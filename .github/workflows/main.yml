@@ -19,6 +19,7 @@ jobs:
         protocol: ftp
         port: 21
         exclude: |
+        	README.md
           **/.git*
           **/.git*/**
           **/node_modules/**
@@ -41,6 +42,7 @@ jobs:
         protocol: ftp
         port: 21
         exclude: |
+          README.md
           **/.git*
           **/.git*/**
           **/node_modules/**
