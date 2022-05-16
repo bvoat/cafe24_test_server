@@ -1,0 +1,115 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/css/module/member/login.css)-->
+<!--@css(/cssbvt/module/member/login.css)-->
+
+
+
+<div module="member_login" id="{$member_login_module_id}">
+    <!--$defaultReturnUrl = /index.html
+        $forbidIpUrl = member/adminFail.html-->
+    <div class="wrapper2 padding2 margin-header">
+
+        <div class="login-box">
+            <img src="/bvtIMG/sign_1.png">
+            <div class="login-title t08">
+                우리가 먹고, 입고, 쓰는 일이 더 가치있도록 함께해요.
+            </div>
+
+            <div class="login-mrg">
+                <a href="#none" class="{$display_kakao|display}" onclick="{$kakao_func_login}">
+                    <div><img src="/bvtIMG/icon/sns_kakao.png" alt="카카오톡 sns 로그인"></div>
+                </a>
+                <a href="#none" class="{$display_naver|display}" onclick="{$naver_func_login}">
+                    <div><img src="/bvtIMG/icon/sns_naver.png" alt="네이버 sns 로그인"></div>
+                </a>
+                <a href="#none" class="{$display_facebook|display}" onclick="{$facebook_func_login}">
+                    <div><img src="/bvtIMG/icon/sns_facebook.png" alt="페이스북 sns 로그인"></div>
+                </a>
+                <a href="#none" class="{$display_apple|display}" onclick="{$apple_func_login}">
+                    <div><img src="/bvtIMG/icon/sns_apple.png" alt="애플 sns 로그인"></div>
+                </a>
+            </div>
+            <div class="hr-sect login-mrg">또는</div>
+
+
+            <div>
+                <div class="login-btn2 link clear {$display_nomember|display}" id="noMemberWrap">
+                    <label>
+                        <a href="{$returnUrl}" onclick="{$action_nomember_order}">
+                            마일리지 안 받고 비회원 구매하기 </a>
+                    </label>
+                </div>
+            </div>
+            <div class="login-mrg login-btn2">
+                <label><a href="/member/login_nomember.html?noMemberOrder&returnUrl=%2Fmyshop%2Forder%2Flist.html">비회원
+                        주문조회</a></label>
+            </div>
+            <div class="login-link login-mrg2">
+                <span class="auto displaynone">{$form.use_login_keeping}</span>
+                <div class="gray2" onclick="toggle()">▼ 아이디로 로그인/회원가입</div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="basiclogin" style="display: none;" class="login-box wrapper2 padding2">
+
+        <fieldset>
+            <legend>비보트 회원로그인</legend>
+            <div class="login-mrg">
+                <div class="login-input">
+                    {$form.member_id}
+                    <label for="member_id">아이디</label>
+                </div>
+                <div class="login-input">
+                    {$form.member_passwd}
+                    <label for="member_passwd">비밀번호</label>
+                </div>
+            </div>
+
+            <p class="security">
+                {$form.member_check_save_id}{$form.member_check_secret_connect}
+            </p>
+            <div class="login-mrg login-btn">
+                <label><a href="#none" onclick="{$action_func_login}">로그인하기</a></label>
+            </div>
+            <ul class="find-box login-mrg">
+                <li><a href="/member/id/find_id.html">아이디찾기</a></li>
+                <li><a href="/member/passwd/find_passwd_info.html">비밀번호찾기</a></li>
+                <li id="signup"><a href="/member/join_agree.html" class="link">회원가입</a></li>
+            </ul>
+
+
+        </fieldset>
+    </div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!--footer-->
+<!--@css(/cssbvt/module/layout/footer.css)-->
+<!--@import(/layout/basic/footer.html)-->
+<script>
+    function toggle() {
+        document.getElementById(`basiclogin`).style.display = "block";
+        var location = document.getElementById(`basiclogin`).offsetTop;
+        window.scrollTo({ top: location, behavior: 'smooth' });
+    }
+
+    function searchParam(key) {
+        return new URLSearchParams(location.search).get(key);
+    };
+
+    if(searchParam('popup')){
+        alert("로그인 후 이용해주세요.");
+    }
+</script>

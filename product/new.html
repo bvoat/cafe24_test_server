@@ -1,0 +1,51 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<div class="margin-header">
+    <div class="padding2 indextitle m25">
+        <h3 class="t14">새로 입점되었어요</h3>
+        <span class="t09">두근두근, 오늘은 또 어떤 가치가 들어왔을까요?</span>
+    </div>
+</div>
+
+
+
+
+<!--신상품-->
+<div class="padding2">
+<div class="bvt-listnormal-box" module="product_listmain_19">
+    <!--@css(/css/module/product/listnormal.css)-->
+    <!--@css(/cssbvt/module/product/listnormal.css)-->
+    <span class="displaynone listmain_title">{$category_title_text}</span>
+    <!--
+                $count = 20
+                    ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                    ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 
+                $moreview = yes
+                $basket_result = /product/add_basket.html
+                $basket_option = /product/basket_option.html
+                $cache = yes
+                $type = moreview
+            -->
+    <!--@import(/layoutbvt/listnormal.html)-->
+    <div module="product_listmore_19">
+        <!--개행 주의-->
+        <!--@css(/css/module/product/productMore.css)-->
+        <!--@css(/cssbvt/module/product/productMore.css)-->
+        <a href="#none" onclick="{$more_action} refresh_discount();">
+            더보기(<span id="more_current_page_{$display_group}">{$current_page}</span>/<span
+                id="more_total_page_{$display_group}">{$total_page}</span>)
+        </a>
+    </div>
+</div>
+</div>
+
+
+<!--footer-->
+<!--@css(/cssbvt/module/layout/footer.css)-->
+<!--@import(/layout/basic/footer.html)-->
+
+
+<!--setting-->
+<!--@define(cmc_log)-->
+<!--@js(/jsbvt/discount_listnormal.js)-->
+

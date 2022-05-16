@@ -1,0 +1,35 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="path">
+    <h3>현재 위치</h3>
+    <ol>
+        <li class="first"><a href="/">홈</a></li>
+        <li title="현재 위치">사은품</li>
+    </ol>
+</div>
+
+<div class="titleArea">
+    <h2>사은품</h2>
+</div>
+
+<div module="gift_list">
+    <!--@css(/css/module/order/gift_list.css)-->
+    <div module="gift_second">
+        <div class="title">
+            <h3>{$category_name}</h3>
+        </div>
+        <div module="gift_Third">
+            <ul>
+                <li>
+                    <img src="{$gift_image}"  alt="" style="width:178px; height:178px" />
+                    <span>{$product_name}</span>
+                    <strong class="point">포인트: {$product_price}</strong>
+                </li>
+                <li>
+                    <img src="{$gift_image}"  alt="" style="width:178px; height:178px" />
+                    <span>{$product_name}</span>
+                    <strong class="point">포인트: {$product_price}</strong>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="margin-header wrapper" module="Project_Package">
+    <!--@css(/css/module/product/project_package.css)-->
+    <!--@css(/cssbvt/module/product/project_package.css)-->
+    <!--@css(/cssbvt/module/product/listnormal.css)-->
+
+    <div module="product_headcategory">
+        {$top_image_tag}
+        <div class="dashline"></div>
+    </div>
+    <!-- 참고 : 뉴상품관리 전용 모듈입니다. 뉴상품관리 이외의 곳에서 사용하면 정상동작하지 않습니다. -->
+    <ul class="menuCategory">
+        <li module="product_projectcategory" >
+            <!-- <a href="#{$cate_id}">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a> -->
+        </li>
+    </ul><!-- //참고 -->
+    <div class="padding2" module="project_list">
+        <!--
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+        <!-- <h3><span id="{$cate_id}">{$category_name}</span></h3> -->
+        <!-- 참고 : 뉴상품관리 전용 모듈입니다. 뉴상품관리 이외의 곳에서 사용하면 정상동작하지 않습니다. -->
+        <div class="bvt-listnormal-box" module="project_productlist">
+            <!--
+                $count = 8
+                    ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                    ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 
+                $moreview = yes
+                $basket_result = /product/add_basket.html
+                $basket_option = /product/basket_option.html
+                $cache = yes
+                $type = moreview
+            -->
+
+            <!--@import(/layoutbvt/listnormal.html)-->
+
+        </div><!-- //참고 -->
+    </div>
+
+    <div module="product_listmore">
+        <!--@css(/css/module/product/productMore.css)-->
+        <!--@css(/cssbvt/module/product/productMore.css)-->
+
+        <a href="#none" onclick="{$more_action} refresh_discount();">
+            더보기(<span id="more_current_page">{$current_page}</span>/<span
+                id="more_total_page">{$total_page}</span>)<span class="more_down"></span>
+        </a>
+    </div>
+</div>
+<!--footer-->
+<!--@css(/cssbvt/module/layout/footer.css)-->
+<!--@import(/layout/basic/footer.html)-->
+
+<!--@js(/jsbvt/discount_listnormal.js)-->
+
+
+<script src="/jsbvt/jquery.rwdImageMaps.min.js"></script>
+<script>
+    var cate_no = getParameterByName('cate_no');
+
+    if (cate_no == 203) {
+        $('.xans-product-headcategory').prepend(`<video autoplay loop muted playsinline id="videobcg">
+        <source src="https://s3.ap-northeast-2.amazonaws.com/img.bvoat.com/video/project_119reo_vid.webm" type="video/webm">
+     <source src="https://s3.ap-northeast-2.amazonaws.com/img.bvoat.com/video/project_119reo_vid.mp4" type="video/mp4">
+          Sorry, your browser does not support HTML5 video.
+</video>`);
+    }
+
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    (function ($) {
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+    })(jQuery);
+
+
+
+</script>

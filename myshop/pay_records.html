@@ -1,0 +1,52 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+    #buy_records_frame{width:100%;border:none;height:1200px;}
+</style>
+<div id="buy_records">
+	<iframe id="buy_records_frame" onload="sendMessageIframe();"  src="https://bvoat.shop/buyRecords"></iframe>
+</div>
+<script>
+    
+
+
+</script>
+
+<div module="myshop_benefit">
+<!--@css(/css/module/myshop/33/benefit.css)-->
+    <div class="info">
+        <div class="{$display_benefit|display}">
+        <div class="memberInfo">
+            <span><img src="{$group_image}" alt="{$group_name}" onerror="this.src='http://img.echosting.cafe24.com/skin/base_ko_KR/member/img_member_default.gif';" width="35" /></span>
+            <ul>
+                <li><strong class="name">{$member_name}님</strong>의 구매등급은 <br><strong class="group">[{$group_name}]</strong>입니다.</li>
+            </ul>
+        </div>
+        <p class="help {$display_no_benefit|display}">
+            <span class="{$display_no_benefit|display}">{$dc_pay} {$dc_min_price} 구매시 {$dc_price}{$dc_type}을 {$use_dc} 받으실 수 있습니다. {$dc_max_percent}</span>
+            <span class="{$display_mobile_use_dc|display}">({$dc_pay} {$mobile_dc_min_price} 모바일 구매시 {$mobile_dc_price}{$mobile_dc_price_type}을 {$mobile_use_dc} 받으실 수 있습니다. {$mobile_dc_max_percent})<br></span>
+            <span class="{$display_with_all|display}">{$dc_pay} {$dc_min_price_mileage} 구매시 {$dc_price_mileage}{$dc_type_mileage}을 {$use_dc_mileage} 받으실 수 있습니다. {$dc_max_mileage_percent}</span>
+            <span class="{$display_mobile_use_mileage|display}">({$dc_pay} {$mobile_dc_mileage_min_buy_amount} 모바일 구매시 {$mobile_dc_mileage_price_o_percent}{$mobile_dc_mileage_unit}을 {$mobile_use_dc_mileage} 받으실 수 있습니다. {$mobile_dc_mileage_max_percent_buy_amount})</span>
+        </p>
+        </div>
+        <div module="myshop_bankbook">
+            <ul>
+                <li>{$mileage_name} : <a href="/myshop/mileage/historyList.html">{$avail_mileage}</a></li>
+                <li class="{$display_deposit|display}">{$deposit_name} : <a href="/myshop/deposits/historyList.html">{$total_deposit}</a></li>
+                <li class="{$display_coupon|display}">쿠폰 : <a href="/myshop/coupon/coupon.html">{$coupon_cnt}개</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="invite {$display_reco|display}">
+        <h3>쇼핑몰 주소 복사하기</h3>
+        <div class="inputBox">
+            <input type="text" id="{$reco_url}" value="http://{$shop_domain}/?reco_id={$member_id}" readonly="readonly" /><a href="#none" class="btnStrong" onclick="{$copy_func}">주소복사</a>
+        </div>
+        <div class="help">
+            <p>
+                쇼핑몰 주소를 친구에게 보내 쇼핑몰에 초대해보세요.<br>
+                가입즉시 친구에게는 {$reco_mileage2}의 적립금이 지급되고,<br>
+                {$reco_mileage}
+            </p>
+        </div>
+    </div>
+</div>

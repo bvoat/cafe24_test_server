@@ -1,0 +1,33 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+   
+   #board_frame{width:100%;border:none;height:1600px;}  
+   .margin-header{background: #F4F5FB;margin-top: 36px;}
+   #bh_slide_frame , #board_view_frame {    position: fixed;    top: 0px;    z-index: 999999;}
+   #board_wrap {    background-color: #f4f5fb;}
+</style>
+<script src="https://bvoat.shop/app/module_community_inline.js"></script>
+<!-- 회원 글 보기 -->
+<div class="margin-header"></div>
+ <!-- 메뉴 -->
+<!--@import(/layout/basic/index_menu_comm.html)-->
+
+<div id="board_wrap" >
+
+</div>
+
+<script>
+   
+   //헤더 디자인 변경 테스트
+   $(".margin-header").html(`<img src="/bvtIMG/title_gradient.svg">`)
+   $(".hd-logo").css(`width`, `initial`);
+   $(".hd-logo").html(`<div style="color:#022CFF; font-size:17px; font-weight:bold;">게시글</div>`);
+   $(".btnBasket").css(`visibility`, `hidden`);
+    $(".count").css(`visibility`, `hidden`);
+    //iframe 높이 조절
+    setInterval(function(){
+        $("#board_wrap").height($(".wrapper2").height());
+    },1000); 
+    
+
+</script>

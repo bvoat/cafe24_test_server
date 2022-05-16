@@ -1,0 +1,168 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/cssbvt/module/myshop/index.css)-->
+
+<div id="body-wrapper">
+<div module="layout_logincheck">
+    <!--
+    $url = /member/login.html?popup=1
+-->
+</div>
+<div class="margin-header"></div>
+
+<div class="mypage_intro padding2">
+    <div class="bh-space">
+        <div class="bh-title b">내 정보</div>
+    </div>
+
+    <div class="profile">
+        <div><img style="width: 33px;" src="https://bvoat.shop/images/new_img/ico__11.png"><span class="nickname"></span></div>
+        <div><a href="/member/modify.html"><span>개인정보 수정</span><img src="/bvtIMG/icon/Icon_metro-pencil.svg"></a></div>
+    </div>
+    <div class="profile2">
+        <div module="myshop_benefit">
+            <span class="b cnt">{$group_name}</span> <br><span class="title">등급</span>
+        </div>
+        <div module="myshop_asyncbankbook">
+            <a href="/myshop/mileage/historyList.html">
+                <span class="b cnt">{$avail_mileage}</span><br><span class="title">마일리지</span>
+            </a>
+        </div>
+        <div module="myshop_asyncbankbook">
+            <a href="/myshop/coupon/coupon.html">
+                <span class="b cnt">{$coupon_cnt}</span><br><span class="title">쿠폰</span>
+            </a>
+        </div>
+    </div>
+    <div class="profile2_benefit"></div>
+    <div class="profile3">
+        <a>✍️ <span class="nickname"></span>님의 소비 기록</a>
+    </div>
+</div>
+
+<div class="mypage_order padding2">
+    <div module="myshop_orderstate">
+        <!--@css(/css/module/myshop/orderState.css)-->
+        <!--@css(/cssbvt/module/myshop/orderState.css)-->
+
+        <div class="title">
+            <h3>주문/배송 조회 </h3><span><a href="/myshop/order/list.html">전체보기 ></a></span>
+        </div>
+        <ul class="order">
+            <li>
+                <a href="{$shppiedBeforeUrl}">
+                    <span class="count">{$shppiedBeforeCount}</span>
+                    <strong>입금전</strong>
+                </a>
+            </li>
+            <li>
+                <a href="{$shppiedStandbyUrl}">
+                    <span class="count">{$shppiedStandbyCount}</span>
+                    <strong>배송준비중</strong>
+                </a>
+            </li>
+            <li>
+                <a href="{$shppiedBeginUrl}">
+                    <span class="count">{$shppiedBeginCount}</span>
+                    <strong>배송중</strong>
+                </a>
+            </li>
+            <li>
+                <a href="{$shppiedComplateUrl}">
+                    <span class="count">{$shppiedComplateCount}</span>
+                    <strong>구매확정</strong>
+                </a>
+            </li>
+        </ul>
+
+        <div class="title">
+            <h3>취소/교환/반품</h3><span><a href="/myshop/order/list.html?mode=cs">전체보기 ></a></span>
+        </div>
+        <ul class="order">
+            <li>
+                <a href="{$orderCancelUrl}">
+                    <span class="count">{$orderCancelCount}</span>
+                    <strong>취소</strong>
+                </a>
+            </li>
+            <li>
+                <a href="{$orderExchangeUrl}">
+                    <span class="count">{$orderExchangeCount}</span>
+                    <strong>교환</strong>
+                </a>
+            </li>
+            <li>
+                <a href="{$orderReturnUrl}">
+                    <span class="count">{$orderReturnCount}</span>
+                    <strong>반품</strong>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+
+
+<div class="mypage_etc padding2">
+    <div module="myshop_main">
+        <div class="title">
+            <h3>고객센터 </h3>
+        </div>
+        <ul>
+            <li ><a href="https://bvoat.channel.io" target="_blank">1:1 문의</a></li>
+            <li module="Layout_stateLogon"><a href="{$action_logout}">로그아웃</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="margin-footer"></div>
+</div>
+
+<script>
+    //헤더 디자인 변경 테스트
+    // $(".margin-header").html(`<img src="/bvtIMG/title_gradient.svg">`)
+    $(".hd-logo").css(`width`, `initial`);
+    $(".hd-logo").html(`<div style="color:#022CFF; font-size:17px; font-weight:bold;">마이페이지</div>`);
+
+
+    //css 동적 변경
+     $(".count").each(function(){
+        var selected = $(this).children("span");
+
+         if(selected.text()=="0"){
+            selected.css("color","#ABABAB");
+         }
+         
+         var id = SHOP.getAdminID();
+         $(".profile3").children("a").attr("href",`/myshop/buy_records/list_my.html?member_id=${id}`);
+
+    });
+
+    var level = $(".cnt").text();
+    var sessionG = sessionStorage.getItem('group_name')
+    console.log(sessionG)
+    var divCont = $(".profile2_benefit")
+    if(sessionG){
+        if(typeof sessionG == 'string' && sessionG == '보터 Lv.1'){
+            divCont.html(`<div>여기에 동적으로 1삽입</div>`)
+        }
+
+    }
+
+
+
+
+    // if(level){
+    //     console.log(level)
+    //     if(typeof level == 'string' && level == '보터 Lv.1'){
+    //         divCont.html(`<div>여기에 동적으로 1삽입</div>`)
+    //     } else if(typeof level == 'string' && level == '보터 Lv.2'){
+    //         divCont.html(`<div>여기에 동적으로 2삽입</div>`)
+    //     } else if(typeof level == 'string' && level == '보터 Lv.4'){
+    //         divCont.html(`<div>여기에 동적으로 3삽입</div>`)
+    //     }
+        
+
+    // }
+    
+</script>

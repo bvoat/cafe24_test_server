@@ -1,0 +1,149 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+
+<!-- Link Swiper's CSS -->
+<link
+rel="stylesheet"
+href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+<style>
+   #board_frame{width:100%;border:none;height:1600px;} 
+   .margin-header{background: #F4F5FB;margin-top: 26px;}
+        
+   #bh_slide_frame ,#board_view_frame {    position: fixed;    top: 0px;    z-index: 999999;}
+   #go_board_write_ico{position:fixed;bottom: 71px;right:10px;}
+    #go_board_write_ico img{width: 100px;height: 100px; }
+
+    .pr_header_banner {
+   		 margin-top: 88px;
+        margin-bottom: 15px;
+    }
+    
+    #comm_ban_1{
+        width: 100%;
+    }
+
+
+.container.board_cont .container{
+    margin-top: 0!important;
+    }
+ 
+
+ /* 서비스 장애 알람 
+
+  .modal_alert_wrap{
+    width: 450px;
+    height: 100vw;
+    background: #00000010;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+  .modal_alert{
+    width: 300px;
+    height: 280px;
+    background: #ffffff;
+    border-radius: 13px;
+    text-align: center;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 3px 7px 11px #CECECE64;
+  }
+  .modal_icon{
+    width: 50px;
+  }
+  .modal_head{
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+  .modal_msg{
+    font-size: 12px;
+  }
+*/
+</style>
+
+
+<script src="https://bvoat.shop/app/module_community_inline.js"></script>
+  
+
+
+
+<!-- 전체 글 리스트 보기 -->
+<div class="margin-header">
+
+<!-- 서비스 장애 알람 
+    <div class="modal_alert_wrap">
+      <div class="modal_alert">
+        <img src="https://m.bvoat.com/bvtIMG/baseline_error_black_48dp.png" class="modal_icon"/>
+        <h1 class="modal_head"> 현재 <strong>서버 불안정</strong>으로 <br> 긴급 복구 작업 중입니다 😥</h1>
+        <br>
+        <p class="modal_msg">소비기록 및 커뮤니티 서비스 이용이 <br>일시적으로 중단되었습니다. <br> 비보트 이용에 불편을 드려 죄송합니다.</p>
+        <p class="modal_msg">빠른 시일 내에 복구하도록 노력하겠습니다. <br> 감사합니다.</p>
+      </div>
+    </div>
+  
+-->
+  
+
+</div>
+ <!-- 메뉴 -->
+<!--@import(/layout/basic/index_menu_comm.html)-->
+
+<div id="board_wrap" >
+
+</div>
+
+  
+
+<div id="go_board_write_ico"> 
+     <a href="#"><img src="https://bvoat.shop/images/new_img/write_btn_2x.png"></a> 
+</div>
+
+<script>
+	// $(".btnBasket").css(`visibility`, `hidden`);
+  $(".count").css(`visibility`, `hidden`);
+      
+      $(".btnBasket").attr(`href`, `../index_level.html`)
+      $(".btnBasket").attr(`class`, `level_info_wrap`)
+    
+      $(".level_info_wrap").html(`<img class="level_info_icon" src="https://m.bvoat.com/bvtIMG/icon/icon_headermenu_index_level.png"><p>등급 안내</p>`)
+   
+    var load_div = "" ;   //뒤로가기여부
+    
+   window.onpageshow = function(event) {
+    if ( event.persisted || (window.performance && window.performance.navigation.type == 2)) {
+        //뒤로가기 해서 왔을경우     
+        load_div = "back";
+    }
+}
+   
+  window.channelPluginSettings = {
+    "hideDefaultLauncher": true
+  }
+
+
+</script>
+     
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".community_banner_wrap", {
+      observer: true, observeParents: true,
+      centeredSlides: true,
+      loop: false, 
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+              },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      effect : 'slide', 
+      fadeEffect: { crossFade: true },
+    });
+
+  </script>
+

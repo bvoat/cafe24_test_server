@@ -1,0 +1,111 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="path">
+    <h3>현재 위치</h3>
+    <ol>
+        <li class="first"><a href="/">홈</a></li>
+        <li><a href="/myshop/index.html">마이 쇼핑</a></li>
+        <li title="현재 위치">적립금</li>
+    </ol>
+</div>
+
+<div class="titleArea">
+    <h2>적립금</h2>
+    <p>고객님의 사용가능 적립금 금액 입니다.</p>
+</div>
+
+<div module="Myshop_mileageUnavailPackage">
+<!--@css(/css/module/myshop/mileageUnavailPackage.css)-->
+    <div module="myshop_summary">
+        <ul>
+            <li><strong class="title">총 적립금</strong> <span class="data">{$total_mileage}</span></li>
+            <li><strong class="title">사용가능 적립금</strong> <span class="data">{$avail_mileage}</span></li>
+            <li><strong class="title">사용된 적립금</strong> <span class="data">{$used_mileage}</span></li>
+            <li><strong class="title">미가용 적립금</strong> <span class="data">{$unavail_mileage}</span></li>
+        </ul>
+    </div>
+
+    <div class="tab">
+        <ul>
+            <li><a href="/myshop/mileage/historyList.html"><img src="http://img.echosting.cafe24.com/design/skin/default/myshop/btn_mileage1.gif" alt="적립내역보기" /></a></li>
+            <li><a href="/myshop/mileage/unavailList.html"><img src="http://img.echosting.cafe24.com/design/skin/default/myshop/btn_mileage2_on.gif" alt="미가용적립내역보기" /></a></li>
+            <li><a href="/myshop/mileage/couponList.html"><img src="http://img.echosting.cafe24.com/design/skin/default/myshop/btn_mileage3.gif" alt="미가용쿠폰/회원등급적립내역" /></a></li>
+        </ul>
+    </div>
+
+    <div module="myshop_unavailList">
+        <!--
+            $only_html = no
+            $count = 10
+            $login_page = /member/login.html
+        -->
+        <table border="1" summary="">
+            <caption>미가용 적립 내역보기</caption>
+            <colgroup>
+                <col style="width:15%" />
+                <col style="width:15%" />
+                <col style="width:15%" />
+                <col style="width:25%" />
+                <col style="width:auto" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">주문날짜</th>
+                    <th scope="col">적립금</th>
+                    <th scope="col">관련 주문</th>
+                    <th scope="col">사용가능 예정일</th>
+                    <th scope="col">적립내용</th>
+                </tr>
+            </thead>
+            <tbody class="{$display_unavail|display}">
+                <tr>
+                    <td>{$order_date|date:Y-m-d}</td>
+                    <td class="right">{$product_mileage}</td>
+                    <td><a href="/myshop/order/detail.html?order_id={$order_id}">{$order_id}</a></td>
+                    <td>{$can_use_date}</td>
+                    <td class="left">{$mileage_type}</td>
+                </tr>
+                <tr>
+                    <td>{$order_date|date:Y-m-d}</td>
+                    <td class="right">{$product_mileage}</td>
+                    <td><a href="/myshop/order/detail.html?order_id={$order_id}">{$order_id}</a></td>
+                    <td>{$can_use_date}</td>
+                    <td class="left">{$mileage_type}</td>
+                </tr>
+            </tbody>
+            <tbody class="{$display_unavail_none|display}">
+                <tr>
+                    <td colspan="5" class="noData">적립내역이 없습니다.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div module="myshop_unavailPaging" class="paging">
+    <!--@css(/css/module/myshop/unavailPaging.css)-->
+    <p><a href="{$first_url}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_first.gif" alt="첫 페이지" /></a></p>
+    <p><a href="{$prev_url}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_prev.gif" alt="이전 페이지" /></a></p>
+    <ol>
+        <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+        <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+        <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+        <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+        <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+        <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+        <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+        <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+        <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+        <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+    </ol>
+    <p><a href="{$next_url}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_next.gif" alt="다음 페이지" /></a></p>
+    <p><a href="{$last_url}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_last.gif" alt="마지막 페이지" /></a></p>
+</div>
+
+<div class="help">
+    <h3>적립금 안내</h3>
+    <ul>
+        <li>주문으로 발생한 적립금은 배송완료 후 익일부터 실제 사용 가능한 적립금으로 전환됩니다. 배송완료 시점으로부터 1일 동안은 미가용 적립금으로 분류됩니다. </li>
+        <li>미가용 적립금은 반품, 구매취소 등을 대비한 임시 적립금으로 사용가능 적립금으로 전환되기까지 상품구매에 사용하실 수 없습니다.</li>
+        <li>사용가능 적립금(총적립금 - 사용된적립금 - 미가용적립금)은 상품구매 시 바로 사용가능합니다.</li>
+    </ul>
+</div>

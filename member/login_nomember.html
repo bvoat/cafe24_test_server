@@ -1,0 +1,52 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/css/module/member/login.css)-->
+<!--@css(/cssbvt/module/member/login.css)-->
+
+
+
+<div module="MyShop_OrderHistoryNologin">
+    <div class="wrapper2 padding2">
+    <!--@css(/cssbvt/module/myshop/orderHistoryNologin.css)-->
+    <!--
+        $orderDetailUrl = /myshop/order/list.html
+    --> <h3 class="padding2">비회원 주문조회</h3>
+        <p class="ec-base-help">비회원의 경우, 주문시의 주문번호로 주문조회가 가능합니다.</p>
+
+        <div class="login-mrg">
+            <div class="login-input">
+                {$form.order_name}
+                <label for="order_name">{$form_label.order_name}</label>
+            </div>
+            <div class="login-input">
+                {$form.order_id}
+                <label for="order_id">{$form_label.order_id}</label>
+            </div>
+            <div class="login-input">
+                {$form.order_password}
+                <label for="order_password">비밀번호</label>
+            </div>
+        </div>
+
+
+        <ul>
+            <li><strong></strong> </li>
+            <li class="number"><strong></strong> </li>
+            <li><strong></strong> </li>
+        </ul>
+        <p class="button">
+            <input class="login-btn" type="image"
+                src="/bvtIMG/btn_nomember_login.svg" alt="로그인"></p>
+    </div>
+</div>
+
+
+<!--footer-->
+<!--@css(/cssbvt/module/layout/footer.css)-->
+<!--@import(/layout/basic/footer.html)-->
+<script>
+    function toggle() {
+        document.getElementById(`basiclogin`).style.display = "block";
+        var location = document.getElementById(`basiclogin`).offsetTop;
+        window.scrollTo({ top: location, behavior: 'smooth' });
+    }
+</script>

@@ -1,0 +1,266 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<div class="margin-header">
+
+</div>
+
+<!-- 메뉴 -->
+<!--@import(/layout/basic/index_menu.html)-->
+
+
+<!--main-->
+<!-- <div class="padding3">
+    <div class="banner_title"><span>이번주 폴티클</span></div>
+    <div class="banner_subtitle"> 어제보다 나은 오늘에 투표하고 <span class="blue">500 마일리지</span> 받아가세요! </div>
+</div>
+<div class="vote-banner2">
+    <div class="swiper-container pollticle_listmain-swipe">
+        <div id="pollticle_listmain1" class="swiper-wrapper">
+
+        </div>
+        <div class="pollticle_listmain_swiper-pagination swiper-pagination"></div>
+
+    </div>
+</div> -->
+
+<!--지난 한 달-->
+
+<div class="padding2 indextitle m20 m108">
+    <h3 class="t14">Vote for Better Tomorrow!</h3>
+    <span class="t09">함께 투표하는 매거진, 폴티클 </span>
+</div>
+
+<div class="vote-banner2">
+    <ul id="pollticle_listmain2" class="padding2 list-contents">
+
+    </ul>
+</div>
+<!--참여가 많았던 폴티클-->
+<div class="padding2 indextitle m20">
+    <h3 class="t14">가장 참여가 많았던 폴티클</h3>
+    <span class="t09">다른 보터들이 가장 흥미로워 한 폴티클을 확인해보세요.  </span>
+</div>
+
+<div class="vote-banner2">
+    <div class="swiper-container pollticle_listmain-swipe">
+        <div id="pollticle_listmain3" class="swiper-wrapper">
+
+        </div>
+        <div class="pollticle_listmain_swiper-pagination swiper-pagination"></div>
+
+    </div>
+</div>
+
+<!--치열했던 폴티클-->
+<div class="padding2 indextitle m20">
+    <h3 class="t14">가장 치열했던 폴티클</h3>
+    <span class="t09">다양한 의견이 공존한 주제의 폴티클을 확인해보세요.</span>
+</div>
+
+<div class="vote-banner2">
+    <div class="swiper-container pollticle_listmain-swipe">
+        <div id="pollticle_listmain4" class="swiper-wrapper">
+
+        </div>
+        <div class="pollticle_listmain_swiper-pagination swiper-pagination"></div>
+
+    </div>
+</div>
+
+
+<div class="list-btn">
+    <a href="/pollticle/list.html" class="shadow">폴티클 전체보기</a>
+</div>
+
+<!--buttons-->
+<!--@import(/pollticle/buttons.html)-->
+
+</div>
+
+
+<!--footer-->
+<!--@css(/cssbvt/module/layout/footer.css)-->
+<!--@import(/layout/basic/footer.html)-->
+
+<!--setting-->
+<!--@define(cmc_log)-->
+<!--@css(/cssbvt/bvt_index.css)-->
+<!--@css(/cssbvt/swiper-bvt.css)-->
+<!--@js(/jsbvt/swiper-bundle.min.js)-->
+<!--@js(/jsbvt/swiper-bvt-setting.js)-->
+
+<script src="/bvtCONTENTS/pollticle.js"></script>
+<script>
+        //pollticle_listmain1~2
+        for (var i = 0; i < 5; i++) {
+            var no = pollticle[i].no
+            if (i == 0) {
+                $("#pollticle_listmain1").append(`<div id="pollticle-${pollticle[i].no}" class="swiper-slide banner-contents">
+                    <a href="#">
+                        <div class="banner-thum-wait"><img src="${pollticle[i].img}" alt="Coming soon"></div>
+                        <div class="banner-desc shadow">
+                            <div class="banner-title">███████ <br>█████ </div>
+                            <div class="list-content-badges">
+                                <ul>
+                                    <li class="cat-badge-blue">???</li>
+                                    <li class="cat-badge-grey">???</li>
+                                </ul>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="banner-btn shadow">
+                            🔒︎ Coming soon
+                        </div>
+                    </a>
+                </div>`);
+            }
+            // else if (i == 1) {
+            //     $("#pollticle_listmain1").prepend(`<div id="pollticle-${pollticle[i].no}" class="swiper-slide banner-contents">
+            //         <a href="/article/bvoat/5/${pollticle[i].no}">
+            //             <div class="banner-thum"><img src="${pollticle[i].img}" alt="${pollticle[i].title}">
+            //             </div>
+            //             <div class="banner-desc shadow">
+            //                 <div class="banner-title">${pollticle[i].title}</div>
+            //                 <div class="list-content-badges">
+            //                     <ul>
+            //                         <li>${pollticle[i].badge1}</li>
+            //                     <li class="cat-badge-grey">${pollticle[i].badge2}</li>
+            //                     </ul>
+            //                 </div>
+            //             </div>
+            //             <div class="banner-btn shadow">
+            //                 ${pollticle[i].subtitle}
+            //             </div>
+            //         </a>
+            //     </div>`);
+
+            // }
+            else {
+                $("#pollticle_listmain2").append(`<li class="moreBoxnone shadow">
+                <div id="pollticle-${pollticle[i].no}">
+                    <a href="/article/bvoat/5/${pollticle[i].no}">
+                        <img class="list-contents-thum" src="${pollticle[i].img}" alt="${pollticle[i].title}"><div class="list-contents-title">
+                            ${pollticle[i].title}
+                        </div>
+                        <div>
+                        <div class="list-content-badges">
+                            <ul>
+                                <li >${pollticle[i].badge1}</li>
+                                <li class="cat-badge-grey">${pollticle[i].badge2}</li>
+                            </ul>
+                            <div>${pollticle[i].subtitle}</div>
+                        </div>
+                        </div>
+                    </a>
+                </div>
+            </li> `);
+
+            }
+
+            switch (pollticle[i].badge1) {
+                case "지속가능":
+                    $(`#pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-navy");
+                    break;
+                case "친환경":
+                    $(`#pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-blue");
+                    break;
+                case "비건":
+                    $(`#pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-green");
+                    break;
+                case "사회가치":
+                    $(`#pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-orange");
+                    break;
+                default:
+                    break;
+            }
+
+        }
+
+        //pollticle_listmain3
+        for (var i = 0; i < 4; i++) {
+            var no = pollticle_listmain3[i].no
+
+            $("#pollticle_listmain3").append(`<div id="pollticle_listmain3_pollticle-${pollticle_listmain3[i].no}" class="swiper-slide banner-contents">
+                    <a href="/article/bvoat/5/${pollticle_listmain3[i].no}">
+                        <div class="banner-thum"><img src="${pollticle_listmain3[i].img}" alt="${pollticle_listmain3[i].title}">
+                        </div>
+                        <div class="banner-desc shadow">
+                            <div class="banner-title">${pollticle_listmain3[i].title}</div>
+                            <div class="list-content-badges">
+                                <ul>
+                                    <li>${pollticle_listmain3[i].badge1}</li>
+                                <li class="cat-badge-grey">${pollticle_listmain3[i].badge2}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="banner-btn shadow">
+                            ${pollticle_listmain3[i].subtitle}
+                        </div>
+                    </a>
+                </div>`);
+
+            switch (pollticle_listmain3[i].badge1) {
+                case "지속가능":
+                    $(`#pollticle_listmain3_pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-navy");
+                    break;
+                case "친환경":
+                    $(`#pollticle_listmain3_pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-blue");
+                    break;
+                case "비건":
+                    $(`#pollticle_listmain3_pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-green");
+                    break;
+                case "사회가치":
+                    $(`#pollticle_listmain3_pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-orange");
+                    break;
+                default:
+                    break;
+            }
+
+        }
+        //pollticle_listmain4
+        for (var i = 0; i < 4; i++) {
+            var no = pollticle_listmain4[i].no
+
+            $("#pollticle_listmain4").append(`<div id="pollticle_listmain4_pollticle-${pollticle_listmain4[i].no}" class="swiper-slide banner-contents">
+                    <a href="/article/bvoat/5/${pollticle_listmain4[i].no}">
+                        <div class="banner-thum"><img src="${pollticle_listmain4[i].img}" alt="${pollticle_listmain4[i].title}">
+                        </div>
+                        <div class="banner-desc shadow">
+                            <div class="banner-title">${pollticle_listmain4[i].title}</div>
+                            <div class="list-content-badges">
+                                <ul>
+                                    <li>${pollticle_listmain4[i].badge1}</li>
+                                <li class="cat-badge-grey">${pollticle_listmain4[i].badge2}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="banner-btn shadow">
+                            ${pollticle_listmain4[i].subtitle}
+                        </div>
+                    </a>
+                </div>`);
+
+            switch (pollticle_listmain4[i].badge1) {
+                case "지속가능":
+                    $(`#pollticle_listmain4_pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-navy");
+                    break;
+                case "친환경":
+                    $(`#pollticle_listmain4_pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-blue");
+                    break;
+                case "비건":
+                    $(`#pollticle_listmain4_pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-green");
+                    break;
+                case "사회가치":
+                    $(`#pollticle_listmain4_pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-orange");
+                    break;
+                default:
+                    break;
+            }
+
+        }
+
+
+
+
+
+</script>

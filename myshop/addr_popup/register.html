@@ -1,0 +1,54 @@
+<!--@layout(/layout/basic/popup.html)-->
+<div module="myshop_AddrRegister">
+    <!--@css(/css/module/myshop/addrRegister_pop.css)-->
+    <!--
+    $return_url = /myshop/addr_popup/list.html
+    -->
+    <div class="header">
+        <h1>배송 주소록 관리</h1>
+    </div>
+
+    <div class="content">
+        <div class="info">
+            <h2>배송주소록 유의사항</h2>
+            <ul>
+                <li>배송 주소록은 최대 10개까지 등록할 수 있으며, 별도로 등록하지 않을 경우 최근 배송 주소록 기준으로 자동 업데이트 됩니다.</li>
+                <li>자동 업데이트를 원하지 않을 경우 주소록 고정 선택을 선택하시면 선택된 주소록은 업데이트 대상에서 제외됩니다.</li>
+            </ul>
+        </div>
+
+        <table border="1" summary="">
+            <caption>배송 주소록 등록</caption>
+            <tr>
+                <th scope="row">배송지명</th>
+                <td>{$form.ma_rcv_title}</td>
+            </tr>
+            <tr>
+                <th scope="row">성명</th>
+                <td>{$form.ma_rcv_name}</td>
+            </tr>
+            <tr>
+                <th scope="row">주소</th>
+                <td>
+                    {$form.address_zip1} - {$form.address_zip2}
+                    <a href="#none" title="우편번호 검색(새창으로 열기)" onclick="{$action_find_address}" id="{$btn_find_post}"><img src="http://img.echosting.cafe24.com/design/skin/default/member/btn_zip.gif" alt="우편번호" /></a><br />
+                    {$form.address_addr1}<br />
+                    {$form.address_addr2}
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">유선전화</th>
+                <td>{$form.ma_rcv_phone}</td>
+            </tr>
+            <tr>
+                <th scope="row">휴대전화</th>
+                <td>{$form.ma_rcv_mobile_no}</td>
+            </tr>
+        </table>
+
+        <div class="btnArea">
+            <a href="#none" onclick="{$action_check}"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_register.gif" alt="등록하기" /></a>
+            <a href="list.html"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_cancel.gif" alt="취소하기" /></a>
+        </div>
+    </div>
+</div>

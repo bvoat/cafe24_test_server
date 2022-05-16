@@ -1,0 +1,85 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/cssbvt/module/myshop/index.css)-->
+<!--상단메뉴-->
+
+
+<div module="layout_logincheck">
+    <!--
+    $url = /member/login.html
+-->
+</div>
+
+<div class="level_cont">
+    <section class="level_cont_header">
+        <div class="level_cont_box">
+            <h1 id="level_title">
+                <span id="voter_nickname">보터</span>님은 현재
+            </h1>
+            <h2><span id="voter_level">한 걸음 보터</span>입니다.</h2>
+            <div class="level_voter_img"></div>
+        </div>
+    </section>
+    <section class="level_cont_info">
+        <h3><span>매월 1일, 비보트 커뮤니티 내 작성해주신</span><span>게시글과 댓글 수를 합산</span>해 등급이 변경됩니다.</h3>
+        <div class="level_info_box_wrap">
+            <div class="info_box">
+                <h4 id="level_first">한 걸음 보터</h4>
+                <p><em>5개 미만</em> 작성 <span id="span_gray">가치소비 첫 걸음을 환영합니다!</span></p>
+            </div>
+            <div class="info_box">
+                <h4 id="level_second">두 걸음 보터</h4>
+                <p><em>월 5~9개</em> 작성 <span><strong>1,000원 할인 쿠폰</strong> 자동 발급</span></p>
+            </div>
+            <div class="info_box">
+                <h4 id="level_third">세 걸음 보터</h4>
+                <p><em>월 10~19개</em> 작성 <span><strong>5,000원 쿠폰팩</strong> 자동 발급</span></p>
+            </div>
+            <div class="info_box">
+                <h4 id="level_fourth">네 걸음 보터</h4>
+                <p><em>월 20개 이상</em> 작성 <span><strong>5,000원 쿠폰팩, 무료배송 쿠폰</strong> 자동 발급</span></p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    
+    function asyncUser(){
+    var voter_info = JSON.parse(sessionStorage.getItem('member_1'))
+    var voter_level = voter_info.data['group_no'];
+    var voter_nickname = voter_info.data.nick_name;
+    var voter_level_id = document.querySelector("#voter_level");
+    var voter_nickname_id = document.querySelector("#voter_nickname");
+
+
+    if(voter_nickname) {
+        voter_nickname_id.textContent = voter_nickname;
+    } else if (voter_nickname == '') {
+        voter_nickname_id.textContent = '보터';
+    } else if (voter_nickname == null) {
+ 		voter_nickname_id.textContent = '보터';
+    } else {
+        voter_nickname_id.textContent = '보터';
+    }
+
+     if(voter_level){
+        if(voter_level == 1){
+            voter_level_id.textContent = "한 걸음 보터";
+        } else if(voter_level == 5){
+            voter_level_id.textContent = "두 걸음 보터"
+        } else if(voter_level == 6){
+            voter_level_id.textContent = "세 걸음 보터"
+        } else if(voter_level == 7){
+            voter_level_id.textContent = "네 걸음 보터"
+        }
+    }
+}
+window.addEventListener('load', asyncUser());
+    //헤더 디자인 변경 테스트
+   $(".margin-header").html(`<img src="/bvtIMG/title_gradient.svg">`)
+   $(".hd-logo").css(`width`, `initial`);
+   $(".hd-logo").html(`<div style="color:#022CFF; font-size:17px; font-weight:bold;">보터 등급별 혜택 안내</div>`);
+    $(".btnBasket").css(`visibility`, `hidden`);
+    $(".count").css(`visibility`, `hidden`);
+    $(".hd-left").css(`visibility`, `hidden`);
+</script>

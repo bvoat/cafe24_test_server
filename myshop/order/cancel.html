@@ -1,0 +1,423 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="margin-header padding2">
+    <div class="bh-title b">📦 취소 신청</div>
+    <div class="bh-cont">더 나은 세상을 향한 선택, 소비는 투표다!</div>
+
+</div>
+
+<div module="Myshop_OrderHistoryApplyCancel" class="margin-footer">
+    <!--@css(/css/module/myshop/orderHistoryApplyCancel.css)-->
+        <!--@css(/cssbvt/module/myshop/orderHistoryApplyCancel.css)-->
+
+    <div class="ec-base-fold theme1 selected eToggle">
+        <div class="title">
+            <h2>
+                <strong class="date" title="주문일자">{$order_date_ymd}</strong>
+                <span class="number" title="주문번호">({$order_id})</span>
+            </h2>
+        </div>
+        <div class="contents">
+            <div class="{$product_no_receiver_display|display}">
+                <div module="Myshop_products">
+                    <div class="orderList">
+                        <div class="product">
+                            <span class="chk">{$form.checkbox}</span>
+                            <div class="description">
+                                <span class="thumbnail"><a href="/product/detail.html{$param_product}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="" /></a></span>
+                                <strong class="name" title="상품명">{$product_name_link}</strong>
+                                <ul class="info">
+                                    <li>
+                                        <span class="price" title="판매가">{$item_price_raw_front_head}<strong>{$item_price_raw_front}</strong>{$item_price_raw_front_tail}<span class="{$item_price_ref_display|display}"> {$item_price_raw_back_head}{$item_price_raw_back}{$item_price_raw_back_tail}</span></span>
+                                        <span class="quantity" title="수량"><strong>{$quantity}</strong>개</span>
+                                    </li>
+                                    <li class="free {$card_installment_display|display}">무이자할부 상품</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="option {$option_display|display}">
+                            <div>{$option_str}</div>
+                            <ul module="Myshop_optionSet">
+                                <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
+                                <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
+                            </ul>
+                            <p class="free {$card_installment_display|display}">무이자할부 상품</p>
+                        </div>
+                        <div class="quantity">
+                            <span class="gLeft">신청수량</span>
+                            <span class="gRight">
+                                <img class="QuantityDown" alt="down" src="//img.echosting.cafe24.com/skin/mobile_ko_KR/order/ico_quantity_down.jpg" width="33" height="29" onclick="{$out_shortcut}">
+                                {$form.quantity}
+                                <img class="QuantityUp" alt="up" src="//img.echosting.cafe24.com/skin/mobile_ko_KR/order/ico_quantity_up.jpg" width="33" height="29" onclick="{$add_shortcut}">
+                                <a class="btnBasic" href="javascript:;" onclick="{$action_modify}">변경</a>
+                            </span>
+                        </div>
+                        <div class="status">{$cur_state}</div>
+                    </div>
+                    <div class="orderList">
+                        <div class="product">
+                            <span class="chk">{$form.checkbox}</span>
+                            <div class="description">
+                                <span class="thumbnail"><a href="/product/detail.html{$param_product}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="" /></a></span>
+                                <strong class="name" title="상품명">{$product_name_link}</strong>
+                                <ul class="info">
+                                    <li>
+                                        <span class="price" title="판매가">{$item_price_raw_front_head}<strong>{$item_price_raw_front}</strong>{$item_price_raw_front_tail}<span class="{$item_price_ref_display|display}"> {$item_price_raw_back_head}{$item_price_raw_back}{$item_price_raw_back_tail}</span></span>
+                                        <span class="quantity" title="수량"><strong>{$quantity}</strong>개</span>
+                                    </li>
+                                    <li class="free {$card_installment_display|display}">무이자할부 상품</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="option {$option_display|display}">
+                            <div>{$option_str}</div>
+                            <ul module="Myshop_optionSet">
+                                <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
+                                <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
+                            </ul>
+                        </div>
+                        <div class="quantity">
+                            <span class="gLeft">신청수량</span>
+                            <span class="gRight">
+                                <img class="QuantityDown" alt="down" src="//img.echosting.cafe24.com/skin/mobile_ko_KR/order/ico_quantity_down.jpg" width="33" height="29" onclick="{$out_shortcut}">
+                                {$form.quantity}
+                                <img class="QuantityUp" alt="up" src="//img.echosting.cafe24.com/skin/mobile_ko_KR/order/ico_quantity_up.jpg" width="33" height="29" onclick="{$add_shortcut}">
+                                <a class="btnBasic" href="javascript:;" onclick="{$action_modify}">변경</a>
+                            </span>
+                        </div>
+                        <div class="status">{$cur_state}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="{$product_receiver_display|display}">
+                <div module="Myshop_productsMobile">
+                    <div class="{$display_receiver_column|display} ec-base-fold theme2 eToggle selected">
+                        <div class="title">
+                            <h3>배송지 {$no}</h3>
+                        </div>
+                        <div class="contents">
+                            <div class="ec-base-table">
+                                <table border="1">
+                                    <caption>배송지 정보</caption>
+                                    <colgroup>
+                                        <col style="width:100px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <strong>{$r_name}</strong>
+                                            <div><span class="{$r_zipcode_display|display}">[{$r_zipcode}]</span> <span data-class="{$raddr_display|display}">{$r_addr}</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr class="{$receive_info_display|display}">
+                                        <th scope="row">수령지</th>
+                                        <td>{$store_name}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">일반전화</th>
+                                        <td>{$r_phone1}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">휴대전화</th>
+                                        <td>{$r_phone2}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">배송번호</th>
+                                        <td>{$delivery_code}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div module="Myshop_ReceiverProductList">
+                                <div class="orderList">
+                                    <div class="product">
+                                        <span class="chk">{$form.checkbox}</span>
+                                        <div class="description">
+                                            <span class="thumbnail"><a href="/product/detail.html{$param_product}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="" /></a></span>
+                                            <strong class="name" title="상품명">{$product_name_link}</strong>
+                                            <ul class="info">
+                                                <li>
+                                                    <span class="price" title="판매가">{$item_price_raw_front_head}<strong>{$item_price_raw_front}</strong>{$item_price_raw_front_tail}<span class="{$item_price_ref_display|display}"> {$item_price_raw_back_head}{$item_price_raw_back}{$item_price_raw_back_tail}</span></span>
+                                                    <span class="quantity" title="수량"><strong>{$quantity}</strong>개</span>
+                                                </li>
+                                                <li class="free {$card_installment_display|display}">무이자할부 상품</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="option {$option_display|display}">
+                                        <div>{$option_str}</div>
+                                        <ul module="Myshop_optionSet">
+                                            <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
+                                            <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
+                                        </ul>
+                                        <p class="free {$card_installment_display|display}">무이자할부 상품</p>
+                                    </div>
+                                    <div class="quantity">
+                                        <span class="gLeft">신청수량</span>
+                                        <span class="gRight">
+                                                <img class="QuantityDown" alt="down" src="//img.echosting.cafe24.com/skin/mobile_ko_KR/order/ico_quantity_down.jpg" width="33" height="29" onclick="{$out_shortcut}">
+                                                {$form.quantity}
+                                                <img class="QuantityUp" alt="up" src="//img.echosting.cafe24.com/skin/mobile_ko_KR/order/ico_quantity_up.jpg" width="33" height="29" onclick="{$add_shortcut}">
+                                                <a class="btnBasic" href="javascript:;" onclick="{$action_modify}">변경</a>
+                                            </span>
+                                    </div>
+                                    <div class="status">{$cur_state}</div>
+                                </div>
+                                <div class="orderList">
+                                    <div class="product">
+                                        <span class="chk">{$form.checkbox}</span>
+                                        <div class="description">
+                                            <span class="thumbnail"><a href="/product/detail.html{$param_product}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="" /></a></span>
+                                            <strong class="name" title="상품명">{$product_name_link}</strong>
+                                            <ul class="info">
+                                                <li>
+                                                    <span class="price" title="판매가">{$item_price_raw_front_head}<strong>{$item_price_raw_front}</strong>{$item_price_raw_front_tail}<span class="{$item_price_ref_display|display}"> {$item_price_raw_back_head}{$item_price_raw_back}{$item_price_raw_back_tail}</span></span>
+                                                    <span class="quantity" title="수량"><strong>{$quantity}</strong>개</span>
+                                                </li>
+                                                <li class="free {$card_installment_display|display}">무이자할부 상품</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="option {$option_display|display}">
+                                        <div>{$option_str}</div>
+                                        <ul module="Myshop_optionSet">
+                                            <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
+                                            <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
+                                        </ul>
+                                        <p class="free {$card_installment_display|display}">무이자할부 상품</p>
+                                    </div>
+                                    <div class="quantity">
+                                        <span class="gLeft">신청수량</span>
+                                        <span class="gRight">
+                                                <img class="QuantityDown" alt="down" src="//img.echosting.cafe24.com/skin/mobile_ko_KR/order/ico_quantity_down.jpg" width="33" height="29" onclick="{$out_shortcut}">
+                                                {$form.quantity}
+                                                <img class="QuantityUp" alt="up" src="//img.echosting.cafe24.com/skin/mobile_ko_KR/order/ico_quantity_up.jpg" width="33" height="29" onclick="{$add_shortcut}">
+                                                <a class="btnBasic" href="javascript:;" onclick="{$action_modify}">변경</a>
+                                            </span>
+                                    </div>
+                                    <div class="status">{$cur_state}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="{$display_receiver_column|display} ec-base-fold theme2 eToggle">
+                        <div class="title">
+                            <h3>배송지 {$no}</h3>
+                        </div>
+                        <div class="contents">
+                            <div class="ec-base-table">
+                                <table border="1">
+                                    <caption>배송지 정보</caption>
+                                    <colgroup>
+                                        <col style="width:100px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <strong>{$r_name}</strong>
+                                            <div><span class="{$r_zipcode_display|display}">[{$r_zipcode}]</span> <span data-class="{$raddr_display|display}">{$r_addr}</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr class="{$receive_info_display|display}">
+                                        <th scope="row">수령지</th>
+                                        <td>{$store_name}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">일반전화</th>
+                                        <td>{$r_phone1}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">휴대전화</th>
+                                        <td>{$r_phone2}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">배송번호</th>
+                                        <td>{$delivery_code}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div module="Myshop_ReceiverProductList">
+                                <div class="orderList">
+                                    <div class="product">
+                                        <span class="chk">{$form.checkbox}</span>
+                                        <div class="description">
+                                            <span class="thumbnail"><a href="/product/detail.html{$param_product}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="" /></a></span>
+                                            <strong class="name" title="상품명">{$product_name_link}</strong>
+                                            <ul class="info">
+                                                <li>
+                                                    <span class="price" title="판매가">{$item_price_raw_front_head}<strong>{$item_price_raw_front}</strong>{$item_price_raw_front_tail}<span class="{$item_price_ref_display|display}"> {$item_price_raw_back_head}{$item_price_raw_back}{$item_price_raw_back_tail}</span></span>
+                                                    <span class="quantity" title="수량"><strong>{$quantity}</strong>개</span>
+                                                </li>
+                                                <li class="free {$card_installment_display|display}">무이자할부 상품</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="option {$option_display|display}">
+                                        <div>{$option_str}</div>
+                                        <ul module="Myshop_optionSet">
+                                            <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
+                                            <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
+                                        </ul>
+                                        <p class="free {$card_installment_display|display}">무이자할부 상품</p>
+                                    </div>
+                                    <div class="quantity">
+                                        <span class="gLeft">신청수량</span>
+                                        <span class="gRight">
+                                                <img class="QuantityDown" alt="down" src="//img.echosting.cafe24.com/skin/mobile_ko_KR/order/ico_quantity_down.jpg" width="33" height="29" onclick="{$out_shortcut}">
+                                                {$form.quantity}
+                                                <img class="QuantityUp" alt="up" src="//img.echosting.cafe24.com/skin/mobile_ko_KR/order/ico_quantity_up.jpg" width="33" height="29" onclick="{$add_shortcut}">
+                                                <a class="btnBasic" href="javascript:;" onclick="{$action_modify}">변경</a>
+                                            </span>
+                                    </div>
+                                    <div class="status">{$cur_state}</div>
+                                </div>
+                                <div class="orderList">
+                                    <div class="product">
+                                        <span class="chk">{$form.checkbox}</span>
+                                        <div class="description">
+                                            <span class="thumbnail"><a href="/product/detail.html{$param_product}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="" /></a></span>
+                                            <strong class="name" title="상품명">{$product_name_link}</strong>
+                                            <ul class="info">
+                                                <li>
+                                                    <span class="price" title="판매가">{$item_price_raw_front_head}<strong>{$item_price_raw_front}</strong>{$item_price_raw_front_tail}<span class="{$item_price_ref_display|display}"> {$item_price_raw_back_head}{$item_price_raw_back}{$item_price_raw_back_tail}</span></span>
+                                                    <span class="quantity" title="수량"><strong>{$quantity}</strong>개</span>
+                                                </li>
+                                                <li class="free {$card_installment_display|display}">무이자할부 상품</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="option {$option_display|display}">
+                                        <div>{$option_str}</div>
+                                        <ul module="Myshop_optionSet">
+                                            <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
+                                            <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
+                                        </ul>
+                                        <p class="free {$card_installment_display|display}">무이자할부 상품</p>
+                                    </div>
+                                    <div class="quantity">
+                                        <span class="gLeft">신청수량</span>
+                                        <span class="gRight">
+                                                <img class="QuantityDown" alt="down" src="//img.echosting.cafe24.com/skin/mobile_ko_KR/order/ico_quantity_down.jpg" width="33" height="29" onclick="{$out_shortcut}">
+                                                {$form.quantity}
+                                                <img class="QuantityUp" alt="up" src="//img.echosting.cafe24.com/skin/mobile_ko_KR/order/ico_quantity_up.jpg" width="33" height="29" onclick="{$add_shortcut}">
+                                                <a class="btnBasic" href="javascript:;" onclick="{$action_modify}">변경</a>
+                                            </span>
+                                    </div>
+                                    <div class="status">{$cur_state}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <p class="ec-base-help">주문상품 전체 취소인 경우, 사은품은 자동적으로 취소 신청됩니다.</p>
+    <div>
+        <div class="boardViewCS">
+            <div class="title">
+                <h3>취소사유</h3>
+            </div>
+            <div class="ec-base-table typeWrite gClearBorderTop">
+                <table border="1">
+                    <caption>취소 사유</caption>
+                    <colgroup>
+                        <col style="width:100px;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">사유선택</th>
+                            <td>
+                                <div class="ec-base-radio typeCS">
+                                {$form.reason_radio}
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">상세사유</th>
+                            <td>{$form.reason_detail}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="boardViewCS {$cs_add_item_display|display}">
+            <div class="title">
+                <h3>추가정보</h3>
+            </div>
+            <div class="ec-base-table typeWrite gClearBorderTop">
+                <table border="1">
+                    <caption>추가정보</caption>
+                    <colgroup>
+                        <col style="width:100px;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody module="Myshop_Csadd">
+                        <tr>
+                            <th scope="row">{$item_title}</th>
+                            <td>
+                                {$item_value}
+                                <p class="gBlank5">{$guide_content}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">{$item_title}</th>
+                            <td>
+                                {$item_value}
+                                <p class="gBlank5">{$guide_content}</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="boardViewCS {$refund_info_display|display}">
+            <div class="title">
+                <h3>환불정보</h3>
+            </div>
+            <div class="ec-base-table gClearBorderTop">
+                <table border="1">
+                    <caption>환불정보</caption>
+                    <colgroup>
+                        <col style="width:100px;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody class="{$refund_notice_display|display}">
+                        <tr>
+                            <th scope="row">환불예정금액</th>
+                            <td>환불예정금액은 판매자가 접수처리 완료 후 '주문상세조회'에서 확인할 수 있습니다.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">배송비 안내</th>
+                            <td>
+                                {$cs_info_desc}
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="{$refund_account_display|display}">
+                        <tr>
+                            <th scope="row">환불계좌</th>
+                            <td>
+                                <span id="{$id_acc_full_str}" class="{$acc_full_str_display|display}">{$acc_full_str}</span>
+                                <span id="{$id_acc_reg_disp}" class="{$acc_reg_display|display}"><a href="#none" class="btnBasic" onclick="OrderApply.popupAccount('./account.html');">환불계좌등록</a></span>
+                                <span id="{$id_acc_mod_disp}" class="{$acc_mod_display|display}"><a href="#none" class="btnBasic" onclick="OrderApply.popupAccount('./account.html');">환불계좌변경</a></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="ec-base-help {$refund_account_display|display}">현금환불 발생시 등록된 환불계좌로 환불 처리 됩니다.</p>
+        </div>
+    </div>
+    {$form.is_new_cs_form}
+    <div class="ec-base-button gColumn">
+        <a href="#none" onclick="OrderApply.apply(); return false;" class="btnSubmit">취소신청</a>
+        <a href="/myshop/order/list.html{$back_page_param}" class="btnEm">이전페이지</a>
+    </div>
+</div>

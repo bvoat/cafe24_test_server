@@ -1,0 +1,123 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<!--@css(/cssbvt/module/myshop/index.css)-->
+
+<!--@css(/cssbvt/swiper-bvt.css)-->
+<script src="/jsbvt/swiper-bundle.min.js"></script>
+
+
+
+<div class="margin-header wrapper2 padding2">
+    <div class="bh-title b">🔵 마일리지</div>
+    <div class="bh-cont">차곡차곡 쌓인 마일리지로 가치있는 선택을 즐겨요!</div>
+
+</div>
+
+
+<div module="Myshop_mileageHistoryPackage">
+
+    <div class="wrapper2 mileage-box" module="myshop_summary">
+        <div class="swiper-container mileage-swipe">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="title">총 마일리지 </div>
+                    <div class="content">{$total_mileage}</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="title">사용가능 마일리지 </div>
+                    <div class="content blue">{$avail_mileage}</div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="title">사용된 마일리지 </div>
+                    <div class="content">{$used_mileage}</div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="title">미가용 마일리지 </div>
+                    <div class="content">{$unavail_mileage}</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="title">환불예정 마일리지 </div>
+                    <div class="content">{$refunded_mileage}</div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper('.mileage-swipe', {
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'progressbar',
+            },
+            slidesPerView: 'auto',
+
+        });
+    </script>
+
+    <div module="myshop_historyList">
+        <!--
+            $only_html = no
+            $count = 10
+            $login_page = /member/login.html
+        -->
+        <div class="wrapper2 mileage-list">
+            <table border="0" summary="">
+                <caption>{$mileage_name} 내역</caption>
+                <tbody class="{$display_history|display} center">
+                    <tr>
+                        <td class="td1">{$issue_date}</td>
+                        <td class="td2">{$order_id_with_link}</td>
+                        <td class="td3">{$mileage_money}</td>
+                        <td class="td4">{$mileage_type}</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">{$issue_date}</td>
+                        <td class="td2">{$order_id_with_link}</td>
+                        <td class="td3">{$mileage_money}</td>
+                        <td class="td4">{$mileage_type}</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">{$issue_date}</td>
+                        <td class="td2">{$order_id_with_link}</td>
+                        <td class="td3">{$mileage_money}</td>
+                        <td class="td4">{$mileage_type}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="empty-message {$display_history_none|display}">{$mileage_name} 내역이 없습니다.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="wrapper2 paginate" module="myshop_historyPaging">
+    <div class="paginate-box">
+        <a href="{$first_url}" class="first">처음</a>
+        <a href="{$prev_url}">이전</a>
+        <ol>
+            <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+            <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+        </ol>
+        <a href="{$next_url}">다음</a>
+        <a href="{$last_url}" class="last">끝</a>
+    </div>
+</div>
+
+<div class="wrapper2 myshop-help-box" module="myshop_head">
+    <div class="t13 b">마일리지 안내</div>
+    <ul module="myshop_historyInfo">
+        <li class="item1">주문으로 발생한 {$mileage_name}은 배송완료 후 {$mileage_period}부터 실제 사용 가능한 {$mileage_name}으로 전환됩니다. 배송완료
+            시점으로부터 {$mileage_period} 동안은 미가용 {$mileage_name}으로 분류됩니다. </li>
+        <li class="item2">미가용 {$mileage_name}은 반품, 구매취소 등을 대비한 임시 {$mileage_name}으로 사용가능 {$mileage_name}으로 전환되기까지 상품구매에
+            사용하실 수 없습니다.</li>
+        <li class="item3">사용가능 {$mileage_name}(총 {$mileage_name} - 사용된 {$mileage_name} - 미가용 {$mileage_name})은 상품구매 시 바로
+            사용가능합니다.</li>
+        <li></li>
+    </ul>
+</div>
+<div class="margin-footer"></div>

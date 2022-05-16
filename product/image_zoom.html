@@ -1,0 +1,141 @@
+<!--@layout(/layout/basic/popup.html)-->
+<div module="Product_ZoomPackage">
+    <!--@css(/css/module/product/zoomPackage.css)-->
+    <div class="header">
+        <h1>확대보기</h1>
+    </div>
+
+    <div class="content">
+        <div module="product_zoom">
+            <!--
+            $popup_flag = T
+             -->
+            <!-- 이미지 영역 -->
+            <div class="imgArea" >
+                <p class="keyImg"><img src="{$big_img}" class="{$big_img_class}" alt="" onclick="self.close();" /></p>
+                <div class="listImg">
+                    <span class="prev"><a href="#none" onclick="{$action_prev_product}" style="display:{$btn_prev_display};"><img src="http://img.echosting.cafe24.com/design/skin/default/product/btn_prev.gif" alt="이전 제품 보기" /></a></span>
+                    <span class="next"><a href="#none" onclick="{$action_next_product}" style="display:{$btn_next_display};"><img src="http://img.echosting.cafe24.com/design/skin/default/product/btn_next.gif" alt="다음 제품 보기" /></a></span>
+                    <ul>
+                        <li><img src="{$tiny_img}" class="{$thumb_img_class}" style="display:{$img_display};" alt="" /></li>
+                        <li>{$add_img_1}</li>
+                        <li>{$add_img_2}</li>
+                        <li>{$add_img_3}</li>
+                        <li>{$add_img_4}</li>
+                    </ul>
+                </div>
+            </div><!-- //이미지 영역 -->
+
+            <!-- 상세정보 내역 -->
+            <div class="infoArea">
+                <h3>{$name|cut:20}
+                    <span>{$soldout_icon} {$recommend_icon} {$new_icon} {$mileage_icon} {$product_icons}</span>
+                </h3>
+
+                <p class="delivery {$delvtype_display|display}">({$eng_name}) 해외배송 가능</p>
+
+                <table border="1" summary="">
+                    <caption>{$name} 기본 정보</caption>
+                    <tbody>
+                        <tr class="{$product_price_display|display}">
+                            <th scope="row">판매가</th>
+                            <td>
+                                <strong id="span_product_price_text" class="{$product_price_class}">{$product_price}</strong>{$txt_product_price}
+                            </td>
+                        </tr>
+                        <tr class="{$custom_price_display|display}">
+                            <th scope="row">소비자가</th>
+                            <td><strong class="sale">{$product_custom|numberformat}</strong></td>
+                        </tr>
+                        <tr class="{$mileage_content_display|display}">
+                            <th scope="row">적립금</th>
+                            <td>
+                                <ul class="mileage">
+                                    <li class="{$mileage_display|display}"><span id="span_mileage_text">{$mileage_value|numberformat}</span> <span class="{$mileage_percent_display|display}">({$mileage_percent}%)</span></li>
+                                    <li class="{$cash_mileage_display|display}"><img src="{$cash_mileage_icon}" alt="무통장 결제시 적립금" /> {$cash_mileage_value|numberformat} 원<span class="{$cash_mileage_percent_display|display}">({$cash_mileage_percent} %)</span></li>
+                                    <li class="{$card_mileage_display|display}"><img src="{$card_mileage_icon}" alt="카드 결제시 적립금" /> {$card_mileage_value|numberformat} 원<span class="{$card_mileage_percent_display|display}">({$card_mileage_percent} %)</span></li>
+                                    <li class="{$tcash_mileage_display|display}"><img src="{$tcash_mileage_icon}" alt="실시간 계좌 이체시 적립금" /> {$tcash_mileage_value|numberformat} 원 <span class="{$tcash_mileage_percent_display|display}">({$tcash_mileage_percent} %)</span></li>
+                                    <li class="{$mileage_mileage_display|display}"><img src="{$mileage_mileage_icon}" alt="적립금 결제시 적립금" /> {$mileage_mileage_value|numberformat} 원<span class="{$mileage_mileage_percent_display|display}">({$mileage_mileage_percent} %)</span></li>
+                                    <li class="{$cell_mileage_display|display}"><img src="{$cell_mileage_icon}" alt="휴대폰 결제시 적립금" /> {$cell_mileage_value|numberformat} 원<span class="{$cell_mileage_percent_display|display}">({$cell_mileage_percent} %)</span></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="{$naver_mileage_display|display}">
+                            <th scope="row">제휴 적립금</th>
+                            <td>
+                               네이버 마일리지 {$naver_mileage_rate} 적립
+                               <img src="{$sNpIconUrl}" id="imgNaverMileageHelp" onclick="{$action_np_help}" />
+                            </td>
+                        </tr>
+                        <tr class="{$allotment_display|display}">
+                            <th scope="row">무이자할부</th>
+                            <td>{$allotment_period}<br />{$allotment_card}</td>
+                        </tr>
+                        <tr class="{$manu_display|display}">
+                            <th scope="row">제조사</th>
+                            <td>{$manu_name}</td>
+                        </tr>
+                        <tr class="{$made_display|display}">
+                            <th scope="row">원산지</th>
+                            <td>{$made_in}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">상품코드</th>
+                            <td>{$product_code}</td>
+                        </tr>
+                        <tr class="{$expiration_date_display|display}">
+                            <th scope="row">유효기간</th>
+                            <td>{$expiration_date}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">수량</th>
+                            <td>
+                                <p class="quantity">{$form.quantity}<img src="http://img.echosting.cafe24.com/design/skin/default/product/btn_quantity_up.gif" alt="up" class="{$quantity_up_class}" /><img src="http://img.echosting.cafe24.com/design/skin/default/product/btn_quantity_down.gif" alt="down" class="{$quantity_down_class}" /></p>
+                            </td>
+                        </tr>
+                        <tr class="{$delvtype_display|display}">
+                            <th scope="row">국내/해외배송</th>
+                            <td>
+                                <span class="delivery">
+                                    <label for="chkDelivery1">{$form.delvtypeA} 국내배송</label>
+                                    <label for="chkDelivery2">{$form.delvtypeB} 해외배송</label>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody module="product_optionlist">
+                        <tr>
+                            <th scope="row">{$option_name}</th>
+                            <td>{$form.option}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">{$option_name}</th>
+                            <td>{$form.option}</td>
+                        </tr>
+                    </tbody>
+                    <tbody module="product_addoptionlist">
+                        <tr>
+                            <th scope="row">{$add_option_name}</th>
+                            <td>{$form.add_option}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">{$add_option_name}</th>
+                            <td>{$form.add_option}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="btnArea" module="product_action">
+                    <span class="left">
+                        <a href="#none" onclick="{$action_basket}" class="{$basket_display|display}"><img src="http://img.echosting.cafe24.com/design/skin/default/product/btn_basket2.gif" alt="장바구니 담기" /></a>
+                        <a href="#none" onclick="{$action_wishlist}" class="{$wishlist_display|display}"><img src="http://img.echosting.cafe24.com/design/skin/default/product/btn_wishlist2.gif" alt="관심상품 등록" /></a>
+                        <a href="#none" onclick="{$action_recommend}"><img src="http://img.echosting.cafe24.com/design/skin/default/product/btn_mail2.gif" alt="추천 메일 보내기" /></a>
+                    </span>
+                    <a href="#none" onclick="{$action_buy}" class="{$buy_display|display}"><img src="http://img.echosting.cafe24.com/design/skin/default/product/btn_cart.gif" alt="바로 구매하기" /></a>
+                    <!-- 네이버 체크아웃 구매 버튼  -->
+                    <div id="NaverChk_Button"></div><!-- //네이버 체크아웃 구매 버튼  -->
+                </div>
+            </div><!-- //상세정보 내역 -->
+        </div>
+    </div>
+</div>

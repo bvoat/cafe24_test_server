@@ -1,0 +1,75 @@
+<!--@layout(/layout/basic/popup.html)-->
+<div module="gift_select">
+    <!--@css(/css/module/order/gift_select.css)-->
+    <div class="header">
+        <h1>사은품 선택</h1>
+    </div>
+
+    <div class="content">
+        <ul module="gift_point" class="giftPoint">
+            <li>선택가능한 사은품 포인트: <strong>{$able_point} 점</strong></li>
+            <li>사용 사은품 포인트: <strong>{$use_point} 점</strong></li>
+            <li class="total">총합계 사은품 포인트: <strong>{$total_point} 점</strong></li>
+        </ul>
+
+        <table border="1" summary="">
+            <caption>사은품 목록</caption>
+            <thead>
+                <tr>
+                    <th scope="row" colspan="2">상품</th>
+                    <th scope="row">포인트</th>
+                    <th scope="row" class="{$display_choice_multi_btn|display}">수량</th>
+                    <th scope="row" class="{$display_single_title|display}">선택</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="thumb"><img src="{$gift_image}" alt="" /></td>
+                    <td class="product"><p>{$product_choice}{$product_name}</p>{$option1}<br />{$option2}</td>
+                    <td class="point">{$gift_price} 점</td>
+                    <td class="amount {$display_amount|display}">{$product_amount}
+                        <span>
+                            <a href="#none"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_order_up.gif" alt="증가" onclick="{$action_change_amount_up}" class="up"></a>
+                            <a href="#none"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_order_down.gif" alt="감소" onclick="{$action_change_amount_down}" class="down"></a>
+                        </span>
+                    </td>
+                    <td class="select {$display_choice_single_btn|display}"><a href="#none" onclick="{$action_choice_single}"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_select.gif" alt="선택" /></a></td>
+                </tr>
+                <tr>
+                    <td class="thumb"><img src="{$gift_image}" alt="" /></td>
+                    <td class="product"><p>{$product_choice}{$product_name}</p>{$option1}<br />{$option2}</td>
+                    <td class="point">{$gift_price} 점</td>
+                    <td class="amount {$display_amount|display}">{$product_amount}
+                        <span>
+                            <a href="#none"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_order_up.gif" alt="증가" onclick="{$action_change_amount_up}" class="up"></a>
+                            <a href="#none"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_order_down.gif" alt="감소" onclick="{$action_change_amount_down}" class="down"></a>
+                        </span>
+                    </td>
+                    <td class="select {$display_choice_single_btn|display}"><a href="#none" onclick="{$action_choice_single}"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_select.gif" alt="선택" /></a></td>
+                </tr>
+                <tr>
+                    <td class="thumb"><img src="{$gift_image}" alt="" /></td>
+                    <td class="product"><p>{$product_choice}{$product_name}</p>{$option1}<br />{$option2}</td>
+                    <td class="point">{$gift_price} 점</td>
+                    <td class="amount {$display_amount|display}">{$product_amount}
+                        <span>
+                            <a href="#none"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_order_up.gif" alt="증가" onclick="{$action_change_amount_up}" class="up"></a>
+                            <a href="#none"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_order_down.gif" alt="감소" onclick="{$action_change_amount_down}" class="down"></a>
+                        </span>
+                    </td>
+                    <td class="select {$display_choice_single_btn|display}"><a href="#none" onclick="{$action_choice_single}"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_select.gif" alt="선택" /></a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <ul module="gift_point" class="giftPoint">
+            <li>선택가능한 사은품 포인트: <strong>{$able_point} 점</strong></li>
+            <li>사용 사은품 포인트: <strong>{$use_point} 점</strong></li>
+            <li class="total">총합계 사은품 포인트: <strong>{$total_point} 점</strong></li>
+        </ul>
+
+        <div class="btnArea {$display_choice_multi_btn|display}">
+            <a href="#none" onclick="{$action_gift_select}"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_submit.gif" alt="확인하기" /></a>
+        </div>
+    </div>
+</div>

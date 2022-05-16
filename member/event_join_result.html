@@ -1,0 +1,52 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<!--@css(/css/module/member/join.css)-->
+<!--@css(/cssbvt/module/member/join.css)-->
+
+
+<div class="padding2 margin-header result_wrap">
+    <!--
+            $returnUrl = /member/event_join_result.html?returnUrl=/product/purchasing_product_A.html
+    -->
+    <div id="titleArea">
+        <h2>회원가입 완료!</h2>
+    </div>
+
+
+    <div class="progress">
+        <ul class="join-order">
+            <li><span>약관동의</span></li>
+            <li><span>정보입력</span></li>
+            <li class="done"><span>가입완료</span></li>
+        </ul>
+    </div>
+
+    <div module="member_joinComplete">
+        <div class="join_intro">
+            <div class="join_intro-title">{$member_name}님,<br>비보트의 보터가 되신 것을 환영합니다.</div>
+            <div class="result-box shadow">
+                <div class="profile">
+                    <div class="profile-first">
+                        <div class="profile_group">{$group_name}</div>
+                        <div class="profile_name"> {$member_name}님 </div>
+                    </div>
+                    <img src="/bvtIMG/bg_join_passport.svg">
+                    <div module="myshop_asyncbankbook">
+
+                        <div class="profile_text"> 오늘은 어떤 지속 가능한 미래를 꿈꾸세요?</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="wrapper2 PJ_fixed_btn">
+            <a href="/" class="btnSubmit">비보트에서 투표 시작하기</a>
+        </div>
+    </div>
+
+
+</div>
+<script>
+    const searchParam = window.location.search.getParam('returnUrl');
+    console.log(searchParam)
+</script>

@@ -1,0 +1,89 @@
+<!--@layout(/layout/basic/popup.html)-->
+<div module="myshop_AddrList">
+    <!--@css(/css/module/myshop/addrList_pop.css)-->
+    <!--
+    $return_url = /myshop/addr_popup/list.html
+    -->
+    <div class="header">
+        <h1>배송 주소록 관리</h1>
+    </div>
+
+    <div class="content">
+        <div class="info">
+            <h2>배송주소록 유의사항</h2>
+            <ul>
+                <li>배송 주소록은 최대 10개까지 등록할 수 있으며, 별도로 등록하지 않을 경우 최근 배송 주소록 기준으로 자동 업데이트 됩니다.</li>
+                <li>자동 업데이트를 원하지 않을 경우 주소록 고정 선택을 선택하시면 선택된 주소록은 업데이트 대상에서 제외됩니다.</li>
+            </ul>
+        </div>
+
+        <table border="1" summary="">
+            <caption>배송 주소록 목록</caption>
+            <colgroup>
+                <col width="5%" />
+                <col width="12%" />
+                <col width="8%" />
+                <col width="8%" />
+                <col width="8%" />
+                <col width="8%" />
+                <col width="auto" />
+                <col width="12%" />
+            </colgroup>
+
+            <thead>
+            <tr>
+                <th scope="col"><span class="{$list_display|display}">{$sCheckAll}</span></th>
+                <th scope="col">주소록 고정</th>
+                <th scope="col">배송지명</th>
+                <th scope="col">수령인</th>
+                <th scope="col">전화번호</th>
+                <th scope="col">휴대번호</th>
+                <th scope="col">주소</th>
+                <th scope="col">배송지관리</th>
+            </tr>
+            </thead>
+
+            <tbody class="{$nodata_display|display}">
+            <tr>
+                <td colspan="9" class="noData">등록된 주소가 없습니다.</td>
+            </tr>
+            </tbody>
+
+            <tbody class="{$list_display|display}">
+            <tr>
+                <td>{$checkbox}</td>
+                <td><a
+                href="{$fix_url}"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_address2.gif" class="{$notfix_display|display}" alt="해제" /><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_address1.gif" class="{$fix_display|display}" alt="고정" /></a></td>
+                <td>{$ma_rcv_title}</td>
+                <td>{$ma_rcv_name}</td>
+                <td>{$ma_rcv_phone}</td>
+                <td>{$ma_rcv_mobile_no}</td>
+                <td class="address">({$ma_rcv_zipcode}){$ma_rcv_addr1} {$ma_rcv_addr2}</td>
+                <td>
+                    <a href="#none" onclick="{$action_order}"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_address3.gif" alt="적용"></a>
+                    <a href="modify.html?ma_idx={$ma_idx}"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_address4.gif" alt="수정"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>{$checkbox}</td>
+                <td><a
+                href="{$fix_url}"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_address2.gif" class="{$notfix_display|display}" alt="해제" /><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_address1.gif" class="{$fix_display|display}" alt="고정" /></a></td>
+                <td>{$ma_rcv_title}</td>
+                <td>{$ma_rcv_name}</td>
+                <td>{$ma_rcv_phone}</td>
+                <td>{$ma_rcv_mobile_no}</td>
+                <td class="address">({$ma_rcv_zipcode}){$ma_rcv_addr1} {$ma_rcv_addr2}</td>
+                <td>
+                    <a href="#none" onclick="{$action_order}"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_address3.gif" alt="적용"></a>
+                    <a href="modify.html?ma_idx={$ma_idx}"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_address4.gif" alt="수정"></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="btnArea">
+            <a href="#none" onclick="{$action_delete}; return false;" class="{$delete_display|display}"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_delete.gif" alt="삭제하기" /></a>
+            <a href="register.html"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_address_register.gif" alt="배송지 신규 등록" /></a>
+        </div>
+    </div>
+</div>

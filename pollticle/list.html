@@ -1,0 +1,123 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<div class="margin-header">
+
+</div>
+
+
+<!--list-->
+<div class="padding3">
+    <div class="banner_title"> <img src="/bvtIMG/index_list_icon.png"><span>진행 중인 폴티클</span></div>
+    <div class="banner_subtitle"> 매일 지속 가능한 가치에 관한 매거진 폴을 만나보세요. </div>
+</div>
+<div>
+    <ul id="pollticle_list" class="padding2 list-contents">
+
+    </ul>
+</div>
+
+
+
+</div>
+
+
+<!--footer-->
+<!--@css(/cssbvt/module/layout/footer.css)-->
+<!--@import(/layout/basic/footer.html)-->
+
+<!--setting-->
+<!--@define(cmc_log)-->
+<!--@css(/cssbvt/bvt_index.css)-->
+
+
+<script>
+
+    var successCallback = function () {
+        //폴티클 동적 생성 beta
+        var pollcnt = pollticle.length;
+        for (var i = 1; i < pollcnt; i++) {
+            var no = pollticle[i].no
+
+            $("#pollticle_list").append(`<li class=" moreBoxnone shadow">
+                <div id="pollticle-${pollticle[i].no}">
+                    <a href="/article/bvoat/5/${pollticle[i].no}">
+                        <img class="list-contents-thum" src="${pollticle[i].img}" alt="${pollticle[i].title}"><div class="list-contents-title">
+                            ${pollticle[i].title}
+                        </div>
+                        <div>
+                        <div class="list-content-badges">
+                            <ul>
+                                <li >${pollticle[i].badge1}</li>
+                                <li class="cat-badge-grey">${pollticle[i].badge2}</li>
+                            </ul>
+                            <div>${pollticle[i].subtitle}</div>
+                        </div>
+                        </div>
+                    </a>
+                </div>
+            </li> `);
+
+            switch (pollticle[i].badge1) {
+                case "지속가능":
+                    $(`#pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-navy");
+                    break;
+                case "친환경":
+                    $(`#pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-blue");
+                    break;
+                case "비건":
+                    $(`#pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-green");
+                    break;
+                case "사회가치":
+                    $(`#pollticle-${no}`).children('a').children('div').children('div .list-content-badges').children('ul').children('li').eq(0).addClass("cat-badge-orange");
+                    break;
+                default:
+                    break;
+            }
+
+        }
+        if (loadmore) {
+            let currentItems = 4;
+            for (let i = 0; i < 4; i++) {
+                const elementList = [...document.querySelectorAll('.list-contents>.moreBox')];
+                if (elementList[i]) {
+                    elementList[i].style.display = 'flex';
+                }
+            }
+            loadmore.addEventListener('click', (e) => {
+                const elementList = [...document.querySelectorAll('.list-contents>.moreBox')];
+                for (let i = currentItems; i < currentItems + 4; i++) {
+                    if (elementList[i]) {
+                        elementList[i].style.display = 'flex';
+                    }
+                }
+                currentItems += 4;
+
+                // Load more button will be hidden after list fully loaded
+                if (currentItems >= elementList.length) {
+                    event.target.style.display = 'none';
+                }
+            })
+        }
+        var swiper = new Swiper(".bigBanner2-swipe", {
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    },
+        failCallback = function () {
+        };
+
+    var verquery = Math.round(Date.now() / 100000);
+    $.getScript(`/bvtCONTENTS/pollticle.js?${verquery}`).done(successCallback).fail(failCallback);
+
+
+
+
+
+
+
+</script>

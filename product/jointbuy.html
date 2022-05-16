@@ -1,0 +1,51 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="Jointbuy_Package">
+    <!--@css(/css/module/product/jointbuy_Package.css)-->
+    <div class="path" module="Jointbuy_Head">
+        <h3>현재 위치</h3>
+        <ol>
+            <li class="first"><a href="/">홈</a></li>
+            <li title="현재 위치"><a href="{$param}"><strong>공동구매</strong></a></li>
+        </ol>
+    </div>
+
+    <div class="title">
+        <h2>공동구매</h2>
+    </div>
+
+    <div module="jointbuy_menu">
+        <h3>공구기간</h3>
+        <p>{$start_year}년 {$start_month}월 {$start_day}일 ~ {$end_year}년 {$end_month}월 {$end_day}일</p>
+
+        <h3>상품분류</h3>
+        <ul>
+            <li><a href="{$param}">{$name}</a></li>
+            <li><a href="{$param}">{$name}</a></li>
+        </ul>
+    </div>
+</div>
+
+<div module="jointbuy_list">
+    <!--@css(/css/module/product/jointbuy_list.css)-->
+    <h3 id="{$category_name}">{$category_name}</h3>
+    <ul class="prdList column4">
+        <li module="jointbuy_childList" unroll="1">
+            <div class="box">
+                <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}" data-title="{$product_name_tag|striptag}"><img src="{$image_medium}" alt="" class="thumb" /></a>
+                <p class="name">
+                    <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}" data-title="{$product_name_tag|striptag}">{$product_name|cut:30,...}</a>
+                    <span class="zoom">{$zoom_icon}</span>
+                </p>
+                <span class="grid">{$price_unit_head}{$product_custom}{$price_unit_tail}</span>
+                <strong class="grid">{$price_unit_head}{$product_price}{$price_unit_tail}</strong>
+                <span class="grid">{$manu_name}</span>
+                <span class="grid" style="display:{$allotment_icon_display};">{$allotment_icon}{$allotment_period}개월</span>
+                <span class="grid" style="display:{$mileage_icon_display};">{$mileage_icon}{$mileage_value}</span>
+                <p class="button">
+                    <span class="bag"><img src="http://img.echosting.cafe24.com/design/skin/default/product/btn_list_cart.gif" alt="장바구니넣기" onclick='{$basket_action}' class="{$basket_display|display}" /></span>
+                    <span class="option">{$option_preview_icon}</span>
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,27 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/cssbvt/bvt_index.css)-->
+<style>
+   #buy_records_frame{width:100%;border:none;height:1600px;}  
+   .margin-header{background: #F4F5FB;}
+   #bh_slide_frame {    position: fixed;    top: 0px;    z-index: 999999;}
+</style>
+<!-- 회원 글 보기 -->
+<div class="margin-header"></div>
+<!-- 메뉴 -->
+<!--@import(/layout/basic/index_menu_comm.html)-->
+
+<div id="buy_records" >
+
+</div>
+
+<script>
+     //헤더 디자인 변경 테스트
+     $(".margin-header").html(`<img src="/bvtIMG/title_gradient.svg">`)
+   //$(".hd-logo").css(`width`, `initial`);
+   //$(".hd-logo").html(`<div style="color:#022CFF; font-size:17px; font-weight:bold;">소비 기록</div>`);
+   $(".btnBasket").css(`visibility`, `hidden`);
+    $(".count").css(`visibility`, `hidden`);
+
+
+
+</script>

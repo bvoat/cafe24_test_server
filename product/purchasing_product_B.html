@@ -1,0 +1,106 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/cssbvt/bvt_purchasing_product.css)-->
+<!--@js(/jsbvt/discount_listnormal_main.js)-->
+
+<section class="header_wrap">
+    <div class="title_box">
+        <h1 class="header_title">한번에 배송되는 가치소비샵</h1>
+        <h2 class="header_sub_title">물건도 브랜드도 착해야 산다</h2>
+    </div>
+    <div class="coupon_btn_box">
+        <p class="coupon_tooltip">1만원 이상</p>
+        <button class="coupon_btn">
+            <span class="coupon_btn_text">가입하고 무료배송 쿠폰 받기</span>
+            <span class="coupon_btn_arrow">클릭</span>
+        </button>
+        <p class="coupon_bottom_text">기존 회원은 자동으로 발급되어 있어요!</p>
+    </div>
+</section>
+<section class="display_wrap">
+    <div module="product_listmain_49">
+        <!--
+            $count = 9
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+        <!-- <h2>
+            <span>{$category_title_text}</span>
+        </h2> -->
+        <h3 class="display_title">
+            비보트 한정판 뱃지를<br/> 함께 보내드려요.
+        </h3>
+        <span class="display_subtitle">(수량 소진시 조기 종료)</span>
+        <ul class="prdList column4">
+            <li class="item" id="anchorBoxId_{$product_no}">
+                <div class="product_box box-desc">
+                    <h4 class="summary_desc">{$summary_desc}</h4>
+                    <div class="product_section">
+                        <div class="anchorBox_img">
+                            <span class="t09 limited_icon">한정수량</span>
+                            <a class="anchorBox_img_link" href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}">
+                        <img src="{$image_medium}" id="{$image_medium_id}" alt="{$summary_desc}" class="thumb" /></a>
+                        </div>
+                        <ul class="product_ListItem">
+                            <li class="prd_brand">{$prd_brand}
+                            </li>
+                            <li class="product_name">
+                                <a href="/product/detail.html{$param}" class="{$product_name_display|display}">{$product_name}</a>
+                            </li>
+                            <li id="price_text" class="price_sale">{$prd_price_sale|replace:원, }</li>
+                            <li class="product_price">
+                                {$disp_product_price|replace:원, }
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="item" id="anchorBoxId_{$product_no}">
+                <div class="product_box box-desc">
+                    <h4 class="summary_desc">{$summary_desc}</h4>
+                    <div class="product_section">
+                        <div class="anchorBox_img">
+                            <span class="t09 limited_icon">한정수량</span>
+                            <a class="anchorBox_img_link" href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}">
+                        <img src="{$image_medium}" id="{$image_medium_id}" alt="{$summary_desc}" class="thumb" /></a>
+                        </div>
+                        <ul class="product_ListItem">
+                            <li class="prd_brand">{$prd_brand}
+                            </li>
+                            <li class="product_name">
+                                <a href="/product/detail.html{$param}" class="{$product_name_display|display}">{$product_name}</a>
+                            </li>
+                            <li id="price_text" class="price_sale">{$prd_price_sale|replace:원, }</li>
+                            <li class="product_price">
+                                {$disp_product_price|replace:원, }
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <button class="top_btn">위로 가기</button>
+</section>
+
+<script>
+    let coupon_btn = document.querySelector(".coupon_btn");
+    let top_btn = document.querySelector(".top_btn");
+    let pathname = window.location.pathname;
+    let session_check = JSON.parse(sessionStorage.getItem("member_1"));
+
+    // 가입하고 무료배송 쿠폰 받기 클릭 시
+    coupon_btn.addEventListener("click", ()=>{
+        if(session_check) {
+            alert("이미 로그인 한 회원입니다. 기존 회원은 자동으로 발급되어 있어요!");
+            return false;
+        }else{
+            location.replace(`/member/event_login.html?returnUrl=${pathname}`);
+        }
+    })
+
+    //하단 탑버튼
+    top_btn.addEventListener("click", ()=>{
+        window.scrollTo({top : 0, behavior: 'smooth'}); 
+    })
+</script>>
+

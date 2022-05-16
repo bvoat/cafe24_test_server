@@ -1,0 +1,62 @@
+<!--@layout(/layout/basic/popup.html)-->
+<div module="Search_FromPackage">
+    <!--@css(/css/module/product/search_FromPackage.css)-->
+    <div class="header">
+        <h1>상품검색</h1>
+    </div>
+
+    <div class="content">
+        <div module="Search_BoardForm">
+            <fieldset>
+                <legend>상품검색</legend>
+                {$form.search_type}
+                {$form.keyword}
+                <input type="image" src="http://img.echosting.cafe24.com/design/skin/default/product/btn_board_search.gif" alt="검색" class="btn" />
+            </fieldset>
+            <div class="resultArea">
+                <p class="total">총 <strong>{$total_count}</strong>개 의 상품이 검색되었습니다.</p>
+                <p class="limit">{$form.limit}</p>
+            </div>
+        </div>
+
+        <div class="searchView">
+            <table border="1" summary="제품 검색결과입니다">
+                <caption>제품 검색결과입니다</caption>
+                <colgroup>
+                    <col style="width:100px;" /><col style="width:auto;" /><col style="width:60px;" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">상품 이미지</th>
+                        <th scope="col">상품 정보</th>
+                        <th scope="col">선택</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr module="Search_BoardList" unroll="1">
+                        <td><img src="{$image_medium}" alt="" style="width:75px;" /></td>
+                        <td class="product">
+                            {$product_name}
+                            <strong>{$price_unit_head}{$product_price}{$price_unit_tail}</strong>
+                        </td>
+                        <td><a href="#none" onclick="{$action_product_select}"><img src="http://img.echosting.cafe24.com/design/skin/default/product/btn_board_select.gif" alt="선택" /></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div module="search_paging">
+            <p><a href="{$param_first}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_first.gif" alt="첫 페이지" /></a> </p>
+            <p><a href="{$param_before}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_prev.gif" alt="이전 페이지" /></a></p>
+            <ol>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            </ol>
+            <p><a href="{$param_next}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_next.gif" alt="다음 페이지" /></a> </p>
+            <p><a href="{$param_last}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_last.gif" alt="마지막 페이지" /></a></p>
+        </div>
+    </div>
+</div>

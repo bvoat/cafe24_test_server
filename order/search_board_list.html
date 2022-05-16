@@ -1,0 +1,59 @@
+<!--@layout(/layout/basic/popup.html)-->
+<div module="Order_BoardListPackage">
+    <!--@css(/css/module/order/boardListPackage.css)-->
+    <div class="header">
+        <h1>주문정보 선택</h1>
+    </div>
+
+    <div class="content">
+        <table border="1" summary="">
+        <caption>주문정보 선택</caption>
+        <colgroup>
+            <col width="70px;" />
+            <col width="auto;" />
+            <col width="100px;" />
+            <col width="100px;" />
+            <col width="100px;" />
+        </colgroup>
+        <thead module="Order_BoardListhead">
+            <tr>
+                <th scope="col">이미지</th>
+                <th scope="col">상품정보</th>
+                <th scope="col">주문번호</th>
+                <th scope="col">주문일시</th>
+                <th scope="col">{$form.limit_select}</th>
+            </tr>
+        </thead>
+        <tbody module="Order_BoardList">
+            <tr>
+                <td class="thumb"><img src="{$image_medium}" onerror="this.src='http://img.echosting.cafe24.com/design/skin/default/order/thumb_100x100.gif';" alt="" /></td>
+                <td class="prdName">{$product_name}<span>{$product_price}</span></td>
+                <td>{$order_id}</td>
+                <td>{$order_date}</td>
+                <td><a href="#none" onclick="{$action_product_select}"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_select.gif" alt="선택" /></a></td>
+            </tr>
+            <tr>
+                <td class="thumb"><img src="{$image_medium}" onerror="this.src='http://img.echosting.cafe24.com/design/skin/default/order/thumb_100x100.gif';" alt="" /></td>
+                <td class="prdName">{$product_name}<span>{$price_unit_head}{$product_price}{$price_unit_tail}</span></td>
+                <td>{$order_id}</td>
+                <td>{$order_date}</td>
+                <td><a href="#none" onclick="{$action_product_select}"><img src="http://img.echosting.cafe24.com/design/skin/default/order/btn_select.gif" alt="선택" /></a></td>
+            </tr>
+        </tbody>
+        </table>
+
+        <div module="Order_BoardPaging">
+            <p><a href="{$param_first}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_first.gif" alt="첫 페이지" /></a></p>
+            <p><a href="{$param_before}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_prev.gif" alt="이전 페이지" /></a></p>
+            <ol>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            </ol>
+            <p><a href="{$param_next}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_next.gif" alt="다음 페이지" /></a></p>
+            <p><a href="{$param_last}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_last.gif" alt="마지막 페이지" /></a></p>
+        </div>
+    </div>
+</div>

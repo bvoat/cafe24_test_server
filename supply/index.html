@@ -1,0 +1,90 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/cssbvt/bvt_supply.css)-->
+
+
+<div class="wrapper margin-header ">
+    <div module="Mall_SupplyMainimage">
+        {$supply_main_image}
+    </div>
+
+
+    <div class="padding2" module="product_normalpackage">
+        <!--@css(/css/module/product/listnormal.css)-->
+        <!--@css(/cssbvt/module/product/listnormal.css)-->
+
+        <!-- <div module="product_normalmenu">
+            <div class="bh-type">
+                <select id="selArray" name="selArray" module="product_Orderby">
+                    <option value="{$param}">{$sort_name}</option>
+                    <option value="{$param}">{$sort_name}</option>
+                </select>
+            </div>
+        </div> -->
+
+        <div class="bvt-listnormal-box" module="product_listnormal">
+            <!--
+                $count = 8
+                    ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                    ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 
+                $moreview = yes
+                $basket_result = /product/add_basket.html
+                $basket_option = /product/basket_option.html
+                $cache = yes
+                $type = moreview
+            -->
+            <!--@import(/layoutbvt/listnormal.html)-->
+        </div>
+    </div>
+
+
+
+    <div module="product_listmore">
+        <!--@css(/css/module/product/productMore.css)-->
+        <!--@css(/cssbvt/module/product/productMore.css)-->
+
+        <a href="#none" onclick="{$more_action} refresh_discount();">
+            더보기(<span id="more_current_page">{$current_page}</span>/<span
+                id="more_total_page">{$total_page}</span>)<span class="more_down"></span>
+        </a>
+    </div>
+
+</div>
+
+<!-- 공급사:판매사정보 -->
+<div module="Mall_SupplyInfo" class="margin-footer supplyInfo ">
+    {$supply_info}
+</div>
+<!-- //공급사:판매사정보 -->
+
+
+</div>
+
+<script>
+
+    var cate_no = getLastPath();
+
+    if (cate_no == "reo119") {
+        $('.xans-mall-supplymainimage').prepend(`<video autoplay loop muted playsinline id="videobcg">
+    <source src="https://s3.ap-northeast-2.amazonaws.com/img.bvoat.com/video/project_119reo_vid.webm" type="video/webm">
+ <source src="https://s3.ap-northeast-2.amazonaws.com/img.bvoat.com/video/project_119reo_vid.mp4" type="video/mp4">
+      Sorry, your browser does not support HTML5 video.
+</video>`);
+    }
+
+    function getLastPath() {
+        var segment_str = window.location.pathname; // return segment1/segment2/segment3/segment4
+        var segment_array = segment_str.split('/');
+        var last_segment = segment_array.pop()
+        return last_segment;
+    }
+
+
+
+
+</script>
+
+
+
+
+<!--@define(cmc_log)-->
+<!--@js(/jsbvt/discount_listnormal.js)-->

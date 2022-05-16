@@ -1,0 +1,33 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+   #board_frame{width:100%;border:none;height:1600px;}  
+   .margin-header{background: #F4F5FB;margin-top: 36px;}
+	#save_btn {    color: #B7B7B7;    font-size: 17px;cursor:pointer;}   
+    .modified{color:#022CFF !important;} 
+</style>
+<script src="https://bvoat.shop/app/module_community_inline.js"></script>
+<div style="height: 100%;">
+<!-- 가치소비기록 작성 -->
+<div module="layout_logincheck">
+    <!--
+    $url = /member/login.html
+	-->
+</div>
+    
+<div class="margin-header"></div>
+
+<div id="board_wrap" >
+
+</div>
+</div>
+<script> 
+    //헤더 디자인 변경 테스트    
+    $(".hd-logo").css(`width`, `initial`);
+    $(".hd-logo").html(`<div style="color:#022CFF; font-size:17px; font-weight:bold;">게시글 작성</div>`);
+ 	$("#header ul").html(`<div id="save_btn" onclick='iframe.postMessage({ run_script : "board_save()"}, "*");'>등록</div>`)
+     $(".btnBasket").css(`visibility`, `hidden`);
+    $(".count").css(`visibility`, `hidden`);
+ 	$(".footerMenu").hide();
+    
+ 
+ </script>

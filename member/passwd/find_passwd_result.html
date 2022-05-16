@@ -1,0 +1,28 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="path">
+    <h3>현재 위치</h3>
+    <ol>
+        <li class="first"><a href="/">홈</a></li>
+        <li title="현재 위치">비밀번호 찾기</li>
+    </ol>
+</div>
+
+<div class="titleArea">
+    <h2>비밀번호 찾기</h2>
+</div>
+
+<div module="member_findpasswdresult">
+    <!--@css(/css/module/member/find_passwd_result.css)-->
+    <div class="findPw">
+        <h3><img src="http://img.echosting.cafe24.com/design/skin/default/member/h3_find_pw.gif" alt="비밀번호 찾기" /></h3>
+        <p class="desc">비밀번호가 고객님<br />메일로 발송되었습니다. <span>고객님의 비밀번호가 성공적으로 발송되었습니다.<br />항상 고객님의 즐겁고 편리한 쇼핑을 위해 최선의 노력을 <br />다하는 쇼핑몰이 되도록 하겠습니다.</span></p>
+        <div class="memberInfo">
+            <p class="thumb"><img src="http://img.echosting.cafe24.com/design/skin/default/member/img_member.gif" alt="" /></p>
+            <p class="info">저희 쇼핑몰를 이용해주셔서 감사합니다.<br /><strong>{$id}</strong> 회원님의 패스워드를<br /><span>{$email}</span>으로 보내드렸습니다.</p>
+        </div>
+        <p class="copy">고객님 즐거운 쇼핑 하세요!</p>
+        <p class="button">
+            <a href="/member/login.html"><img src="http://img.echosting.cafe24.com/design/skin/default/member/btn_find_login.gif" alt="로그인" /></a>
+        </p>
+    </div>
+</div>

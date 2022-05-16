@@ -1,0 +1,663 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+
+<div class="wrapper2 padding2" module="Order_BasketPackage">
+    <!--@css(/css/module/order/basketPackage.css)-->
+    <!--@css(/cssbvt/module/order/basketPackage.css)-->
+
+    <div class="margin-header">
+        <div class="bh-title b">🛒 가치소비 장바구니</div>
+        <div class="bh-cont">더 나은 세상을 향한 선택, 소비는 투표다!</div>
+    </div>
+
+
+    <div class="empty-message w100" module="Order_Empty">
+        <p>장바구니가 비었어요!</p>
+    </div>
+    <div class="orderListArea ec-base-table typeList gBorder">
+        <!--기본배송-->
+        <table border="1" summary="" module="Order_NormNormal">
+            <caption>기본배송</caption>
+            <colgroup>
+                <col style="width:27px" />
+                <col style="width:92px" />
+                <col style="width:auto" />
+                <col style="width:98px" />
+                <col style="width:75px" />
+                <col style="width:98px" />
+                <col style="width:98px" />
+                <col style="width:85px" />
+                <col style="width:98px" />
+                <col style="width:110px" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col"><input type="checkbox" onclick='{$chk_basketlist}' /></th>
+                    <th scope="col">이미지</th>
+                    <th scope="col">상품정보</th>
+                    <th scope="col">판매가</th>
+                    <th scope="col">수량</th>
+                    <th scope="col" class="mileage">{$mileage_name}</th>
+                    <th scope="col">배송구분</th>
+                    <th scope="col">배송비</th>
+                    <th scope="col">합계</th>
+                    <th scope="col">선택</th>
+                </tr>
+            </thead>
+            <tfoot class="right">
+                <tr>
+                    <td colspan="10"><span class="gLeft">[기본배송]</span> 상품구매금액
+                        <strong>{$total_product_price}
+                            <span
+                                class="{$total_option_price_display|display}">({$total_option_price})</span></strong><span
+                            class="{$total_product_ref_display|display}">
+                            {$total_product_ref}</span><span class="{$vat_total_display|display}"> + 부가세
+                            {$total_product_vat_price_no_unit}<span
+                                class="{$total_product_vat_price_ref_display|display}">
+                                {$total_product_vat_price_ref}</span></span> + 배송비 <span
+                            id="{$normal_normal_ship_fee_id}">{$total_delv_price}</span><span
+                            class="{$total_delv_ref_display|display}"> {$total_delv_ref}</span> <span
+                            id="{$normal_normal_benefit_price_area_id}"
+                            class="{$total_delvtype_benefit_price_display|display}"> - 상품할인금액 <span
+                                id="{$normal_normal_benefit_price_id}">{$total_delvtype_benefit_price}</span>
+                        </span> = 합계 : <strong class="txtEm gIndent10">{$total_sum_price_front_head}<span
+                                id="{$normal_normal_ship_fee_sum_id}"
+                                class="txt18">{$total_sum_price_front}</span>{$total_sum_price_front_tail}</strong>
+                        <span class="{$total_sum_price_ref_display|display}">
+                            {$total_sum_price_back_head}{$total_sum_price_back}{$total_sum_price_back_tail}</span>
+                    </td>
+                </tr>
+            </tfoot>
+            <tbody module="Order_list" class="center">
+                <tr>
+                    <td><input type="checkbox" id="{$chk_id}" name="{$chk_name}" /></td>
+                    <td class="thumb gClearLine">
+                        <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}" data-title="{$product_name_tag|striptag}"><img src="{$img}"
+                                onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';"
+                                alt="{$name_alt}" /></a>
+                    </td>
+                    <td class="left gClearLine">
+                        <strong class="name">{$product_name_link}</strong> {$icon} {$today_arrival_icon}
+                        {$pickup_icon} {$benefit_icons}<span class="{$eng_name_display|display} engName">(영문명 :
+                            {$eng_name})</span>
+                        <ul class="option" module="Order_optionAll">
+                            <li><strong class="{$product_name_display|display}">{$product_name}</strong>{$option_str}
+                                <span class="{$qty_display|display}">({$qty}개)</span><br />
+                                <span class="{$nplusevent_hide_display|display}"><a href="#none"
+                                        onclick="{$action_option_change}"
+                                        class="btnNormal gBlank5 {$option_change_display|display}">옵션변경</a></span>
+                            </li>
+                            <li><strong class="{$product_name_display|display}">{$product_name}</strong>{$option_str}
+                                <span class="{$qty_display|display}">({$qty}개)</span><br />
+                                <span class="{$nplusevent_hide_display|display}"><a href="#none"
+                                        onclick="{$action_option_change}"
+                                        class="btnNormal gBlank5 {$option_change_display|display}">옵션변경</a></span>
+                            </li>
+                        </ul>
+                        <p class="gBlank5 {$subscription_show_display|display}"><strong>배송주기</strong>
+                            <span class="txtEm">{$subscription_option_str}</span>
+                        </p>
+                    </td>
+                    <td class="right">
+                        <div id="{$product_price_div_id}" class="{$discount}">
+                            <strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong>
+                            <p class="{$product_price_display|display}">
+                                {$product_price_back_head}{$product_price_back}{$product_price_back_tail}
+                            </p>
+                        </div>
+                        <div id="{$product_sale_price_div_id}" class="{$product_sale_price_display|display}">
+                            <strong>{$product_sale_price_front_head}<span
+                                    id="{$product_sale_price_front_id}">{$product_sale_price_front}</span>{$product_sale_price_front_tail}</strong>
+                            <p class="{$product_sale_price_ref_display|display}">
+                                {$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="{$nplusevent_hide_display|display}">
+                            <span class="ec-base-qty">{$form.quantity}<a href="javascript:;" class="up"
+                                    onclick="{$add_shortcut}"><img src="/bvtIMG/btn_quantity_up.svg" alt="수량증가" /></a><a
+                                    href="javascript:;" class="down" onclick="{$out_shortcut}"><img
+                                        src="/bvtIMG/btn_quantity_down.svg" alt="수량감소" /></a></span>
+                            <a href="javascript:;" class="btnNormal gBlank5" onclick="{$action_modify}">변경</a>
+                        </span>
+                        <span class="{$nplusevent_show_display|display}">{$quantity}</span>
+                    </td>
+                    <td><span id="{$product_mileage_id}" class="txtInfo">{$mileage}</span></td>
+                    <td>
+                        <div class="txtInfo">기본배송<br />{$product_delv_str}</div>
+                    </td>
+                    <td rowspan="{$delv_cnt}" class="{$delv_cnt_display|display}">
+                        <p class="{$delv_price_display|display}">
+                            {$delv_price_front_head}{$delv_price_front}{$delv_price_front_tail}<span
+                                class="{$delv_ref_display|display}"><br />{$delv_price_back_head}{$delv_price_back}{$delv_price_back_tail}</span><br />
+                        </p>{$delv_type}
+                    </td>
+                    <td class="right"><strong>{$sum_price_front_head}<span
+                                id="{$sum_price_front_id}">{$sum_price_front}</span>{$sum_price_front_tail}</strong>
+                        <div class="{$sum_price_display|display}">
+                            {$sum_price_back_head}{$sum_price_back}{$sum_price_back_tail}</div>
+                    </td>
+                    <td class="button">
+                        <a href="javascript:;" class="btnSubmit {$subscription_hide_display|display}"
+                            onclick="{$action_buy_item}">주문하기</a>
+                        <a href="javascript:;" class="btnSubmit {$subscription_show_display|display}"
+                            onclick="{$action_buy_item}">정기배송 신청</a>
+                        <a href="javascript:;" class="btnNormal" onclick="{$action_wish_item}">관심상품등록</a>
+                        <a href="javascript:;" class="btnNormal" onclick="{$action_move_item}"><i class="icoDelete"></i>
+                            삭제</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="{$chk_id}" name="{$chk_name}" /></td>
+                    <td class="thumb gClearLine">
+                        <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}" data-title="{$product_name_tag|striptag}"><img src="{$img}"
+                                onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';"
+                                alt="{$name_alt}" /></a>
+                    </td>
+                    <td class="left gClearLine">
+                        <strong class="name">{$product_name_link}</strong> {$icon} {$today_arrival_icon}
+                        {$pickup_icon} {$benefit_icons}<span class="{$eng_name_display|display} engName">(영문명 :
+                            {$eng_name})</span>
+                        <ul class="option" module="Order_optionAll">
+                            <li><strong class="{$product_name_display|display}">{$product_name}</strong>{$option_str}
+                                <span class="{$qty_display|display}">({$qty}개)</span><br />
+                                <span class="{$nplusevent_hide_display|display}"><a href="#none"
+                                        onclick="{$action_option_change}"
+                                        class="btnNormal gBlank5 {$option_change_display|display}">옵션변경</a></span>
+                            </li>
+                            <li><strong class="{$product_name_display|display}">{$product_name}</strong>{$option_str}
+                                <span class="{$qty_display|display}">({$qty}개)</span><br />
+                                <span class="{$nplusevent_hide_display|display}"><a href="#none"
+                                        onclick="{$action_option_change}"
+                                        class="btnNormal gBlank5 {$option_change_display|display}">옵션변경</a></span>
+                            </li>
+                        </ul>
+                        <p class="gBlank5 {$subscription_show_display|display}"><strong>배송주기</strong>
+                            <span class="txtEm">{$subscription_option_str}</span>
+                        </p>
+                    </td>
+                    <td class="right">
+                        <div id="{$product_price_div_id}" class="{$discount}">
+                            <strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong>
+                            <p class="{$product_price_display|display}">
+                                {$product_price_back_head}{$product_price_back}{$product_price_back_tail}
+                            </p>
+                        </div>
+                        <div id="{$product_sale_price_div_id}" class="{$product_sale_price_display|display}">
+                            <strong>{$product_sale_price_front_head}<span
+                                    id="{$product_sale_price_front_id}">{$product_sale_price_front}</span>{$product_sale_price_front_tail}</strong>
+                            <p class="{$product_sale_price_ref_display|display}">
+                                {$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="{$nplusevent_hide_display|display}">
+                            <span class="ec-base-qty">{$form.quantity}<a href="javascript:;" class="up"
+                                    onclick="{$add_shortcut}"><img src="/bvtIMG/btn_quantity_up.svg" alt="수량증가" /></a><a
+                                    href="javascript:;" class="down" onclick="{$out_shortcut}"><img
+                                        src="/bvtIMG/btn_quantity_down.svg" alt="수량감소" /></a></span>
+                            <a href="javascript:;" class="btnNormal gBlank5" onclick="{$action_modify}">변경</a>
+                        </span>
+                        <span class="{$nplusevent_show_display|display}">{$quantity}</span>
+                    </td>
+                    <td><span id="{$product_mileage_id}" class="txtInfo">{$mileage}</span></td>
+                    <td>
+                        <div class="txtInfo">기본배송<br />{$product_delv_str}</div>
+                    </td>
+                    <td rowspan="{$delv_cnt}" class="{$delv_cnt_display|display}">
+                        <p class="{$delv_price_display|display}">
+                            {$delv_price_front_head}{$delv_price_front}{$delv_price_front_tail}<span
+                                class="{$delv_ref_display|display}"><br />{$delv_price_back_head}{$delv_price_back}{$delv_price_back_tail}</span><br />
+                        </p>{$delv_type}
+                    </td>
+                    <td class="right"><strong>{$sum_price_front_head}<span
+                                id="{$sum_price_front_id}">{$sum_price_front}</span>{$sum_price_front_tail}</strong>
+                        <div class="{$sum_price_display|display}">
+                            {$sum_price_back_head}{$sum_price_back}{$sum_price_back_tail}</div>
+                    </td>
+                    <td class="button">
+                        <a href="javascript:;" class="btnSubmit {$subscription_hide_display|display}"
+                            onclick="{$action_buy_item}">주문하기</a>
+                        <a href="javascript:;" class="btnSubmit {$subscription_show_display|display}"
+                            onclick="{$action_buy_item}">정기배송 신청</a>
+                        <a href="javascript:;" class="btnNormal" onclick="{$action_wish_item}">관심상품등록</a>
+                        <a href="javascript:;" class="btnNormal" onclick="{$action_move_item}"><i class="icoDelete"></i>
+                            삭제</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--공급사기본-->
+        <div class="BorderDelevery" module="Order_SuppNormal">
+            <div class="bdHead w100 rndd">
+                <span class="b"> 주문내역 </span>
+                <span class="allSellect"><label><input type="checkbox" onclick='{$chk_basketlist}' />전체선택</label></span>
+            </div>
+            <div class="BgoodsList w100">
+                <ul module="Order_list">
+                    <li class="rndd">
+                        <div class="line">
+                            <div class="w20"><input type="checkbox" id="{$chk_id}" name="{$chk_name}" />
+                            </div>
+                            <div class="w80 BBtns">
+                                <a href="javascript:;" class="deleteOrderBtn" onclick="{$action_move_item}">삭제</a>
+                            </div>
+                        </div>
+                        <div class="leftBox">
+                            <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}" data-title="{$product_name_tag|striptag}">
+                                <img src="{$img}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}"/><div class="bMoreBtn">상품정보 </div>
+                        </a>
+                            <div class="BBtns">
+                                <a href="javascript:;" class="orderBuyBtn {$subscription_hide_display|display}"
+                                    onclick="{$action_buy_item}">바로주문</a>
+                            </div>
+                        </div>
+                        <div class="rightBox">
+                            <div class="name"><strong>{$name}</strong></div>
+                            <div class="optionList w100 rndd" module="Order_optionAll">
+                                <div class="optionBox">
+                                    {$option_str}
+                                    <span class="{$qty_display|display}">({$qty}개)</span>
+
+                                </div>
+                                <div class="optionBox">
+                                    {$option_str}
+                                    <span class="{$qty_display|display}">({$qty}개)</span>
+
+                                </div>
+                            </div>
+
+                            <div class="tips {$subscription_show_display|display}">
+                                <strong>배송주기</strong> <span>{$subscription_option_str}</span>
+                            </div>
+
+                            <div id="{$product_price_div_id}" class="line2 w100 {$discount}">
+                                <span>판매가</span>
+                                <span>
+                                    <strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong>
+                                    <p class="{$product_price_display|display}">
+                                        {$product_price_back_head}{$product_price_back}{$product_price_back_tail}
+                                    </p>
+                                </span>
+                            </div>
+
+                            <div id="{$product_sale_price_div_id}" class="line2 {$product_sale_price_display|display}">
+                                <span>할인판매가</span>
+                                <span id="{$product_sale_price_front_id}">{$product_sale_price_front}{$product_sale_price_front_tail}</span>
+                            </div>
+
+                            <div class="line2">
+                                <span>배송 {$product_delv_str}</span>
+                                <span class="{$delv_cnt_display|display}">
+                                    <span class="{$delv_price_display|display}">
+                                        {$delv_price_front_head}{$delv_price_front}{$delv_price_front_tail}
+                                        <span
+                                            class="{$delv_ref_display|display}">{$delv_price_back_head}{$delv_price_back}{$delv_price_back_tail}</span>
+                                        {$delv_type}
+                                    </span>
+                                </span>
+                            </div>
+
+                            <div class="line2" id="{$product_mileage_id}">
+                                <span>마일리지</span>
+                                <span>
+                                    {$mileage}
+                                </span>
+                            </div>
+
+                            <div class="line2">
+                                <span>수량</span>
+                                <span class="right {$nplusevent_hide_display|display}">
+                                    <div class="quant">
+                                        <a href="javascript:;" class="up" onclick="{$add_shortcut}"><i
+                                                class="upArrow"></i></a>
+                                        {$form.quantity}
+                                        <a href="javascript:;" class="down" onclick="{$out_shortcut}"><i
+                                                class="downArrow"></i></a>
+                                </span>
+                                <span class="{$nplusevent_show_display|display}">{$quantity}</span>
+                            </div>
+                        </div>
+
+                        <div class="line3">
+                            <span>합계</span>
+                            <span>
+                                <strong>{$sum_price_front_head}<span
+                                        id="{$sum_price_front_id}">{$sum_price_front}</span>{$sum_price_front_tail}</strong>
+                                <div class="{$sum_price_display|display}">
+                                    {$sum_price_back_head}{$sum_price_back}{$sum_price_back_tail}</div>
+                            </span>
+                        </div>
+
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="orderListArea ec-base-table typeList gBorder">
+
+        <!--공급사개별-->
+        <div class="BorderDelevery" module="Order_NormIndividual">
+            <div class="bdHead w100 rndd">
+                <span class="b"> 주문내역 </span>
+                <span class="allSellect"><label><input type="checkbox" onclick='{$chk_basketlist}' />전체선택</label></span>
+            </div>
+            <div class="BgoodsList w100">
+                <ul module="Order_list">
+                    <li class="rndd">
+                        <div class="line">
+                            <div class="w20"><input type="checkbox" id="{$chk_id}" name="{$chk_name}" />
+                            </div>
+                            <div class="w80 BBtns">
+                                <a href="javascript:;" class="deleteOrderBtn" onclick="{$action_move_item}">삭제</a>
+                            </div>
+                        </div>
+                        <div class="leftBox">
+                            <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}" data-title="{$product_name_tag|striptag}">
+                                    <img src="{$img}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}"/><div class="bMoreBtn">상품정보 </div>
+                            </a>
+                            <div class="BBtns">
+                                <a href="javascript:;" class="orderBuyBtn {$subscription_hide_display|display}"
+                                    onclick="{$action_buy_item}">바로주문</a>
+                            </div>
+                        </div>
+                        <div class="rightBox">
+                            <div class="name"><strong>{$name}</strong></div>
+                            <div class="optionList w100 rndd" module="Order_optionAll">
+                                <div class="optionBox">
+                                    {$option_str}
+                                    <span class="{$qty_display|display}">({$qty}개)</span>
+
+                                </div>
+                                <div class="optionBox">
+                                    {$option_str}
+                                    <span class="{$qty_display|display}">({$qty}개)</span>
+
+                                </div>
+                            </div>
+
+                            <div class="tips {$subscription_show_display|display}">
+                                <strong>배송주기</strong> <span>{$subscription_option_str}</span>
+                            </div>
+
+                            <div id="{$product_price_div_id}" class="line2 w100 {$discount}">
+                                <span>판매가</span>
+                                <span>
+                                    <strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong>
+                                    <p class="{$product_price_display|display}">
+                                        {$product_price_back_head}{$product_price_back}{$product_price_back_tail}
+                                    </p>
+                                </span>
+                            </div>
+
+                            <div id="{$product_sale_price_div_id}" class="line2 {$product_sale_price_display|display}">
+                                <span>할인판매가</span>
+                                <span id="{$product_sale_price_front_id}">{$product_sale_price_front}{$product_sale_price_front_tail}</span>
+                            </div>
+
+                            <div class="line2">
+                                <span>배송 {$product_delv_str}</span>
+                                <span class="{$delv_cnt_display|display}">
+                                    <span class="{$delv_price_display|display}">
+                                        {$delv_price_front_head}{$delv_price_front}{$delv_price_front_tail}
+                                        <span
+                                            class="{$delv_ref_display|display}">{$delv_price_back_head}{$delv_price_back}{$delv_price_back_tail}</span>
+                                        {$delv_type}
+                                    </span>
+                                </span>
+                            </div>
+
+                            <div class="line2" id="{$product_mileage_id}">
+                                <span>마일리지</span>
+                                <span>
+                                    {$mileage}
+                                </span>
+                            </div>
+
+                            <div class="line2">
+                                <span>수량</span>
+                                <span class="right {$nplusevent_hide_display|display}">
+                                    <div class="quant">
+                                        <a href="javascript:;" class="up" onclick="{$add_shortcut}"><i
+                                                class="upArrow"></i></a>
+                                        {$form.quantity}
+                                        <a href="javascript:;" class="down" onclick="{$out_shortcut}"><i
+                                                class="downArrow"></i></a>
+                                </span>
+                                <span class="{$nplusevent_show_display|display}">{$quantity}</span>
+                            </div>
+                        </div>
+
+                        <div class="line3">
+                            <span>합계</span>
+                            <span>
+                                <strong>{$sum_price_front_head}<span
+                                        id="{$sum_price_front_id}">{$sum_price_front}</span>{$sum_price_front_tail}</strong>
+                                <div class="{$sum_price_display|display}">
+                                    {$sum_price_back_head}{$sum_price_back}{$sum_price_back_tail}</div>
+                            </span>
+                        </div>
+
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div module="Order_AllotmentInfo">
+        <p>{$card_img}</p>
+        <p class="info {$min_price_display|display}">총 주문금액이 5만원 미만일시에는 카드결제 시 무이자할부가 적용되지 않습니다.</p>
+    </div>
+
+    <div module="Order_BasketPriceInfoGuide" class="w100 {$basket_price_info_guide_display|display}">
+        <p class="info {$basket_price_sale_guide_display|display}">할인 적용 금액은 주문서작성의 결제예정금액에서 확인 가능합니다.</p>
+        <p class="info {$basket_price_basic_guide_display|display}">결제예정금액은 배송비가 포함된 금액이므로 주문서작성에서 확인 가능합니다.</p>
+        <p class="info {$basket_nplusevent_guid_display|display}">추가증정 이벤트 상품의 옵션 및 수량 변경은 상품상세에서 가능합니다.</p>
+    </div>
+
+    <div module="Order_SelectOrder" class="ec-base-button">
+        <span class="gLeft">
+            <a href="#none" class="btnEm" onclick="{$action_empty}">전체삭제</a>
+            <a href="#none" class="btnEm" onclick="{$action_delete}"><i class="icoDelete"></i> 선택삭제</a>
+        </span>
+
+    </div>
+
+    <!-- 총 주문금액 : 국내배송상품 -->
+    <div module="Order_TotalSummary" class="ec-base-table typeList gBorder total {$area_delv_info_display|display}"
+        unroll="1">
+        <table border="1" summary="">
+            <caption>총 주문금액</caption>
+            <colgroup>
+                <col style="width:17%;" />
+                <col style="width:17%;" class="{$vat_total_display|display}" />
+                <col style="width:19%;" />
+                <col style="width:17%;" class="{$total_benefit_layer_display|display}" />
+                <col style="width:auto;" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col"><strong>총 상품금액</strong></th>
+                    <th scope="col" class="{$vat_total_display|display}"><strong>총 부가세</strong></th>
+                    <th scope="col"><strong>총 배송비</strong></th>
+                    <th scope="col" id="{$total_benefit_price_title_area_id}"
+                        class="{$total_benefit_layer_display|display}"><strong>총 할인금액</strong> 
+                        <!-- <a href="#none" class="btnNormal" onclick="{$total_benefit_layer_on}">내역보기</a> -->
+                    </th>
+                    <th scope="col" class="total_payment"><strong>결제예정금액</strong></th>
+                </tr>
+            </thead>
+            <tbody class="center">
+                <tr>
+                    <td>
+                        <div class="box txt16"><strong>{$total_product_price_display_front_head}<span
+                                    class="txt23">{$total_product_price_display_front}</span>{$total_product_price_display_front_tail}</strong>
+                            <span
+                                class="txt14 {$total_product_price_ref_display|display}">{$total_product_price_display_back_head}{$total_product_price_display_back}{$total_product_price_display_back_tail}</span>
+                        </div>
+                    </td>
+                    <td class="{$vat_total_display|display}">
+                        <div class="box txt16"><strong>{$total_product_vat_price_front_head}<span
+                                    class="txt23">{$total_product_vat_price_front}</span>{$total_product_vat_price_front_tail}</strong>
+                            <span
+                                class="txt14 {$total_product_vat_price_ref_display|display}">{$total_product_vat_price_back_head}{$total_product_vat_price_back}{$total_product_vat_price_back_tail}</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="box shipping txt16">
+                            <strong class="txt23">+ </strong><strong>{$total_delv_price_front_head}<span
+                                    id="{$total_delv_price_front_id}"
+                                    class="txt23">{$total_delv_price_front}</span>{$total_delv_price_front_tail}</strong>
+                            <span
+                                class="txt14 {$total_delv_price_ref_display|display}">{$total_delv_price_back_head}{$total_delv_price_back}{$total_delv_price_back_tail}</span>
+                            <div class="shippingArea {$order_shipfee_sale_info_display|display}">
+                                (<span>{$shipfee_condition}</span>
+                                <div class="shippingFee">
+                                    <a href="#none" class="btnNormal" id="{$shipfee_layer_id}">자세히</a>)
+                                    <div class="ec-base-tooltip">
+                                        <h3>배송비할인</h3>
+                                        <div class="content">
+                                            <h4>{$shipfee_sale_title}</h4>
+                                            <table border="1" summary="">
+                                                <caption>배송비 할인 이벤트 정보</caption>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">혜택</th>
+                                                        <td>
+                                                            <strong
+                                                                class="txtEm">{$shipfee_benefit_use_condition}</strong>
+                                                            <p>{$shipfee_benefit_use_sub_condition}</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="{$shipfee_benefit_date_title_display|display}">
+                                                        <th scope="row">기간</th>
+                                                        <td>
+                                                            <strong class="txtEm">{$shipfee_benefit_date_title}</strong>
+                                                            <p>{$shipfee_benefit_date}</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="{$shipfee_benefit_member_condition_display|display}">
+                                                        <th scope="row">대상</th>
+                                                        <td>{$shipfee_benefit_member_condition}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <a href="#none" class="btnClose"><img
+                                                src="//img.echosting.cafe24.com/skin/base/common/btn_close_tip.gif"
+                                                alt="닫기" /></a>
+                                        <span class="edge"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td id="{$total_benefit_price_area_id}" class="{$total_benefit_layer_display|display}">
+                        <div class="box txt16"><strong class="txt23">-
+                            </strong><strong>{$total_product_discount_price_front_head}<span
+                                    id="{$total_product_discount_price_front_id}"
+                                    class="txt23">{$total_product_discount_price_front}</span>{$total_product_discount_price_front_tail}</strong>
+                            <span
+                                class="txt14 {$total_product_discount_price_ref_display|display}">{$total_product_discount_price_back_head}<span
+                                    id="{$total_product_discount_price_back_id}">{$total_product_discount_price_back}</span>{$total_product_discount_price_back_tail}</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="box txtEm txt16"><strong class="txt23 equal">=
+                            </strong><strong class="total_payment_price">{$total_order_price_front_head}<span id="{$total_order_price_front_id}"
+                                    class="txt23">{$total_order_price_front}</span>{$total_order_price_front_tail}</strong>
+                            <span
+                                class="txt14 {$total_order_price_ref_display|display}">{$total_order_price_back_head}<span
+                                    id="{$total_order_price_back_id}">{$total_order_price_back}</span>{$total_order_price_back_tail}</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="{$total_benefit_layer}" class="totalDetail ec-base-layer">
+            <div class="header">
+                <h3>총 할인금액 상세내역</h3>
+            </div>
+            <div class="content">
+                <p id="{$total_benefit_price_layer_id}" class="txtEm txt16">
+                    <strong>{$price_unit_head}{$total_benefit_price}{$price_unit_tail}</strong>
+                </p>
+                <ul id="{$total_benefit_list_id}" class="ec-base-desc typeDot gLarge rightDD">
+                    <li class="{$total_subscriptionpayseqsale_price_display|display}"><strong
+                            class="term">정기배송할인</strong><span id="{$total_subscriptionpayseq_price_id}"
+                            class="desc">{$price_unit_head}{$total_subscriptionpayseqsale_price}{$price_unit_tail}</span>
+                    </li>
+                    <li class="{$total_periodsale_price_display|display}"><strong class="term">기간할인</strong><span
+                            id="{$total_periodsale_price_id}"
+                            class="desc">{$price_unit_head}{$total_periodsale_price}{$price_unit_tail}</span>
+                    </li>
+                    <li class="{$total_membersale_price_display|display}"><strong class="term">회원할인</strong><span
+                            id="{$total_membersale_price_id}"
+                            class="desc">{$price_unit_head}{$total_membersale_price}{$price_unit_tail}</span>
+                    </li>
+                    <li class="{$total_rebuysale_price_display|display}"><strong
+                            class="term">{$rebuysale_head}재구매할인</strong><span id="{$total_rebuysale_price_id}"
+                            class="desc">{$price_unit_head}{$total_rebuysale_price}{$price_unit_tail}</span>
+                    </li>
+                    <li class="{$total_bulksale_price_display|display}"><strong class="term">대량구매할인</strong><span
+                            id="{$total_bulksale_price_id}"
+                            class="desc">{$price_unit_head}{$total_bulksale_price}{$price_unit_tail}</span></li>
+                    <li class="{$total_livelinkonsale_price_display|display}"><strong
+                            class="term">바로가기(링콘)할인</strong><span id="{$total_livelinkonsale_price_id}"
+                            class="desc">{$price_unit_head}{$total_livelinkonsale_price}{$price_unit_tail}</span>
+                    </li>
+                    <li class="{$total_pbpsale_price_display|display}"><strong class="term">어바웃pbp할인</strong><span
+                            id="{$total_pbpsale_price_id}"
+                            class="desc">{$price_unit_head}{$total_pbpsale_price}{$price_unit_tail}</span></li>
+                    <li class="{$total_newproductsale_price_display|display}"><strong class="term">신규상품할인</strong><span
+                            id="{$total_newproductsale_price_id}"
+                            class="desc">{$price_unit_head}{$total_newproductsale_price}{$price_unit_tail}</span>
+                    </li>
+                    <li class="{$total_setproductsale_price|display}"><strong class="term">세트할인</strong><span
+                            id="{$total_setproductsale_price_id}"
+                            class="desc">{$price_unit_head}{$total_setproductsale_price}{$price_unit_tail}</span>
+                    </li>
+                    <li class="{$total_paymethodsale_price_display|display}"><strong class="term">결제수단할인</strong><span
+                            id="{$total_paymethodsale_price_id}"
+                            class="desc">{$price_unit_head}{$total_paymethodsale_price}{$price_unit_tail}</span>
+                    </li>
+                    <li class="{$total_membergroupsale_price_display|display}"><strong class="term">회원등급할인</strong><span
+                            id="{$total_membergroupsale_price_id}"
+                            class="desc">{$price_unit_head}{$total_membergroupsale_price}{$price_unit_tail}</span>
+                    </li>
+                    <li class="{$total_shipfeesale_price_display|display}"><strong class="term">배송비할인</strong><span
+                            id="{$total_shipfeeale_price_id}"
+                            class="desc">{$price_unit_head}{$total_shipfeesale_price}{$price_unit_tail}</span>
+                    </li>
+                </ul>
+            </div>
+            <a href="#none" class="close" onclick="{$total_benefit_layer_off}"><img
+                    src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="닫기" /></a>
+        </div>
+    </div>
+
+
+    <div class="row-tail" module="Order_TotalOrder">
+        <div class="button-box ">
+            <div class="btn-basic btn-type1 btn-size-m">
+                <a href="#none" onclick="{$action_order_all}" class="{$buy_display|display}"
+                    link-order="/order/orderform.html{$param}" link-login="/member/login.html">모두주문하기</a>
+            </div>
+            <div class="btn-basic btn-type2 btn-size-m">
+                <a href="#none" onclick="{$action_order_select}" link-order="/order/orderform.html{$param}"
+                    link-login="/member/login.html">선택주문하기</a>
+            </div>
+        </div>
+        <!-- 네이버 체크아웃 구매 버튼  -->
+        <div id="{$naver_checkout_button_id}"></div>
+    </div>
+</div>

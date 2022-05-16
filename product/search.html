@@ -1,0 +1,84 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+
+<div class="wrapper2 padding2">
+    <div class="bvt-searchbox" module="search_form">
+        <div class="margin-header">
+            <li class="bh-title b">🔍 검색결과</li>
+            <li class="gray b">{$total_count}개의 상품을 찾았어요.</li>
+
+
+        </div>
+        <div id="detailSearch" style="display:none">
+            <fieldset>
+                <legend>상품 검색</legend>
+                <div class="rsW50">
+                    <div class="item">
+                        <li>상품분류</li> {$form.category_no}
+                    </div>
+                    <div class="item">
+                        <li>검색조건</li> {$form.search_type} {$form.keyword}
+                    </div>
+                    <div class="item" id="{$except_keyword_wrap_id}" style="display:none">
+                        <li>제외검색어</li> {$form.exceptkeyword}
+                    </div>
+                </div>
+                <div class="rsW50">
+                    <div class="item">
+                        <li>판매가격대</li> {$form.product_price1} ~ {$form.product_price2}
+                    </div>
+                    <div class="item">
+                        <li>정렬기준</li> {$form.order_by}
+                    </div>
+                    <div class="button-box" style="float: right;">
+                        <div class="button"><button type="submit" class="btn-type1 btn-size-m btn-basic">검색</button>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="noData {$search_fail_display|display}">
+            <strong class="warning">검색결과가 없습니다.</strong>
+            <ul>
+                <li>검색어/제외검색어의 입력이 정확한지 확인해 보세요.</li>
+                <li>두 단어 이상의 검색어인 경우, 띄어쓰기를 확인해 보세요.</li>
+                <li>검색 옵션을 다시 확인해 보세요.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div module="Search_Result" class="wrapper2 padding2 ec-base-product bvt-listnormal-box">
+    <!--@css(/css/module/product/search_result.css)-->
+    <!--@css(/cssbvt/module/product/search_result.css)-->
+    <!--@css(/cssbvt/module/product/listnormal.css)-->
+
+    <!--
+        $count = 10
+        $moreview = yes
+    -->
+    <!--@import(/layoutbvt/listnormal.html)-->
+
+
+</div>
+<div class="paginate" module="search_paging">
+    <div class="paginate-box">
+        <a href="{$param_first}" class="first">처음</a>
+        <a href="{$param_before}">이전</a>
+        <ol>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        </ol>
+        <a href="{$param_next}">다음</a>
+        <a href="{$param_last}" class="last">끝</a>
+    </div>
+</div>
+
+<!--footer-->
+<!--@css(/cssbvt/module/layout/footer.css)-->
+<!--@import(/layout/basic/footer.html)-->
+
+<!--@js(/jsbvt/discount_listnormal.js)-->

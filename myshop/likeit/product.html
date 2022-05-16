@@ -1,0 +1,75 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--상단메뉴-->
+
+
+<div class="margin-header padding2">
+    <div class="indextitle m15">
+        <h3 class="t14">내 좋아요 리스트</h3>
+        <span class="t09">가치소비 후보들 모아보고 결정할까요?</span>
+    </div>
+</div>
+
+
+<div class="margin-footer" module="myshop_likeitPrdPackage">
+    <!--@css(/css/module/myshop/likeitPrdPackage.css)-->
+    <!--@css(/cssbvt/module/myshop/likeitPrdPackage.css)-->
+
+    <div class="padding2" module="myshop_LikeProductControl">
+        <div class="btn-basic btn-type2"><a href="#none" onclick="{$delete_mylikeprd}">선택삭제</a></div>
+    </div>
+
+    <div class="bvt-listnormal-box padding2" module="myshop_LikeProductList">
+        <!--@css(/cssbvt/module/product/listnormal.css)-->
+
+        <!--
+            $count = 6
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+        <ul class="{$list_display|display} prdList grid2">
+
+            <li>
+                {$checkbox}
+                <div class="box-img">
+                    <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}" data-title="{$product_name_tag|striptag}">
+                        <img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"" class="thumb" /></a>
+                </div>
+                <div class="box-desc padding2">
+                    <div class="title"><a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"
+                            data-title="{$product_name_tag|striptag}">{$disp_product_name}</a></div>
+                </div>
+            </li>
+
+            <li>
+                {$checkbox}
+                <div class="box-img">
+                    <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}" data-title="{$product_name_tag|striptag}">
+                        <img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"" class="thumb" /></a>
+                </div>
+                <div class="box-desc padding2">
+                    <div class="title"><a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"
+                            data-title="{$product_name_tag|striptag}">{$disp_product_name}</a></div>
+                </div>
+            </li>
+        </ul>
+        <div class="empty-message {$empty_display|display}">좋아요 상품 내역이 없습니다.</div>
+        <!-- <div><label>전체선택<input type="checkbox" onclick="{$check_mylikeprd}" /> </label></div> -->
+
+    </div>
+
+
+
+    <div class="paginate" module="myshop_LikeProductPaging">
+        <div class="paginate-box">
+            <a href="{$param_first}" class="first">처음</a>
+            <a href="{$param_before}">이전</a>
+            <ol>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            </ol>
+            <a href="{$param_next}">다음</a>
+            <a href="{$param_last}" class="last">끝</a>
+        </div>
+    </div>
+</div>

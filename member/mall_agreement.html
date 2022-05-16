@@ -1,0 +1,33 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+
+<div class="wrapper2 padding2">
+
+    <div class=" margin-header">
+
+        <div class="bh-title b">📄 비보트 이용약관</div>
+        <div class="bh-cont">-</div>
+    </div>
+
+    <div module="mall_term" class="w100">
+        <!--@css(/css/module/mall/privacy.css)-->
+        <!--@css(/cssbvt/module/mall/privacy.css)-->
+
+        <div class="ec-base-box typeThinBg">
+            <strong class="date {$displayEnforce|display}">{$enforce_date}</strong>
+            <div class="agree">
+                {$mall_agreement}
+            </div>
+        </div>
+        <div class="ec-base-button {$displayBeforeEnforce|display}">
+            <span class="gRight">
+                <a href="{$before_enforce_link}" class="btnLink" target="_blank">{$before_enforce_date}</a>
+            </span>
+        </div>
+    </div>
+</div>
+
+
+<!--footer-->
+<!--@css(/cssbvt/module/layout/footer.css)-->
+<!--@import(/layout/basic/footer.html)-->

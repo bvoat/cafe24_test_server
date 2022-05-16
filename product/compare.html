@@ -1,0 +1,124 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="path">
+    <h3>현재 위치</h3>
+    <ol>
+        <li class="first"><a href="/">홈</a></li>
+        <li title="현재 위치">상품비교하기</li>
+    </ol>
+</div>
+
+<div class="titleArea">
+    <h2>상품 비교하기</h2>
+</div>
+
+<div module="Product_ListCompare">
+    <!--@css(/css/module/product/compare.css)-->
+    <!--
+    $max_count = auto
+    max_count는 auto면 검색한 상품 수량만큼, 1~4는 해당 숫자 만큼, 그외의 모든 값은 4로 고정
+    정상적인 반복을 위해 <td>를 두번이상 입력해주세요.
+    -->
+    <div class="dataArea">
+        <table border="1" summary="상품 비교 목록입니다.">
+        <thead>
+            <tr module='Product_Productimagetiny'>
+                <th scope="row">상품이미지</th>
+                <td><a href="./detail.html?product_no={$product_no}"><img src="{$Productimagetiny}" alt="" /></a></td>
+                <td><a href="./detail.html?product_no={$product_no}"><img src="{$Productimagetiny}" alt="" /></a></td>
+            </tr>
+            <tr module='Product_Productname'>
+                <th scope="row">상품명</th>
+                <td><input type="checkbox" class="{$product_select_class}"> <span class="prdName">{$Productname}</span> - {$product_no}</td>
+                <td><input type="checkbox" class="{$product_select_class}"> <span class="prdName">{$Productname}</span> - {$product_no}</td>
+            </tr>
+            <tr module='Product_Productcustom'>
+                <th scope="row">소비자가</th>
+                <td><span class="prdPrice"><em id="product_price_nf{$product_no}">{$Productcustom}</em>원</span></td>
+                <td><span class="prdPrice"><em id="product_price_nf{$product_no}">{$Productcustom}</em>원</span></td>
+            </tr>
+            <tr module='Product_Productprice'>
+                <th scope="row">판매가</th>
+                <td><span class="prdPrice"><em id="product_price_nf{$product_no}">{$Productprice}</em>원</span></td>
+                <td><span class="prdPrice"><em id="product_price_nf{$product_no}">{$Productprice}</em>원</span></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="first" module='Product_Quantity'>
+                <th scope="row">수량</th>
+                <td>{$form.quantity}</td>
+                <td>{$form.quantity}</td>
+            </tr>
+            <tr>
+                <th scope="row">옵션</th>
+                <td  module='Product_CompareOptionList'><ul module="Product_CompareOption">
+                    <li>{$option_name} : {$form.option}</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <th scope="row">사용자옵션</th>
+                <td  module='Product_CompareAddOptionList'><ul module="Product_CompareAddOption">
+                    <li>{$add_option_name} : {$form.add_option}</li>
+                </ul></td>
+            </tr>
+            <tr module='Product_Allotperiod'>
+                <th scope="row">무이자</th>
+                <td>{$Allotperiod}</td>
+                <td>{$Allotperiod}</td>
+            </tr>
+            <tr module='Product_Allotcard'>
+                <th scope="row"></th>
+                <td>{$Allotcard}</td>
+                <td>{$Allotcard}</td>
+            </tr>
+            <tr module='Product_Mileage'>
+                <th scope="row">적립금</th>
+                <td>{$Mileage}</td>
+                <td>{$Mileage}</td>
+            </tr>
+            <tr module='Product_Manuname'>
+                <th scope="row">제조사</th>
+                <td>{$Manuname}</td>
+                <td>{$Manuname}</td>
+            </tr>
+            <tr module='Product_Madein'>
+                <th scope="row">원산지</th>
+                <td>{$Madein}</td>
+                <td>{$Madein}</td>
+            </tr>
+            <tr module='Product_Brand'>
+                <th scope="row">브랜드</th>
+                <td>{$Brand}</td>
+                <td>{$Brand}</td>
+            </tr>
+            <tr module='Product_Model'>
+                <th scope="row">모델명</th>
+                <td>{$Model}</td>
+                <td>{$Model}</td>
+            </tr>
+            <tr module='Product_Productcode'>
+                <th scope="row">상품코드</th>
+                <td>{$Productcode}</td>
+                <td>{$Productcode}</td>
+            </tr>
+            <tr module='Product_Selfproductcode'>
+                <th scope="row">자체상품코드</th>
+                <td>{$Selfproductcode}</td>
+                <td>{$Selfproductcode}</td>
+            </tr>
+            <tr module='Product_Description'>
+                <th scope="row">간략설명</th>
+                <td>{$Description}</td>
+                <td>{$Description}</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <div class="btnArea">
+        <span class="left">
+            <img src="http://img.echosting.cafe24.com/design/skin/default/product/btn_basket1.gif" alt="장바구니담기" class='{$basket_class}' />
+            <img src="http://img.echosting.cafe24.com/design/skin/default/product/btn_wishlist1.gif" alt="관심상품등록" class='{$wishlist_class}'  />
+        </span>
+        <img src="http://img.echosting.cafe24.com/design/skin/default/product/btn_cart.gif" alt="바로구매하기" class='{$buy_class}' />
+    </div>
+</div>

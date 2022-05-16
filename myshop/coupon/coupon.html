@@ -1,0 +1,122 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<!--@css(/cssbvt/module/myshop/index.css)-->
+
+
+<div module="myshop_CouponList">
+    <!--
+        $product_list_url = coupon_product_list.html
+    -->
+    <div class="margin-header wrapper2 padding2">
+        <div class="bh-title b">🔵 쿠폰</div>
+        <div class="bh-cont">바른 가치와 쿠폰만 있다면 어디든 갈 수 있어</div>
+    
+    </div>
+
+
+    <div class="wrapper2 coupon-table">
+        <table border="0" summary="">
+            <tbody class="{$display_coupon_list|display} center">
+                <tr>
+                    <td class="name"><strong>{$coupon_name}</strong></td>
+                    <td>
+                        <div class="tag">쿠폰내용</div>
+                        <div class="content"><span class="highLighting hl-yellow">{$coupon_benefit_result}</span></div>
+                    </td>
+                    <td>
+                        <div class="tag">적용상품</div>
+                        <div class="content">{$coupon_use_product_icon}</div>
+                    </td>
+                    <td>
+                        <div class="tag">적용구매금액</div>
+                        <div class="content">{$coupon_use_price}</div>
+                    </td>
+                    <td>
+                        <div class="tag">사용 기간</div>
+                        <div class="content" style="margin-bottom: 10px;">{$coupon_start_end_date}</div>
+                        <div class="dottedPartition" style="margin-bottom: 20px;"></div>
+                    </td>
+                    <td class="paymethod {$display_paymethod|display}">
+                        <div class="tag">적용결제수단</div>
+                        <div class="content">{$coupon_paymethod}</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name"><strong>{$coupon_name}</strong></td>
+                    <td>
+                        <div class="tag">쿠폰내용</div>
+                        <div class="content"><span class="highLighting hl-yellow">{$coupon_benefit_result}</span></div>
+                    </td>
+                    <td>
+                        <div class="tag">적용상품</div>
+                        <div class="content">{$coupon_use_product_icon}</div>
+                    </td>
+                    <td>
+                        <div class="tag">적용구매금액</div>
+                        <div class="content">{$coupon_use_price}</div>
+                    </td>
+                    <td>
+                        <div class="tag">사용 기간</div>
+                        <div class="content" style="margin-bottom: 10px;">{$coupon_start_end_date}</div>
+                        <div class="dottedPartition" style="margin-bottom: 20px;"></div>
+                    </td>
+                    <td class="paymethod {$display_paymethod|display}">
+                        <div class="tag">적용결제수단</div>
+                        <div class="content">{$coupon_paymethod}</div>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody class="{$display_no_coupon_list|display}">
+                <tr class="no-coupon">
+                    <td class="empty-message">쿠폰함이 비어있어요.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="wrapper2 ec-base-button {$coupon_mileage_display|display}"><span class="gRight"><a href="#none" class="btnSubmitFix sizeM" onclick="COUPON.useCoupon()">사용하기</a></span></p>
+</div>
+
+<div class="wrapper2 paginate" module="myshop_CouponListPaging">
+    <div class="paginate-box">
+        <a href="{$first_url}" class="first">처음</a>
+        <a href="{$prev_url}">이전</a>
+        <ol>
+            <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+            <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+            <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+        </ol>
+        <a href="{$next_url}">다음</a>
+        <a href="{$last_url}" class="last">끝</a>
+    </div>
+</div>
+
+<div class="wrapper2" module="myshop_CouponSerial">
+    <div class="couponSerial">
+        <!--
+            $login_page_url = /member/login.html
+        -->
+        <fieldset>
+            <div class="t15 b">쿠폰등록하기</div>
+            <legend>쿠폰번호 등록</legend>
+            <div class="bvtBasicInput">{$form.coupon_code}<label for="coupon_code">쿠폰번호</label></div>
+            <div class="button-box">
+                <a href="#none" class="btn-basic btn-size-m btn-type1" onclick="{$action_coupon_submit}">쿠폰번호인증</a>
+            </div>
+            <div class="tips">"-" 제외한 쿠폰번호를 입력해주세요.</div>
+        </fieldset>
+    </div>
+</div>
+
+
+
+<div class="wrapper2 myshop-help-box" module="myshop_head">
+    <div class="t13 b">쿠폰 안내</div>
+    <ul odule="myshop_historyInfo">
+        <li>쿠폰은 주문 시 1회에 한해 적용되며, 1회 사용 시 재 사용이 불가능합니다.</li>
+        <li>쿠폰은 적용 가능한 상품이 따로 적용되어 있는 경우 해당 상품 구매 시에만 사용이 가능합니다.</li>
+        <li>특정한 종이쿠폰/시리얼쿠폰/모바일쿠폰의 경우 단 1회만 사용이 가능할 수 있습니다.</li>
+        <li></li>
+    </ul>
+</div>
+
+<div class="margin-footer"></div>

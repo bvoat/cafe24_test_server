@@ -1,0 +1,74 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/cssbvt/bvt_index.css)-->
+<style>
+   #buy_records_frame{width:100%;border:none;height:1600px;}  
+   .margin-header{background: #F4F5FB;}
+   #bh_slide_frame {    position: fixed;    top: 0px;    z-index: 999999;}
+
+
+  /* 서비스 장애 알람 */
+  .modal_alert_wrap{
+    width: 450px;
+    height: 100vw;
+    background: #00000010;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+  .modal_alert{
+    width: 300px;
+    height: 280px;
+    background: #ffffff;
+    border-radius: 13px;
+    text-align: center;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 3px 7px 11px #CECECE64;
+  }
+  .modal_icon{
+    width: 50px;
+  }
+  .modal_head{
+    font-size: 16px;
+  }
+  .modal_msg{
+    font-size: 12px;
+  }
+
+
+</style>
+<!-- 전체 글 리스트 보기 -->
+<div class="margin-header"></div>
+<!-- 메뉴 -->
+<!--@import(/layout/basic/index_menu_comm.html)-->
+
+<div id="buy_records" >
+<!-- 서비스 장애 알람  -->
+<div class="modal_alert_wrap">
+  <div class="modal_alert">
+    <img src="https://m.bvoat.com/bvtIMG/baseline_error_black_48dp.png" class="modal_icon"/>
+    <h1 class="modal_head"> 현재 <strong>서버 불안정</strong>으로 <br> 긴급 복구 작업 중입니다 😥</h1>
+    <p class="modal_msg">현재 스토어 서비스 외의 일부 서비스 이용이 <br>일시적으로 중단되었습니다. <br> 비보트 이용에 불편을 드려 죄송합니다.</p>
+    <p class="modal_msg">빠른 시일 내에 복구하도록 노력하겠습니다. <br> 감사합니다.</p>
+  </div>
+</div>
+</div>
+
+<script>
+   //헤더 디자인 변경 테스트
+    $(".margin-header").html(`<img src="/bvtIMG/title_gradient.svg">`)
+   // $(".hd-logo").css(`width`, `initial`);
+   //$(".hd-logo").html(`<div style="color:#022CFF; font-size:17px; font-weight:bold;">소비 기록</div>`);
+   $(".btnBasket").css(`visibility`, `hidden`);
+    $(".count").css(`visibility`, `hidden`);
+
+
+
+  window.channelPluginSettings = {
+    "hideDefaultLauncher": true
+  }
+
+
+
+
+</script>

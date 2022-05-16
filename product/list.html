@@ -1,0 +1,113 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+
+
+
+<div class="margin-header wrapper">
+    <div class="padding2" module="product_headcategory">
+        {$top_image_tag}
+        <div class="dashline"></div>
+
+    </div>
+
+
+
+
+    <!-- 메뉴 -->
+    <div module="Product_menupackage">
+
+        <div class="padding2 bvt-menu-box2">
+
+            <div class=" menu-swipe swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div module="product_displaycategory" class="swiper-slide  -box"><a
+                            href="/product/list.html?{$param_cate_no}" class="{$selected}">{$category_name}</a></div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="padding2" module="product_normalpackage">
+        <!--@css(/css/module/product/listnormal.css)-->
+        <!--@css(/cssbvt/module/product/listnormal.css)-->
+
+        <div module="product_normalmenu">
+            <div class="bh-type">
+                <select id="selArray" name="selArray" module="product_Orderby">
+                    <option value="{$param}">{$sort_name}</option>
+                    <option value="{$param}">{$sort_name}</option>
+                </select>
+            </div>
+        </div>
+        <div class="bvt-listnormal-box" module="product_listnormal">
+            <!--
+                $count = 8
+                    ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                    ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 
+                $moreview = yes
+                $basket_result = /product/add_basket.html
+                $basket_option = /product/basket_option.html
+                $cache = yes
+                $type = moreview
+            -->
+            <!--@import(/layoutbvt/listnormal.html)-->
+
+        </div>
+    </div>
+
+
+    <div module="product_listmore">
+        <!--@css(/css/module/product/productMore.css)-->
+        <!--@css(/cssbvt/module/product/productMore.css)-->
+
+        <a href="#none" onclick="{$more_action} refresh_discount();">
+            더보기(<span id="more_current_page">{$current_page}</span>/<span
+                id="more_total_page">{$total_page}</span>)<span class="more_down"></span>
+        </a>
+    </div>
+
+</div>
+
+<!--footer-->
+<!--@css(/cssbvt/module/layout/footer.css)-->
+<!--@import(/layout/basic/footer.html)-->
+
+<!--@css(/cssbvt/swiper-bvt.css)-->
+<!--@js(/jsbvt/discount_listnormal.js)-->
+
+<script src="/jsbvt/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".menu-swipe", {
+        slidesPerView: "auto",
+    });
+
+
+    // var swiper3 = new Swiper(".recommned-swipe", {
+    //     slidesPerView: 'auto',
+    //     spaceBetween: 8,
+
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true,
+    //         type: "progressbar",
+    //     },
+    // });
+
+
+    var filter = "win16|win32|win64|mac|macintel";
+    if (navigator.platform) {
+        if (filter.indexOf(navigator.platform.toLowerCase()) < 0) { //mobile 
+           
+        } else { //pc 
+           $("#selArray").prepend('<option value="" class="xans-record-" selected>-정렬방식-</option>')
+        }
+    }
+
+
+</script>
