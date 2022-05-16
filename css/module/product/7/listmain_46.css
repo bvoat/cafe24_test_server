@@ -1,0 +1,94 @@
+/* 기본상품 리스트 */
+.xans-product-listmain-46 { padding:0; background-color:#fff; }
+.xans-product-listmain-46 h2 { max-height:43px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:15px; line-height:43px; padding:0 42px 0 14px; background:url("http://img.echosting.cafe24.com/skin/mobile_ko_KR/layout/bg_title_close.gif") no-repeat right 14px top 50%; background-size:13px 8px; cursor:pointer; }
+.xans-product-listmain-46 .autoSwipe ul { display:table; table-layout:fixed; width:100%; font-size:0; line-height:0; }
+.xans-product-listmain-46 .autoSwipe img { max-width:100%; }
+.xans-product-listmain-46 .autoSwipe ul li { position:relative; vertical-align:top; }
+.xans-product-listmain-46 .autoSwipe .thumbnail { margin:0 14px 14px; padding:0; }
+.xans-product-listmain-46 .autoSwipe .thumbnail img { width:100%; }
+.xans-product-listmain-46 .autoSwipe .information {  position:relative; min-height:10px; margin:0 14px; }
+.xans-product-listmain-46 .autoSwipe .name { font-size:13px; line-height:1.25em; word-wrap:break-word; margin:0; }
+.xans-product-listmain-46 .autoSwipe .name a { display:block; color:#757575; }
+.xans-product-listmain-46 .autoSwipe .price { color:#000; font-family:Tahoma; font-size:15px; line-height:1.25em; word-wrap:break-word; }
+.xans-product-listmain-46 .autoSwipe .strike { text-decoration:line-through; }
+.xans-product-listmain-46 .autoSwipe .color { overflow:hidden; margin:0; }
+.xans-product-listmain-46 .autoSwipe .color .chips { float:left; width:12px; height:10px; margin:0 2px 2px 0; font-size:0; line-height:0; }
+
+/* 자동 스와이프 컨트롤 패널 */
+.xans-product-listmain-46 .autoSwipe { position:relative; }
+.xans-product-listmain-46 .autoSwipe .information { min-height:121px; }
+.xans-product-listmain-46 .autoSwipe .swipePage {
+    position:absolute; left:50%; bottom:60px; width:122px; margin-left:-61px; padding:0 25px; color:#fff; font-weight:bold; text-align:center; font-family:Verdana; font-size:13px; background:rgba(65,65,70,0.7);
+    text-shadow:1px 1px 0px rgba(75, 68, 67, 0.65);
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-border-top-left-radius:22px;
+    -webkit-border-top-right-radius:22px;
+    -webkit-border-bottom-left-radius:22px;
+    -webkit-border-bottom-right-radius:22px;
+    border-radius:22px;
+}
+.xans-product-listmain-46 .autoSwipe .swipePage span { height:22px; line-height:22px; }
+.xans-product-listmain-46 .autoSwipe .swipePage span.now { color:#adb3ff; }
+.xans-product-listmain-46 .autoSwipe .swipePage button { position:absolute; top:0; width:25px; height:22px; padding:0; font-size:0; line-height:0; color:transparent; border:0; cursor:pointer; background:none; background-size:7px auto; background-position:50% 50%; background-repeat:no-repeat; }
+.xans-product-listmain-46 .autoSwipe .swipePage .prev { left:0; background-image:url("http://img.echosting.cafe24.com/design/module/product/listmain/7/btn_autoswipe_prev.png"); }
+.xans-product-listmain-46 .autoSwipe .swipePage .next { right:0; background-image:url("http://img.echosting.cafe24.com/design/module/product/listmain/7/btn_autoswipe_next.png"); }
+.xans-product-listmain-46 .autoSwipe .swipeCtrl { position:absolute; right:0; bottom:20px; }
+.xans-product-listmain-46 .autoSwipe .swipeCtrl .play { position:absolute; right:14px; bottom:0; width:39px; height:40px; padding:0; font-size:0; line-height:0; color:transparent; border:0; cursor:pointer; background:none; background-size:100% 100%; background-image:url("http://img.echosting.cafe24.com/design/module/product/listmain/7/btn_autoswipe_play.png"); background-position:0 0; background-repeat:no-repeat; }
+.xans-product-listmain-46 .autoSwipe .swipeCtrl .speed {
+    z-index:1; position:absolute; right:74px; bottom:0; width:81px; padding:8px 0; height:6px; display:none;
+}
+.xans-product-listmain-46 .autoSwipe .swipeCtrl .speed .bar {
+    position:absolute; left:0; bottom:8px; width:100%; height:6px; background-color:#c6c6c6;
+    -moz-box-shadow:inset 0 1px 1px 1px rgba(75,68,67,0.5);
+    -webkit-box-shadow:inset 0 1px 1px 1px rgba(75,68,67,0.5);
+    box-shadow:inset 0 1px 1px 1px rgba(75,68,67,0.5);
+    -webkit-border-top-left-radius:6px;
+    -webkit-border-top-right-radius:6px;
+    -webkit-border-bottom-left-radius:6px;
+    -webkit-border-bottom-right-radius:6px;
+    border-radius:6px;
+}
+.xans-product-listmain-46 .autoSwipe .swipeCtrl .speed .ui-slider-range {
+    position:absolute; left:0; top:8px; height:6px; width:100%;
+    background: #9287f6; /* Old browsers */
+    background: -moz-linear-gradient(left, #9287f6 0%, #8a9ffd 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9287f6), color-stop(100%,#8a9ffd)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #9287f6 0%,#8a9ffd 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #9287f6 0%,#8a9ffd 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #9287f6 0%,#8a9ffd 100%); /* IE10+ */
+    background: linear-gradient(to right, #9287f6 0%,#8a9ffd 100%);
+    -webkit-border-top-left-radius:10px;
+    -webkit-border-top-right-radius:10px;
+    -webkit-border-bottom-left-radius:10px;
+    -webkit-border-bottom-right-radius:10px;
+    border-radius:10px;
+}
+.xans-product-listmain-46 .autoSwipe .swipeCtrl .speed a {
+    position:absolute; top:0; width:16px; height:16px; margin:2px 0 0 -7px; padding:0; font-size:0; line-height:0; color:transparent; border:0; cursor:pointer; background-color:#f1f1f1;
+    -moz-box-shadow:inset 0 1px 1px 1px rgba(75,68,67,0.4);
+    -webkit-box-shadow:inset 0 1px 1px 1px rgba(75,68,67,0.4);
+    box-shadow:0 2px 1px 0px rgba(75,68,67,0.4);
+    -webkit-border-top-left-radius:16px;
+    -webkit-border-top-right-radius:16px;
+    -webkit-border-bottom-left-radius:16px;
+    -webkit-border-bottom-right-radius:16px;
+    border-radius:16px;
+}
+.xans-product-listmain-46 .autoSwipe .swipeCtrl .speed .text {
+    display:none; position:absolute; left:0; bottom:100%; width:60px; margin:0 0 4px -30px; padding:1px 0 0; text-align:center; font-weight:bold; font-size:10px; color:#fff; line-height:20px; white-space:nowrap; background:rgba(0,0,0, 0.6);
+    text-shadow:0 1px 0px rgba(0, 0, 0, 0.85);
+    -webkit-border-top-left-radius:2px;
+    -webkit-border-top-right-radius:2px;
+    -webkit-border-bottom-left-radius:2px;
+    -webkit-border-bottom-right-radius:2px;
+    border-radius:2px;
+}
+.xans-product-listmain-46 .autoSwipe .swipeCtrl .speed .text:before { content:""; position:absolute; left:50%; top:100%; width:0; height:0; margin-left:-4px; border:4px solid transparent; border-top:5px solid rgba(0,0,0, 0.6); }
+    /* play 상태 노출 */
+    .autoSwipe.autoPlay .swipeCtrl .speed { display:block; }
+    .autoSwipe.autoPlay .swipeCtrl .play { background-image:url("http://img.echosting.cafe24.com/design/module/product/listmain/7/btn_autoswipe_stop.png");
+}
+
+.ui-widget-content { border:0; }

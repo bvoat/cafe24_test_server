@@ -1,0 +1,12 @@
+.xans-layout-statelogon {overflow:hidden; width:960px; margin:0 auto; padding:10px 0 7px;}
+.xans-layout-statelogon ul {float:right;}
+.xans-layout-statelogon li {float:left; padding:2px 8px 0 9px; background:url('//img.echosting.cafe24.com/design/skin/fashion013/header_top_state_line.gif') no-repeat 0% 50%;}
+.xans-layout-statelogon li.first {padding-left:8px; background:none;}
+.xans-layout-statelogon li.last {padding-right:15px; background:url('//img.echosting.cafe24.com/design/skin/fashion013/header_top_shortcut_arrow.gif') no-repeat 100% 50%;}
+.xans-layout-statelogon li a {color:#8f8f91;}
+.xans-layout-statelogon li a:hover {color:#fff; text-decoration:none;}
+.xans-layout-statelogon li.last a {color:#fff;}
+.xans-layout-statelogon p {float:right; margin-right:20px; padding-top:2px; color:#8f8f91;}
+.xans-layout-statelogon p span {color:#fefefe;}
+.xans-layout-statelogon p a {color:#7a7a81;}
+.xans-layout-statelogon p a:hover {color:#fff; text-decoration:none;}

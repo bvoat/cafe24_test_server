@@ -1,0 +1,12 @@
+.xans-myshop-wishlistpaging { margin:10px 0; text-align:center; }
+.xans-myshop-wishlistpaging p,
+.xans-myshop-wishlistpaging ol,
+.xans-myshop-wishlistpaging li { display:inline; }
+.xans-myshop-wishlistpaging img { vertical-align:top; }
+.xans-myshop-wishlistpaging p { margin-right:-3px; *margin-right:1px; }
+.xans-myshop-wishlistpaging ol { margin:0 17px 0 20px; }
+.xans-myshop-wishlistpaging li { margin:0 4px; font-size:12px; font-weight:bold; font-family:tahoma, sans-serif; }
+.xans-myshop-wishlistpaging li a { color:#7c7b7b; }
+.xans-myshop-wishlistpaging li a:hover { color:#fd5c40; text-decoration:underline; }
+.xans-myshop-wishlistpaging li a.this { color:#fd5c40; }
+.xans-myshop-wishlistpaging a.nolink { cursor:default; }

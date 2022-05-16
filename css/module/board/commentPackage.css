@@ -1,0 +1,53 @@
+.xans-board-commentlist .boardComment { border-top:2px solid #c0c0c0; border-bottom:2px solid #c0c0c0; }
+.xans-board-commentlist .boardComment li { position:relative; overflow:hidden; padding:10px 20px; border-top:1px dotted #c7c7c7; color:#595959; text-align:left; line-height:140%; }
+.xans-board-commentlist .boardComment li.first { border:0; }
+
+.xans-board-commentlist .boardComment li .name { margin:0 10px 0 0; }
+.xans-board-commentlist .boardComment li .name input { width:13px; height:13px; margin:0 2px 0 0; vertical-align:-2px; *vertical-align:2px; }
+.xans-board-commentlist .boardComment li .name a { color:#595959; }
+.xans-board-commentlist .boardComment li .date { margin:0 10px 0 0; font-size:11px; font-family:tahoma, sans-serif; color:#8f8f8f; }
+.xans-board-commentlist .boardComment li .grade { margin:0 10px 0 0; }
+.xans-board-commentlist .boardComment li .button {}
+.xans-board-commentlist .boardComment li .button a { margin:0 -3px 0 0; }
+.xans-board-commentlist .boardComment li .comment { margin:5px 0 0; word-break:break-all; }
+.xans-board-commentlist .btnArea { margin:10px 0; text-align:right; font-size:1%; line-height:1%; }
+.xans-board-commentlist .btnArea img { margin:0 0 0 1px; cursor:pointer; font-size:12px; line-height:12px; }
+
+.xans-board-commentpaging { clear:both; margin:10px 0; text-align:center; }
+.xans-board-commentpaging p,
+.xans-board-commentpaging ol,
+.xans-board-commentpaging li { display:inline; }
+.xans-board-commentpaging img { vertical-align:top; }
+.xans-board-commentpaging p { margin-right:-3px; }
+.xans-board-commentpaging ol { margin:0 17px 0 20px; }
+.xans-board-commentpaging li { margin:0 4px; font-size:12px; font-weight:bold; font-family:tahoma, sans-serif; }
+.xans-board-commentpaging li a { color:#7c7b7b; }
+.xans-board-commentpaging li a:hover { color:#ffd5c40; text-decoration:underline; }
+.xans-board-commentpaging li a.this { color:#fd5c40; }
+.xans-board-commentpaging a.nolink { cursor:default; }
+
+.xans-board-commentwrite { margin:10px 0; padding:10px 20px 20px; border:1px solid #e7e7e7; background:#f8f8f8; font-size:11px; color:#202020; }
+.xans-board-commentwrite legend { visibility:hidden; overflow:hidden; width:0; height:0; font-size:0; line-height:0; }
+.xans-board-commentwrite p { margin:10px 0 0; }
+.xans-board-commentwrite strong { display:inline-block; width:100px; }
+.xans-board-commentwrite input,
+.xans-board-commentwrite textarea { padding:2px 2px 2px 4px; border:1px solid #d9d9d9; color:#202020; }
+.xans-board-commentwrite input { width:84px; height:14px; margin:0 10px 0 9px; }
+.xans-board-commentwrite textarea { width:640px; height:44px; }
+.xans-board-commentwrite p.grade input { width:13px; height:13px; margin:0 2px 0 0; padding:0; border:0; vertical-align:-2px; *vertical-align:1px; }
+.xans-board-commentwrite p.grade label { padding:0 10px 0 0; }
+.xans-board-commentwrite p.grade em { font-style:normal; }
+.xans-board-commentwrite #attendCommentBtnWrap input { border:none !important; width:auto !important; height:auto !important; margin:0 !important; padding:0 !important; }
+
+.xans-board-commentform { margin:10px 0; padding:10px 20px 20px; border:1px solid #e7e7e7; background:#f8f8f8; font-size:11px; color:#202020; }
+.xans-board-commentform legend { visibility:hidden; overflow:hidden; width:0; height:0; font-size:0; line-height:0; }
+.xans-board-commentform p { margin:10px 0 0; }
+.xans-board-commentform input,
+.xans-board-commentform textarea { padding:2px 2px 2px 4px; border:1px solid #d9d9d9; color:#202020; }
+.xans-board-commentform input { width:84px; height:14px; margin:0 10px 0 9px; }
+.xans-board-commentform textarea { width:543px; height:44px; }
+.xans-board-commentform #attendCommentBtnWrap input { border:none !important; width:auto !important; height:auto !important; margin:0 !important; padding:0 !important; }
+.xans-board-commentform img { margin:0 -3px 0 0; }
+
+/* 운영일지 - iframe width 739 일 경우 */
+.xans-board-commentwrite-11 textarea { width:623px; }

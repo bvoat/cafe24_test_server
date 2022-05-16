@@ -1,0 +1,19 @@
+.xans-search-form { margin:0 0 20px; }
+.xans-search-form .searchbox { padding:20px 0 20px 330px; margin:20px 0; background:#d9d9d9 url("http://img.echosting.cafe24.com/design/skin/default/product/bg_search.gif") 30px 30px no-repeat; border:1px solid #bcbcbc; border-radius:2px; }
+.xans-search-form .searchbox li { margin:8px 0; font-size:11px; line-height:1.8em; }
+.xans-search-form .searchbox li strong { display:block; }
+.xans-search-form .searchbox p { margin:20px 0; }
+.xans-search-form .searchbox li input { border:1px solid #bcbcbc; height:18px; padding:1px 3px; }
+.xans-search-form .searchbox #category_no, 
+.xans-search-form .searchbox #order_by { width:378px; }
+.xans-search-form .searchbox #keyword { width:370px; }
+.xans-search-form .searchbox #product_price1 { width:175px; }
+.xans-search-form .searchbox #product_price2 { width:173px; }
+
+.xans-search-form .searchResult { margin:20px 0; overflow:hidden; font-size:11px; }
+.xans-search-form .record { float:left; }
+.xans-search-form .record strong { color:#80a3d7; font-size:14px; }
+.xans-search-form .listType { float:right; }
+.xans-search-form .listType li { display:inline; padding:0 0 0 10px; margin:0 6px 0 0; background:url("http://img.echosting.cafe24.com/design/skin/default/product/bg_search_type.gif") 0 center no-repeat; cursor:pointer; }
+.xans-search-form .listType li:first-child { background:none; }
+.xans-search-form .noData { padding:50px; text-align:center; }

@@ -1,0 +1,67 @@
+.xans-product-additional { clear:both; margin:45px 0 0; }
+.xans-product-additional ul.link { height:29px; border-bottom:1px solid #bbb; zoom:1; background-color:#e6e6e6; }
+.xans-product-additional ul.link:after { content:''; display:block; clear:both; }
+.xans-product-additional ul.link li { float:left; height:29px; padding:0 16px 0 17px; border-right:1px solid #fff; line-height:33px; background:#e6e6e6; }
+.xans-product-additional ul.link li.selected { border-right:0; background:#1a1a1a; height:30px; }
+.xans-product-additional ul.link li a { color:#838383; font-size:11px; }
+.xans-product-additional ul.link li.selected a { color:#fff; font-weight:bold; }
+.xans-product-additional .cont { padding:16px 20px 60px; color:#999; line-height:1.8em; }
+.xans-product-additional .cont h3 { margin:0 0 9px; color:#444; font-size:12px; }
+
+/* 상품 게시판 */
+.xans-product-additional div.board { padding:20px 0 50px; color:#8f8f91; line-height:1.8em; }
+.xans-product-additional div.board h3 { padding:0 20px 10px; color:#444; font-size:12px; }
+.xans-product-additional div.board p.desc { padding:0 20px; }
+.xans-product-additional div.board p.nodata { border:1px solid #e3e3e3; line-height:50px; text-align:center; }
+.xans-product-additional .btnArea { margin:10px 0; text-align:right; }
+.xans-product-additional .btnArea img { margin:0 0 0 -3px; }
+.xans-product-additional table.board { table-layout:fixed; margin:20px 0 0; border-bottom:1px solid #c0c0c0; color:#8f8f8f; font-size:11px; }
+.xans-product-additional table.board th { padding:5px 0 3px; border-top:2px solid #c0c0c0; border-bottom:1px solid #ccc; background:#f6f6f6; font-weight:normal; color:#676767; }
+.xans-product-additional table.board td { padding:6px 0 4px; border-top:1px dotted #e3e3e3; line-height:140%; text-align:center; vertical-align:middle; }
+.xans-product-additional table.board td.left { text-align:left; }
+.xans-product-additional table.board td img { margin:0 2px; vertical-align:middle; }
+.xans-product-additional table.board td a,
+.xans-product-additional table.board td a:hover { color:#8f8f8f; }
+.xans-product-additional table.board td .view { padding:10px; text-align:left; }
+
+.xans-product-additional .paging { margin:20px 0; text-align:center; line-height:1.4em; }
+.xans-product-additional .paging p,
+.xans-product-additional .paging ol,
+.xans-product-additional .paging li { display:inline; }
+.xans-product-additional .paging img { vertical-align:top; }
+.xans-product-additional .paging p { margin-right:-3px; *margin-right:1px; }
+.xans-product-additional .paging ol { margin:0 17px 0 20px; }
+.xans-product-additional .paging li { margin:0 4px; font:bold 11px tahoma, sans-serif; }
+.xans-product-additional .paging li a { color:#a5a5a5; }
+.xans-product-additional .paging li a.this,
+.xans-product-additional .paging li a:hover { color:#000; text-decoration:none; }
+.xans-product-additional .paging a.nolink { cursor:default; }
+
+.xans-product-additional .reply { border-top:2px solid #c0c0c0; border-bottom:2px solid #c0c0c0; }
+.xans-product-additional .reply thead { display:none; }
+.xans-product-additional .reply tbody tr td { padding:10px; border-top:1px dotted #c7c7c7;text-align:left; }
+.xans-product-additional .reply tbody tr td strong { margin:0 10px 0 0; }
+.xans-product-additional .reply tbody tr td span { margin:0 10px 0 0; font-family:tahoma, sans-serif; }
+.xans-product-additional .reply tbody tr td p { margin:5px 0 0; word-break:break-all; }
+
+.xans-product-additional .memoCont { overflow:hidden; margin:20px 0; padding:15px 20px; border:1px solid #e7e7e7; background:#f8f8f8; font-size:11px; color:#202020; text-align:left; }
+.xans-product-additional .memoCont input,
+.xans-product-additional .memoCont textarea { padding:2px 2px 2px 4px; border:1px solid #d9d9d9; color:#202020; }
+.xans-product-additional .memoCont input { width:84px; height:14px; margin:0 10px 0 9px; }
+.xans-product-additional .memoCont textarea { width:640px; height:44px; margin:0 2px 0 0; }
+.xans-product-additional .memoCont .nameArea { display:block; margin:0 0 10px; }
+.xans-product-additional .memoCont .rating { margin:10px 0 0; }
+.xans-product-additional .memoCont .rating input { width:13px; height:13px; margin:0 2px 0 0; padding:0; border:0; vertical-align:-2px; *vertical-align:1px; }
+.xans-product-additional .memoCont .rating label { padding:0 10px 0 0; }
+.xans-product-additional .memoCont .rating em { font-style:normal; }
+.xans-product-additional .memoCont .text,
+.xans-product-additional .memoCont .captcha { margin:10px 0 0; }
+
+
+/* 진열방식 */
+.xans-product-additional ul.prdList { display:table; width:100%; min-width:756px; padding:0 0 30px; font-size:0; line-height:0; }
+.xans-product-additional ul.prdList img { vertical-align:middle; }
+.xans-product-additional ul.prdList li.item { display:inline-block; *display:inline; *zoom:1; margin:0 0 20px 0; width:20%; color:#838383; vertical-align:top; }
+.xans-product-additional ul.prdList li.item div.box { width:140px; margin:0 auto; font-size:11px; line-height:1.8em; }
+.xans-product-additional ul.prdList li.item div.box strong { display:block; }
+.xans-product-additional ul.prdList li.item .thumb { width:140px; height:140px; }

@@ -1,0 +1,58 @@
+<div class="indexmenu fixed">
+    <ol class="tabs wrapper2 padding2">
+        <li id="index">
+            <a href='/'>홈</a>
+        </li>
+				<li id="category">
+            <a href='/product/cat.html'>발견하기</a>
+        </li>
+        <li id="funding">
+            <a href='/funding/index.html'>펀딩·공구</a>
+        </li>
+        <li id="pollticle" class="tooltip">
+            <a href='/pollticle/index.html'>콘텐츠</a>
+            <!-- <span class="tooltiptext"><b>마일리지</b> 지급</span> -->
+        </li>
+
+    </ol>
+</div>
+
+
+
+<script>
+    //index_menu 현재 페이지 표시
+    var url = location.href;
+    var getAr1 = url.indexOf("funding");
+    var getAr3 = url.indexOf("pollticle");
+    var getAr4 = url.indexOf("cat");
+
+    if (getAr4 != -1) {
+        $("#category").addClass("active");
+    }
+    else if (getAr1 != -1) {
+        $("#funding").addClass("active");
+    }
+    else if (getAr3 != -1) {
+        $("#pollticle").addClass("active");
+        $('.tooltiptext').css("display", "none");
+        $('.indexmenu').css("margin-bottom", "40px");
+    }
+    else {
+        $("#index").addClass("active");
+    }
+
+  
+    // //위치고정, 탭 위치
+    // var jbOffset = $('.indexmenu').offset().top + 260;
+    // $(window).scroll(function () {
+    //     if ($(document).scrollTop() > jbOffset) {
+    //         $('.indexmenu').addClass('fixed');
+    //         $('.tooltiptext').addClass('displaynone');
+    //     }
+    //     else {
+    //         $('.indexmenu').removeClass('fixed');
+    //         $('.tooltiptext').removeClass('displaynone');
+
+    //     }
+    // });
+</script>

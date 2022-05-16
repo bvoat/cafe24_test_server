@@ -1,0 +1,24 @@
+.xans-member-findid { background:#f5f5f5; border:1px solid #e9e9e9; padding:60px 0 70px; }
+.xans-member-findid .findId { width:220px; margin:0 auto; font-size:11px; color:#070705; }
+.xans-member-findid .findId h3 { padding:0 0 150px; background:url("http://img.echosting.cafe24.com/design/skin/default/member/bg_find_id.gif") no-repeat 0 50px; }
+.xans-member-findid .findId p { margin:7px 0 0; }
+.xans-member-findid .findId strong { display:block; margin:0 0 5px; font-weight:normal; }
+.xans-member-findid .findId .check { margin-bottom:15px; color:#8f8f91; }
+.xans-member-findid .findId .check label { margin:0 10px 0 0; }
+.xans-member-findid .findId .member select { width:180px; }
+.xans-member-findid .findId .ipin {}
+.xans-member-findid .findId .ipin span,
+.xans-member-findid .findId .mobileauth span { display:block; margin:0 0 5px; color:#8f8f91; }
+.xans-member-findid .findId .button { margin:30px 0 0; }
+.xans-member-findid .findId input { height:14px; padding:2px; border:1px solid #d9d9d9; color:#202020; }
+.xans-member-findid .findId input[type=radio],
+.xans-member-findid .findId input[type=checkbox] { width:13px; height:13px; margin:0 3px 0 0; padding:0; border:0; vertical-align:-2px; *vertical-align:2px; }
+.xans-member-findid .findId #name,
+.xans-member-findid .findId #email { width:170px; }
+.xans-member-findid .findId #ssn1,
+.xans-member-findid .findId #ssn2 { width:75px; }
+.xans-member-findid .findId #mobile1 { width:36px; }
+.xans-member-findid .findId #mobile2,
+.xans-member-findid .findId #mobile3 { width:47px; }
+
+

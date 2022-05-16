@@ -1,0 +1,19 @@
+.xans-myshop-summary { border:1px solid #e6e6e6; background:#efeff0; }
+.xans-myshop-summary ul { padding:22px 0 17px; overflow:hidden; }
+.xans-myshop-summary li { overflow:hidden; float:left; width:290px; margin:0 0 0 40px; padding:7px 0 7px 6px; background:url("http://img.echosting.cafe24.com/design/skin/default/myshop/ico_myshop.gif") no-repeat 0 11px; }
+.xans-myshop-summary li .title { float:left; width:100px; font-weight:normal; font-size:11px; }
+.xans-myshop-summary li .data { float:left; width:160px; text-align:right; color:#757575; font-size:12px; }
+
+.xans-myshop-mileageunavailpackage .tab { margin:20px 0 30px; height:34px; border-bottom:1px solid #d6d6d6; }
+.xans-myshop-mileageunavailpackage .tab ul { overflow:hidden; zoom:1; }
+.xans-myshop-mileageunavailpackage .tab li { float:left; }
+
+.xans-myshop-unavaillist { margin:0 0 10px; }
+.xans-myshop-unavaillist table { border-bottom:1px solid #c0c0c0; color:#8f8f8f; font-size:11px; }
+.xans-myshop-unavaillist table th { padding:9px 0 7px; border-top:2px solid #c0c0c0; border-bottom:1px solid #ccc; background:#f6f6f6; font-weight:normal; color:#202020; }
+.xans-myshop-unavaillist table td { padding:11px 5px 9px; border-top:1px dotted #e3e3e3; line-height:140%; text-align:center; vertical-align:middle; }
+.xans-myshop-unavaillist table td.left { padding-left:9px; text-align:left; }
+.xans-myshop-unavaillist table td.right { text-align:right; }
+.xans-myshop-unavaillist table td.noData { padding:50px; text-align:center; }
+.xans-myshop-unavaillist table td a,
+.xans-myshop-unavaillist table td a:hover { color:#8f8f8f; }

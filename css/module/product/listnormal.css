@@ -1,0 +1,43 @@
+.xans-product-normalmenu { overflow:hidden; }
+.xans-product-normalmenu .title h2 { padding:0 0 0 20px; font-size:15px; color:#292929; background:url('//img.echosting.cafe24.com/design/skin/fashion013/ico_product_list_title.gif') no-repeat 0 2px; }
+.xans-product-normalmenu fieldset { float:left; }
+.xans-product-normalmenu .compare { float:right; padding:0 0 0 10px; }
+.xans-product-normalmenu ul#type { float:right; padding:26px 0 0; }
+.xans-product-normalmenu ul#type li { display:inline; padding:0 0 0 10px; margin:0 6px 0 0; font-size:11px; background:url("http://img.echosting.cafe24.com/design/skin/default/product/bg_result_type.gif") 0 center no-repeat; }
+.xans-product-normalmenu ul#type li:first-child { background:none; }
+.xans-product-normalmenu ul#type li a { color:#8f8f91 }
+.xans-product-normalmenu ul#type li a.sort { color:#272823 }
+.xans-product-normalmenu p.prdCount { clear:both; padding:7px 0; color:#8f8f91; font-size:11px; }
+.xans-product-normalmenu p.prdCount strong { color:#272822; }
+
+.xans-product-listnormal img { vertical-align:middle; }
+.xans-product-listnormal ul.prdList { display:table; width:100%; min-width:756px; font-size:0; line-height:0; }
+.xans-product-listnormal ul.prdList li.item { display:inline-block; *display:inline; *zoom:1; margin:0 0 25px; color:#838383; vertical-align:top; text-align:center; }
+.xans-product-listnormal ul.prdList li.item div.box { margin:0 auto; font-size:11px; line-height:1.8em; }
+.xans-product-listnormal span.grid { display:block; }
+
+.xans-product-listnormal ul.prdList .chk { display:block; }
+.xans-product-listnormal ul.prdList .chk input { margin:0 0 3px; }
+.xans-product-listnormal ul.prdList .name { position:relative; padding:7px 0 0; }
+.xans-product-listnormal ul.prdList .name a { color:#838383; }
+.xans-product-listnormal ul.prdList .name .zoom {  position:absolute; width:12px; top:10px; right:0; }
+.xans-product-listnormal ul.prdList .btns { overflow:hidden; zoom:1; }
+.xans-product-listnormal ul.prdList .button img { cursor:pointer; margin:0 4px 0 0; }
+.xans-product-listnormal ul.prdList .button .bag { float:left; padding:7px 10px 0 0; }
+.xans-product-listnormal ul.prdList .button .option { float:left; padding:7px 0 0; }
+
+/* 진열방식 */
+.xans-product-listnormal ul.column3 li.item { width:33.33%; }
+.xans-product-listnormal ul.column3 li.item .box { width:240px; }
+.xans-product-listnormal ul.column3 li.item .thumb { width:240px; height:240px; }
+.xans-product-listnormal ul.column4 li.item { width:25%; }
+.xans-product-listnormal ul.column4 li.item .box { width:180px; }
+.xans-product-listnormal ul.column4 li.item .thumb { width:180px; height:180px; }
+.xans-product-listnormal ul.column5 { width:102%; margin-left:-15px; }
+.xans-product-listnormal ul.column5 li.item { width:180px; margin-left:15px; }
+.xans-product-listnormal ul.column5 li.item .box { width:180px; }
+.xans-product-listnormal ul.column5 li.item .thumb { width:178px; height:208px; border:1px solid #ececec; }
+
+/* module="product_ListItem" */
+.xans-product-listnormal .xans-product-listitem { margin:0; }
+.xans-product-listnormal .xans-product-listitem li .title { font-weight:normal; }

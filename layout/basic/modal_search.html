@@ -1,0 +1,39 @@
+<div id="bvtSearch" class="modal-bottom" module="Layout_SearchHeader" >
+    <div class="padding2">
+        <div class="bh-title b">🔍 검색하기</div>
+        <div class="bh-cont">어떤 상품을 찾아도 무조건 가치소비!</div>
+    </div>
+
+    <div>
+        <div class="srchInputBox" >
+            <span class="shadow">{$form.keyword}</span>
+            <button type="button" class="srchBtn" onclick="{$action_search_submit}"><img
+                    src="/bvtIMG/console_search_black.svg" alt="검색"></button>
+        </div>
+        <div class="padding2">
+            <div class="bh-title b">🧭 보터들이 많이 찾는 키워드</div>
+            <div class="bh-cont">이런 키워드를 많이 검색해요.</div>
+        </div>
+        <div class="hotKeywords">
+            <ul module="search_hotkeyword">
+                <li><a href="{$hot_keyword_url}">{$hot_keyword_name}</a></li>
+                <li><a href="{$hot_keyword_url}">{$hot_keyword_name}</a></li>
+            </ul>
+        </div>
+        <div module="search_recentkeyword">
+            <p class="{$recent_none_display|display}">최근 검색어가 없습니다.</p>
+            <ul class="{$recent_list_display|display}">
+                <li>
+                    <a href="{$recent_keyword_url}">{$recent_keyword_name}</a>
+                    <button type="button" class="btnDelete" onclick="{$recent_keyword_remove}">삭제</button>
+                </li>
+                <li>
+                    <a href="{$recent_keyword_url}">{$recent_keyword_name}</a>
+                    <button type="button" class="btnDelete" onclick="{$recent_keyword_remove}">삭제</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>

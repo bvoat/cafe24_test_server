@@ -1,0 +1,44 @@
+
+
+.xans-myshop-orderstate {
+    border: 0;
+    margin: 0;
+}
+
+.xans-myshop-orderstate .title h3 {
+    font-size: 20px;
+    color:#292929;
+
+}
+
+.xans-myshop-orderstate .title {
+    padding: 0px 0px 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.xans-myshop-orderstate .order,.xans-myshop-orderstate .cs{
+    padding: 13px 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.xans-myshop-orderstate .order .count {
+    color: #292929;
+}
+
+.xans-myshop-orderstate .order li {
+    border:0;
+    padding:0;
+    margin:0;
+}
+
+
+
+.xans-myshop-orderstate .order li strong{
+    margin:0;
+    padding:10px 0 0 0;
+    font-size: 14px;
+    color:#6D7084;
+}

@@ -1,0 +1,290 @@
+.xans-product-headcategory>img {
+    height: auto;
+    width: 100%;
+    padding: 0 13px;
+    margin-top: 20px;
+}
+
+.xans-product-headcategory>.dashline {
+    margin: 20px 0;
+}
+
+.class-link {
+    margin-top: 10%;
+}
+
+.class-link>a {
+    border-radius: 100px;
+    text-align: center;
+    display: block;
+    background: #022CFF url(/web/upload/j1.png) no-repeat 95% center;
+    color: #fff;
+    background-size: 15px;
+    font-size: 5vw;
+    padding: 2% 0;
+}
+
+.class-link ul {
+    margin-left: -4%;
+}
+
+.class-link ul li {
+    margin: 5% 0 0;
+    width: 46%;
+    margin-left: 4%;
+    float: left;
+}
+
+.class-link ul li a {
+    padding: 4% 6%;
+    border: 1px solid #022CFF;
+    display: block;
+    border-radius: 100px;
+    font-size: 4.5vw;
+    color: #022CFF;
+    padding-right: 15%;
+    position: relative;
+    background: url(/web/upload/j2.png) no-repeat 85% center;
+    background-size: 12px;
+}
+
+.class-link ul li a img {
+    margin-left: 5px;
+    position: relative;
+    top: 3px;
+    height: 22px;
+}
+
+.bvt-menu-box2 {
+    background: none;
+}
+
+.bvt-menu-box2>.swiper-container>.swiper-wrapper {
+    padding-bottom: 30px;
+}
+
+.bvt-menu-box2 ul li {
+    float: left;
+    margin: 0 5%;
+}
+
+.bvt-menu-box2 ul li a {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bvt-menu-box2 .swiper-slide {
+    vertical-align: top;
+    position: relative;
+    display: table-cell;
+    margin: 0 5px;
+}
+
+.bvt-menu-box2 .swiper-slide a {
+    font-size: 0.9em;
+    padding: 5px 15px;
+    position: relative;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: normal;
+    border: 1px solid #D8D8D8;
+
+}
+
+.bvt-menu-box2 .swiper-slide a.selected {
+    font-weight: normal;
+    padding-bottom: 5px;
+    background-color: #022CFF;
+    color:#fff;
+}
+
+/* .bvt-menu-box2 .swiper-slide a.selected::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    content: "";
+    background: #022CFF;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+} */
+
+
+.bvt-listnormal-box ul.prdList.grid2, .xans-myshop-likeproductlist ul.prdList.grid2 {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0;
+    line-height: 0;
+    min-width: 0;
+}
+
+.bvt-listnormal-box ul li {
+    display: inline-block;
+    /* margin: 0 0 20px; */
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 1.4;
+    width: calc(50% - 5px);
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.bvt-listnormal-box>ul>li:nth-child(2n-1) {
+    margin-right: 5px;
+}
+
+.bvt-listnormal-box>ul>li:nth-child(2n) {
+    margin-left: 5px;
+}
+
+
+.bvt-listnormal-box .box-img a img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.bvt-listnormal-box .box-img {
+    width: 100%;
+    position: relative;
+}
+
+.bvt-listnormal-box .box-img>a {
+    position: relative;
+    padding-top: 100%;
+    /* 1:1 ratio */
+    overflow: hidden;
+    border-radius: 7px;
+}
+.bvt-listnormal-box .brand {
+    margin-bottom: 2px;
+}
+
+.bvt-listnormal-box .brand {
+    font-size: 12px ;
+    color: #022CFF ;
+    font-weight: bold;
+}
+
+.bvt-listnormal-box .title {
+    margin-bottom: 18px;
+}
+
+.bvt-listnormal-box .title * {
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #292929 ;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.bvt-listnormal-box .price {
+    padding-right: 5px;
+}
+.bvt-listnormal-box .price,.bvt-listnormal-box .price * {
+    font-size: 14px !important;
+    color: #292929 !important;
+    font-weight: bold !important; 
+    display: inline-block;
+}
+
+.bvt-listnormal-box .strikeprice {
+    font-size: 13px !important;
+    text-decoration: line-through !important;
+    color: #C7C7C7 !important;
+    display: inline-block;
+
+}
+
+
+.bvt-listnormal-box .box-desc {
+    width: 100%;
+    padding-top: 10px;
+}
+
+/*listnormal 좋아요,관심상품 */
+
+
+.bvt-listnormal-box ul>li .likePrd,.bvt-listnormal-box ul>li .wish {
+    position: absolute;
+    left: 8px;
+    bottom: 13px;
+}
+
+.bvt-listnormal-box .likePrd .gdVote, .bvt-listnormal-box .wish .gdVote {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid white;
+    outline: none;
+    padding: 0;
+    -webkit-box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.07);
+}
+
+.bvt-listnormal-box .likePrd .gdVote:hover {
+    border: 2px solid #022CFF;
+    -webkit-transition: ease-in 0.07s;
+    transition: ease-in 0.07s;
+    cursor: pointer;
+    -webkit-box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.07);
+}
+
+.bvt-listnormal-box .likePrd .gdVote img {
+    height: 18px;
+    width: auto;
+}
+
+.bvt-listnormal-box .wish .ec-product-listwishicon {
+    height: 18px;
+    width: auto;
+}
+
+/*할인율 공통 적용*/
+.discountPrd {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #022CFF;
+    color:#ffffff;
+    border-radius: 50%;
+    font-size: 13px;
+    text-align: center;
+}
+
+/*할인율 공통 적용*/
+.freedeliveryPrd {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    z-index: 1;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #022CFF;
+    color:#ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+
+video{
+    width: 100%;
+}

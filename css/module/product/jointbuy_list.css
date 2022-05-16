@@ -1,0 +1,30 @@
+.xans-jointbuy-list { margin:30px 0 0; }
+.xans-jointbuy-list h3 { padding:0 0 15px 10px; background:url("http://img.echosting.cafe24.com/design/skin/default/common/ico_title.gif") 0 2px no-repeat; font-size:12px; color:#292929; }
+
+.xans-jointbuy-list img { vertical-align:middle; }
+.xans-jointbuy-list ul.prdList { display:table; width:100%; min-width:756px; font-size:0; line-height:0; }
+.xans-jointbuy-list ul.prdList li.xans-jointbuy-childlist { display:inline-block; *display:inline; *zoom:1; margin:20px 0 40px 0; color:#838383; vertical-align:top; }
+.xans-jointbuy-list ul.prdList li.xans-jointbuy-childlist div.box { margin:0 auto; font-size:11px; line-height:1.8em; }
+.xans-jointbuy-list span.grid { display:block; }
+
+.xans-jointbuy-list ul.prdList .name { position:relative; padding:10px 12px 0 0; }
+.xans-jointbuy-list ul.prdList .name a { color:#838383; }
+.xans-jointbuy-list ul.prdList .name .zoom {  position:absolute; width:12px; top:10px; right:0; }
+.xans-jointbuy-list ul.prdList .button { overflow:hidden; zoom:1; }
+.xans-jointbuy-list ul.prdList .button img { cursor:pointer; margin:0 4px 0 0; }
+.xans-jointbuy-list ul.prdList .button .bag { float:left; padding:7px 10px 0 0; }
+.xans-jointbuy-list ul.prdList .button .option { float:left; padding:7px 0 0; }
+
+/* 진열방식 */
+.xans-jointbuy-list ul.column3 { margin:-20px -11px 0; }
+.xans-jointbuy-list ul.column3 li.xans-jointbuy-childlist { width:33.33%; }
+.xans-jointbuy-list ul.column3 li.xans-jointbuy-childlist .box { width:240px; }
+.xans-jointbuy-list ul.column3 li.xans-jointbuy-childlist .thumb { width:240px; height:240px; }
+.xans-jointbuy-list ul.column4 { margin:-20px -8px 0; }
+.xans-jointbuy-list ul.column4 li.xans-jointbuy-childlist { width:25%; }
+.xans-jointbuy-list ul.column4 li.xans-jointbuy-childlist .box { width:180px; }
+.xans-jointbuy-list ul.column4 li.xans-jointbuy-childlist .thumb { width:180px; height:180px; }
+.xans-jointbuy-list ul.column5 { margin:-20px -9px 0; }
+.xans-jointbuy-list ul.column5 li.xans-jointbuy-childlist { width:20%; }
+.xans-jointbuy-list ul.column5 li.xans-jointbuy-childlist .box { width:140px; }
+.xans-jointbuy-list ul.column5 li.xans-jointbuy-childlist .thumb { width:140px; height:140px; }

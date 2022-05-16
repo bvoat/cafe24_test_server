@@ -1,0 +1,122 @@
+video{
+    width: 100%;
+}
+
+.xans-project-package>.xans-product-headcategory>img {
+    width: 100%;
+    height: auto;
+}
+.xans-product-headcategory>.dashline {
+    margin: 20px 0;
+}
+.class-link {
+    margin-top: 10%;
+}
+
+.class-link>a {
+    border-radius: 100px;
+    text-align: center;
+    display: block;
+    background: #022CFF url(/web/upload/j1.png) no-repeat 95% center;
+    color: #fff;
+    background-size: 15px;
+    font-size: 5vw;
+    padding: 2% 0;
+}
+
+.class-link ul {
+    margin-left: -4%;
+}
+
+.class-link ul li {
+    margin: 5% 0 0;
+    width: 46%;
+    margin-left: 4%;
+    float: left;
+}
+
+.class-link ul li a {
+    padding: 4% 6%;
+    border: 1px solid #022CFF;
+    display: block;
+    border-radius: 100px;
+    font-size: 4.5vw;
+    color: #022CFF;
+    padding-right: 15%;
+    position: relative;
+    background: url(/web/upload/j2.png) no-repeat 85% center;
+    background-size: 12px;
+}
+
+.class-link ul li a img {
+    margin-left: 5px;
+    position: relative;
+    top: 3px;
+    height: 22px;
+}
+
+
+/* .bvt-menu-box2 {
+    background: none;
+}
+
+.bvt-menu-box2>.swiper-container>.swiper-wrapper {
+padding-bottom: 30px;
+}
+
+.bvt-menu-box2 ul li {
+    float: left;
+    margin: 0 5%;
+}
+
+.bvt-menu-box2 ul li a {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bvt-menu-box2 .swiper-slide {
+    vertical-align: top;
+    position: relative;
+    display: table-cell;
+    margin: 0 5px;
+}
+
+.bvt-menu-box2 .swiper-slide a {
+    font-size: 0.9em;
+    padding: 5px 15px;
+    position: relative;
+    color: #022CFF;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 100px;
+}
+
+.bvt-menu-box2 .swiper-slide a.selected {
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-bottom: 5px;
+    background: #022CFF;
+} */
+
+/* .bvt-menu-box2 .swiper-slide a.selected::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    content: "";
+    background: #022CFF;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+} */
+
+
+.xans-project-list ul.prdList{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0;
+    line-height: 0;
+    min-width: 0;
+}
+

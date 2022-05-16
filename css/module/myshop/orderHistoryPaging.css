@@ -1,0 +1,12 @@
+.xans-myshop-orderhistorypaging { margin:10px 0; text-align:center; }
+.xans-myshop-orderhistorypaging p,
+.xans-myshop-orderhistorypaging ol,
+.xans-myshop-orderhistorypaging li { display:inline; }
+.xans-myshop-orderhistorypaging img { vertical-align:top; }
+.xans-myshop-orderhistorypaging p { margin-right:-3px; *margin-right:1px; }
+.xans-myshop-orderhistorypaging ol { margin:0 17px 0 20px; }
+.xans-myshop-orderhistorypaging li { margin:0 4px; font-size:12px; font-weight:bold; font-family:tahoma, sans-serif; }
+.xans-myshop-orderhistorypaging li a { color:#7c7b7b; }
+.xans-myshop-orderhistorypaging li a:hover { color:#ffd5c40; text-decoration:underline; }
+.xans-myshop-orderhistorypaging li a.this { color:#fd5c40; }
+.xans-myshop-orderhistorypaging a.nolink { cursor:default; }

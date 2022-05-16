@@ -1,0 +1,30 @@
+.xans-calendar-monthpackage {}
+.xans-calendar-monthpackage .tab { position:relative; margin:20px 0 30px; height:34px; border-bottom:1px solid #d6d6d6; }
+.xans-calendar-monthpackage .tab ul { overflow:hidden; zoom:1; }
+.xans-calendar-monthpackage .tab li { float:left; }
+.xans-calendar-monthpackage .tab li.addType { position:absolute; top:0; right:0; }
+
+.xans-calendar-headmonth { overflow:hidden; zoom:1; float:right; width:656px;}
+.xans-calendar-headmonth .date { float:left; width:478px; padding:0 0 30px 22px; text-align:center; color:#d9bca0; font-size:30px; letter-spacing:-1px; font-family:Lucida Sans, sans-serif; }
+.xans-calendar-headmonth .date img { vertical-align:middle; }
+.xans-calendar-headmonth .btn { float:right; }
+
+.xans-calendar-category { float:left; width:100px; padding:10px 0 0; }
+
+.xans-calendar-listmonth { clear:both; }
+.xans-calendar-listmonth td { border:1px solid #fff; background:#f7f4ec; font-size:11px; }
+.xans-calendar-listmonth td.cal_day_select { background:#f4eacf; }
+.xans-calendar-listmonth td.cal_day_select .day { color:#897130; }
+.xans-calendar-listmonth td.cal_day { background:#f7f4ec; }
+
+.xans-calendar-listmonth td div { min-height:90px; _height:90px; padding:8px 6px; border-top:1px solid #e2ddd0; border-left:1px solid #e2ddd0; color:#8f8f8f; }
+.xans-calendar-listmonth td div.today { background:#d1e7b9; }
+.xans-calendar-listmonth td div.today .day { font-weight:bold; text-decoration:underline; color:#75a039; }
+
+.xans-calendar-listmonth td p { padding:0 0 25px; color:#8f8f8f; }
+.xans-calendar-listmonth td p span { padding:0 4px 0 0; }
+.xans-calendar-listmonth td p a,
+.xans-calendar-listmonth td p a:hover { display:inline-block; .display:inline; zoom:1; padding:2px 0 2px 21px; color:#4b97b4; background:url("http://img.echosting.cafe24.com/design/skin/default/calendar/ico_count.gif") 0 0 no-repeat; }
+.xans-calendar-listmonth td li { padding:0 0 0 7px; background:url("http://img.echosting.cafe24.com/design/skin/default/calendar/ico_list.gif") 0 center no-repeat; }
+.xans-calendar-listmonth td li a,
+.xans-calendar-listmonth td li a:hover { line-height:18px; color:#8f8f91; }

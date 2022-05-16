@@ -1,0 +1,18 @@
+.xans-myshop-boardlist { margin:0 0 10px; }
+.xans-myshop-boardlist table { border-bottom:1px solid #c0c0c0; color:#8f8f8f; font-size:11px; }
+.xans-myshop-boardlist table th { padding:9px 0 7px; border-top:2px solid #c0c0c0; border-bottom:1px solid #ccc; background:#f6f6f6; font-weight:normal; color:#202020; }
+.xans-myshop-boardlist table td { padding:11px 0 9px; border-top:1px dotted #e3e3e3; line-height:140%; text-align:center; vertical-align:middle; }
+.xans-myshop-boardlist table a,
+.xans-myshop-boardlist table a:hover { color:#000; }
+.xans-myshop-boardlist table td.subject { font-size:12px; text-align:left; word-break:break-all; }
+.xans-myshop-boardlist table .subject img { vertical-align:middle; margin:0 1px; }
+.xans-myshop-boardlist table .number { width:52px; }
+.xans-myshop-boardlist table .category { width:104px; }
+.xans-myshop-boardlist table .category a { color:#7ca6d8; }
+.xans-myshop-boardlist table .name { width:84px; }
+.xans-myshop-boardlist table .date { width:74px; }
+.xans-myshop-boardlist table .hit { width:45px; }
+.xans-myshop-boardlist table .writer { width:84px; }
+.xans-myshop-boardlist table tbody.notice .subject { font-weight:bold; }
+
+.xans-myshop-boardlisthead { margin:0 0 10px; }

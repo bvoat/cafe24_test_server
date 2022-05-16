@@ -1,0 +1,12 @@
+.xans-myshop-couponmemberpaging { margin:10px 0; text-align:center; }
+.xans-myshop-couponmemberpaging p,
+.xans-myshop-couponmemberpaging ol,
+.xans-myshop-couponmemberpaging li { display:inline; }
+.xans-myshop-couponmemberpaging img { vertical-align:top; }
+.xans-myshop-couponmemberpaging p { margin-right:-3px; *margin-right:1px; }
+.xans-myshop-couponmemberpaging ol { margin:0 17px 0 20px; }
+.xans-myshop-couponmemberpaging li { margin:0 4px; font-size:12px; font-weight:bold; font-family:tahoma, sans-serif; }
+.xans-myshop-couponmemberpaging li a { color:#7c7b7b; }
+.xans-myshop-couponmemberpaging li a:hover { color:#ffd5c40; text-decoration:underline; }
+.xans-myshop-couponmemberpaging li a.this { color:#fd5c40; }
+.xans-myshop-couponmemberpaging a.nolink { cursor:default; }

@@ -1,0 +1,79 @@
+.xans-member-join h3 { padding:50px 0 10px; font-size:12px; color:#444; }
+.xans-member-join h3:first-child { margin-top:0; }
+.xans-member-join select { height:24px; margin:0 4px 0 0; }
+.xans-member-join input,
+.xans-member-join textarea { padding:4px; border:1px solid #d9d9d9; color:#000; font-size:12px; }
+.xans-member-join input[type=radio],
+.xans-member-join input[type=checkbox] { width:14px; height:14px; margin:0 3px 0 0; padding:0; border:0; }
+.xans-member-join div.grid,
+.xans-member-join p.grid { margin:7px 0 0; }
+.xans-member-join ul.grid li { margin:5px 0 0; }
+.xans-member-join p.required { margin:-25px 0 10px; color:#6292db; font-size:11px; text-align:right; }
+.xans-member-join p.required img { vertical-align:middle; }
+.xans-member-join .error { color:#e84f20; }
+.xans-member-join .info {font-size:11px; }
+
+.xans-member-join .boardWrite table { table-layout:fixed; border-top:2px solid #c0c0c0; border-bottom:1px solid #c0c0c0; color:#747474; font-size:12px; line-height:20px; }
+.xans-member-join .boardWrite th { width:140px; padding:12px 0 8px 20px; border-top:1px solid #e9e9e9; font-weight:normal; text-align:left; background:#f6f6f6; }
+.xans-member-join .boardWrite td { width:auto; padding:8px 0 8px 20px; border-top:1px solid #e9e9e9; vertical-align:middle; }
+.xans-member-join .boardWrite img { vertical-align:middle; }
+.xans-member-join .boardWrite a { text-decoration:none; }
+.xans-member-join .boardWrite label { padding:0 20px 0 0; }
+.xans-member-join .boardWrite.type th { padding:22px 0 18px 20px; }
+.xans-member-join .boardWrite.type td { padding:18px 0 18px 20px; }
+.xans-member-join .boardWrite .birth { margin:0 0 0 16px; }
+.xans-member-join .boardWrite .interest { line-height:25px; }
+.xans-member-join .boardWrite .interest span { display:inline-block; }
+.xans-member-join .boardWrite .interest label { padding-right:15px; }
+.xans-member-join .agreeArea { padding:20px 20px 15px 20px; border-top:2px solid #c0c0c0; border-bottom:1px solid #c0c0c0; color:#747474; font-size:12px; line-height:20px; background:#f6f6f6; }
+.xans-member-join .agreeArea .agree { overflow:auto; height:110px; padding:20px; border:1px solid #e6e6e6; background:#fff; }
+.xans-member-join .agreeArea .agree p { padding:0 0 17px; }
+.xans-member-join .agreeArea .check { padding:7px 0 0 0; color:#202020; font-size:12px; }
+
+.xans-member-join .btnArea { overflow:hidden; margin:20px 0 50px; text-align:right; }
+.xans-member-join .btnArea.center { text-align:center; }
+
+/* INPUT SIZE */
+.xans-member-join #hint_answer { width:500px; }
+.xans-member-join #postcode1,
+.xans-member-join #postcode2 { width:40px; text-align:center; }
+.xans-member-join #addr1,
+.xans-member-join #addr2 { width:280px; margin:5px 0 0; }
+.xans-member-join #phone2,
+.xans-member-join #mobile2 { width:120px; margin:0 4px; }
+.xans-member-join #email1 { margin-right:4px; }
+.xans-member-join #email2 { margin:0 4px; }
+.xans-member-join #birth_year,
+.xans-member-join #marry_year,
+.xans-member-join #partner_year { width:60px; }
+.xans-member-join #birth_month,
+.xans-member-join #marry_month,
+.xans-member-join #partner_month,
+.xans-member-join #birth_day,
+.xans-member-join #marry_day,
+.xans-member-join #partner_day { width:30px; }
+.xans-member-join #bank_code { width:240px; }
+.xans-member-join #c_bank_account_no { width:230px; }
+
+.xans-member-join #job,
+.xans-member-join #job_class,
+.xans-member-join #school,
+.xans-member-join #region,
+.xans-member-join #internet,
+.xans-member-join #child,
+.xans-member-join #car,
+.xans-member-join #earning { width:200px; }
+
+.xans-member-join #add1,
+.xans-member-join #add2,
+.xans-member-join #add3,
+.xans-member-join #add4,
+.xans-member-join #add5,
+.xans-member-join #add6,
+.xans-member-join #add7,
+.xans-member-join #add8,
+.xans-member-join #add9  { width:500px; }
+
+#realNameAuth p span { display:inline-block; width:80px; }
+#ipinWrap img,
+#mobileWrap img { display:block; }

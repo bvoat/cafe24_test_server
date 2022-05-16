@@ -1,0 +1,42 @@
+/* 게시판 전체 공통 */
+.xans-board-title-9 .title { margin:0 0 15px; }
+.xans-board-title-9 .title h2 { font-size:12px; color:#292929; }
+.xans-board-title-9 .title p { padding:16px 0 0 0; font-size:11px; color:#8f8f8f; line-height:140%; }
+
+/* read */
+.xans-board-read-9 { margin:-42px 0 0; }
+.xans-board-read-9 .boardView { margin:60px 0 0; }
+.xans-board-read-9 .boardView table { table-layout:fixed; border-top:2px solid #c0c0c0; border-bottom:1px solid #c0c0c0; color:#202020; line-height:180%; }
+.xans-board-read-9 table th { width:110px; padding:20px 0 18px 20px; border-top:1px solid #e7e7e7; background:#f6f6f6; color:#414141; text-align:left; }
+.xans-board-read-9 table td { width:auto; padding:20px 0 18px 20px; border-top:1px solid #e7e7e7; }
+.xans-board-read-9 table td img { vertical-align:middle; }
+.xans-board-read-9 table a { text-decoration:none; }
+.xans-board-read-9 table tr.view td { padding:0; border:0; line-height:140%; }
+.xans-board-read-9 table tr.view .detail { position:relative; z-index:2; margin:-1px 0 0; padding:17px 0 15px 20px; border-top:1px solid #e7e7e7; word-break:break-all; }
+.xans-board-read-9 table tr.etcArea {}
+.xans-board-read-9 table tr.etcArea td { padding:0; border:0; }
+.xans-board-read-9 table tr.etcArea ul { position:relative; z-index:1; overflow:hidden; width:100%; border-top:1px solid #e7e7e7; }
+.xans-board-read-9 table tr.etcArea ul li { float:left; border-bottom:1px solid #e7e7e7; }
+.xans-board-read-9 table tr.etcArea ul .th { width:110px; background:#f6f6f6; color:#414141; }
+.xans-board-read-9 table tr.etcArea ul .td { width:120px; }
+.xans-board-read-9 table tr.etcArea ul .th,
+.xans-board-read-9 table tr.etcArea ul .td { float:left; padding:20px 0 18px 20px; }
+/*
+.xans-board-read-9 table tr.etcArea ul li.comment {}
+.xans-board-read-9 table tr.etcArea ul li.comment .th { width:140px; }
+.xans-board-read-9 table tr.etcArea ul li.comment .td { width:140px; }
+.xans-board-read-9 table tr.etcArea ul li.date {}
+.xans-board-read-9 table tr.etcArea ul li.date .th { width:140px; }
+.xans-board-read-9 table tr.etcArea ul li.date .td { width:142px; }
+*/
+.xans-board-read-9 table tr.attach { color:#8f8f8f; }
+.xans-board-read-9 table tr.attach a { padding:0 0 0 12px; background:url("http://img.echosting.cafe24.com/design/skin/default/board/ico_attach1.gif") no-repeat 0 0; color:#8f8f8f; }
+.xans-board-read-9 table tr.attach a:hover { text-decoration:underline; }
+
+.xans-board-read-9 .btnArea { overflow:hidden; margin:10px 0 60px; text-align:right; font-size:1%; line-height:1%; }
+.xans-board-read-9 .btnArea.miniType { margin-bottom:10px; }
+.xans-board-read-9 .btnArea.center { text-align:center; }
+.xans-board-read-9 .btnArea img { cursor:pointer; margin:0 0 0 1px; font-size:12px; line-height:18px; }
+.xans-board-read-9 .btnArea span.left { float:left; margin:0 0 0 -1px; }
+
+.boardWait { margin:0 0 60px; padding:20px; border:1px solid #e7e7e7; background:#f8f8f8; font-size:11px; color:#202020; }

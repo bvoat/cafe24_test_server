@@ -1,0 +1,29 @@
+#popup { width:800px; }
+.header { height:77px; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_popup_header.gif") 0 0 repeat-x; }
+.header h1 { height:49px; padding:0 0 0 33px; font-size:20px; line-height:49px; color:#fefefe; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_popup_title.gif") 20px center no-repeat; }
+.content { padding:0 22px 22px; }
+.content .btnArea { overflow:hidden; padding:20px 0 0; text-align:right; }
+.content .btnArea.center { text-align:center; }
+.content .btnArea span.left { float:left; }
+
+.xans-coupon-select h3 { margin:20px 0 10px; font-size:12px; color:#444; }
+.xans-coupon-select .info { margin:0 0 20px; color:#8f8f8f; }
+.xans-coupon-select .info h2 { padding:0 0 0 15px; background:url("http://img.echosting.cafe24.com/design/skin/default/member/ico_caution.gif") no-repeat 0 50%; font-size:11px; color:#444; }
+.xans-coupon-select .info ul { margin:10px 0 0; line-height:140%; }
+
+.xans-coupon-select table { table-layout:fixed; border-bottom:1px solid #c0c0c0; color:#8f8f8f; font-size:11px; }
+.xans-coupon-select th { padding:9px 0 7px; border-top:2px solid #c0c0c0; border-bottom:1px solid #ccc; background:#f6f6f6; font-weight:normal; color:#202020; }
+.xans-coupon-select td { padding:11px 0 9px; border-top:1px dotted #e3e3e3; line-height:140%; text-align:center; vertical-align:middle; }
+.xans-coupon-select td.right { padding-right:5px; text-align:right; }
+.xans-coupon-select td select { width:100%; margin:2px 0 0; }
+.xans-coupon-select .product { overflow:hidden; padding:0 0 0 5px; text-align:left; }
+.xans-coupon-select .product .type { margin:0 0 5px; }
+.xans-coupon-select .product .thumb { float:left; }
+.xans-coupon-select .product .thumb img { width:46px; }
+.xans-coupon-select .product .desc { padding:0 0 0 50px; }
+.xans-coupon-select .product .desc strong { display:block; font-weight:normal; }
+.xans-coupon-select .product .desc span { display:block; }
+.xans-coupon-select .product ul { margin:-10px 0 0; }
+.xans-coupon-select .product li { overflow:hidden; margin:10px 0 0; }
+.xans-coupon-select .total { margin:30px 0 0; font-size:14px; text-align:right; }
+.xans-coupon-select .total span { padding:0 0 0 20px; }

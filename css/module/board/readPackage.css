@@ -1,0 +1,57 @@
+/* 게시판 전체 공통 */
+.xans-board-title .title { margin:0 0 15px; }
+.xans-board-title .title h2 { font-size:12px; color:#292929; }
+.xans-board-title .title p { padding:16px 0 0 0; font-size:11px; color:#8f8f8f; line-height:140%; }
+
+/* read */
+.xans-board-read .boardView table { table-layout:fixed; border-top:2px solid #c0c0c0; border-bottom:1px solid #c0c0c0; color:#202020; line-height:180%; }
+.xans-board-read table th { width:110px; padding:20px 0 18px 20px; border-top:1px solid #e7e7e7; background:#f6f6f6; color:#414141; text-align:left; }
+.xans-board-read table td { width:auto; padding:20px 0 18px 20px; border-top:1px solid #e7e7e7; }
+.xans-board-read table td img { vertical-align:middle; }
+.xans-board-read table a { text-decoration:none; }
+.xans-board-read table tr.view td { padding:0; border:0; line-height:140%; }
+.xans-board-read table tr.view .detail { position:relative; z-index:2; margin:-1px 0 0; padding:17px 0 15px 20px; border-top:1px solid #e7e7e7; word-break:break-all; }
+.xans-board-read table tr.etcArea {}
+.xans-board-read table tr.etcArea td { padding:0; border:0; }
+.xans-board-read table tr.etcArea ul { position:relative; z-index:1; overflow:hidden; width:100%; border-top:1px solid #e7e7e7; }
+.xans-board-read table tr.etcArea ul li { float:left; border-bottom:1px solid #e7e7e7; }
+.xans-board-read table tr.etcArea ul .th { width:110px; background:#f6f6f6; color:#414141; }
+.xans-board-read table tr.etcArea ul .td { width:120px; }
+.xans-board-read table tr.etcArea ul .th,
+.xans-board-read table tr.etcArea ul .td { float:left; padding:20px 0 18px 20px; }
+.xans-board-read table tr.etcArea ul li.hit .td { width:66px; }
+/*
+.xans-board-read table tr.etcArea ul li.date {}
+.xans-board-read table tr.etcArea ul li.date .th { width:140px; }
+.xans-board-read table tr.etcArea ul li.date .td { width:140px; }
+.xans-board-read table tr.etcArea ul li.recom {}
+.xans-board-read table tr.etcArea ul li.recom .th { width:70px; }
+.xans-board-read table tr.etcArea ul li.recom .td { width:142px; }
+.xans-board-read table tr.etcArea ul li.hit {}
+.xans-board-read table tr.etcArea ul li.hit .th { width:70px; }
+.xans-board-read table tr.etcArea ul li.hit .td { width:74px; }
+.xans-board-read table tr.etcArea ul li.grade {}
+.xans-board-read table tr.etcArea ul li.grade .th { width:140px; }
+.xans-board-read table tr.etcArea ul li.grade .td { width:140px; }
+*/
+.xans-board-read table tr.attach { color:#8f8f8f; }
+.xans-board-read table tr.attach a { padding:0 0 0 12px; background:url("http://img.echosting.cafe24.com/design/skin/default/board/ico_attach1.gif") no-repeat 0 0; color:#8f8f8f; }
+.xans-board-read table tr.attach a:hover { text-decoration:underline; }
+.xans-board-read table .info { margin:0 0 0 5px; color:#adadad; font-size:11px; }
+.xans-board-read table input { height:14px; padding:2px; border:1px solid #d9d9d9; color:#202020; }
+
+.xans-board-read .btnArea { overflow:hidden; margin:10px 0 60px; text-align:right; font-size:1%; line-height:1%; }
+.xans-board-read .btnArea.miniType { margin-bottom:10px; }
+.xans-board-read .btnArea.center { text-align:center; }
+.xans-board-read .btnArea img { cursor:pointer; margin:0 0 0 1px; font-size:12px; line-height:18px; }
+.xans-board-read .btnArea span.left { float:left; margin:0 0 0 -1px; }
+
+/* read - 상품 */
+.xans-board-product { overflow:hidden; margin:0 0 10px; padding:10px; background:#e6e6e6; border:1px solid #bbb; }
+.xans-board-product .prdThumb { float:left; }
+.xans-board-product .prdThumb img { width:86px; border:1px solid #fff; }
+.xans-board-product .prdInfo { float:left; width:620px; padding:0 0 0 20px; }
+.xans-board-product .prdInfo h3 { font-size:20px; color:#202020; }
+.xans-board-product .prdInfo h3 img { vertical-align:middle; }
+.xans-board-product .prdInfo p { margin:15px 0 0; font-size:16px; font-weight:bold; color:#5086d7; }
+

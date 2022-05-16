@@ -1,0 +1,64 @@
+
+
+<div module="Layout_SearchHeader" class="searchBox" id="{$search_box_id}">
+    <div class="headerflex">
+        <div class="hd-left">
+            <button type="button" class="btnClose" id="{$search_cancel_id}"><img id="search-icon" src="/bvtIMG/icon/hd_close.svg" alt="Logo" /></button>
+        </div>
+        <div class="hd-logo">
+            <a href="/"><img src="/bvtIMG/logo_202102.png" alt="Logo" /></a>
+        </div>
+        <ul>
+            <oi>
+                <a href="/order/basket.html" class="btnBasket"><img src="/bvtIMG/icon/icon_basket.svg"></a>
+            </oi>
+            <p module="Layout_orderBasketcount">
+                <span class="count {$basket_count_display|display}">{$basket_count}</span>
+            </p>
+        </ul>
+    </div>
+    <!--@css(/css/module/layout/searchHeader.css)-->
+    <!--@css(/cssbvt/module/layout/searchHeader.css)-->
+
+    <!--
+        $category_page=/product/list.html
+    -->
+    <div class="indextitle m15">
+        <h3 class="t14">Search</h3>
+        <span class="t09">오늘은 어떤 가치소비를 해볼까요?</span>
+    </div>
+        <div class="searchForm srchInputBox">
+            {$form.keyword}
+            <!-- <button type="button" class="btnDelete">삭제</button> -->
+            <button type="button" class="srchBtn" onclick="{$action_search_submit}"><img
+                    src="/bvtIMG/console_search_black.svg" alt="검색"></button>
+        </div>
+
+        <div class="searchtitle m20 t09 b">내가 찾아본 키워드</div>
+    <div module="search_recentkeyword">
+        <p class="{$recent_none_display|display}">최근 검색어가 없습니다.</p>
+        <ul class="{$recent_list_display|display}">
+            <li data-index="{$recent_keyword_index}">
+                <a href="{$recent_keyword_url}">{$recent_keyword_name}</a>
+                <button type="button" class="btnDelete" onclick="{$recent_keyword_remove}">삭제</button>
+            </li>
+            <li data-index="{$recent_keyword_index}">
+                <a href="{$recent_keyword_url}">{$recent_keyword_name}</a>
+                <button type="button" class="btnDelete" onclick="{$recent_keyword_remove}">삭제</button>
+            </li>
+        </ul>
+        <!-- <div class="button">
+            <button type="button" class="btnDeleteAll" onclick="{$recent_keyword_remove_all}">검색기록 전체삭제</button>
+        </div> -->
+    </div>
+
+    <div class="searchtitle m25 t09 b">HOT 키워드</div>
+
+    <div module="search_hotkeyword">
+        <ul>
+            <li><a href="{$hot_keyword_url}">{$hot_keyword_name}</a></li>
+            <li><a href="{$hot_keyword_url}">{$hot_keyword_name}</a></li>
+        </ul>
+    </div>
+
+</div>

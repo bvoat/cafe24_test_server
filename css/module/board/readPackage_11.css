@@ -1,0 +1,13 @@
+.xans-board-read-11 { margin:0 0 20px; }
+.xans-board-read-11 table { table-layout:fixed; border-top:2px solid #c0c0c0; border-bottom:1px solid #c0c0c0; color:#202020; line-height:140%; font-size:11px; }
+.xans-board-read-11 table th,
+.xans-board-read-11 table td { padding:9px 0 7px 20px; background:#f6f6f6; color:#202020; }
+.xans-board-read-11 table th { font-weight:normal; text-align:left; }
+.xans-board-read-11 table td { border-top:1px solid #e7e7e7; }
+.xans-board-read-11 table td img { vertical-align:middle; }
+.xans-board-read-11 table th.subject { width:50px; }
+.xans-board-read-11 table td.subject { word-break:break-all; }
+.xans-board-read-11 table th.date { width:50px; }
+.xans-board-read-11 table td.date { width:140px; }
+.xans-board-read-11 table tr.view td { background:#fff; padding:20px; }
+.xans-board-read-11 table tr.view .detail {}

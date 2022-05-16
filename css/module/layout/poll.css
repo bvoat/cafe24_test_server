@@ -1,0 +1,11 @@
+.xans-layout-poll { margin:30px 0 40px; font-size:11px; }
+.xans-layout-poll h2 { height:30px; font-size:12px; color:#292929; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_title.gif") 0 3px repeat-x; }
+.xans-layout-poll h2 span { padding:0 7px 0 0; background:#fff; }
+.xans-layout-poll h3 { padding:1px 0 5px 33px; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_poll.gif") no-repeat 10px 0; color:#76797f; font-size:11px; line-height:140%; }
+.xans-layout-poll h3 span { visibility:hidden; overflow:hidden; width:0; height:0; font-size:0; line-height:0; }
+.xans-layout-poll ul { margin:0 0 0 13px; font-size:11px; line-height:140%; color:#8f8f91; }
+.xans-layout-poll li { margin:5px 0 0; }
+.xans-layout-poll li input { width:13px; height:13px; vertical-align:-3px; *vertical-align:2px; margin:0 7px 0 0; }
+.xans-layout-poll .btn { margin:7px 0 0 10px; }
+.xans-layout-poll .btn a { margin:0 -2px 0 0; }
+

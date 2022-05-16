@@ -1,0 +1,1047 @@
+@charset "utf-8";
+
+
+.mypage_intro {
+    background-color: #fff;
+    padding-bottom: 25px;
+}
+
+.profile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile>div {
+    display: flex;
+    align-items: center;
+}
+.nickname {
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 8px;
+}
+.profile>div:nth-of-type(2) {
+    justify-content: end;
+}
+
+.profile>div>a>span {
+    color: #707070;
+    font-size: 15px;
+    margin-right: 8px;
+}
+
+.profile2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile2>div {
+    width: 33%;
+    padding: 11px;
+    border-radius: 6px;
+    background-color: #F2F2F2;
+}
+
+.profile2 .b.cnt {
+    color: #022CFF;
+    font-size: 18px;
+}
+
+.profile2 .title {
+    color: #6D7084;
+    font-size: 12px;
+}
+
+
+.profile2>div:nth-of-type(2) {
+    margin: 0px 6px;
+}
+
+.profile3{
+    background-color: #022CFF;
+    border-radius: 6px;
+    padding:20px;
+}
+.profile3>a{
+    color:#fff;
+}
+
+.profile_level_info{
+    background-color: #fff;
+    border: 2px solid #022cff;
+    border-radius: 6px;
+    padding:20px;
+    margin-bottom: 6px;
+}
+.profile_level_info>a{
+    color:#022cff;
+}
+
+
+/* 레벨페이지 index_level*/
+
+#level_img {
+    display: inherit;
+    width: 225px;
+    margin: 0 auto;
+}
+
+#level_cnt {
+    border-radius: 14px;
+    box-shadow: 7px 11px 39px #00000014;
+    background-color: #ffffff;
+    width: 252px;
+    min-height: 72px;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    font-size: 1.1em;
+    line-height: 72px;
+}
+
+.level_table {
+    width: 100%;
+}
+
+.level_table>tbody>tr>th {
+    text-align: left;
+    padding: 15px 0;
+    width: 50%;
+}
+
+.level_table>tbody>tr>td {
+    padding: 15px 0;
+    width: 50%;
+}
+
+.level_table>tbody>tr>.table_desc {
+    font-size: 0.8em;
+    color: #ABABAB;
+}
+
+.level_desc {
+    font-size: 0.8em;
+    color: #ABABAB;
+    padding-bottom: 50px;
+}
+
+/* 레벨 페이지 신버전 2021-12-28*/
+.level_cont{
+    width: 100%;
+    background-color: #FAFAFA80;
+    padding: 50px 0 139px 0;
+    transform: rotate(0.04deg);
+}
+.level_cont_header{
+    position: relative;
+    width: 99.5%;
+    background: #022cff;
+    height: 139px;
+    padding: 0 13px;
+}
+.level_cont_box{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 122px;
+    background: #fff;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    border-radius: 11px;
+    box-shadow: 3px 7px 11px #00000015;
+    top: 69px;
+    transform: rotate(0.04deg);
+}
+.level_cont_box h1, h2{
+    margin: 0;
+    letter-spacing: -0.5px;
+    color: #707070;
+}
+#voter_level{
+    color: #000;
+}
+.level_cont_box h1 {
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 1px;
+}
+.level_cont_box h2 {
+    font-size: 18px;
+}
+.level_voter_img{
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    background: url(https://m.bvoat.com/bvtIMG/icon/profile_anonymous.png) content-box no-repeat;
+    background-size: contain;
+    top: -36px;
+    border-radius: 50%;
+}
+.level_cont_info{
+    padding-top: 80px;
+    text-align: center;
+    margin: 0 auto;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+.level_cont_info h3{
+    font-size: 15px;
+    font-weight: normal;
+    color:#707070;
+    transform: rotate(0.04deg);
+}
+.level_cont_info>h3>span:nth-child(1){
+    display: block;
+    font-size: 12px;
+}
+.level_cont_info>h3>span:nth-child(2){
+    color: #000;
+    font-weight: 700;
+}
+.level_info_box_wrap{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin: 43px auto 0;
+    padding: 0 13px;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.info_box{
+    position: relative;
+    height: 97px;
+    background: #fff;
+    box-shadow: 3px 7px 11px #00000015;
+    border-radius: 11px;
+    word-break: inherit;
+    word-wrap: inherit;
+    transform: rotate(0.04deg);
+}
+.info_box h4{
+    text-indent: -9999px;
+}
+#level_first{
+    position: absolute;
+    width: 98px;
+    height: 29px;
+    background: url(https://m.bvoat.com/bvtIMG/icon/level_first_icon.png) center;
+    background-size: contain;
+    top:-35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#level_second{
+    position: absolute;
+    width: 98px;
+    height: 29px;
+    background: url(https://m.bvoat.com/bvtIMG/icon/level_second_icon.png) center;
+    background-size: contain;
+    top:-35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#level_third{
+    position: absolute;
+    width: 98px;
+    height: 29px;
+    background: url(https://m.bvoat.com/bvtIMG/icon/level_third_icon.png) center;
+    background-size: contain;
+    top:-35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#level_fourth{
+    position: absolute;
+    width: 98px;
+    height: 29px;
+    background: url(https://m.bvoat.com/bvtIMG/icon/level_fourth_icon.png) center;
+    background-size: contain;
+    top:-35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.info_box p{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 25px;
+    color: #707070;
+}
+.info_box p>em{
+    font-weight: 700;
+    font-style: normal;
+    color: #000;
+}
+.info_box p>span{
+    display: block;
+    font-size: 15px;
+    margin-top: 5px;
+    color: #022cff;
+    font-weight: 500;
+}
+.info_box p>span>strong{
+    font-weight: 600;
+}
+#span_gray{
+    color: #707070;
+}
+
+.cntbadge {
+    color: #022CFF;
+    margin-left: 1em;
+}
+
+.mypage_order {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 25px 0 0;
+}
+.mypage_order .title>span>a{
+    color: #707070;
+    font-size: 15px;
+}
+.join_intro {
+    padding-top: 35px;
+}
+
+.mypage_notice {
+    text-align: center;
+    color: #707070;
+    font-size: 13px;
+    padding: 75px 0 50px 0;
+}
+
+.myshop-mileage {
+    margin-bottom: 20px;
+}
+
+.myshop-mileage ul li {
+    width: 33.33%;
+    float: left;
+}
+
+.myshop-mileage ul li a {
+    padding: 15px;
+}
+
+.myshop-mileage ul li a:hover {
+    background-color: #f9f9f9;
+}
+
+.myshop-mileage ul li .t15, .myshop-mileage ul li .t13 span {
+    line-height: 36px;
+}
+
+
+
+.mypage_etc {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 25px 0 100px;
+}
+
+.mypage_etc .title h3 {
+    font-size: 20px;
+    color: #292929;
+}
+.mypage_etc ul li {
+    padding-top: 15px;
+
+}
+
+.mypage_etc ul li a {
+    padding: 0px;
+    color: #707070;
+    font-size: 17px;
+}
+
+/* bvt table */
+
+.bvt-table {
+    width: 100%;
+    float: left;
+}
+
+.bvt-table-frame {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.bvt-table ul li {
+    width: calc(50% - 5px);
+    float: left;
+    padding: 20px;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 24px 48px 0px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-left: 0;
+    height: 250px;
+}
+
+.bvt-table ul li:nth-child(2n) {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.bvt-table ul li .tips {
+    color: gray
+}
+
+.bvt-table .row {
+    float: left;
+    position: relative;
+    width: 50%;
+    padding: 10px;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.bvt-table .row2 {
+    float: left;
+    width: 100%;
+    padding: 10px
+}
+
+.bvt-table .ar1 {
+    width: 100px;
+    float: left;
+}
+
+.bvt-table .ar1 .title {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.bvt-table .ar2 {
+    width: calc(100% - 100px);
+    float: left;
+}
+
+.table-title {
+    float: left;
+    line-height: 35px;
+    width: 100px;
+    text-align: left;
+}
+
+.table-cont {
+    width: calc(100% - 100px);
+    float: left;
+}
+
+.bvt-table .highlightType {
+    background-color: #f9f9f9;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+}
+
+.table-cont input[type=checkbox] {
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 10px;
+}
+
+.bvt-table .highlightType input[type=radio]+label, .bvt-table .highlightType input[type=checkbox]+label {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.table-cont input[type=text], .table-cont select {
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+}
+
+.table-cont select {
+    padding: 0;
+}
+
+.table-cont input:focus, .table-cont select:focus {
+    outline: none;
+    border: 1px solid #022CFF;
+}
+
+.button-box {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.button-box .btn-basic {
+    width: 150px;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    color: black;
+    height: 40px;
+    line-height: 40px;
+}
+
+.button-box .btn-basic:hover {
+    transition: all 0.2s;
+    -webkit-box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.07);
+}
+
+.button-box .btn-type1 {
+    background-color: #022CFF;
+    color: white !important;
+    word-break: keep-all;
+}
+
+.button-box .btn-type2 {
+    border: 1px solid #ececec
+}
+
+.bvt-table .row-tail {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.bvt-table .selectBtn {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    border: 1px solid #ececec;
+}
+
+.bvt-table .selectBtn:hover {
+    transition: all 0.2s;
+    border: 1px solid #022CFF;
+    -webkit-box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.07);
+}
+
+.blank-message {
+    width: 100%;
+    float: left;
+    height: 350px;
+    text-align: center;
+    line-height: 350px;
+}
+
+/* 주소입력 */
+
+.xans-myshop-addrmodify #address_addr1, .xans-myshop-addrmodify #address_addr2, .xans-myshop-addrregister #address_addr1, .xans-myshop-addrregister #address_addr2 {
+    width: 100% !important;
+}
+
+/* 배송조회 */
+
+.myshop-type-box {
+    height: 36px;
+    float: left;
+    overflow: hidden;
+    border: 1px solid #f7f7f7;
+    font-size: 12px;
+    width: 100%;
+}
+
+.myshop-type-box div, .myshop-type .selected {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    float: left;
+    width: 50%;
+}
+
+.myshop-type .selected {
+    padding: 0;
+}
+
+.myshop-type .selected a {
+    background-color: #022CFF;
+    padding: 0 15px;
+    color: white;
+}
+
+.delivery-date {
+    width: 100%;
+    float: left;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.delivery-date fieldset {
+    border: 0;
+    padding: 0;
+}
+
+.delivery-date-select, .delivery-date-choose {
+    display: inline-block;
+}
+
+.delivery-date-select select {
+    height: 40px;
+}
+
+.delivery-date-choose li {
+    display: inline-block;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0.8em;
+}
+
+#history_start_date, #history_end_date {
+    height: 40px;
+    margin-right: 2px;
+    width: 80px;
+}
+
+.ui-datepicker-trigger {
+    background-color: transparent;
+    border: 0;
+    height: 40px;
+}
+
+#order_search_btn {
+    width: 60px;
+    height: 40px;
+}
+
+.delivery-date-tip {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 20px;
+    color: gray;
+}
+
+.delivery-date-tip a {
+    display: inline-block;
+}
+
+.delivery-table {
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+}
+
+.delivery-table .nametag {
+    font-size: 12px;
+    color: gray;
+}
+
+.delivery-table .nametag2 {
+    font-size: 12px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.delivery-table table {
+    border-style: none;
+    width: 100%;
+}
+
+.delivery-table table tr {
+    padding: 10px 20px;
+    border: 1px solid #e1e1e1;
+    background-color: white;
+    margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 24px 48px 0px;
+}
+
+.delivery-table table tr, .delivery-table table td {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.delivery-table table td {
+    padding: 10px 0;
+}
+
+.delivery-table table .first-box {
+    border-bottom: 1px solid #f9f9f9;
+    font-size: 13px;
+}
+
+.delivery-table table .first-box .status {
+    display: inline-block;
+}
+
+.delivery-table table .second-box .sb-goods-thumb {
+    width: 130px;
+    float: left;
+}
+
+.delivery-table table .second-box .sb-goods-info {
+    width: calc(100% - 130px);
+    float: left;
+    padding: 0 15px;
+}
+
+.delivery-table table .second-box .sb-goods-info .option {
+    font-size: 12px;
+    color: gray;
+}
+
+.delivery-table table .second-box .sb-order-list a {
+    width: 100%;
+    display: inline-block;
+    margin-top: 5px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+}
+
+.delivery-table table td span {
+    margin-right: 15px;
+}
+
+.delivery-table table td a {
+    display: inline;
+}
+
+/* 마일리지 */
+
+.mileage-box {
+    margin-bottom: 60px !important;
+}
+
+.mileage-box .swiper-slide {
+    width: 210px;
+    float: left;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.mileage-box .title {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.mileage-box .content {
+    font-weight: 700;
+}
+
+.mileage-list table {
+    border-style: none;
+    width: 100%;
+}
+
+.mileage-list table caption {
+    display: none;
+}
+
+.mileage-list table tr {
+    display: block;
+    width: 100%;
+    float: left;
+    min-height: 60px;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #f3f3f3;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 24px 48px 0px;
+}
+
+.mileage-list table td {
+    display: block;
+    width: 50%;
+    float: left;
+    min-height: 20px;
+}
+
+.mileage-list table .td1 {
+    font-size: 12px;
+    color: gray;
+}
+
+.mileage-list table .td2 a {
+    font-size: 12px;
+    color: #022CFF;
+    text-align: right;
+}
+
+.mileage-list table .td3 {
+    font-size: 20px;
+    color: gray;
+    font-weight: 700;
+}
+
+.mileage-list table .td4 {
+    font-size: 12px;
+    text-align: right;
+}
+
+.mileage-list table .td5 {
+    font-size: 12px;
+    text-align: right;
+    width: 100% !important;
+}
+
+.mileage-list table td {
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.mileage-list table .td1 {
+    font-size: 12px;
+    color: gray;
+}
+
+.mileage-list table .td2 a {
+    font-size: 12px;
+    color: #022CFF;
+    text-align: right;
+}
+
+.mileage-list table .td3 {
+    font-size: 20px;
+    color: gray;
+    font-weight: 700;
+}
+
+.mileage-list table .td4 {
+    font-size: 12px;
+    text-align: right;
+}
+
+.mileage-list table .td5 {
+    font-size: 12px;
+    text-align: right;
+    width: 100% !important;
+}
+
+/* 쿠폰 */
+
+.coupon-table table {
+    border: 0;
+    outline: none;
+    width: 100%;
+}
+
+.coupon-table table tbody {
+    width: 100%;
+}
+
+.coupon-table table tr {
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 0px;
+    box-shadow: rgba(0, 91, 152, 0.1) 0px 24px 48px 0px;
+}
+
+.coupon-table table tr:nth-child(2n) {
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.coupon-table table tr td {
+    display: block;
+}
+
+.coupon-table table tr .name {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.coupon-table .tag {
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    color: gray;
+}
+
+.coupon-table .content {
+    padding: 0 10px;
+}
+
+.coupon-table .content br {
+    display: none;
+}
+
+.coupon-table table tr .paymethod {
+    font-size: 13px;
+    color: gray;
+}
+
+.coupon-table .no-coupon {
+    width: 100%;
+}
+
+.xans-myshop-couponserial {
+    padding: 50px 20px;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 20px;
+}
+
+.xans-myshop-couponserial fieldset {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.xans-myshop-couponserial .tips {
+    font-size: 0.8em;
+    color: gray;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bvtBasicInput {
+    position: relative;
+}
+
+input#coupon_code {
+    width: 100%;
+    border: 3px solid #F0F0F0;
+    border-radius: 2px;
+    height: 50px;
+    padding-left: 60px
+}
+
+input#coupon_code:focus {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    border: 2px solid #022CFF;
+    outline: none;
+}
+
+input#coupon_code+label {
+    position: absolute;
+    height: 50px;
+    line-height: 50px;
+    font-size: 0.7em;
+    left: 15px;
+    top: 0;
+    color: #aeaeae;
+}
+
+input#coupon_code:focus+label {
+    font-size: 0.7em;
+    color: #022CFF;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.coupon-box {
+    margin-bottom: 60px;
+}
+
+.coupon-box .swiper-slide {
+    width: 210px;
+    float: left;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.coupon-box .title {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.coupon-box .content {
+    font-weight: 700;
+}
+
+.coupon-list table {
+    border-style: none;
+    width: 100%;
+}
+
+.coupon-list table caption {
+    display: none;
+}
+
+.coupon-list table tr {
+    display: block;
+    width: 100%;
+    float: left;
+    min-height: 60px;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #f3f3f3;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 24px 48px 0px;
+}
+
+/* 마이샵 헬프 */
+
+.myshop-help-box {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.myshop-help-box .t15 {
+    height: 40px;
+    border-bottom: 2px solid black;
+}
+
+.myshop-help-box ul li {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* 내 정보 수정 */
+
+.my-info-box-check {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    -webkit-box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.07);
+    margin-bottom: 80px;
+}
+
+.my-info-box-check fieldset {
+    border: 0
+}
+
+.pw-input {
+    height: 50px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.pw-input input[type=password] {
+    width: 100%;
+    border: 3px solid #F0F0F0;
+    border-radius: 2px;
+    height: 50px;
+    padding-left: 60px
+}
+
+.pw-input input[type=password]:focus {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    border: 2px solid #022CFF;
+    outline: none;
+}
+
+.pw-input input[type=password]+label {
+    position: absolute;
+    height: 50px;
+    line-height: 50px;
+    font-size: 0.7em;
+    left: 15px;
+    top: 0;
+    color: #aeaeae;
+}
+
+.pw-input input[type=password] :focus+label {
+    font-size: 0.7em;
+    color: #022CFF;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+

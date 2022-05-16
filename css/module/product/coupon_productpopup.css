@@ -1,0 +1,26 @@
+#popup { width:450px; }
+.header { height:77px; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_popup_header.gif") 0 0 repeat-x; }
+.header h1 { height:49px; padding:0 0 0 33px; font-size:20px; line-height:49px; color:#fefefe; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_popup_title.gif") 20px center no-repeat; }
+.content { padding:0 22px 22px; }
+.content .btnArea { overflow:hidden; padding:20px 0 0; text-align:right; border-top:1px solid #dedcdc; }
+.content .btnArea.center { text-align:center; }
+.content .btnArea span.left { float:left; }
+
+.xans-coupon-productpopup .coupon { width:372px; margin:0 auto; }
+.xans-coupon-productpopup .coupon .coupon_content { position:relative; width:352px; text-align:center; height:144px; margin:0 0 10px; border:10px solid #bfbecc; background:url(http://img.echosting.cafe24.com/design/skin/mono/product/bg_coupon1.jpg) 50% 50% no-repeat; cursor:pointer; }
+.xans-coupon-productpopup .coupon .coupon_content .name { padding:10px 0; }
+.xans-coupon-productpopup .coupon .coupon_content .sale { font-size:40px; padding:15px 0; line-height:normal; letter-spacing:-1px; font-weight:bold; }
+.xans-coupon-productpopup .coupon .coupon_content .date { position:absolute; top:125px; left:0; width:100%; color:#666; font-size:.9em; }
+.xans-coupon-productpopup .coupon .btn { text-align:right; }
+
+#dCouponDetail {
+    position: relative; background:#fff; overflow:hidden; width:372px; margin:-20px 0 0 -40px; padding:10px; border:1px solid #7d7c8b;
+    /* Opera */ box-shadow:5px 5px 5px #d3d3d3;
+    /* Firefox */ -moz-box-shadow:5px 5px 5px #d3d3d3;
+    /* Safiri, Chrome */ -webkit-box-shadow:5px 5px 5px #d3d3d3;
+    /* IE */ filter:progid:DXImageTransform.Microsoft.Shadow(color=#d3d3d3,direction=135, strength=10);
+}
+#dCouponDetail h3 { float:left; padding:0 0 10px; color:#34a7b3; }
+#dCouponDetail ul { clear:both; padding:10px; margin:10px 0; background:#f1f1f1;}
+#dCouponDetail ul li { line-height:18px; font-size:11px; }
+#dCouponDetail img { float:right; }

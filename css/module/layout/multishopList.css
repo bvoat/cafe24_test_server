@@ -1,0 +1,5 @@
+.xans-layout-multishoplist.thumb {position:absolute; left:795px; top:30px; font-size:13px; font-family:"Helvetica Neue",Helvetica,Arial; font-weight:bold;}
+.xans-layout-multishoplist.thumb > ul { overflow:hidden; }
+.xans-layout-multishoplist.thumb > ul li { float:left; width:35px; margin:0 -7px 0 0; }
+.xans-layout-multishoplist.thumb > ul li a { text-decoration:none; }
+.xans-layout-multishoplist.thumb img { width:auto !important; height:auto !important; }

@@ -1,0 +1,16 @@
+.xans-board-reply table td {
+    padding:10px;
+}
+
+.xans-board-reply table td .adminAnswer a {
+    display: initial;
+}
+
+.xans-board-reply table #subject {
+    width: 100%;
+    font-size: 16px;
+}
+.btnArea a {
+    display:initial;
+
+} 

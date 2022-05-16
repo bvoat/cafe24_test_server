@@ -1,0 +1,131 @@
+/* 발견하기 */
+
+.margin-header.cat {
+    margin-top: 84px;
+}
+
+.cat_background {
+    background-color: #F5F6FC;
+    padding-top: 40px;
+}
+
+.swipertab {
+    padding-top:13px;
+    padding-bottom: 28px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+}
+
+.swipertab>div>div>span {
+    color: #707070;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.swipertab .selected>span {
+    color: #022CFF;
+    border-bottom: 3px solid #022CFF;
+}
+
+.xans-layout-category {
+    border: 0;
+}
+
+.swipercontent{
+    background-color: #fff;
+    box-shadow: 3px 0px 17px #E7EAF7;
+    border-radius: 20px;
+    padding:35px 0;
+    top:-10px
+}
+
+.cat_by-prd{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cat_by-prd>div[class^="main-category"],.main-middle{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+div[class^="main-category"]{
+    font-family: 'Jost', 'Noto Sans KR' !important;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.main-middle{
+    margin-bottom: 40px;
+}
+
+.main-middle .middle-title {
+    padding:20px 0;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    border-radius: 7px;
+    border:1px solid #DBDEE5;
+}
+
+.main-middle .middle-title.active {
+background-color: #022CFF;
+color:#fff;
+}
+
+.main-middle>div[class^="middle-category"]{
+    width: calc(33% - 4px);
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.middle-small {
+    margin:0px 0 15px 0;
+    width: 100%;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    display: flex;
+    left: 13px;
+}
+
+div[class^="small-category"]{
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: #F2F2F2;
+    padding:5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: normal;
+
+}
+
+div[class^="small-category"].all{
+    background-color: #EBEFFF;
+    color:#022CFF;
+}
+
+
+
+.main-middle>div[class^="middle-tag-category"]{
+    width: calc(50% - 5px);
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+div[class^="small-tag-category"]{
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+    padding:5px 10px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: normal;
+    border:1px solid #D8D8D8;
+}
+
+div[class^="small-tag-category"].all{
+    background-color: #EBEFFF;
+    color:#022CFF;
+    border:0;
+}

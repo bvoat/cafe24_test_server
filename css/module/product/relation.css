@@ -1,0 +1,19 @@
+/* 관련상품 */
+.xans-product-additional div.relation { padding:20px 0 50px; color:#8f8f91; line-height:1.8em; }
+.xans-product-additional div.relation h3 { padding:0 20px 10px; color:#444; font-size:12px; }
+.xans-product-additional div.relation table { table-layout:fixed; border-bottom:1px solid #c0c0c0; color:#8f8f8f; font-size:11px; }
+.xans-product-additional div.relation table th { padding:5px 0 3px; border-top:2px solid #c0c0c0; border-bottom:1px solid #ccc; background:#f6f6f6; font-weight:normal; color:#676767; }
+.xans-product-additional div.relation table td { padding:6px 3px 4px; border-top:1px dotted #e3e3e3; line-height:140%; text-align:center; vertical-align:middle; }
+.xans-product-additional div.relation table td.left { text-align:left; }
+.xans-product-additional div.relation table td.right { text-align:right; }
+.xans-product-additional div.relation table td img { margin:0 2px; vertical-align:middle; }
+.xans-product-additional div.relation table td a,
+.xans-product-additional div.relation table td a:hover { color:#8f8f8f; }
+.xans-product-additional div.relation table td .option li { line-height:1.8em; }
+.xans-product-additional div.relation table td .option span { display:block; }
+.xans-product-additional div.relation table td .option input { width:80px; padding:2px 2px 2px 4px; border:1px solid #d9d9d9; color:#202020; }
+.xans-product-additional div.relation table td .option select { width:88px; }
+.xans-product-additional div.relation table td .quantity { position:relative; width:48px; margin:0 auto; text-align:left; line-height:0; }
+.xans-product-additional div.relation table td .quantity input { width:28px; padding:2px 2px 2px 4px; border:1px solid #d9d9d9; color:#202020; }
+.xans-product-additional div.relation table td .quantity .RelationQuantityUp { position:absolute; top:0; right:0; margin:0; }
+.xans-product-additional div.relation table td .quantity .RelationQuantityDown { position:absolute; top:9px; right:0; margin:0; }

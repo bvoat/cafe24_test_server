@@ -1,0 +1,9 @@
+.xans-layout-statelogon { float:right; height:45px; line-height:45px; }
+.xans-layout-statelogon a { padding:0 4px 0 10px; color:#757575; font-size:12px; background:url("http://img.echosting.cafe24.com/skin/base_ko_KR/layout/ico_util1.gif") no-repeat 0 1px; }
+.xans-layout-statelogon .myinfo { color:#757575; font-size:11px; }
+.xans-layout-statelogon .myinfo strong { color:#353535; font-size:12px; }
+.xans-layout-statelogon .myinfo a { background:none; }
+.xans-layout-statelogon a .count,
+.xans-layout-statelogon a .count span { position:relative; display:inline-block; background:url("http://img.echosting.cafe24.com/skin/base_ko_KR/layout/bg_new_count.png") no-repeat; }
+.xans-layout-statelogon a .count { left:-5px; top:-1px; margin:0 -5px 0 3px; padding:0 0 0 7px; vertical-align:middle; background-position:0 0; }
+.xans-layout-statelogon a .count span { height:14px; padding:1px 8px 1px 0; font-size:11px; font-weight:bold; color:#fff; line-height:14px; vertical-align:top; background-position:right -26px; }

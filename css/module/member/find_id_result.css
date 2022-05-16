@@ -1,0 +1,14 @@
+.xans-member-findidresult { background:#f5f5f5; border:1px solid #e9e9e9; padding:60px 0 70px; }
+.xans-member-findidresult .findId { width:320px; margin:0 auto; font-size:11px; color:#8f8f91; }
+.xans-member-findidresult .findId h3 { padding:0 0 150px; background:url("http://img.echosting.cafe24.com/design/skin/default/member/bg_find_id_result.gif") no-repeat 0 50px; }
+.xans-member-findidresult .findId .desc { margin:0 0 47px; font-size:30px; color:#333; font-weight:bold; }
+.xans-member-findidresult .findId .desc span { display:block; margin:10px 0 0; font-size:11px; font-weight:normal; line-height:160%; color:#8f8f91; }
+.xans-member-findidresult .findId .memberInfo { overflow:hidden; }
+.xans-member-findidresult .findId .memberInfo .thumb { float:left; }
+.xans-member-findidresult .findId .memberInfo .thumb img { max-width:50px; _width:50px; }
+.xans-member-findidresult .findId .memberInfo .info { float:left; padding:0 0 0 15px; line-height:160%; }
+.xans-member-findidresult .findId .memberInfo .info span { color:#62c2f4; }
+.xans-member-findidresult .findId ul { margin:15px 0 0; }
+.xans-member-findidresult .findId li { margin:5px 0 0; }
+.xans-member-findidresult .findId .copy { margin:20px 0 0; }
+.xans-member-findidresult .findId .button { margin:50px 0 0; }

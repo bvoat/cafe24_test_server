@@ -1,0 +1,19 @@
+#popup { width:444px; }
+.header { height:77px; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_popup_header.gif") 0 0 repeat-x; }
+.header h1 { height:49px; padding:0 0 0 33px; font-size:20px; line-height:49px; color:#fefefe; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_popup_title.gif") 20px center no-repeat; }
+.content { padding:0 22px 22px; }
+.content .btnArea { overflow:hidden; padding:20px 0 0; text-align:right; }
+.content .btnArea.center { text-align:center; }
+.content .btnArea span.left { float:left; }
+
+.xans-poll-result .summary { margin:0 0 10px; padding:10px; background:#e6e6e6; border:1px solid #bbb; font-size:11px; }
+.xans-poll-result .summary h2 { font-size:16px; padding:0 0 3px; }
+
+.xans-poll-result .result { padding:10px 0 0; }
+.xans-poll-result .result li { padding:6px 3px; font-size:11px; border-bottom:1px solid #bbb; }
+.xans-poll-result .result p { overflow:hidden; padding:3px 0; }
+.xans-poll-result .result p.title strong { font-size:12px; }
+.xans-poll-result .result p.title span { padding:0 0 0 10px; }
+.xans-poll-result .result p.graph em { float:left; width:40px; font-style:normal; }
+.xans-poll-result .result p.graph span.box { float:left; width:350px; padding:0 3px 0 0; background:url("http://img.echosting.cafe24.com/design/skin/default/poll/bg_graph1.gif") 0 1px no-repeat;}
+.xans-poll-result .result p.graph span.box span { display:block; height:16px; margin:0 0 0 3px; background:url("http://img.echosting.cafe24.com/design/skin/default/poll/bg_graph2.gif") right 1px no-repeat;}

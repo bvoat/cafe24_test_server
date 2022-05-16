@@ -1,0 +1,18 @@
+.xans-board-listsgroup { margin:0 0 60px; }
+.xans-board-listsgroup h3 { margin:0 0 10px; font-size:12px; color:#444; }
+.xans-board-listsgroup table { border-bottom:1px solid #c0c0c0; color:#8f8f8f; font-size:11px; }
+.xans-board-listsgroup table th { padding:9px 0 7px; border-top:2px solid #c0c0c0; border-bottom:1px solid #ccc; background:#f6f6f6; font-weight:normal; color:#202020; }
+.xans-board-listsgroup table td { padding:11px 0 9px; border-top:1px dotted #e3e3e3; line-height:140%; text-align:center; vertical-align:middle; }
+.xans-board-listsgroup table a,
+.xans-board-listsgroup table a:hover { color:#000; }
+.xans-board-listsgroup table td.subject { font-size:12px; text-align:left; word-break:break-all; }
+.xans-board-listsgroup table .subject img { vertical-align:middle; margin:0 1px; }
+.xans-board-listsgroup table .number { width:52px; }
+.xans-board-listsgroup table .category { width:104px; }
+.xans-board-listsgroup table .name { width:84px; }
+.xans-board-listsgroup table .date { width:74px; }
+.xans-board-listsgroup table .hit { width:45px; }
+.xans-board-listsgroup table .grade { width:60px; }
+.xans-board-listsgroup table .writer { width:84px; }
+.xans-board-listsgroup table .recom { width:45px; }
+.xans-board-listsgroup table .thumb { width:134px; }

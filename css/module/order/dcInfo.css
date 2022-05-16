@@ -1,0 +1,5 @@
+.xans-order-dcinfo { overflow:hidden; margin:40px 0; padding:20px; border:1px solid #e6e6e6; background:#f6f6f6; }
+.xans-order-dcinfo .myThumb { float:left; }
+.xans-order-dcinfo .myThumb img { max-width:85px; _width:85px; }
+.xans-order-dcinfo .myInfo { float:left; width:600px; padding:0 0 0 10px; }
+.xans-order-dcinfo .myInfo p { line-height:160%; }

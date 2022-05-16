@@ -1,0 +1,29 @@
+#popup { width:600px; }
+.header { height:77px; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_popup_header.gif") 0 0 repeat-x; }
+.header h1 { height:49px; padding:0 0 0 33px; font-size:20px; line-height:49px; color:#fefefe; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_popup_title.gif") 20px center no-repeat; }
+.content { padding:0 22px 22px; }
+.content .btnArea { overflow:hidden; padding:20px 0 0; text-align:right; }
+.content .btnArea.center { text-align:center; }
+.content .btnArea span.left { float:left; }
+
+.xans-gift-select .giftPoint { margin:10px 0; }
+.xans-gift-select .giftPoint li { font-size:11px; line-height:18px; }
+.xans-gift-select .giftPoint .total { padding:5px 0 0; color:#f26522; }
+
+.xans-gift-select table { border-bottom:1px solid #c0c0c0; color:#8f8f8f; font-size:11px; }
+.xans-gift-select th { padding:9px 0 7px; border-top:2px solid #c0c0c0; border-bottom:1px solid #ccc; background:#f6f6f6; font-weight:normal; color:#202020; }
+.xans-gift-select td { padding:11px 0 9px; border-top:1px dotted #e3e3e3; line-height:140%; text-align:center; }
+.xans-gift-select .thumb { width:70px; }
+.xans-gift-select .thumb img { width:54px; }
+.xans-gift-select .product { line-height:20px; text-align:left; }
+.xans-gift-select .product input { margin:0 3px 0 0; }
+.xans-gift-select .product p { padding:0 0 10px; }
+.xans-gift-select .point { width:90px; padding-right:10px; text-align:right; color:#f26522; font-weight:bold; }
+.xans-gift-select .amount { width:50px; }
+.xans-gift-select .amount input { float:left; border:1px solid #d9d9d9; width:30px; padding:2px; text-align:center; font-size:11px; vertical-align:middle; }
+.xans-gift-select .amount span { float:left; position:relative; }
+.xans-gift-select .amount span img.up { position:absolute; top:0; left:2px; }
+.xans-gift-select .amount span img.down{ position:absolute; top:10px; left:2px; }
+.xans-gift-select .select { width:50px; }
+
+

@@ -1,0 +1,12 @@
+.xans-product-recentlistpaging { margin:10px 0; text-align:center; }
+.xans-product-recentlistpaging p,
+.xans-product-recentlistpaging ol,
+.xans-product-recentlistpaging li { display:inline; }
+.xans-product-recentlistpaging img { vertical-align:top; }
+.xans-product-recentlistpaging p { margin-right:-3px; *margin-right:1px; }
+.xans-product-recentlistpaging ol { margin:0 17px 0 20px; }
+.xans-product-recentlistpaging li { margin:0 4px; font-size:12px; font-weight:bold; font-family:tahoma, sans-serif; }
+.xans-product-recentlistpaging li a { color:#7c7b7b; }
+.xans-product-recentlistpaging li a:hover { color:#ffd5c40; text-decoration:underline; }
+.xans-product-recentlistpaging li a.this { color:#fd5c40; }
+.xans-product-recentlistpaging a.nolink { cursor:default; }

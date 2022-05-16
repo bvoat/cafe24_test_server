@@ -1,0 +1,17 @@
+.xans-coupon-join {padding:50px 0 30px; overflow:hidden; }
+.xans-coupon-join h3 { float:left; margin:0; font-size:18px; color:#34a7b3; }
+.xans-coupon-join p.btn { float:right; }
+
+.xans-coupon-join .couponArea { clear:both; overflow:hidden; margin:30px 0 0 -12px;}
+.xans-coupon-join .couponArea .coupon li { float:left; position:relative; min-height:200px; .height:210px; width:372px; margin:0 0 10px 12px; text-align:center; }
+.xans-coupon-join .couponArea .zone li { height:180px; }
+.xans-coupon-join .couponArea .coupon li div { height:144px; margin:0 0 10px; border:10px solid #bfbecc; background:url("http://img.echosting.cafe24.com/design/skin/default/coupon/bg_coupon.gif") 50% 50% no-repeat; cursor:pointer; }
+.xans-coupon-join .couponArea .coupon .name { padding:10px 0; }
+.xans-coupon-join .couponArea .coupon .sale { font-size:40px; padding:15px 0; line-height:normal; letter-spacing:-1px; font-weight:bold; }
+.xans-coupon-join .couponArea .coupon .date { position:absolute; top:135px; left:0; width:100%; color:#fff; font-size:11px; }
+.xans-coupon-join .couponArea .coupon .btn { width:100%; text-align:right;}
+
+.xans-coupon-join .coupon .imgCoupon {}
+.xans-coupon-join .coupon .imgCoupon .name { position:absolute; top:-5000px; }
+.xans-coupon-join .coupon .imgCoupon .sale { position:absolute; top:-5000px; }
+.xans-coupon-join .coupon .imgCoupon .date { position:absolute; top:-5000px;}

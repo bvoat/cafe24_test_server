@@ -1,0 +1,8 @@
+.xans-mall-faq ul.link { height:32px; border-bottom:1px solid #bbb; zoom:1;}
+.xans-mall-faq ul.link:after { content:""; display:block; clear:both; }
+.xans-mall-faq ul.link li { float:left; height:22px; margin:0 1px 0 0; padding:10px 24px 0; background:#e6e6e6; }
+.xans-mall-faq ul.link li a { color:#838383; font-size:11px; }
+.xans-mall-faq ul.link li.selected { background:#96b1da; height:23px; padding-top:9px; border:1px solid #bbb; border-bottom:0; }
+.xans-mall-faq ul.link li.selected a { color:#feffff; font-weight:bold; }
+.xans-mall-faq .cont { padding:20px 20px 50px; color:#8f8f91; line-height:1.8em; }
+.xans-mall-faq .cont h3 { margin:0 0 20px; color:#444; font-size:12px; }

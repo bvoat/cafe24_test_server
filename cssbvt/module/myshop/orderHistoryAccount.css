@@ -1,0 +1,181 @@
+.ec-base-table th, .ec-base-table td {
+    border-top: 1px solid #ececec;
+    font-size: 13px;
+    vertical-align: top;
+}
+
+.ec-base-table tbody th {
+    padding: 12px 0 12px 13px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.ec-base-table.typeWrite td {
+    padding: 7px 13px 6px;
+    vertical-align: middle;
+    line-height: 27px;
+}
+
+.ec-base-table {
+    border: 0;
+    margin: 0;
+}
+
+.ec-base-table.typeWrite {
+    margin: 14px;
+}
+
+.ec-base-table.typeWrite .emailCheck td, .ec-base-table.typeWrite .idCheck td, .ec-base-table.typeWrite .pwdCheck td {
+    font-size: 11px;
+}
+
+.ec-base-table.typeWrite .emailCheck .error, .ec-base-table.typeWrite .idCheck .error {
+    color: #f00;
+}
+
+.ec-base-table.typeWrite td.thead .subject {
+    display: block;
+    padding: 0 0 10px;
+    font-weight: normal;
+    color: #757575;
+}
+
+.ec-base-table.typeWrite .interest label {
+    min-width: 90px;
+    margin: 0 7px 14px 0;
+}
+
+.ec-base-table.typeWrite .interest {
+    font-size: 11px;
+    line-height: 1.2em;
+}
+
+.ec-base-table.typeWrite .interest input {
+    margin: 0 3px 0 0;
+}
+
+.ec-base-table.typeWrite .interest span {
+    display: inline-block;
+}
+
+.ec-base-table.typeWrite td {
+    border: 0;
+    padding: 5px 0;
+    line-height: 32px;
+}
+
+.ec-base-table.typeWrite td:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.ec-base-table.typeWrite td .btnBasic {
+    float: right;
+    border: 1px solid #022CFF;
+    color: #022CFF;
+    border-radius: 100px;
+    padding: 0;
+    width: 30%;
+    background: #fff;
+    font-size: 11px;
+    height: 32px;
+}
+
+.ec-base-table.typeWrite th {
+    border: 0;
+    font-size: 12px;
+    width: 20%;
+    text-align: left;
+}
+
+.ec-base-table.typeWrite th>img {
+    vertical-align: middle;
+    position: relative;
+    top: -5px;
+}
+
+.ec-base-table.typeWrite select {
+    margin-right: 4px;
+}
+
+.ec-base-table.typeWrite #authWrap #ipinWrap img, .ec-base-table.typeWrite #authWrap #mobileWrap img, .ec-base-table.typeWrite #authWrap img {
+    width: 106px !important;
+}
+
+.ec-base-table.typeAuth {
+    clear: both;
+    display: block;
+    border: 0;
+    padding: 0;
+}
+
+.ec-base-table.typeAuth td {
+    border: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.ec-base-table.typeAuth td label {
+    font-size: 11px;
+    line-height: 14px;
+}
+
+.ec-base-layer h1 {
+    width: 100%;
+    height: 36px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 36px;
+    color: #fff;
+    box-sizing: border-box;
+    background: #4a5164;
+    margin: 0;
+}
+
+.ec-base-layer p {
+    margin: 0;
+}
+
+.ec-base-layer .btnClose {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 510;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    padding: 0;
+    font-size: 0;
+    text-indent: -150%;
+    background: url("//img.echosting.cafe24.com/skin/mobile/common/btn_close_white.png") center center no-repeat;
+    background-size: 14px 14px;
+}
+
+.ec-base-layer .wrap {
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 100%;
+    padding: 14px;
+    font-size: 12px;
+    overflow-x: auto;
+    overflow-y: auto;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+
+.ec-base-layer .wrap+div>.ec-base-button, .ec-base-layer .wrap+.ec-base-button, .ec-base-layer>.ec-base-button {
+    margin: 0;
+    padding: 7px 14px 7px 10px;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+
+.ec-base-layer .wrap+.ec-base-button>.ec-base-button {
+    padding: 0;
+}
+
+

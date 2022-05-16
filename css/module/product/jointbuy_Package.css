@@ -1,0 +1,8 @@
+.xans-jointbuy .title h2 { padding:0 0 15px 10px; background:url("http://img.echosting.cafe24.com/design/skin/default/common/ico_title.gif") 0 1px no-repeat; font-size:12px; color:#292929; }
+.xans-jointbuy-menu { padding:0 0 0 10px; }
+.xans-jointbuy-menu h3 { margin:0 0 10px; font-size:12px; color:#444; }
+.xans-jointbuy-menu p, 
+.xans-jointbuy-menu ul { margin:10px 0 15px; color:#8f8f8f; line-height:140%; }
+.xans-jointbuy-menu li { padding:0 5px 0 10px; display:inline; background:url("http://img.echosting.cafe24.com/design/skin/default/product/bg_jointbuy_menu.gif") no-repeat 0 50% transparent }
+.xans-jointbuy-menu li:first-child { padding-left:0; background:none; }
+.xans-jointbuy-menu a { color:#8f8f8f; }

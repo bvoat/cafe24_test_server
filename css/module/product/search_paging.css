@@ -1,0 +1,12 @@
+.xans-search-paging { margin:10px 0; text-align:center; }
+.xans-search-paging p,
+.xans-search-paging ol,
+.xans-search-paging li { display:inline; }
+.xans-search-paging img { vertical-align:top; }
+.xans-search-paging p { margin-right:-3px; *margin-right:1px; }
+.xans-search-paging ol { margin:0 17px 0 20px; }
+.xans-search-paging li { margin:0 4px; font-size:12px; font-weight:bold; font-family:tahoma, sans-serif; }
+.xans-search-paging li a { color:#7c7b7b; }
+.xans-search-paging li a:hover { color:#ffd5c40; text-decoration:underline; }
+.xans-search-paging li a.this { color:#fd5c40; }
+.xans-search-paging a.nolink { cursor:default; }

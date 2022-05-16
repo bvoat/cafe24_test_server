@@ -1,0 +1,8 @@
+.xans-layout-statelogoff {overflow:hidden; width:960px; margin:0 auto; padding:10px 0 7px;}
+.xans-layout-statelogoff ul {float:right;}
+.xans-layout-statelogoff li {float:left; padding:2px 8px 0 9px; background:url('//img.echosting.cafe24.com/design/skin/fashion013/header_top_state_line.gif') no-repeat 0% 50%;}
+.xans-layout-statelogoff li.first {padding-left:8px; background:none;}
+.xans-layout-statelogoff li.last {padding-right:15px; background:url('//img.echosting.cafe24.com/design/skin/fashion013/header_top_shortcut_arrow.gif') no-repeat 100% 50%;}
+.xans-layout-statelogoff li a {color:#8f8f91;}
+.xans-layout-statelogoff li a:hover {color:#fff; text-decoration:none;}
+.xans-layout-statelogoff li.last a {color:#fff;}

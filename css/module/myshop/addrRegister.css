@@ -1,0 +1,22 @@
+.xans-myshop-addrregister .boardWrite table { table-layout:fixed; border-top:2px solid #c0c0c0; border-bottom:1px solid #c0c0c0; }
+.xans-myshop-addrregister table th { width:140px; padding:23px 0 18px 22px; border-top:1px solid #e7e7e7; background:#f6f6f6; color:#414141; text-align:left; line-height:140%; }
+.xans-myshop-addrregister table td { width:auto; padding:23px 0 18px 22px; border-top:1px solid #e7e7e7; color:#8f8f8f; line-height:140%; font-size:11px; }
+.xans-myshop-addrregister table td img { vertical-align:middle; }
+.xans-myshop-addrregister table a { text-decoration:none; }
+.xans-myshop-addrregister table input,
+.xans-myshop-addrregister table textarea { padding:2px 2px 2px 4px; border:1px solid #d9d9d9; color:#202020; }
+
+.xans-myshop-addrregister table #address_zip1,
+.xans-myshop-addrregister table #address_zip2 { width:40px; }
+.xans-myshop-addrregister table #address_addr1,
+.xans-myshop-addrregister table #address_addr2 { width:500px; margin:3px 0;}
+.xans-myshop-addrregister table #ma_rcv_phone1,
+.xans-myshop-addrregister table #ma_rcv_phone2,
+.xans-myshop-addrregister table #ma_rcv_phone3,
+.xans-myshop-addrregister table #ma_rcv_mobile_no1,
+.xans-myshop-addrregister table #ma_rcv_mobile_no2,
+.xans-myshop-addrregister table #ma_rcv_mobile_no3 { width:60px; }
+
+.xans-myshop-addrregister .btnArea { overflow:hidden; padding:20px 0 0; text-align:right; border-top:1px solid #dedcdc; }
+.xans-myshop-addrregister .btnArea.center { text-align:center; }
+.xans-myshop-addrregister .btnArea span.left { float:left; }

@@ -1,0 +1,20 @@
+.error > img {
+    width: 100%;
+}
+.error > ul > li {
+    color: #ABABAB;
+    font-size: 0.9em;
+}
+
+.error_div{
+    text-align: center;
+    font-size: 1.5em;
+    color:#022CFF;
+    padding:1em 0;
+}
+.error_div2{
+    text-align: center;
+    font-size: 1.1em;
+    color:#022CFF;
+    padding:1em 0;
+}

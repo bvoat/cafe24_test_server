@@ -1,0 +1,12 @@
+.xans-attend-commentpaging { margin:10px 0; text-align:center; }
+.xans-attend-commentpaging p,
+.xans-attend-commentpaging ol,
+.xans-attend-commentpaging li { display:inline; }
+.xans-attend-commentpaging img { vertical-align:top; }
+.xans-attend-commentpaging p { margin-right:-3px; *margin-right:1px; }
+.xans-attend-commentpaging ol { margin:0 17px 0 20px; }
+.xans-attend-commentpaging li { margin:0 4px; font-size:12px; font-weight:bold; font-family:tahoma, sans-serif; }
+.xans-attend-commentpaging li a { color:#7c7b7b; }
+.xans-attend-commentpaging li a:hover { color:#ffd5c40; text-decoration:underline; }
+.xans-attend-commentpaging li a.this { color:#fd5c40; }
+.xans-attend-commentpaging a.nolink { cursor:default; }

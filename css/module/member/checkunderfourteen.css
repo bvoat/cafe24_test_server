@@ -1,0 +1,29 @@
+#popup { width:510px; }
+.header { height:77px; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_popup_header.gif") 0 0 repeat-x; }
+.header h1 { height:49px; padding:0 0 0 33px; font-size:20px; line-height:49px; color:#fefefe; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_popup_title.gif") 20px center no-repeat; }
+.content { padding:0 22px 22px; }
+.content .btnArea { overflow:hidden; padding:20px 0 0; text-align:right; }
+.content .btnArea.center { text-align:center; }
+.content .btnArea span.left { float:left; }
+
+.xans-member-checkunderfourteen { font-size:11px; color:#8f8f91; line-height:140%; }
+.xans-member-checkunderfourteen .info { padding:0 0 0 17px; background:url("http://img.echosting.cafe24.com/design/skin/default/member/ico_caution.gif") 0 0 no-repeat; color:#202020; }
+.xans-member-checkunderfourteen .info span { color:#f26323; }
+
+.xans-member-checkunderfourteen .select { margin:15px 0; }
+.xans-member-checkunderfourteen .select label { margin:0 10px 0 0; }
+.xans-member-checkunderfourteen .ipin { margin:10px 0 0; }
+.xans-member-checkunderfourteen .ipin p { margin:5px 0 0; }
+
+.xans-member-checkunderfourteen .check { margin:20px 0 0; padding:10px; border-top:1px solid #dddcdd; border-bottom:1px solid #dddcdd; color:#202020; }
+.xans-member-checkunderfourteen .check p { overflow:hidden; padding:5px 0; }
+.xans-member-checkunderfourteen .check strong { float:left; width:84px; padding:2px 0 0; font-weight:normal; }
+.xans-member-checkunderfourteen .check span { float:left; width:300px; }
+.xans-member-checkunderfourteen .check input { padding:2px 2px 2px 4px; border:1px solid #d9d9d9; color:#202020; }
+.xans-member-checkunderfourteen .check input.btn { padding:0; border:0; }
+.xans-member-checkunderfourteen .check #name { width:120px; }
+.xans-member-checkunderfourteen .check #ssn1 { width:80px; margin:0 4px 0 0; }
+.xans-member-checkunderfourteen .check #ssn2 { width:80px; margin:0 0 0 4px; }
+
+.xans-member-checkunderfourteen .agreement { margin:20px 0 0; }
+.xans-member-checkunderfourteen .agreement p { padding:5px 0 0; }

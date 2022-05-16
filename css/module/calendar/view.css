@@ -1,0 +1,15 @@
+#popup { width:600px; height:500px; }
+.header { height:77px; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_popup_header.gif") 0 0 repeat-x; }
+.header h1 { height:49px; padding:0 0 0 33px; font-size:20px; line-height:49px; color:#fefefe; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_popup_title.gif") 20px center no-repeat; }
+.content { padding:0 22px 22px; }
+.content .btnArea { overflow:hidden; padding:20px 0 0; text-align:right; }
+.content .btnArea.center { text-align:center; }
+.content .btnArea span.left { float:left; }
+
+.xans-calendar-view table { border-bottom:1px solid #c0c0c0; color:#8f8f8f; font-size:11px; }
+.xans-calendar-view table th { padding:9px 0 7px; border:1px solid #ccc; border-top:2px solid #c0c0c0; background:#f6f6f6; font-weight:normal; color:#202020; }
+.xans-calendar-view table td { padding:11px 5px 9px; border:1px dotted #e3e3e3; line-height:140%; text-align:center; vertical-align:middle; }
+.xans-calendar-view table td.left { text-align:left; }
+
+.confirm_yes { margin:0 auto; width:18px; height:16px; overflow:hidden; background:url("http://img.echosting.cafe24.com/design/skin/default/calendar/ico_confirm_yes.gif") 0 0 no-repeat; }
+.confirm_no { margin:0 auto; width:18px; height:16px; overflow:hidden; background:url("http://img.echosting.cafe24.com/design/skin/default/calendar/ico_confirm_no.gif") 0 0 no-repeat; }

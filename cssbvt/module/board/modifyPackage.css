@@ -1,0 +1,36 @@
+.xans-board-modify .prdSelect {
+    background-color: #F8FAFB;
+    border: 0;
+    border-radius: 6px;
+}
+
+.xans-board-modify .prdInfo {
+    width: calc(100% - 90px);
+}
+
+
+.xans-board-listsgroup table a, .xans-board a{
+    display: initial;
+}
+
+
+.xans-board-modify table th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #F8FAFB;
+    text-align: center;
+    font-weight: normal;
+}
+
+.xans-board-modify table #subject {
+    width: 100%;
+    font-size: 16px;
+}
+
+.xans-board-modify table td {
+    padding:10px;
+}
+
+.xans-board-modify .boardWrite table {
+    border:0;
+}

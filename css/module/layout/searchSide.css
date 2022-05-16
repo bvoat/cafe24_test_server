@@ -1,0 +1,8 @@
+.xans-layout-searchside { margin:30px 0 40px; }
+.xans-layout-searchside h2 { height:30px; font-size:12px; color:#292929; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_title.gif") 0 3px repeat-x; }
+.xans-layout-searchside h2 span { padding:0 7px 0 0; background:#fff; }
+.xans-layout-searchside fieldset { border:1px solid #ddd; padding:1px 0 0; }
+.xans-layout-searchside #keyword { width:147px; height:19px; padding:3px 0 0 4px; border:0; background:#f5f5f5; vertical-align:middle; font-size:12px; }
+.xans-layout-searchside img { cursor:pointer; }
+.xans-layout-searchside p { padding:15px 0 0 7px; background:url(http://img.echosting.cafe24.com/design/skin/default/layout/ico_search_more.gif) 0 18px no-repeat; }
+.xans-layout-searchside p a { color:#80a3d7; font-size:11px; text-decoration:underline; }

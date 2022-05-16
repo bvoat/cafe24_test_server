@@ -1,0 +1,9 @@
+.xans-product-optionpreview .prdOption { position:absolute; z-index:90; max-width:300px; margin-top:-2px; }
+.xans-product-optionpreview .prdOption .inner { overflow:hidden; margin:-1px 0 0; background:#aaa6a2; border:1px solid #8f8f8f; color:#fff; font-size:11px;  }
+.xans-product-optionpreview .prdOption ul { margin:5px; float:left; border:0; padding:0 0 10px; }
+.xans-product-optionpreview .prdOption li { float:none; width:auto; color:#fff; padding:5px 10px; border-bottom:1px solid #bbb8b5; }
+.xans-product-optionpreview .prdOption li:first-child { background:none; padding:5px 10px; }
+.xans-product-optionpreview .prdOption p.close { margin:5px 3px 0 0; text-align:right; }
+.xans-product-optionpreview .prdOption p.ico {text-align:center; font-size:1%; line-height:1%; }
+.xans-product-optionpreview .prdOption a,
+.xans-product-optionpreview .prdOption a:hover { color:#fff799; }

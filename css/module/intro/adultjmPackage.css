@@ -1,0 +1,30 @@
+.loginBox { width:730px; margin:50px auto; }
+.loginBox h1 { padding:0 0 11px 3px; margin:0 0 55px; border-bottom:3px solid #000; }
+.loginBox .msg { padding:0 0 0 206px; height:220px; background:url("http://img.echosting.cafe24.com/design/skin/default/intro/bg_under19.gif") 45px 0 no-repeat; font-size:12px; color:#565656; line-height:18px; }
+.loginBox .msg img { display:block; margin:0 0 20px -5px; }
+.loginBox .msg .info { padding:0 0 0 5px; }
+.loginBox .msg a img { margin:20px 0 0; }
+
+.idcheck { padding:24px 40px 24px 40px; background:#f3f3f3; border-top:1px solid #ddd; border-bottom:3px solid #000; }
+.idcheck h2 { padding:0 0 10px; font-size:12px; color:#000; }
+.idcheck input { border:1px solid #ccc; }
+.idcheck .login { width:325px; overflow:hidden; zoom:1; font-size:11px; }
+.idcheck .login span { display:block; overflow:hidden; zoom:1; padding:1px 0 3px; }
+.idcheck .login span strong { float:left; width:107px; padding:3px 0 0 13px; font-weight:normal; background:url("http://img.echosting.cafe24.com/design/skin/default/intro/ico_dot.gif") 0 50% no-repeat; }
+.idcheck .login span input { width:120px; padding:3px; }
+.idcheck .login .inputType { float:left; }
+.idcheck .login .btn { float:right; }
+
+.idcheck .info { clear:both; font-size:11px; line-height:17px; color:#9d9c9c; }
+.idcheck .info span { font-size:12px; line-height:16px; }
+.idcheck .info strong { display:block; padding:20px 0; color:#e1566e; font-weight:normal; }
+
+.xans-member-adult { float:left; }
+.xans-member-adult .nameChk { padding:10px 0 0; font-size:11px; line-height:17px; color:#9d9c9c; }
+.xans-member-login { float:right; }
+.xans-member-login .login { width:285px; }
+.xans-member-login .login span strong { float:left; width:67px; padding:3px 0 0 13px; font-weight:normal; background:url("http://img.echosting.cafe24.com/design/skin/default/intro/ico_dot.gif") 0 50% no-repeat; }
+
+.xans-member-login .join { padding:10px 0 0 73px; font-size:11px; line-height:12px; }
+.xans-member-login .join a { padding:0 0 0 7px; margin:0 3px 0 0; border-left:1px solid #9f9f9f; }
+.xans-member-login .join a.first { border:0; }

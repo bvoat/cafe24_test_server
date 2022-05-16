@@ -1,0 +1,10 @@
+.xans-layout-project { margin:30px 0 40px; font-size:11px; }
+.xans-layout-project h2 { height:30px; font-size:12px; color:#292929; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_title.gif") 0 3px repeat-x; }
+.xans-layout-project h2 span { padding:0 7px 0 0; background:#fff; }
+
+.xans-layout-project li { width:180px; height:180px; text-align:center; }
+
+.xans-layout-project .player { overflow:hidden; margin:8px 0 0; text-align:right; }
+.xans-layout-project .player img { margin:0 0 0 2px; cursor:pointer; }
+.xans-layout-project .player span { float:left; }
+.xans-layout-project .player span img { margin:0 2px 0 0; }

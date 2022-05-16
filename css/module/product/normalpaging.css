@@ -1,0 +1,12 @@
+.xans-product-normalpaging { margin:19px 0 0; text-align:center; }
+.xans-product-normalpaging p,
+.xans-product-normalpaging ol,
+.xans-product-normalpaging li { display:inline; }
+.xans-product-normalpaging img { vertical-align:top; }
+.xans-product-normalpaging p { margin-right:-2px; }
+.xans-product-normalpaging ol { margin:0 17px 0 20px; }
+.xans-product-normalpaging li { margin:0 4px; font-size:12px; font-weight:bold; font-family:tahoma, sans-serif; }
+.xans-product-normalpaging li a { color:#a5a5a5; }
+.xans-product-normalpaging li a:hover,
+.xans-product-normalpaging li a.this { color:#000; text-decoration:none; }
+.xans-product-normalpaging a.nolink { cursor:default; }

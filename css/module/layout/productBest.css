@@ -1,0 +1,13 @@
+.xans-layout-productbest { margin:30px 0 40px; font-size:11px; }
+.xans-layout-productbest h2 { height:30px; font-size:12px; color:#292929; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_title.gif") 0 3px repeat-x; }
+.xans-layout-productbest h2 span { padding:0 7px 0 0; background:#fff; }
+
+.xans-layout-productbest li { height:250px; text-align:center; text-align:center; }
+.xans-layout-productbest li a,
+.xans-layout-productbest li img { display:block; }
+.xans-layout-productbest li p { margin:5px 0 0; font-weight:normal; color:#8f8f91; }
+
+.xans-layout-productbest .player { overflow:hidden; text-align:right; }
+.xans-layout-productbest .player img { margin:0 0 0 2px; cursor:pointer; }
+.xans-layout-productbest .player span { float:left; }
+.xans-layout-productbest .player span img { margin:0 2px 0 0; }

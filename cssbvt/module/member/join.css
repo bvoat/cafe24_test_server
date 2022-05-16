@@ -1,0 +1,905 @@
+@charset "utf-8";
+/* 공통 단계 표시 */
+.margin-header{
+    
+}
+.progress {
+    overflow: hidden;
+    text-align: center;
+    width: 94%;
+    height: 60px;
+    margin: 0 auto;
+}
+.join-order{
+    margin: 20px auto 0;
+    display: flex;
+    padding: 0;
+}
+
+.progress li {
+    position: relative;
+    padding: 0;
+    width: 33.33%;
+    height: 100%;
+    line-height: 37px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.progress li span {
+    display: block;
+    width: 94%;
+    margin: 0 auto;
+    color: #022CFF;
+    border-radius: 100px;
+    border: 1px solid #022CFF;
+    text-align: left;
+    padding: 0 0 0 17px;
+    font-size: 0.9em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    transform: rotate(0.04deg);
+}
+
+.progress li.done span {
+    background-color: #022CFF;
+    color: #fff;
+    position: relative;
+}
+
+.progress li.done span:after {
+    content: '';
+    background: url(/bvtIMG/arrow_process_white.png) no-repeat center center;
+    background-size: 20px 20px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+
+/* 상단,하단 숨기기 */
+
+.footerMenu, .hd-search, .btnBasket, .xans-layout-orderbasketcount {
+    display: none !important;
+}
+
+#titleArea {
+    position: relative;
+    height: 50px;
+    margin: auto;
+    border: 0;
+    text-align: center;
+}
+
+#titleArea h2 {
+    position: relative;
+    color: #000000;
+    font-size: 1.1em;
+    line-height: 3em;
+    display: block;
+}
+
+.PJ_fixed_btn {
+    clear: both;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    left: 50%;
+    width: 100%;
+}
+
+.PJ_fixed_btn .btnSubmit {
+    background: #022CFF;
+    color: #fff;
+    font-size: 0.9em;
+    line-height: 1;
+    padding: 20px 0;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    height: auto;
+    max-width: 450px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.join-complete-box {
+    padding: 100px 0;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.join-logo {
+    width: 140px;
+    margin-bottom: 40px;
+}
+
+.join-title {
+    text-align: left;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 50px;
+    line-height: 28px;
+}
+
+.join-cont {
+    margin-bottom: 60px;
+}
+
+.bg_color {
+    background-color: #FAFAFE;
+}
+
+.xans-member-join input[type=radio], .xans-member-join input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+}
+
+/* 가입완료 패스포트 */
+
+.result-box {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin: 40px 0;
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 25px;
+    position: relative;
+    z-index: 999;
+}
+
+.profile {
+    width: 100%;
+}
+
+.profile>img {
+    width: 50%;
+    max-width: 175px;
+    float: right;
+    vertical-align: middle;
+}
+
+.profile-first {
+    width: 40%;
+    display: inline-block;
+}
+
+.profile>div>.profile_group {
+	font-size: 1.025em;
+    color: #022CFF;
+}
+
+.profile>div>.profile_name {
+    font-size: 23px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.profile>div>.profile_text {
+    margin-top: 9px;
+    font-size: 14px;
+    color: #ABABAB;
+}
+
+.profile_mileage {
+    padding: 10px 15px;
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    color: #148E67;
+    background-color: rgba(47, 227, 130, 0.14);
+}
+
+.join_intro {
+    position: relative;
+    top: 17vh;
+    transform: rotate(0.04deg);
+}
+
+.join_intro-title {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.join_intro-title >span{
+	font-size: 1.25em;
+    font-weight: 600;
+    color: #022cff;
+    margin-right: 6px;
+}
+
+.join-text {
+    text-align: center;
+    font-size: 0.8em;
+    color: #707070;
+}
+
+.bvoat_top_cate {
+    display: none;
+}
+
+#header .category {
+    display: none;
+}
+
+#header .xans-layout-orderbasketcount {
+    display: none;
+}
+
+#header .xans-layout-mobileaction {
+    display: block;
+}
+
+.xans-layout-footerpackage .footerMenu .menu {
+    display: none;
+}
+
+.xans-layout-footerpackage .xans-layout-footer {
+    display: none;
+}
+
+.PJ_fixed_btn:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.PJ_fixed_btn .btnEm {
+    float: left;
+    background: #F2F2F2;
+    color: #000;
+    font-size: 1.3em;
+    line-height: 1;
+    padding: 15px 0;
+    width: 50%;
+    border: 0;
+    border-radius: 0;
+    height: auto;
+}
+
+.xans-member-join {
+    padding: 0;
+}
+
+.xans-member-join .titleArea {
+    width: 100%;
+    margin: 0;
+    border: none;
+    display: none;
+}
+
+.xans-member-join .titleArea.accountArea {
+    margin: -8px 0 0;
+}
+
+.xans-member-join .titleArea h3 {
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #d5d5d5;
+    font-size: 13px;
+    font-weight: bold;
+    color: #022CFF;
+    background: #f1f1f1;
+}
+
+.xans-member-join .titleArea h3 span {
+    float: right;
+    padding: 0 14px 0 0;
+    color: #292929;
+    font: 11px normal;
+}
+
+.xans-member-join .titleArea h3 span img {
+    margin: 0 3px 0 0;
+    padding: 4px 0 0;
+    vertical-align: top;
+}
+
+.xans-member-join p.required {
+    margin: -25px 0 6px;
+    color: #6292db;
+    font-size: 11px;
+    text-align: right;
+}
+
+.xans-member-join p.required img {
+    vertical-align: middle;
+}
+
+.xans-member-join .agreeArea {
+    /*padding: 10px 0;*/
+    margin: 0 0 7px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.sMarketingAgree{
+	margin-bottom: 80px!important;
+    height: 170px;
+    overflow: hidden;
+}
+
+.xans-member-join .title {
+    position: relative;
+    line-height: 1;
+    padding: 0;
+    color: #333;
+    border-bottom: 1px solid #C7C7C7;
+}
+
+.xans-member-join .title h3 {
+    padding: 5px 10px;
+}
+
+.xans-member-join .title h3 label {
+    display: none;
+}
+.label_all {
+    font-size: 14px;
+    font-weight: 600;
+    color: #022CFF!important;
+}
+
+.xans-member-join .title h3 label.check {
+    display: inline;
+    font-size: 13px;
+    color: #292929;
+    font-weight: bold;
+    line-height: 12px;
+}
+
+.xans-member-join .title h3 label.check:nth-child(2){
+   line-height: 30px;
+}
+
+#sMarketingAgreeAllChecked{
+
+	margin-top: -11px;
+}
+.xans-member-join .title a.btnMore {
+    position: absolute;
+    top: 0px;
+    right: 14px;
+    font-size: 1em;
+    text-decoration: underline;
+    display: none;
+}
+
+.xans-member-join .contents {
+    overflow: hidden;
+    overflow-y: auto;
+    height: 18vw;
+    padding: 20px 14px;
+    color: #c1c1c1;
+    font-size: 0.78em;
+}
+.xans-member-join .contents:nth-child(2){
+    height: 20vw;    
+}
+.xans-member-join .contents::-webkit-scrollbar {
+ width: 10px;   
+    
+ }
+
+.xans-member-join .contents::-webkit-scrollbar-thumb {
+ background: #bdbdbd;
+ border-radius: 6px;
+ }
+
+.xans-member-join .contents::-webkit-scrollbar-track {
+ background: #efefef80;
+ border-radius: 2px;
+ }
+
+.xans-member-join ul.info {
+    margin: 0 14px;
+}
+
+.xans-member-join ul.info li {
+    clear: both;
+    display: block;
+    margin: 0;
+    text-align: left;
+}
+
+.xans-member-join ul.info strong.name {
+    display: table-cell;
+    width: 100px;
+    font-size: 12px;
+    line-height: 32px;
+    color: #292929;
+    text-align: left;
+    font-weight: bold;
+    vertical-align: middle;
+    padding: 5px 0;
+}
+
+.xans-member-join ul.info li>span {
+    display: table-cell;
+    text-align: left;
+    padding: 5px 0;
+}
+
+.xans-member-join ul.info li .btnBasic {
+    float: right;
+    border: 1px solid #022CFF;
+    color: #022CFF;
+    border-radius: 100px;
+    padding: 0;
+    width: 30%;
+    background: #fff;
+    font-size: 11px;
+    height: 32px;
+}
+
+#foreignerPersonWrap .ec-base-help {
+    margin: 14px;
+    font-size: 10px;
+    color: #c7c7c7;
+}
+
+#foreignerPersonWrap label {
+    line-height: 18px;
+}
+
+/* 정보입력 */
+
+#joinForm {
+    margin: 20px 0;
+    height: auto;
+    padding: 5px 12px;
+}
+
+.xans-member-join .ec-base-table {
+    border: 0;
+    margin: 0;
+}
+
+.xans-member-join .ec-base-table.typeWrite {}
+
+.xans-member-join .ec-base-table.typeWrite .emailCheck td, .xans-member-join .ec-base-table.typeWrite .idCheck td, .xans-member-join .ec-base-table.typeWrite .pwdCheck td {
+    font-size: 11px;
+    transform: rotate(0.04deg);
+}
+
+#idMsg{
+    margin:0;
+    word-break: keep-all;
+    transform: rotate(0.04deg);
+}
+
+#nickMsg{
+	font-size: 11px;
+    color: red;
+    margin: 0;
+    line-height: 2.5em;
+    word-break: keep-all;
+    transform: rotate(0.04deg);
+}
+
+#emailMsg{
+    line-height: 2.5em;
+        margin-top: 0;
+    word-break: keep-all;
+    transform: rotate(0.04deg);
+}
+
+#pwConfirmMsg{
+	font-size: 11px;
+    color: red;
+    margin: 0;
+    line-height: 2.5em;
+    word-break: keep-all;
+    transform: rotate(0.04deg);
+}
+
+.xans-member-join .ec-base-table.typeWrite .emailCheck .error, .xans-member-join .ec-base-table.typeWrite .idCheck .error {
+    color: #f00;
+    word-break: keep-all;
+    transform: rotate(0.04deg);
+}
+
+.xans-member-join .ec-base-table.typeWrite td.thead .subject {
+    display: block;
+    padding: 0 0 10px;
+    font-weight: normal;
+    color: #757575;
+}
+
+.xans-member-join .ec-base-table.typeWrite .interest label {
+    min-width: 90px;
+    margin: 0 7px 14px 0;
+}
+
+.xans-member-join .ec-base-table.typeWrite .interest {
+    font-size: 11px;
+    line-height: 1.2em;
+}
+
+.xans-member-join .ec-base-table.typeWrite .interest input {
+    margin: 0 3px 0 0;
+}
+
+.xans-member-join .ec-base-table.typeWrite .interest span {
+    display: inline-block;
+}
+
+.xans-member-join .ec-base-table.typeWrite td {
+    border: 0;
+    padding: 5px 0;
+    line-height: 32px;
+    width: 100%;
+}
+
+.xans-member-join .ec-base-table.typeWrite td:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.xans-member-join .ec-base-table.typeWrite td .btnBasic {
+    float: right;
+    border: 1px solid #022CFF;
+    color: #022CFF;
+    border-radius: 100px;
+    padding: 0;
+    width: 70px;
+    background: #fff;
+    font-size: 12px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.xans-member-join .ec-base-table.typeWrite td .btnBasic:hover{
+	color: #fff239;
+    border: 1px solid #fff239;
+    transition: all 0.2s;
+}
+
+.xans-member-join .ec-base-table.typeWrite th {
+    border: 0;
+    font-size: 14px;
+    vertical-align: middle;
+    min-width: 95px;
+    text-align: left;
+    transform: rotate(0.04deg);
+}
+
+.xans-member-join .ec-base-table.typeWrite th>img {
+    vertical-align: middle;
+    position: relative;
+    top: -5px;
+}
+
+.xans-member-join .ec-base-table.typeWrite select {
+    margin-right: 4px;
+}
+
+.xans-member-join .ec-base-table.typeWrite #authWrap #ipinWrap img, .xans-member-join .ec-base-table.typeWrite #authWrap #mobileWrap img, .xans-member-join .ec-base-table.typeWrite #authWrap img {
+    width: 106px !important;
+}
+
+.xans-member-join .ec-base-table.typeAuth {
+    clear: both;
+    display: block;
+    border: 0;
+    padding: 0;
+}
+
+.xans-member-join .ec-base-table.typeAuth td {
+    border: 0;
+    padding: 0;
+    text-align: center;
+    display: none;
+}
+
+.xans-member-join .ec-base-table.typeAuth td label {
+    font-size: 11px;
+    line-height: 14px;
+}
+
+/* 인증번호 */
+
+.xans-member-join .verify {
+    position: relative;
+    width: 100%;
+    height: 29px;
+}
+
+.xans-member-join .verify #verify_sms_number {
+    width: 100%;
+    padding: 0 35px 0 4px;
+}
+
+.xans-member-join .verify .time {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    color: #ff5400;
+}
+
+/* INPUT SIZE */
+
+.xans-member-join input[type=tel] {
+    padding: 10px 4px;
+}
+
+.xans-member-join select {
+    padding: 0 20px 0 4px;
+}
+
+.xans-member-join #foreigner_ssn {
+    width: auto;
+}
+/*
+.xans-member-join #user_passwd_confirm, .xans-member-join #hint, .xans-member-join #hint_answer {
+    margin-bottom: 7px;
+}
+
+ .xans-member-join #member_id { width:66%; } */
+
+.xans-member-join #postcode1 {
+    width: 55px;
+    text-align: center;
+}
+
+.xans-member-join #addr1 {
+    margin: 5px 0 0;
+}
+
+.xans-member-join #addr2 {
+    margin: 5px 0 7px;
+}
+
+.xans-member-join #phone1, .xans-member-join #mobile1 {
+    width: 25%;
+    font-size: 12px;
+}
+
+.xans-member-join #phone2, .xans-member-join #phone3, .xans-member-join #mobile2, .xans-member-join #mobile3 {
+    width: 30%;
+    margin: 0 4px;
+}
+
+.xans-member-join #bssn1, .xans-member-join #bssn2 {
+    width: 28%;
+}
+
+/* .xans-member-join #email1 { max-width:66%; margin:0 4px 4px 0; }
+.xans-member-join #email2 { max-width:66%; margin:0 4px 4px 4px; } */
+
+.xans-member-join #email3 {
+    height: 29px;
+    margin: 0 0 4px;
+}
+
+.xans-member-join #birth_year, .xans-member-join #marry_year, .xans-member-join #partner_year {
+    width: 54px;
+    margin: 0 4px 0 0;
+}
+
+.xans-member-join #birth_month, .xans-member-join #marry_month, .xans-member-join #partner_month {
+    width: 38px;
+    margin: 0 4px;
+}
+
+.xans-member-join #birth_day, .xans-member-join #marry_day, .xans-member-join #partner_day {
+    width: 38px;
+    margin: 0 4px;
+}
+
+.xans-member-join input[type=text], .xans-member-join input[type=password], .xans-member-join input[type=number], .xans-member-join input[type=tel], .xans-member-join select {
+    border: 1px solid #c7c7c7;
+    border-radius: 0;
+    height: 43px;
+    line-height: 28px;
+    margin: 1px;
+    padding: 8px;
+    width: calc(100% - 80px);
+    font-size: 13px;
+}
+
+/* tooltip */
+
+.xans-member-join .ec-base-tooltip-area {
+    position: relative;
+    width: 100%;
+}
+
+.xans-member-join .ec-base-tooltip-area .ec-base-tooltip {
+    width: 235px;
+    word-break: keep-all;
+    font-size: 0.8em;
+    z-index: 999;
+}
+
+/*memberSpecial*/
+
+.memberSpecial {
+    background: #F2F2F2;
+}
+
+/* welcome */
+
+.xans-member-joincomplete>p {
+    margin: 0;
+}
+
+.xans-member-joincomplete .welcome p:last-child {
+    margin: 10px 0 0;
+}
+
+.xans-member-joincomplete .welcome p>strong {
+    font-size: 1.3em;
+}
+
+.xans-member-joincomplete .welcome p>span {
+    font-size: 1em;
+    color: #C7C7C7;
+    margin-left: 10px;
+}
+
+.xans-member-joincomplete .welcome .complete {
+    margin: 0
+}
+
+.xans-member-joincomplete .ec-base-table {
+    margin: 5vw auto 0;
+    border: 0;
+    width: auto;
+}
+
+.xans-member-joincomplete .ec-base-table tbody th {
+    padding: 0;
+    font-size: 0.8em;
+    color: #022CFF;
+    width: 13vw;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.xans-member-joincomplete .ec-base-table tbody td {
+    padding: 0;
+    font-size: 0.8em;
+    color: #022CFF;
+    position: relative;
+    line-height: 1;
+}
+
+.xans-member-joincomplete .ec-base-table tbody td:nth-child(2):after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 3vw;
+    background: #022CFF;
+    width: 1px;
+    height: 10px;
+    display: block;
+}
+
+.xans-member-joincomplete .memberEmail {
+    font-weight: bold;
+}
+
+.welcome_txt img {
+    width: 10vw;
+    margin-bottom: 4vw;
+}
+
+.welcome_txt {
+    position: relative;
+    color: #022CFF;
+    text-align: center;
+    font-size: 0.9em;
+    padding-bottom: 60px;
+}
+
+.welcome_txt p font {
+    display: inline-block;
+    color: #022CFF;
+    position: relative;
+    z-index: 1;
+    padding: 0px;
+    font-weight: bold;
+}
+
+.welcome_txt p font:before {
+    content: '';
+    background: #ffff02;
+    display: block;
+    position: absolute;
+    top: 0.3em;
+    left: 50%;
+    margin-left: -50%;
+    height: 0.7em;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.xans-member-join .agreeAll {
+    padding: 0 0 1.5em 10px;
+}
+
+.xans-member-join .agreeAll p {
+    font-size: 1.2em;
+}
+
+.xans-member-join .agreeAll span {
+    font-size: 1rem;
+    color: #022CFF;
+    font-weight: 700;
+}
+
+.xans-member-join .agreeAll label {
+    width: calc(100% - 46px);
+    width: -webkit-calc(100% - 46px);
+    font-size: 0.9em;
+    color: #C7C7C7;
+    cursor: pointer;
+}
+
+.xans-member-join .agreeAll label strong {
+    color: #022CFF;
+    font-weight: normal;
+}
+
+.xans-member-join .agreeArea .ec-base-chk {
+    margin: 7px 8px 6px 6px;
+    vertical-align: sub;
+}
+
+
+.xans-member-join .additional {
+    display: flex;
+    display: -webkit-flex;
+    padding: 2px 14px 2px 15px;
+    background: #F2F2F2;
+}
+
+.xans-member-join .additional li {
+    flex: 1;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 14px;
+    color: #022cff;
+
+}
+
+.xans-member-join .additional li label {
+    min-height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #292929;
+    font-weight: bold;
+}
+
+/* 약관 */
+
+.xans-member-join .check {
+    padding: 0;
+}
+
+.xans-member-join .title {
+    line-height: inherit;
+}
+
+.agreeAll>.ec-base-chk>input[type=checkbox] {
+    top: 0px;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+        cursor: pointer;
+
+   }
+    

@@ -1,0 +1,20 @@
+#popup { width:600px; }
+.header { height:77px; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_popup_header.gif") 0 0 repeat-x; }
+.header h1 { height:49px; padding:0 0 0 33px; font-size:20px; line-height:49px; color:#fefefe; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_popup_title.gif") 20px center no-repeat; }
+.content { padding:0 22px 22px; }
+.content .btnArea { overflow:hidden; padding:20px 0 0; text-align:right; }
+.content .btnArea.center { text-align:center; }
+.content .btnArea span.left { float:left; }
+
+.xans-estimate-userform {}
+.xans-estimate-userform h2 { margin:0 0 10px; font-size:12px; color:#444; }
+.xans-estimate-userform table { table-layout:fixed; border-top:2px solid #c0c0c0; border-bottom:1px solid #c0c0c0; line-height:140%; }
+.xans-estimate-userform th { width:120px; padding:10px 0 8px 20px; border-top:1px solid #e7e7e7; background:#f6f6f6; color:#414141; text-align:left; }
+.xans-estimate-userform td { width:auto; padding:10px 0 8px 20px; border-top:1px solid #e7e7e7; color:#8f8f8f; font-size:11px; }
+.xans-estimate-userform td input { height:14px; padding:2px; color:#202020; border:1px solid #d9d9d9; }
+.xans-estimate-userform td input[type=radio] { width:13px; height:13px; margin:0 2px 0 0; padding:0; border:0; vertical-align:-2px; *vertical-align:2px; }
+.xans-estimate-userform .agree { overflow:auto; height:100px; margin:0 0 10px; padding:10px; color:#202020; border:1px solid #d9d9d9; }
+.xans-estimate-userform #user_phone1 { width:40px; }
+.xans-estimate-userform #user_phone2,
+.xans-estimate-userform #user_phone3 { width:60px; }
+.xans-estimate-userform #user_email { width:300px; }

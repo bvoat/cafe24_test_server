@@ -1,0 +1,22 @@
+.xans-product-listcompare .dataArea { overflow:auto; }
+.xans-product-listcompare table { table-layout:fixed; border-top:2px solid #c0c0c0; border-bottom:1px solid #c0c0c0; }
+.xans-product-listcompare table th { width:140px; padding:23px 0 18px 22px; border-top:1px solid #e7e7e7; background:#f6f6f6; color:#414141; text-align:left; line-height:140%; }
+.xans-product-listcompare table td { width:auto; padding:23px 10px 18px; border-top:1px solid #e7e7e7; border-left:1px solid #e7e7e7; color:#8f8f8f; line-height:140%; font-size:11px; }
+.xans-product-listcompare table td img { vertical-align:middle; }
+.xans-product-listcompare .first th,
+.xans-product-listcompare .first td { border-top:1px solid #c0c0c0; }
+.xans-product-listcompare em { font-style:normal; }
+
+.xans-product-productimagetiny img { width:100px; border:1px solid #e7e7e7; }
+.xans-product-productimagetiny th,
+.xans-product-productimagetiny td { text-align:center; }
+
+.xans-product-quantity input,
+.xans-product-compareaddoption input { padding:2px; border:1px solid #bec0cc; display:block; }
+.xans-product-compareoption select { display:block; }
+
+.xans-product-listcompare .btnArea { overflow:hidden; margin:10px 0 60px; text-align:right; font-size:1%; line-height:1%; }
+.xans-product-listcompare .btnArea.miniType { margin-bottom:10px; }
+.xans-product-listcompare .btnArea.center { text-align:center; }
+.xans-product-listcompare .btnArea img { cursor:pointer; margin:0 0 0 1px; font-size:12px; line-height:18px; }
+.xans-product-listcompare .btnArea span.left { float:left; margin:0 0 0 -1px; }

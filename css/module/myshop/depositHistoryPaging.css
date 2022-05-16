@@ -1,0 +1,12 @@
+.xans-myshop-deposithistorypaging { margin:10px 0; text-align:center; }
+.xans-myshop-deposithistorypaging p,
+.xans-myshop-deposithistorypaging ol,
+.xans-myshop-deposithistorypaging li { display:inline; }
+.xans-myshop-deposithistorypaging img { vertical-align:top; }
+.xans-myshop-deposithistorypaging p { margin-right:-3px; *margin-right:1px; }
+.xans-myshop-deposithistorypaging ol { margin:0 17px 0 20px; }
+.xans-myshop-deposithistorypaging li { margin:0 4px; font-size:12px; font-weight:bold; font-family:tahoma, sans-serif; }
+.xans-myshop-deposithistorypaging li a { color:#7c7b7b; }
+.xans-myshop-deposithistorypaging li a:hover { color:#ffd5c40; text-decoration:underline; }
+.xans-myshop-deposithistorypaging li a.this { color:#fd5c40; }
+.xans-myshop-deposithistorypaging a.nolink { cursor:default; }

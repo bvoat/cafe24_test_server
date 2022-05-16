@@ -1,0 +1,53 @@
+#popup { width:882px; }
+.header { height:77px; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_popup_header.gif") 0 0 repeat-x; }
+.header h1 { height:49px; padding:0 0 0 33px; font-size:20px; line-height:49px; color:#fefefe; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_popup_title.gif") 20px center no-repeat; }
+.content { padding:0 0 22px 22px; }
+.content .btnArea { overflow:hidden; padding:20px 0 0; text-align:right; }
+.content .btnArea.center { text-align:center; }
+.content .btnArea span.left { float:left; }
+
+.xans-product-zoompackage { height:720px; overflow:auto; }
+
+.xans-product-zoom { position:relative; overflow:hidden; padding:0 0 0 520px; }
+.xans-product-zoom h3 { margin:0 22px 0 0; padding:0 0 13px; font-size:18px; border-bottom:1px solid #c3cad1; }
+.xans-product-zoom h3 span { }
+.xans-product-zoom h3 span img { vertical-align:middle; }
+
+.xans-product-zoom .imgArea { float:left; width:500px; margin:0 0 0 -520px; text-align:center; }
+.xans-product-zoom .imgArea .keyImg img { max-width:500px; cursor:pointer; }
+.xans-product-zoom .imgArea .listImg { position:relative; font-size:0; overflow:hidden; min-height:72px; padding:10px 40px 0; }
+.xans-product-zoom .imgArea .listImg ul { display:inline; overflow:hidden; margin:0 0 0 -1px;  }
+.xans-product-zoom .imgArea .listImg li { display:inline; margin:0 0 0 1px; }
+.xans-product-zoom .imgArea .listImg li img { width:72px; cursor:pointer; }
+.xans-product-zoom .imgArea .listImg span { position:absolute; top:10px; }
+.xans-product-zoom .imgArea .listImg .prev { left:0; }
+.xans-product-zoom .imgArea .listImg .next { right:0; }
+
+.xans-product-zoom .infoArea { padding:0 22px 0 0; }
+.xans-product-zoom .infoArea p.delivery { padding:10px 0 20px; }
+
+.xans-product-zoom .infoArea table { border:0; font-size:11px; margin:10px 0 0;}
+.xans-product-zoom .infoArea th { font-weight:normal; color:#808080; width:85px; padding:9px 0 9px 5px; text-align:left; vertical-align:middle; }
+.xans-product-zoom .infoArea td { padding:9px 0; color:#202020; vertical-align:middle; }
+.xans-product-zoom .infoArea td input { border:1px solid #bcbcbc; height:18px; }
+.xans-product-zoom .infoArea td #span_product_price_text { font-size:20px; color:#5086d7; }
+.xans-product-zoom .infoArea td.social { padding:4px 0 0; }
+.xans-product-zoom .infoArea td.social img { cursor:pointer; }
+.xans-product-zoom .infoArea td .sale { text-decoration:line-through; }
+.xans-product-zoom .infoArea td .mileage li { line-height:1.7em; }
+.xans-product-zoom .infoArea td p.quantity { position:relative; }
+.xans-product-zoom .infoArea td p.quantity input { width:30px; height:18px; border:1px solid #bcbcbc; }
+.xans-product-zoom .infoArea td p.quantity .QuantityUp { position:absolute; left:32px; top:0; }
+.xans-product-zoom .infoArea td p.quantity .QuantityDown { position:absolute; left:32px; bottom:0; }
+.xans-product-zoom .infoArea td .delivery input { border:0; }
+
+.xans-product-zoom .infoArea .xans-product-action { width:320px; text-align:left; }
+.xans-product-zoom .infoArea .xans-product-action .left { padding:0 0 1px; }
+.xans-product-zoom .infoArea .xans-product-action .left img { float:left; padding:0 0 0 1px; }
+
+#NaverChk_Button { clear:both; margin:10px 0 0; float:right; }
+
+#divNvPointInfo { display:none; position:absolute; z-index:99; width:245px; padding:10px; color:#777; font-size:11px; background:#fff; border:1px solid #5B9761; }
+#divNvPointInfo a { display:block; padding:5px 0 0; color:#1ec228; }
+#divNvPointInfo a img { vertical-align:middle; }
+#imgNaverMileageHelp { cursor:pointer; }

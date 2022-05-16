@@ -1,0 +1,30 @@
+.xans-coupon-zonepackage #couponTab { margin:0 0 30px; height:34px; border-bottom:1px solid #d6d6d6; }
+.xans-coupon-zonepackage #couponTab li { float:left; height:35px; }
+
+.xans-coupon-zonepackage .couponArea { clear:both; overflow:hidden; margin:10px 0 0 -12px;}
+.xans-coupon-zonepackage .couponArea li { float:left; position:relative; height:200px; width:372px; margin:0 0 10px 12px; text-align:center; }
+.xans-coupon-zonepackage .couponArea li div { height:144px; margin:0 0 10px; border:10px solid #bfbecc; background:url("http://img.echosting.cafe24.com/design/skin/default/coupon/bg_coupon.gif") 50% 50% no-repeat; cursor:pointer; }
+.xans-coupon-zonepackage .couponArea .name { padding:10px 0; }
+.xans-coupon-zonepackage .couponArea .sale { font-size:40px; padding:15px 0; line-height:normal; letter-spacing:-1px; font-weight:bold; }
+.xans-coupon-zonepackage .couponArea .date { position:absolute; top:135px; left:0; width:100%; color:#fff; font-size:11px; }
+.xans-coupon-zonepackage .couponArea .btn { width:100%; text-align:right;}
+.xans-coupon-zonepackage .couponArea .chkBtn { position:absolute; left:15px; top:15px; }
+
+.xans-coupon-zonepackage .xans-coupon-azonelist li { height:180px; }
+
+.xans-coupon-zonepackage .couponZone { overflow:hidden: zoom:1; margin:30px 0 10px; padding:30px 0 0; border-top:1px solid #d6d6d6; }
+.xans-coupon-zonepackage .couponZone .title { margin:0 0 15px; overflow:hidden; }
+.xans-coupon-zonepackage .couponZone .title h3 { float:left; font-size:12px; color:#444; }
+.xans-coupon-zonepackage .couponZone .title p { float:right; font-size:11px; color:#8f8f8f; }
+
+#dCouponDetail {
+	position: relative; background:#fff; overflow:hidden; width:372px; padding:10px; border:1px solid #7d7c8b;
+	/* Opera */ box-shadow:5px 5px 5px #d3d3d3;
+	/* Firefox */ -moz-box-shadow:5px 5px 5px #d3d3d3;
+	/* Safiri, Chrome */ -webkit-box-shadow:5px 5px 5px #d3d3d3;
+	/* IE */ filter:progid:DXImageTransform.Microsoft.Shadow(color=#d3d3d3,direction=135, strength=10);
+}
+#dCouponDetail h3 { float:left; padding:0 0 10px; color:#34a7b3; }
+#dCouponDetail ul { clear:both; padding:10px; margin:10px 0; background:#f1f1f1;}
+#dCouponDetail ul li { line-height:18px; font-size:11px; }
+#dCouponDetail img { float:right; }

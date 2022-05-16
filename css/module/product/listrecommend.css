@@ -1,0 +1,32 @@
+.xans-product-listrecommend .title h2 { margin-bottom:16px; padding:0 0 0 20px; font-size:15px; color:#292929; background:url('//img.echosting.cafe24.com/design/skin/fashion013/ico_product_list_title.gif') no-repeat 0 2px; }
+.xans-product-listrecommend img { vertical-align:middle; }
+.xans-product-listrecommend ul.prdList { display:table; width:100%; min-width:756px; font-size:0; line-height:0; }
+.xans-product-listrecommend ul.prdList li.item { display:inline-block; *display:inline; *zoom:1; margin:0 0 32px; color:#838383; vertical-align:top; text-align:center; }
+.xans-product-listrecommend ul.prdList li.item div.box { margin:0 auto; font-size:11px; line-height:1.8em; }
+.xans-product-listrecommend span.grid { display:block; }
+
+.xans-product-listrecommend ul.prdList .chk { display:block; }
+.xans-product-listrecommend ul.prdList .chk input { margin:0 0 3px; }
+.xans-product-listrecommend ul.prdList .name { position:relative; padding:7px 0 0; }
+.xans-product-listrecommend ul.prdList .name a { color:#838383; }
+.xans-product-listrecommend ul.prdList .name .zoom {  position:absolute; width:12px; top:10px; right:0; }
+.xans-product-listrecommend ul.prdList .btns { overflow:hidden; zoom:1; }
+.xans-product-listrecommend ul.prdList .button img { cursor:pointer; margin:0 4px 0 0; }
+.xans-product-listrecommend ul.prdList .button .bag { float:left; padding:7px 10px 0 0; }
+.xans-product-listrecommend ul.prdList .button .option { float:left; padding:7px 0 0; }
+
+/* 진열방식 */
+.xans-product-listrecommend ul.column3 li.item { width:33.33%; }
+.xans-product-listrecommend ul.column3 li.item .box { width:240px; }
+.xans-product-listrecommend ul.column3 li.item .thumb { width:240px; height:240px; }
+.xans-product-listrecommend ul.column4 li.item { width:25%; }
+.xans-product-listrecommend ul.column4 li.item .box { width:180px; }
+.xans-product-listrecommend ul.column4 li.item .thumb { width:180px; height:180px; }
+.xans-product-listrecommend ul.column5 { width:102%; margin-left:-15px; }
+.xans-product-listrecommend ul.column5 li.item { width:180px; margin-left:15px; }
+.xans-product-listrecommend ul.column5 li.item .box { width:180px; }
+.xans-product-listrecommend ul.column5 li.item .thumb { width:178px; height:208px; border:1px solid #ececec; }
+
+/* module="product_ListItem" */
+.xans-product-listrecommend .xans-product-listitem { margin:0; }
+.xans-product-listrecommend .xans-product-listitem li .title { font-weight:normal; }

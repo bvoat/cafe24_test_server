@@ -1,0 +1,28 @@
+#popup { width:800px; }
+.header { height:77px; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_popup_header.gif") 0 0 repeat-x; }
+.header h1 { height:49px; padding:0 0 0 33px; font-size:20px; line-height:49px; color:#fefefe; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_popup_title.gif") 20px center no-repeat; }
+.content { padding:0 22px 22px; }
+.content .btnArea { overflow:hidden; padding:20px 0 0; text-align:right; }
+.content .btnArea.center { text-align:center; }
+.content .btnArea span.left { float:left; }
+
+.xans-myshop-orderissuetax {}
+.xans-myshop-orderissuetax p.info { font-size:11px; }
+.xans-myshop-orderissuetax h2 { padding:27px 0 10px; color:#f26522; font-size:11px; text-decoration:underline; }
+.xans-myshop-orderissuetax #mall_addr_addr1 { margin:3px 0; width:380px; }
+.xans-myshop-orderissuetax #mall_addr_addr2 { width:380px; }
+.xans-myshop-orderissuetax #email1 { width:100px; }
+.xans-myshop-orderissuetax #email2 { width:100px; }
+.xans-myshop-orderissuetax #mall_addr_zip1 { width:40px; text-align:center; }
+.xans-myshop-orderissuetax #mall_addr_zip2 { width:40px; text-align:center;  }
+.xans-myshop-orderissuetax #company_condition { width:380px; }
+.xans-myshop-orderissuetax #company_line { width:380px; }
+
+.xans-myshop-orderissuetax table { table-layout:fixed; border-top:2px solid #c0c0c0; border-bottom:1px solid #c0c0c0; }
+.xans-myshop-orderissuetax th { width:140px; padding:23px 0 18px 22px; border-top:1px solid #e7e7e7; background:#f6f6f6; color:#414141; text-align:left; line-height:140%; }
+.xans-myshop-orderissuetax td { width:auto; padding:23px 0 18px 22px; border-top:1px solid #e7e7e7; color:#8f8f8f; line-height:140%; font-size:11px; }
+
+.xans-myshop-orderissuetax td input,
+.xans-myshop-orderissuetax td textarea { padding:2px 2px 2px 4px; border:1px solid #d9d9d9; color:#202020; }
+.xans-myshop-orderissuetax td input[type=radio],
+.xans-myshop-orderissuetax td input[type=checkbox] { width:13px; height:13px; padding:0; border:0; vertical-align:-2px; *vertical-align:2px; margin:0 3px 0 0; }

@@ -1,0 +1,12 @@
+.xans-myshop-historypaging { margin:10px 0; text-align:center; }
+.xans-myshop-historypaging p,
+.xans-myshop-historypaging ol,
+.xans-myshop-historypaging li { display:inline; }
+.xans-myshop-historypaging img { vertical-align:top; }
+.xans-myshop-historypaging p { margin-right:-3px; *margin-right:1px; }
+.xans-myshop-historypaging ol { margin:0 17px 0 20px; }
+.xans-myshop-historypaging li { margin:0 4px; font-size:12px; font-weight:bold; font-family:tahoma, sans-serif; }
+.xans-myshop-historypaging li a { color:#7c7b7b; }
+.xans-myshop-historypaging li a:hover { color:#ffd5c40; text-decoration:underline; }
+.xans-myshop-historypaging li a.this { color:#fd5c40; }
+.xans-myshop-historypaging a.nolink { cursor:default; }

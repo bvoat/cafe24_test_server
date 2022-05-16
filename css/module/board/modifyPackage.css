@@ -1,0 +1,37 @@
+/* 게시판 전체 공통 */
+.xans-board-title .title { margin:0 0 15px; }
+.xans-board-title .title h2 { font-size:12px; color:#292929; }
+.xans-board-title .title p { padding:16px 0 0 0; font-size:11px; color:#8f8f8f; line-height:140%; }
+
+/* modify */
+.xans-board-modify .boardWrite table { table-layout:fixed; border-top:2px solid #c0c0c0; border-bottom:1px solid #c0c0c0; }
+.xans-board-modify table th { width:140px; padding:23px 0 18px 22px; border-top:1px solid #e7e7e7; background:#f6f6f6; color:#414141; text-align:left; line-height:140%; }
+.xans-board-modify table td { width:auto; padding:23px 0 18px 22px; border-top:1px solid #e7e7e7; color:#8f8f8f; line-height:140%; font-size:11px; }
+.xans-board-modify table td img { vertical-align:middle; }
+.xans-board-modify table a { text-decoration:none; }
+.xans-board-modify table input,
+.xans-board-modify table textarea { padding:2px 2px 2px 4px; border:1px solid #d9d9d9; color:#202020; }
+.xans-board-modify table td.write { width:100%; padding:0; }
+.xans-board-modify table td.write table { border:0; table-layout:auto; }
+.xans-board-modify table tr.agree th { border-top:1px solid #ccc; vertical-align:middle; }
+.xans-board-modify table tr.agree td { border-top:1px solid #ccc; }
+.xans-board-modify table tr.agree td textarea { width:560px; height:140px; margin:0 0 10px; }
+.xans-board-modify table #subject { width:390px; }
+.xans-board-modify table #ucc_width { width:40px; }
+.xans-board-modify table #ucc_height { width:40px; }
+.xans-board-modify table input[type=radio], .xans-board-modify table input[type=checkbox], .xans-board-modify table #notice0, .xans-board-modify table #secure0, .xans-board-modify table #secure1, .xans-board-modify table #privacy_agreement_radio0, .xans-board-modify table #privacy_agreement_radio1 { border:0; width:13px; height:13px; margin:0 3px 0 0; background:none; vertical-align:middle; }
+
+.xans-board-modify .btnArea { overflow:hidden; margin:10px 0 60px; text-align:right; font-size:1%; line-height:1%; }
+.xans-board-modify .btnArea.miniType { margin-bottom:10px; }
+.xans-board-modify .btnArea.center { text-align:center; }
+.xans-board-modify .btnArea img { cursor:pointer; margin:0 0 0 1px; font-size:12px; line-height:18px; }
+.xans-board-modify .btnArea span.left { float:left; margin:0 0 0 -1px; }
+
+/* modify - 상품 */
+.xans-board-modify .prdSelect { overflow:hidden; margin:0 0 10px; padding:10px; background:#e6e6e6; border:1px solid #bbb; }
+.xans-board-modify .prdThumb { float:left; }
+.xans-board-modify .prdThumb img { width:86px; border:1px solid #fff; }
+.xans-board-modify .prdInfo { float:left; width:620px; padding:0 0 0 20px; }
+.xans-board-modify .prdInfo h3 { font-size:20px; color:#202020; }
+.xans-board-modify .prdInfo h3 img { vertical-align:middle; }
+.xans-board-modify .prdInfo p { margin:15px 0 0; font-size:16px; font-weight:bold; color:#5086d7; }

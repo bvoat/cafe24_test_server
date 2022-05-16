@@ -1,0 +1,37 @@
+.xans-myshop-wishlistbutton {
+    padding: 0 7px 7px;
+}
+
+.xans-myshop-wishlistbutton .select {
+    margin: 20px 0 30px;
+    padding: 7px 14px;
+    border: 0;
+    border-top: 0;
+}
+
+.xans-myshop-wishlistbutton .select .btnNormal {
+    border: 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ABABAB;
+}
+
+.xans-myshop-wishlistbutton .select .gRight {
+    float: right;
+}
+
+.xans-myshop-wishlistbutton .button .ec-base-button {
+    margin: 0;
+}
+.xans-myshop-wishlistbutton .button .btnSubmit {
+    width: 100%;
+    border-radius: 100px;
+    padding:13px 0;
+    font-size: 14px;
+    color: #fff;
+    background: #022CFF;
+    height: inherit;
+    line-height: inherit;
+    border: 0;
+
+}

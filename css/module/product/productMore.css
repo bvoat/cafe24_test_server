@@ -1,0 +1,27 @@
+@charset "utf-8";
+.xans-product-listmore {
+    margin: 7px 0;
+    font-size: 12px
+}
+
+.xans-product-listmore a {
+    display: block;
+    padding: 7px 0;
+    color: #212530;
+    font-weight: bold;
+    text-align: center;
+    background: #d4d4d6;
+}
+
+.xans-product-listmore span.more_down {
+    overflow: hidden;
+    display: inline-block;
+    width: 8px;
+    height: 7px;
+    margin: 0 0 0 5px;
+    vertical-align: middle;
+    font-size: 0;
+    line-height: 0;
+    background: url("http://img.echosting.cafe24.com/mobileWeb/common/ico_toggle_arow_down.png") no-repeat 50% 50%;
+    background-size: 100% 100%;
+}

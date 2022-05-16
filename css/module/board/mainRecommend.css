@@ -1,0 +1,12 @@
+.xans-board-mainrecommend { position:relative; float:right; width:49%; padding:0 0 50px; }
+.xans-board-mainrecommend img { vertical-align:middle; margin:1px; }
+
+.boardMain .xans-board-mainrecommend h3 { height:25px; font-size:12px; color:#cc5f36; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_title.gif") 0 3px repeat-x; }
+.boardMain .xans-board-mainrecommend h3 span { padding:0 7px 0 0; background:#fff; }
+
+.xans-board-mainrecommend table { width:100%; }
+.xans-board-mainrecommend table th { display:none; }
+.xans-board-mainrecommend table td { height:20px; font-size:11px; line-height:20px; color:#8f8f91; }
+.xans-board-mainrecommend table td.subject { padding:0 0 0 7px; background:url("http://img.echosting.cafe24.com/design/skin/default/board/ico_board_main.gif") no-repeat 0 50%; }
+.xans-board-mainrecommend table td.subject a { color:#8f8f91; }
+.xans-board-mainrecommend table td.date { width:65px; text-align:right; }

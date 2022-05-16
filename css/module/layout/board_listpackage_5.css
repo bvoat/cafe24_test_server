@@ -1,0 +1,11 @@
+.xans-board-listpackage-5 { position:relative; float:left; width:49.2%; }
+.xans-board-listpackage-5 { margin:20px 0; padding:0 0 10px; }
+.xans-board-listpackage-5 h2 { height:20px; font-size:12px; color:#292929; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_title.gif") 0 3px repeat-x; }
+.xans-board-listpackage-5 h2 span { padding:0 7px 0 10px; background:#fff url("http://img.echosting.cafe24.com/design/skin/default/common/ico_title.gif") 0 0 no-repeat; }
+.xans-board-listpackage-5 p.more { position:absolute; top:-2px; right:0; padding:0 0 0 7px; background:#fff; }
+
+.xans-board-listpackage-5 thead {visibility:hidden; position:absolute; left:-1000px; top:-1000px; height:0; width:0; }
+.xans-board-listpackage-5 td { width:75px; border:none; text-align:center; color:#838382; font-size:11px; line-height:29px; border-bottom:1px solid #dedcdc;}
+.xans-board-listpackage-5 td.title { width:auto; text-align:left; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_board_main.gif") 0 50% no-repeat; }
+.xans-board-listpackage-5 td.title a,
+.xans-board-listpackage-5 td.title a:hover { padding:0 0 0 7px; color:#838382;}

@@ -1,0 +1,69 @@
+ <!-- <h2>
+            <span>{$category_title_text}</span>
+        </h2> -->
+    
+        <ul class="prdList column4 prdList50">
+            <li class="item" id="anchorBoxId_{$product_no}">
+                <div class="product_box box-desc">
+                    <div class="anchorBox_img">
+                        <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
+                        <a class="anchorBox_img_link" href="/product/detail.html{$param}"
+                            name="anchorBoxName_{$product_no}">
+                            <img src="{$image_big}" id="{$image_big_id}" alt="{$summary_desc}" class="thumb" /></a>
+                            <div class="wish {$list_wish_icon|display}">
+                                <button  class="gdVote">{$list_wish_icon}</button>
+                            </div>
+                            <div class="{$disp_likeprd_class}">
+                                <button class="gdVote" type="button">{$disp_likeprd_icon}</button>
+                            </div>
+                    
+                    </div>
+                    <div class="product_section">
+                        <ul class="product_ListItem">
+                            <li class="prd_brand">{$prd_brand}
+                            </li>
+                            <li class="product_name">
+                                <a href="/product/detail.html{$param}">{$product_name}</a>
+                            </li>
+                            <p class="summary_desc">{$summary_desc}</p>
+                            <li id="price_text" class="price_sale">{$prd_price_sale|replace:원, }</li>
+                            <li class="product_price">
+                                {$disp_product_price|replace:원, }
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="item" id="anchorBoxId_{$product_no}">
+                <div class="product_box box-desc">
+                    <div class="anchorBox_img">
+                        <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
+                        <a class="anchorBox_img_link" href="/product/detail.html{$param}"
+                            name="anchorBoxName_{$product_no}">
+                            <img src="{$image_big}" id="{$image_big_id}" alt="{$summary_desc}" class="thumb" /></a>
+                            <div class="wish {$list_wish_icon|display}">
+                                <button  class="gdVote">{$list_wish_icon}</button>
+                            </div>
+                            <div class="{$disp_likeprd_class}">
+                                <button class="gdVote" type="button">{$disp_likeprd_icon}</button>
+                            </div>
+                    
+                    </div>
+                    <div class="product_section">
+                        <ul class="product_ListItem">
+                            <li class="prd_brand">{$prd_brand}
+                            </li>
+                            <li class="product_name">
+                                <a href="/product/detail.html{$param}">{$product_name}</a>
+                            </li>
+                            <p class="summary_desc">{$summary_desc}</p>
+                            <li id="price_text" class="price_sale">{$prd_price_sale|replace:원, }</li>
+                            <li class="product_price">
+                                {$disp_product_price|replace:원, }
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    

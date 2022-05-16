@@ -1,0 +1,23 @@
+.xans-calendar-daypackage {}
+.xans-calendar-daypackage .tab { position:relative; margin:20px 0 30px; height:34px; border-bottom:1px solid #d6d6d6; }
+.xans-calendar-daypackage .tab ul { overflow:hidden; zoom:1; }
+.xans-calendar-daypackage .tab li { float:left; }
+.xans-calendar-daypackage .tab li.addType { position:absolute; top:0; right:0; }
+
+.xans-calendar-headday { overflow:hidden; zoom:1; float:right; width:656px;}
+.xans-calendar-headday .date { float:left; width:478px; padding:0 0 30px 22px; text-align:center; color:#d9bca0; font-size:30px; letter-spacing:-1px; font-family:Lucida Sans, sans-serif; }
+.xans-calendar-headday .date img { vertical-align:middle; }
+.xans-calendar-headday .btn { float:right; }
+
+.xans-calendar-category { float:left; width:100px; padding:10px 0 0; }
+
+.xans-calendar-listdayhead th { border-top:1px solid #d9bca0; font-size:11px; color:#d9bca0; font-weight:normal; background:url("http://img.echosting.cafe24.com/design/skin/default/calendar/bg_thead.gif") 0 0 no-repeat; }
+.xans-calendar-listdayhead th.time { width:60px; padding:8px 15px; }
+.xans-calendar-listdayhead th.todo p { padding:8px 15px; background:url("http://img.echosting.cafe24.com/design/skin/default/calendar/bg_thead.gif") right 0 no-repeat; }
+
+.xans-calendar-listday th,
+.xans-calendar-listday td { padding:8px 15px; border:1px solid #fff; background:#f1f4e6; font-size:11px; }
+.xans-calendar-listday th { width:60px; text-align:center; color:#8f8f8f; font-weight:normal; }
+.xans-calendar-listday td li { }
+.xans-calendar-listday td li a,
+.xans-calendar-listday td li a:hover { line-height:18px; color:#96aa4b; }

@@ -1,0 +1,13 @@
+/* 게시판 메인 > 자료실 */
+.board.xans-board-listpackage-7 { position:relative; padding:0 0 50px; margin:2px 0 0; }
+.board.xans-board-listpackage-7 p.btn { width:370px; padding:15px 0 0; }
+.board.xans-board-listpackage-7 h3 { height:25px; font-size:12px; color:#292929; background:url("http://img.echosting.cafe24.com/design/skin/default_en/layout/bg_title.gif") 0 3px repeat-x; }
+.board.xans-board-listpackage-7 h3 span { padding:0 7px 0 0; background:#fff; }
+.board.xans-board-listpackage-7 .more { position:absolute; top:-2px; right:0; background:#fff; padding:0 0 0 7px; }
+.board.xans-board-listpackage-7 table { width:100%; }
+.board.xans-board-listpackage-7 table th { display:none; }
+.board.xans-board-listpackage-7 table td { height:20px; font-size:11px; line-height:20px; color:#8f8f91; }
+.board.xans-board-listpackage-7 table td.subject { padding:0 0 0 7px; background:url("http://img.echosting.cafe24.com/design/skin/default_en/board/ico_board_main.gif") no-repeat 0 50%; }
+.board.xans-board-listpackage-7 table td.subject a { color:#8f8f91; }
+.board.xans-board-listpackage-7 table td.subject strong { color:#34a7b3; }
+.board.xans-board-listpackage-7 table td.date { width:65px; text-align:right; }

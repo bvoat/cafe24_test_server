@@ -1,0 +1,9 @@
+.xans-layout-productrecent { border:1px solid #e3e3e3; border-top:0; margin:0 0 10px; text-align:center; }
+.xans-layout-productrecent h2 { height:30px; }
+.xans-layout-productrecent h2 a { font-size:11px; line-height:30px; color:#666; }
+.xans-layout-productrecent ul { width:85px; margin:0 auto; }
+.xans-layout-productrecent li a { color:#c1c1c0; font-size:11px; }
+.xans-layout-productrecent li img { max-width:85px; }
+.xans-layout-productrecent li span { display:block; padding:3px 0 9px; line-height:16px; }
+.xans-layout-productrecent .player { overflow:hidden; width:90px; margin:0 auto; padding:0px 0 0px 0px; }
+.xans-layout-productrecent .player img { float:left; padding:0 0 0 1px; }

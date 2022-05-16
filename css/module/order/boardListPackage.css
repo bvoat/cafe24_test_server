@@ -1,0 +1,28 @@
+#popup { width:700px; }
+.header { height:77px; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_popup_header.gif") 0 0 repeat-x; }
+.header h1 { height:49px; padding:0 0 0 33px; font-size:20px; line-height:49px; color:#fefefe; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_popup_title.gif") 20px center no-repeat; }
+.content { padding:0 22px 22px; }
+.content .btnArea { overflow:hidden; padding:20px 0 0; text-align:right; }
+.content .btnArea.center { text-align:center; }
+.content .btnArea span.left { float:left; }
+
+.xans-order-boardlistpackage table { border-bottom:1px solid #c0c0c0; color:#8f8f8f; font-size:11px; }
+.xans-order-boardlistpackage th { padding:9px 0 7px; border-top:2px solid #c0c0c0; border-bottom:1px solid #ccc; background:#f6f6f6; font-weight:normal; color:#202020; }
+.xans-order-boardlistpackage td { padding:11px 0 9px; border-top:1px dotted #e3e3e3; line-height:140%; text-align:center; vertical-align:middle; }
+.xans-order-boardlistpackage td.thumb {}
+.xans-order-boardlistpackage td.thumb img { width:54px; }
+.xans-order-boardlistpackage td.prdName { text-align:left; }
+.xans-order-boardlistpackage td.prdName span { display:block; }
+
+.xans-order-boardpaging { margin:10px 0; text-align:center; }
+.xans-order-boardpaging p,
+.xans-order-boardpaging ol,
+.xans-order-boardpaging li { display:inline; }
+.xans-order-boardpaging img { vertical-align:top; }
+.xans-order-boardpaging p { margin-right:-3px; *margin-right:1px; }
+.xans-order-boardpaging ol { margin:0 17px 0 20px; }
+.xans-order-boardpaging li { margin:0 4px; font-size:12px; font-weight:bold; font-family:tahoma, sans-serif; }
+.xans-order-boardpaging li a { color:#7c7b7b; }
+.xans-order-boardpaging li a:hover { color:#ffd5c40; text-decoration:underline; }
+.xans-order-boardpaging li a.this { color:#fd5c40; }
+.xans-order-boardpaging a.nolink { cursor:default; }

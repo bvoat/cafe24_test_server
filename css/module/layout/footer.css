@@ -1,0 +1,13 @@
+.xans-layout-footer {float:left; position:relative; width:756px; padding:40px 0;}
+.xans-layout-footer ul {overflow:hidden;}
+.xans-layout-footer li {float:left; padding:0 10px; background:url('//img.echosting.cafe24.com/design/skin/fashion013/footer_line.gif') no-repeat 0% 5px;}
+.xans-layout-footer li:first-child {padding-left:0; background:none;}
+.xans-layout-footer li a {color:#7a7a7a; font-size:11px; line-height:2em;}
+.xans-layout-footer li a:hover {color:#fff; text-decoration:none;}
+.xans-layout-footer #address {margin-top:3px; padding-top:10px; color:#565656; font-size:11px; line-height:2em; border-top:2px solid #2c2c2c;}
+.xans-layout-footer #address span {padding-right:15px;}
+.xans-layout-footer #address span a {color:#565656;}
+.xans-layout-footer #address span a:hover {color:#fff;}
+.xans-layout-footer #copy {color:#7a7a7a;}
+.xans-layout-footer #top {position:absolute; right:5px; top:81px;}
+.xans-layout-footer #logo {position:absolute; right:0; bottom:40px;}

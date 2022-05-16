@@ -1,0 +1,40 @@
+/* 게시판 전체 공통 */
+.xans-board-title-1001 .title { margin:0 0 15px; }
+.xans-board-title-1001 .title h2 { font-size:12px; color:#292929; }
+.xans-board-title-1001 .title p { padding:16px 0 0 0; font-size:11px; color:#8f8f8f; line-height:140%; }
+
+/* 메모 입력 */
+.xans-board-memowrite-1001 { margin:0 0 20px; padding:10px 20px 20px; border:1px solid #e7e7e7; background:#f8f8f8; font-size:11px; color:#202020; }
+.xans-board-memowrite-1001 legend { visibility:hidden; overflow:hidden; width:0; height:0; font-size:0; line-height:0; }
+.xans-board-memowrite-1001 p { margin:10px 0 0; }
+.xans-board-memowrite-1001 input,
+.xans-board-memowrite-1001 textarea { padding:2px 2px 2px 4px; border:1px solid #d9d9d9; color:#202020; }
+.xans-board-memowrite-1001 input { width:84px; height:14px; margin:0 10px 0 9px; }
+.xans-board-memowrite-1001 textarea { width:640px; height:44px; }
+.xans-board-memowrite-1001 .secret input { width:13px; height:13px; margin:0 2px 0 0; padding:0; border:0; vertical-align:-2px; *vertical-align:1px; }
+.xans-board-memowrite-1001 #attendCommentBtnWrap input { border:none !important; width:auto !important; height:auto !important; margin:0 !important; padding:0 !important; }
+
+/* 메모 목록 */
+.memoList { border-top:2px solid #c0c0c0; border-bottom:2px solid #c0c0c0; }
+.memoList .memoArea { overflow:hidden; padding:20px; border-top:1px dotted #c7c7c7; color:#595959; }
+.memoList .xans-board-memolist-1001:first-child .memoArea { border-top:0; }
+.memoList .memoArea .name { float:left; color:#595959; }
+.memoList .memoArea .btn { float:right; margin:0 0 0 20px; }
+.memoList .memoArea .btn a { margin:0 0 0 3px; padding:0 0 0 7px; color:#595959; background:url("http://img.echosting.cafe24.com/design/skin/default/board/ico_memo_line1.gif") no-repeat 0 1px; }
+.memoList .memoArea .btn a.first { margin:0; padding:0; background:none; }
+.memoList .memoArea .date { float:right; color:#8f8f8f; }
+.memoList .memoArea .memo { clear:both; padding:10px 0 0; }
+
+.memoList .memoArea.reply { padding-left:40px; background:#f6f6f6 url("http://img.echosting.cafe24.com/design/skin/default/board/ico_memo_reply.gif") no-repeat 20px 20px; }
+.memoList .memoArea.reply .btn a { color:#8f8f8f; background:url("http://img.echosting.cafe24.com/design/skin/default/board/ico_memo_line2.gif") no-repeat 0 1px; }
+.memoList .memoArea.reply .btn a.first { background:none; }
+
+.memoList input,
+.memoList textarea { padding:2px 2px 2px 4px; border:1px solid #d9d9d9; color:#202020; }
+.memoList input { width:84px; height:14px; margin:0 10px 0 9px; }
+.memoList textarea { width:580px; height:44px; }
+.memoList .secret input { width:13px; height:13px; margin:0 2px 0 0; padding:0; border:0; vertical-align:-2px; *vertical-align:1px; }
+
+.replyModify { padding:10px 20px 20px 20px; border-top:1px dotted #c7c7c7; background:#f6f6f6; font-size:11px; }
+.replyModify p { margin:10px 0 0; }
+.commentView { padding:10px 20px; border-top:1px dotted #c7c7c7; background:#f6f6f6; font-size:11px; }

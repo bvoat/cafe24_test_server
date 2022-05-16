@@ -1,0 +1,349 @@
+/* 상단 header_wrap */
+
+.header_wrap{
+    width: 100%;
+    height: 511px;
+    padding: 55px 0 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background: url("https://bvoat.com/web/image/purchasing_product/purchasing_background.png");
+    background-size: cover;
+}
+
+.title_box{
+    width: 270px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_box>.header_title{
+    width: 230px;
+    height: 25px;
+    margin: 0;
+    background: url("https://bvoat.com/web/image/purchasing_product/purchasing_title.png") no-repeat;
+    background-size: contain;
+    image-rendering: -webkit-optimize-contrast;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.title_box>.header_sub_title{
+    width: 270px;
+    height: 82px;
+    margin: 12px 0 0 0;
+    background: url("https://bvoat.com/web/image/purchasing_product/purchasing_subtitle.png") no-repeat;
+    background-size: contain;
+    image-rendering: -webkit-optimize-contrast;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    text-align: center;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.coupon_btn_box{
+    position: relative;
+    margin-top: 56px;
+}
+
+.coupon_tooltip{
+    display: inline-block;
+    position: absolute;
+    width: 85px;
+    height: 40px;
+    top: -40px;
+    left: 112px;
+
+    background: url("https://bvoat.com/web/image/purchasing_product/purchasing_morethan_10.png") no-repeat;
+    background-size: contain;
+    image-rendering: -webkit-optimize-contrast;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    overflow: hidden;text-align: center;
+    text-indent: -9999px;
+    color: #022CFF00;
+}
+
+.coupon_btn{
+    width: 322px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #022CFF00 0% 0% no-repeat padding-box;
+    border: 2px solid #022CFF;
+    border-radius: 55px;
+    opacity: 1;
+    padding : 16px 30px 16px 25px;
+    cursor: pointer;
+}
+
+.coupon_btn>.coupon_btn_text{
+    display: block;
+    font-size: 19px;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+    color: #022CFF;
+    transform: rotate(0.04deg);
+}
+
+.coupon_btn>.coupon_btn_arrow{
+    display: block;
+    width: 10px;
+    height: 18px;
+    margin-top: 3px;
+    background: url("https://bvoat.com/web/image/purchasing_product/purchasing_click.png") no-repeat;
+    background-size: contain;
+    image-rendering: -webkit-optimize-contrast;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    text-indent: -9999px;
+    font-size: 1px;
+}
+
+.coupon_bottom_text{
+    text-align: center;
+    font-size: 14px;
+    color: #292929;
+    letter-spacing: -0.5px;
+    transform: rotate(0.04deg);
+    margin: 0;
+    margin-top: 10px;
+}
+
+/* 하단 display_wrap */
+
+.display_wrap{
+    width: 100%;
+    padding: 42px 14px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px -15px 50px #D6D9E8;
+    border-radius: 27px;
+    margin-top: -65px;
+}
+
+.display_title{
+    font-size: 24px;
+    color: #292929;
+    letter-spacing: -0.5px;
+    line-height: 32px;
+    transform: rotate(0.04deg);
+    margin-bottom: 6px;
+}
+
+.display_subtitle{
+    font-size: 14px;
+    font-weight: 500;
+    color: #292929;
+    letter-spacing: -0.5px;
+    transform: rotate(0.04deg);
+}
+
+.prdList{
+    width: 100%;
+    padding: 0;
+    margin-top: 25px;
+}
+
+
+.item{
+    width: 100%;
+    border-top: 1px solid #022CFF;
+    border-left: 1px solid #022CFF;
+    border-right: 1px solid #022CFF;
+    border-radius: 25px;
+    margin-bottom: 35px;
+}
+
+.product_box{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_box>.summary_desc{
+    display: inline-block;
+    margin: 16px auto;
+    color: #022CFF;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    transform: rotate(0.04deg);
+}
+.product_section{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    z-index: 10;
+    width: 100.5%;
+    height: 340px;
+    background: #fff;
+}
+
+.anchorBox_img{
+    height: 250px;
+    border-radius: 4px;
+    overflow: hidden;
+
+    width: 100%;
+    /* border-radius: 16px; */
+    /* overflow: hidden; */
+    margin-bottom: -12px;
+}
+.anchorBox_img>a{
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.anchorBox_img>a>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* 개별 이미지 top 조절 */
+
+/* 루파 수세미 */
+#eListPrdImage2014_51{ 
+    top: -16%;
+}
+
+/* 화장솜 */
+#eListPrdImage2015_51{
+    top: -35%;
+}
+
+/* 집게 */
+#eListPrdImage2016_51{
+    top: -15%;
+}
+
+/* 샴푸 */
+#eListPrdImage1986_51{
+    top: -25%;
+}
+
+/* 리유저블백 */
+#eListPrdImage2020_51{
+    top: -35%;
+}
+
+/* 지갑 */
+
+#eListPrdImage2019_51{
+    top: -20%;
+}
+
+/* 치약 */
+#eListPrdImage2018_51{
+    top: -22%;
+}
+
+/* 페이퍼 */
+
+#eListPrdImage2028_51{
+    top: -22%;
+}
+
+/* 참치 */
+
+#eListPrdImage2023_51{
+    top: -33%;
+}
+
+.anchorBox_img>.limited_icon{
+    position: absolute;
+    display: flex;
+    width: 72px;
+    height: 34px;
+    background: #022CFF 0% 0% no-repeat padding-box;
+    font-weight: 500;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -0.5px;
+    transform: rotate(0.04deg);
+    z-index: 999;
+}
+
+.anchorBox_img>.anchorBox_img_link{
+    text-align: center;
+}
+
+.product_ListItem{
+    width: 100%;
+    text-align: left;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.product_ListItem>.prd_brand{
+    font-size: 13px;
+    font-family: Apple SD Gothic Neo;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    transform: rotate(0.04deg);
+}
+
+.product_ListItem>.product_name{
+    font-size: 22px;
+    font-family: Apple SD Gothic Neo;
+    font-weight: bold;
+    letter-spacing: -0.8px;
+    transform: rotate(0.04deg);
+    margin: 0 0 5px 0;
+}
+
+.product_ListItem>.prd_price_sale{
+    display: inline-block;
+    font-size: 24px;
+    font-family: Apple SD Gothic Neo;
+    font-weight: bold;
+    letter-spacing: -0.7px;
+    transform: rotate(0.04deg) ;
+    color: #022CFF ;
+    margin-right: 8px;
+}
+
+.strikeprice {
+    display: inline-block;
+    font-size: 24px;
+    font-family: Apple SD Gothic Neo;
+    font-weight: bold;
+    text-decoration: line-through;
+    color: #C7C7C7;
+    letter-spacing: -0.7px;
+    transform: rotate(0.04deg) ;
+}
+
+.top_btn{
+    display: block;
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 50px;
+    background-color: #00000000;
+    border: none;
+    background: url("https://bvoat.com/web/image/purchasing_product/purchasing_top_btn.png") no-repeat;
+    background-size: contain;
+    image-rendering: -webkit-optimize-contrast;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    overflow: hidden;
+    text-indent: -9999px;
+    cursor: pointer;
+}

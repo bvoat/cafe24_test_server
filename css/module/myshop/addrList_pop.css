@@ -1,0 +1,17 @@
+#popup { width:800px; }
+.header { height:77px; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_popup_header.gif") 0 0 repeat-x; }
+.header h1 { height:49px; padding:0 0 0 33px; font-size:20px; line-height:49px; color:#fefefe; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_popup_title.gif") 20px center no-repeat; }
+.content { padding:0 22px 22px; }
+.content .btnArea { overflow:hidden; padding:20px 0 0; text-align:right; }
+.content .btnArea.center { text-align:center; }
+.content .btnArea span.left { float:left; }
+
+.xans-myshop-addrlist .info { margin:0 0 10px; color:#8f8f8f; }
+.xans-myshop-addrlist .info h2 { padding:0 0 0 15px; background:url("http://img.echosting.cafe24.com/design/skin/default/member/ico_caution.gif") no-repeat 0 50%; font-size:11px; color:#444; }
+.xans-myshop-addrlist .info ul { margin:10px 0 0; line-height:140%; }
+
+.xans-myshop-addrlist table { border-bottom:1px solid #c0c0c0; color:#8f8f8f; font-size:11px; }
+.xans-myshop-addrlist th { padding:9px 5px 7px; border-top:2px solid #c0c0c0; border-bottom:1px solid #ccc; background:#f6f6f6; font-weight:normal; color:#202020; }
+.xans-myshop-addrlist td { padding:11px 5px 9px; border-top:1px dotted #e3e3e3; line-height:140%; text-align:center; vertical-align:middle; }
+.xans-myshop-addrlist td.address { text-align:left; }
+.xans-myshop-addrlist td.noData { padding:50px; text-align:center; }

@@ -1,0 +1,431 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#eventvote {
+    background: linear-gradient(#e4e4e4, #efefef);
+    padding: 0 20px 20px 20px;
+}
+
+.vote {
+    padding-top: 45px;
+    padding-bottom: 70px;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0 -15px 15px -9px #0000000D;
+}
+
+.vote-icon {
+    width: 23px;
+    margin-right: 7px !important;
+}
+
+.vote-title {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.vote-count {
+    font-size: 16px;
+    font-family: "GmarketSansMedium" !important;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#vote-name {
+    font-size: 17px;
+    color: #292929;
+    font-weight: bold;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box>div {
+    font-size: 13px;
+    color: #022CFF;
+    text-align: center;
+    margin-top: 37px;
+}
+
+.box>input {
+    display: block;
+    margin: 0 auto;
+}
+
+.box>.box-btn-login, .box>.box-btn-vote {
+    width: 141px;
+    height: 43px;
+    line-height: 43px;
+    background: #022CFF 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    box-shadow: 7px 11px 39px #0288FF4B;
+    border-radius: 100px;
+    border: 0;
+    opacity: 1;
+    margin: 16px auto 20px auto;
+}
+
+.wrapper .box label {
+    display: flex;
+    height: 53px;
+    width: 100%;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 100px;
+    margin: 10px 0;
+    padding-left: 20px;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+input[type=radio]+label {
+    width: calc( 50% - 5px);
+    border-radius: 10px;
+    border: 2px solid #022CFF;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+input[type=radio]+label:nth-of-type(2n) {
+    margin-left: 10px;
+}
+
+.wrapper .box label {
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+input[id^=option-]:checked::before~label[class^=option-] {
+    background: #fff;
+}
+
+input[id^=option-]:checked+label {
+    background: #022CFF;
+    border-color: #022CFF;
+}
+
+input[id^=option-]:checked+label .choice-text {
+    color: #fff;
+}
+
+input[id^=option-]:checked+label .choice-button {
+    color: #fff;
+}
+
+.box input[type="radio"] {
+    display: none;
+}
+
+.box>label>.choice-text {
+    color: #292929;
+    font-size: 16px;
+    font-family: "GmarketSansMedium" !important;
+}
+
+.vote-board>.box>label>.choice-button {
+    color: #022cff;
+    font-size: 10px;
+    font-family: "GmarketSansMedium" !important;
+}
+
+.vote-status {
+    background: #022CFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 7px 11px #B2B2B21F;
+    border-radius: 100px;
+    opacity: 1;
+    width: 103px;
+    height: 27px;
+    letter-spacing: -0.19px;
+    color: #FFFFFF;
+    z-index: 3;
+    top: 67px;
+    font-size: 12.5px;
+    line-height: 27px;
+}
+
+#result-box {
+    background: url('/bvtIMG/event/event_coupon_bg.png') no-repeat 0 0;
+    background-size: cover;
+    height: 155px;
+    color: #022cff;
+    width: 100%;
+    max-width: 249px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#result-box>div:nth-of-type(1) {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "GmarketSansMedium" !important;
+    margin-bottom: 5px;
+}
+
+#result-box>div:nth-of-type(2) {
+    background: #022cff;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: "GmarketSansMedium" !important;
+    padding: 5px;
+}
+
+#result-box>div:nth-of-type(2)>span:nth-of-type(1) {
+    padding-right: 5px;
+    border-right: 2px solid #fff;
+}
+
+#black-background {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #464646;
+    opacity: 0.77;
+    z-index: 9999;
+}
+
+#dlgbox, #dlgbox2 {
+    /*initially dialog box is hidden*/
+    display: none;
+    position: fixed;
+    max-width: 335px;
+    width: 100%;
+    z-index: 9999;
+    padding: 13px;
+    background-color: #e4e4e4;
+    border-radius: 15px;
+    transform: translate(-50%, 0);
+    left: 50%;
+}
+
+#dlg-x {
+    float: right;
+    width: 0.9em;
+}
+
+#dlg-body, #dlg2-body {
+    color: black;
+    font-size: 1.2em;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "GmarketSansMedium" !important;
+}
+
+#dlg-text {
+    width: 100%;
+    max-width: 249px;
+    background: #022cff;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: 0;
+    opacity: 1;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-family: "GmarketSansMedium" !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#dlg-text>.txt0 {
+    height: 48px;
+    line-height: 48px;
+}
+
+#dlg-text>.txt1 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "GmarketSansMedium" !important;
+    margin-bottom: 5px;
+}
+
+#dlg-text>.txt2 {
+    background: #022cff;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: "GmarketSansMedium" !important;
+    padding: 5px;
+}
+
+#dlg-text>div:nth-of-type(2)>span:nth-of-type(1) {
+    padding-right: 5px;
+    border-right: 2px solid #fff;
+}
+
+#dlg2-text {
+    color: #292929;
+    font-size: 0.9em;
+    margin-bottom: 0.9em;
+    text-align: center;
+    font-family: "GmarketSansMedium" !important;
+}
+
+#dlg2-text2 {
+    color: #022CFF;
+    font-size: 0.9em;
+    margin-bottom: 0.9em;
+    text-align: center;
+    font-family: "GmarketSansMedium" !important;
+}
+
+#dlg-btn, #dlg-btn2 {
+    width: 100%;
+    max-width: 249px;
+    height: 48px;
+    line-height: 48px;
+    background: #FFFFFF;
+    color: #292929;
+    border-radius: 5px;
+    border: 0;
+    opacity: 1;
+    margin: 10px auto;
+    text-align: center;
+    margin-bottom: 16px;
+    font-family: "GmarketSansMedium" !important;
+}
+
+.dlg2-btns {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "GmarketSansMedium" !important;
+}
+
+.dlg2-imgs {
+    padding: 10px
+}
+
+#dlg2-a-shr, #dlg2-a-badge {
+    display: inline-block;
+    width: calc(50% - 15px);
+    max-width: 151px;
+}
+
+#dlg2-btn-shr {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 3px 7px 11px #CECECE64;
+}
+
+#dlg2-btn-badge {
+    width: 100%;
+    box-shadow: 3px 7px 11px #0288FF4B;
+    border-radius: 30px;
+}
+
+#dlg2-a-shr {
+    margin-right: 16px;
+}
+
+#dlg2-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 77px;
+    box-shadow: 3px 7px 11px #0288FF4B;
+    border-radius: 100%;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip>input {
+    display: none;
+}
+
+.tooltip>input:checked+span {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip input+span {
+    visibility: hidden;
+    width: 6em;
+    background-color: #292929;
+    color: #fff;
+    text-align: center;
+    border-radius: 19px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 9;
+    top: 2em;
+    right: -0.5em;
+    margin-left: 16px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip input+span:after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #292929 transparent;
+}
+
+.shr-box {
+    text-align: center;
+    margin: 60px 0;
+    font-size: 13px;
+    color: #292929;
+}
+
+.shr-text {
+    margin-bottom: 20px;
+}
+
+.board-notice {
+    font-size: 10px;
+    color: #292929;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 174px;
+}
+
+@media (prefers-color-scheme: dark) {
+    input[type=radio]+label {
+        background-color: #fff !important;
+    }
+    #eventvote {
+        background: linear-gradient(#e4e4e4, #efefef) !important;
+    }
+    .vote-count {
+        color: #292929 !important;
+    }
+    #dlg-btn2 {
+
+        background: #FFFFFF !important;
+        color: #292929 !important;
+        
+    }
+}

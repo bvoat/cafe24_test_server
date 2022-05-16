@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+
+/* 장바구니 */
+
+.basket-header {
+    margin-bottom: 30px;
+    padding: 40px 0;
+}
+
+.basket-type {
+    margin: 10px 0 0 0 !important;
+}
+
+.basket-type-box {
+    height: 30px;
+    float: left;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #f7f7f7;
+    float: left;
+    font-size: 12px;
+}
+
+.basket-type-box div,
+.basket-type .selected {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    float: left;
+}
+
+.basket-type .selected {
+    padding: 0;
+}
+
+.basket-type .selected a {
+    background-color: black;
+    padding: 0 15px;
+    color: white;
+    border-radius: 15px;
+}
+
+.allSellect {
+    float: right;
+}
+
+.basketInfoBox a {
+    display: inline;
+    font-weight: bold;
+    color: #022CFF;
+}
+
+.BorderType {
+    margin: 0 !important;
+}
+
+.BorderType ul {
+    text-align: left;
+}
+
+.BorderType ul li {
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.3em;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.BorderType ul li a {
+    color: #c5c5c5;
+}
+
+.BorderType ul li.selected a {
+    color: black !important;
+}
+
+.orderEmpty {
+    height: 350px;
+    line-height: 350px;
+    text-align: center;
+    color: #707070;
+}
+
+.bdHead {
+    height: 60px;
+    line-height: 60px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+
+.BgoodsList ul li {
+    width: 100%;
+    float: left;
+    margin-bottom: 8px;
+    padding: 20px;
+    border: 1px solid #f1f1f1;
+}
+
+.BgoodsList ul li .line {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.orderBuyBtn {
+    height: 30px;
+    border: 1px solid #f1f1f1;
+    line-height: 28px;
+    float: left;
+    font-size: 0.8em;
+    padding: 0 8px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #022CFF;
+    color: white;
+    margin-top: 5px;
+}
+
+.deleteOrderBtn {
+    width: 50px;
+    float: right;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.deleteOrderBtn:hover {
+    opacity: 1;
+}
+
+.BgoodsList ul li .leftBox {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.BgoodsList ul li .leftBox a img {
+    width: 100%;
+}
+.BgoodsList input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    margin: 6px 0;
+    float: left;
+    position: inherit;
+    top:inherit;
+}
+
+.bMoreBtn {
+    margin-top: 3px;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 30px;
+}
+
+.BgoodsList ul li .rightBox {
+    width: calc(100% - 100px);
+    float: left;
+    padding-left: 15px;
+}
+
+.BgoodsList ul li .optionList {
+    float: left;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.BgoodsList ul li .optionBox .optionChange {
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    font-size: 0.9em;
+    border: 1px solid #f1f1f1;
+    background-color: white;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.BgoodsList ul li .tips {
+    color: #c5c5c5;
+}
+
+.BgoodsList .line2 {
+    width: 100%;
+    float: left;
+    padding: 0 10px;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BgoodsList .line3 {
+    width: 100%;
+    float: left;
+    text-align: right;
+    font-weight: 700;
+    padding: 0 10px;
+    margin-top: 15px;
+    font-size: 1em;
+    color: #022CFF;
+}
+
+.row-tail{
+    padding-bottom: 60px;
+}
+
+  /* typeList */
+  .ec-base-table.typeList { border-width:0; }
+  .ec-base-table.typeList table:after { display:none; }
+  .ec-base-table.typeList thead th { text-align:center; background:#fafafa; }
+  .ec-base-table.typeList th,
+  .ec-base-table.typeList td { padding:9px 10px; vertical-align:middle; border:1px solid #d7d5d5; }
+  .ec-base-table.typeList.gClearBorderTop thead th { border-top-width:0; }
+
+
+/* Total */
+.xans-order-basketpackage .ec-base-table.total table th { 
+    height:39px; width: 25%; font-size: 0.825em; }
+    .xans-order-basketpackage .ec-base-table.total table td .box { 
+    word-break:keep-all; text-align: center; }
+    .total_payment { color: #022cff; }
+    .equal { color: #022cff; }
+    .total_payment_price { color: #022cff; }
+    
+
+
+/* 수량 카운트 */
+
+.quant, .quantity {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100% !important;
+    max-width: 93px;
+    margin: 0;
+    height: 30px;
+    border: 1px solid #f1f1f1;
+    overflow: hidden;
+    background-color: white;
+}
+
+
+.quant input[type=tel], .quant input[type=text], .quantity input[type=tel], .quantity input[type=text] {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.line2>.right>.quant .up{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    text-align: center;
+}
+.line2>.right>.quant .down{
+    width: 30px;
+    height: 30px;
+    float: left;
+    text-align: center;
+}
+.quantity .down, .quantity .up {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    text-align: center;
+}
+
+.quantity .down {
+    background-image: url(/bvtIMG/quantity_down.png) !important;
+}
+
+.quantity .up {
+    background-image: url(/bvtIMG/quantity_up.png) !important;
+}
+
+.quantity .down img, .quantity .up img {
+    opacity: 0;
+}
+
+.quant input, .quantity input {
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    background-color: transparent;
+}
+
+.quantity~.delete {
+    width: 30px;
+    float: left;
+    padding: 10px;
+}
+
+.quant .upArrow, .quantity .upArrow {
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+    font-size: 0;
+    text-indent: -10000px
+}
+
+.quant .downArrow {
+    width: 10px;
+    font-size: 0;
+    text-indent: -10000px;
+    height: 10px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 7px;
+}
+
+.quant .upArrow:after, .quant .upArrow:before, .quant .downArrow:after, .quant .downArrow:before {
+    background-color: gray;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+}
+
+.quant .upArrow:before, .quant .downArrow:before {
+    width: 3px;
+    height: 10px;
+}
+
+.quant .upArrow:after, .quant .downArrow:after {
+    width: 10px;
+    height: 3px;
+}

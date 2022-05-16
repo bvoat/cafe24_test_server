@@ -1,0 +1,18 @@
+#popup { width:500px; }
+.header { height:77px; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_popup_header.gif") 0 0 repeat-x; }
+.header h1 { height:49px; padding:0 0 0 33px; font-size:20px; line-height:49px; color:#fefefe; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_popup_title.gif") 20px center no-repeat; }
+.content { padding:0 22px 22px; }
+.content .btnArea { overflow:hidden; padding:20px 0 0; text-align:right; border-top:1px solid #dedcdc; }
+.content .btnArea.center { text-align:center; }
+.content .btnArea span.left { float:left; }
+
+.xans-myshop-orderissuecash table { table-layout:fixed; border-top:2px solid #c0c0c0; border-bottom:1px solid #c0c0c0; color:#202020; line-height:180%; }
+.xans-myshop-orderissuecash table th { width:140px; padding:10px 0 8px 20px; border-top:1px solid #e7e7e7; background:#f6f6f6; color:#414141; text-align:left; }
+.xans-myshop-orderissuecash table td { width:auto; padding:10px 0 8px 20px; border-top:1px solid #e7e7e7; }
+.xans-myshop-orderissuecash table input { height:14px; padding:2px; border:1px solid #d9d9d9; color:#202020; }
+.xans-myshop-orderissuecash table #regno { width:120px; }
+.xans-myshop-orderissuecash table #ssn1 { width:90px; margin:0 3px 0 0; }
+.xans-myshop-orderissuecash table #ssn2 { width:90px; margin:0 3px; }
+.xans-myshop-orderissuecash table #mobile1 { margin:0 3px 0 0; }
+.xans-myshop-orderissuecash table #mobile2 { width:60px; margin:0 3px; }
+.xans-myshop-orderissuecash table #mobile3 { width:90px; margin:0 3px; }

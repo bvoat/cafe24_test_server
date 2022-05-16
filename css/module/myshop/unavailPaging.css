@@ -1,0 +1,12 @@
+.xans-myshop-unavailpaging { margin:10px 0; text-align:center; }
+.xans-myshop-unavailpaging p,
+.xans-myshop-unavailpaging ol,
+.xans-myshop-unavailpaging li { display:inline; }
+.xans-myshop-unavailpaging img { vertical-align:top; }
+.xans-myshop-unavailpaging p { margin-right:-3px; *margin-right:1px; }
+.xans-myshop-unavailpaging ol { margin:0 17px 0 20px; }
+.xans-myshop-unavailpaging li { margin:0 4px; font-size:12px; font-weight:bold; font-family:tahoma, sans-serif; }
+.xans-myshop-unavailpaging li a { color:#7c7b7b; }
+.xans-myshop-unavailpaging li a:hover { color:#ffd5c40; text-decoration:underline; }
+.xans-myshop-unavailpaging li a.this { color:#fd5c40; }
+.xans-myshop-unavailpaging a.nolink { cursor:default; }

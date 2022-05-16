@@ -1,0 +1,18 @@
+.xans-attend-calendarpackage {}
+
+.xans-attend-calendarhead { padding:0 0 14px; text-align:right; overflow:hidden; zoom:1; }
+.xans-attend-calendarhead .inner { position:relative; float:right; }
+.xans-attend-calendarhead p { text-align:center; color:#000; }
+.xans-attend-calendarhead p.prev { position:absolute; top:15px;}
+.xans-attend-calendarhead p.next { position:absolute; top:15px; right:0; }
+.xans-attend-calendarhead p.date { padding:0 30px; }
+.xans-attend-calendarhead p span { color:#d9bca0; font-style:italic; font-weight:bold; font-size:50px; line-height:50px; }
+
+.xans-attend-calendar {  }
+.xans-attend-calendar td { border:1px solid #fff; background:#f7f4ec; }
+.xans-attend-calendar td p { position:relative; height:90px; padding:8px 6px; border-top:1px solid #e2ddd0; border-left:1px solid #e2ddd0; color:#8f8f8f; }
+.xans-attend-calendar td p img { padding:15px; }
+.xans-attend-calendar #attStart { position:absolute; left:-13px; top:-40px; padding:0; }
+.xans-attend-calendar #attEnd { position:absolute; left:-13px; top:-40px; padding:0; }
+
+.xans-attend-button { text-align:right; margin:20px 0 0; }

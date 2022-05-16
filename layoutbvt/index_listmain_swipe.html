@@ -1,0 +1,59 @@
+<div class="bvt-listmain_swipe swiper-container listmain_swipe-swipe">
+    <div class="prdList swiper-wrapper">
+        <div class="swiper-slide" id="anchorBoxId_{$product_no}">
+            <div class="box-img">
+                <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"
+                    data-title="{$product_name_tag|striptag}"><img src="{$image_big}" id="{$image_big_id}"
+                        alt="{$seo_alt_tag}" class="thumb" /></a>
+            </div>
+            <div class="wish {$list_wish_icon|display}">
+                <button class="gdVote">{$list_wish_icon}</button>
+            </div>
+            <div class="{$disp_likeprd_class}">
+                <button class="gdVote" type="button">{$disp_likeprd_icon}</button>
+            </div>
+
+            <div class="box-desc">
+                <div class="brand">{$prd_brand}</div>
+                <div class="title"><a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"
+                        data-title="{$product_name_tag|striptag}">{$prd_model}</a></div>
+                <div module="product_ListItem">
+                    <div class="displaynone delivery_price">{$item_content|striptag}</div>
+                    <div class="displaynone">{$item_content|striptag}</div>
+                    <div class="displaynone">{$item_content|striptag}</div>
+                    <div class="price{$item_display|display}">{$item_content|striptag}</div>
+                    <div class="price2{$item_display|display}">{$item_content|striptag}</div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide" id="anchorBoxId_{$product_no}">
+            <div class="box-img">
+                <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"
+                    data-title="{$product_name_tag|striptag}"><img src="{$image_big}" id="{$image_big_id}"
+                        alt="{$seo_alt_tag}" class="thumb" /></a>
+            </div>
+            <div class="wish {$list_wish_icon|display}">
+                <button class="gdVote">{$list_wish_icon}</button>
+            </div>
+            <div class="{$disp_likeprd_class}">
+                <button class="gdVote" type="button">{$disp_likeprd_icon}</button>
+            </div>
+
+            <div class="box-desc">
+                <div class="brand">{$prd_brand}</div>
+                <div class="title"><a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"
+                        data-title="{$product_name_tag|striptag}">{$prd_model}</a></div>
+                <div module="product_ListItem">
+                    <div class="displaynone delivery_price">{$item_content|striptag}</div>
+                    <div class="displaynone">{$item_content|striptag}</div>
+                    <div class="displaynone">{$item_content|striptag}</div>
+                    <div class="price{$item_display|display}">{$item_content|striptag}</div>
+                    <div class="price2{$item_display|display}">{$item_content|striptag}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="listmain_swipe-swiper-pagination"></div>
+
+</div>

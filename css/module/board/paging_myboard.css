@@ -1,0 +1,12 @@
+.xans-myshop-boardlistPaging { margin:10px 0; text-align:center; }
+.xans-myshop-boardlistPaging p,
+.xans-myshop-boardlistPaging ol,
+.xans-myshop-boardlistPaging li { display:inline; }
+.xans-myshop-boardlistPaging img { vertical-align:top; }
+.xans-myshop-boardlistPaging p { margin-right:-3px; *margin-right:1px; }
+.xans-myshop-boardlistPaging ol { margin:0 17px 0 20px; }
+.xans-myshop-boardlistPaging li { margin:0 4px; font-size:12px; font-weight:bold; font-family:tahoma, sans-serif; }
+.xans-myshop-boardlistPaging li a { color:#7c7b7b; }
+.xans-myshop-boardlistPaging li a:hover { color:#ffd5c40; text-decoration:underline; }
+.xans-myshop-boardlistPaging li a.this { color:#fd5c40; }
+.xans-myshop-boardlistPaging a.nolink { cursor:default; }

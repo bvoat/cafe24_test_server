@@ -28,7 +28,7 @@ jobs:
           **/preference*/**
           *.json
           *.ini
-          *gif
+          *.gif
           *.yml
           *.md
 
@@ -51,6 +51,6 @@ jobs:
           **/preference*/**
           *.json
           *.ini
-          *gif
+          *.gif
           *.yml
           *.md

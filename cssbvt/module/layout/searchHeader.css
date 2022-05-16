@@ -1,0 +1,155 @@
+/* 검색 오버스크린 */
+
+.searchtitle {
+    margin-bottom: 5px;
+}
+
+.searchtitle.m20 {
+    margin-top: 20px;
+}
+
+.searchtitle.m25 {
+    margin-top: 25px;
+}
+
+#search_box {
+    width: 100%;
+    max-width: 450px;
+    padding-left: 13px;
+    padding-right: 13px;
+    overflow: auto;
+    z-index: 100;
+    border: 0;
+    height: 1359px;
+    background-color: #F5F6FC;
+    transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+
+
+.srchInputBox input[type=text] {
+    width: calc(100% - 55px) !important;
+    height: 40px !important;
+    line-height: 50px;
+    border: 0;
+    text-align: left;
+    font-size: 1.4em;
+    font-weight: bold;
+    float: left;
+    border-radius: 100px;
+    padding-left: 13px !important;
+    border: 0px solid black;
+    -webkit-appearance: none;
+}
+
+.srchInputBox input[type=text]:focus {
+    outline: none;
+}
+
+.srchBtn {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    margin-right: 15px;
+}
+
+.srchBtn img {
+    width: 40px;
+    height: 40px;
+    padding: 9px 0 9px 9px;
+}
+
+.srchBtn:focus {
+    background-color: #f1f1f1;
+    outline: none;
+}
+
+.xans-layout-searchheader .btnClose {
+    position: inherit;
+    width: auto;
+    width: auto;
+    outline-style: none;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background: none;
+}
+
+.xans-layout-searchheader .indextitle {
+    margin-top: 20px;
+}
+
+.xans-layout-searchheader .searchForm {
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 100px;
+}
+
+.xans-layout-searchheader .xans-search-recentkeyword, .xans-layout-searchheader .xans-search-hotkeyword {
+    background: transparent;
+}
+
+.xans-layout-searchheader .xans-search-recentkeyword p {
+    padding: inherit;
+    border-bottom: 0;
+    color: inherit;
+    font-size: 13px;
+    text-align: inherit;
+}
+
+.xans-layout-searchheader .xans-search-recentkeyword li {
+    border: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 0 20px 0 0;
+}
+
+.xans-layout-searchheader .xans-search-recentkeyword li a {
+    color: #292929;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+.xans-layout-searchheader .xans-search-hotkeyword ul {
+    display: inherit;
+    border: 0;
+    padding: 0;
+}
+
+.xans-layout-searchheader .xans-search-hotkeyword li {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.xans-layout-searchheader .xans-search-hotkeyword li a {
+    color: #292929;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+.xans-layout-searchheader .xans-search-hotkeyword li a:before {
+    background: none;
+}
+
+.xans-layout-searchheader .xans-search-recentkeyword li .btnDelete {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: url(/bvtIMG/icon/btn_delete.svg) no-repeat 0 0;
+    background-size: inherit;
+}

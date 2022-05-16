@@ -1,0 +1,17 @@
+.bvt-listnormal-box ul li input[type=checkbox] {
+    top: 12px;
+    left: 12px;
+    position: absolute !important;
+    z-index: 1;
+}
+
+.xans-myshop-likeproductcontrol{
+    float: right;
+    margin-bottom: 20px;
+}
+
+.bvt-listnormal-box ul li {
+    border-radius: 10px;
+    border:1px solid #DBDBDB;
+}
+

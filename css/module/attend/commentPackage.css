@@ -1,0 +1,13 @@
+.xans-attend-commentwrite { margin:0 0 20px; padding:10px 20px 20px; border:1px solid #e7e7e7; background:#f8f8f8; font-size:11px; color:#202020; }
+.xans-attend-commentwrite legend { visibility:hidden; overflow:hidden; width:0; height:0; font-size:0; line-height:0; }
+.xans-attend-commentwrite p { margin:10px 0 0; }
+.xans-attend-commentwrite textarea { width:640px; height:44px; padding:2px 2px 2px 4px; border:1px solid #d9d9d9; color:#202020; }
+
+.memoList { border-top:2px solid #c0c0c0; border-bottom:2px solid #c0c0c0; }
+.memoList .memoArea { overflow:hidden; padding:20px; border-top:1px dotted #c7c7c7; color:#595959; }
+.memoList .memoArea.first { border-top:0; }
+.memoList .memoArea .name { float:left; color:#595959; }
+.memoList .memoArea .date { float:right; color:#8f8f8f; }
+.memoList .memoArea .memo { clear:both; padding:10px 0 0; }
+
+#commentForm { display:block; }

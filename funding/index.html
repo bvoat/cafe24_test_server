@@ -1,0 +1,101 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<div class="margin-header">
+
+</div>
+
+<!-- 메뉴 -->
+<!--@import(/layout/basic/index_menu.html)-->
+
+
+<div class="padding2 indextitle m20 m108">
+    <h3 class="t14">지금 진행 중이에요.</h3>
+    <span class="t09">책임 있는 생산에 가치있는 한 표를 함께해요.</span>
+</div>
+
+
+
+<div class="padding2 listmain-18">
+    <div module="product_listmain_18">
+        <!--펀딩 메인진열-->
+        <!--
+                $count = 10
+                $basket_result = /product/add_basket.html
+                $basket_option = /product/basket_option.html
+            -->
+        <!--@import(/layoutbvt/index_funding.html)-->
+    </div>
+</div>
+
+
+<div class="padding2 indextitle m20">
+    <h3 class="t14">종료된 펀딩·공구</h3>
+    <span class="t09">함께 가치를 더했던 상품들이에요.</span>
+</div>
+
+<div class="padding2">
+    <div class=" fundingbanner" id="fundingbanner"></div>
+</div>
+
+<div>
+    <div module="product_listmain_26">
+        <div class="padding2">
+            <!--펀딩 종료진열-->
+            <!--
+                $count = 3
+                $moreview = yes
+                $cache = yes
+                $type = moreview
+            -->
+            <!--@import(/layoutbvt/index_funding.html)-->
+        </div>
+        <div module="product_listmore_26">
+            <!--개행 주의-->
+            <!--@css(/css/module/product/productMore.css)-->
+            <!--@css(/cssbvt/module/product/productMore.css)-->
+            <a id="fundingmore" href="#none" onclick="{$more_action}">
+                더보기(<span id="more_current_page_{$display_group}">{$current_page}</span>/<span
+                    id="more_total_page_{$display_group}">{$total_page}</span>)
+            </a>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<!--footer-->
+<!--@css(/cssbvt/module/layout/footer.css)-->
+<!--@import(/layout/basic/footer.html)-->
+
+<!--setting-->
+<!--@define(cmc_log)-->
+<!--@css(/cssbvt/bvt_index.css)-->
+<!--@css(/cssbvt/swiper-bvt.css)-->
+<!--@css(/cssbvt/module/product/index_listmain.css)-->
+<!--@js(/jsbvt/swiper-bundle.min.js)-->
+<!--@js(/jsbvt/swiper-bvt-setting.js)-->
+
+
+<script>
+    // 넘어온 값이 빈값인지 체크합니다.
+    // !value 하면 생기는 논리적 오류를 제거하기 위해
+    // 명시적으로 value == 사용
+    // [], {} 도 빈값으로 처리
+    var isEmpty = function (value) {
+        if (value == "" || value == null || value == undefined || (value != null && typeof value == "object" && !Object.keys(value).length)) {
+            return true
+        } else {
+            return false
+        }
+    };
+    if ($(".listmain-18").text().length==5) {
+        $(".listmain-18").append(`
+    <div class=" fundingendbanner" id="fundingendbanner"></div>
+`);
+
+        $("#fundingendbanner").append(`⏳<br><b>현재 진행 중인 펀딩·공구가 없어요!</b>`);
+    }
+
+</script>

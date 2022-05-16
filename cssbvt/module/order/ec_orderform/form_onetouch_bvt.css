@@ -1,0 +1,503 @@
+.headerflex {
+    justify-content: center !important;
+}
+.padding2.bg{
+background-color: #F8FAFB;
+}
+.padding2.bg>.bh-cont{
+    font-size:13px;
+    margin-top:15px;
+}
+#mCafe24Order .txtEm {
+ color:#022CFF;   
+}
+
+#mCafe24Order{
+    width: 100%;
+    border: 0;
+    background-color: #ffffff;
+    padding-top:24px;
+}
+#mCafe24Order.typeHeader {
+    background-color: #DCE1E3;
+    padding-top: 0px;
+
+}
+#mCafe24Order.typeHeader.result {
+    background-color: #ffffff;
+    padding-top: 0px;
+
+}
+#mCafe24Order .title {
+    padding: 13px 23px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+}
+
+#mCafe24Order .title:hover {
+    background-color: #f9f9f9;
+}
+
+#mCafe24Order .title h2 {
+    margin: 0 10px 0 0;
+    font-size: 1em;
+    color: #333;
+}
+
+#mCafe24Order .ec-base-fold {
+    padding: 0;
+    border: 0;
+    background: #fff;
+}
+#mCafe24Order .ec-base-fold:nth-child(3) {
+ margin-top: 25px;
+}
+
+#mCafe24Order .ec-base-fold.selected>.contents {
+    overflow: visible;
+    opacity: 1;
+    border: 0;
+    height: auto;
+    -webkit-transition: height .2s ease, opacity .2s ease-out;
+    -moz-transition: height .2s ease, opacity .2s ease-out;
+    -ms-transition: height .2s ease, opacity .2s ease-out;
+    -o-transition: height .2s ease, opacity .2s ease-out;
+    transition: height .2s ease, opacity .2s ease-out;
+}
+#mCafe24Order .ec-base-fold > .title:after {
+    position: absolute;
+    top: 15px;
+    right: 14px;
+    content: '';
+    height: 11px;
+    width: 19px;
+    display: block;
+    background: url(//img.echosting.cafe24.com/skin/mobile/order/bg_fold.png) no-repeat 0 0;
+    background-size: 19px auto;
+    -webkit-transition: .3s ease-out;
+    -moz-transition: .3s ease-out;
+    -ms-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
+
+#mCafe24Order .segment {
+    position: relative;
+    border-top: 0;
+}
+#mCafe24Order .recentShipArea {
+    padding: 13px;
+}
+#ec-shippingInfo-newAddress{
+    padding: 13px 0;
+}
+
+#mCafe24Order .segment {
+    padding:0;
+}
+#mCafe24Order .segment.unique {
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+#mCafe24Order .ec-base-button.gFull [class*="btn"],
+[class*="btn"].gFull {
+    width: 100%;
+
+}
+#mCafe24Order .ec-base-button.gFull {
+    margin:0;
+
+}
+#mCafe24Order .btnSubmit {
+    height: 70px;
+    line-height: 70px;
+    padding: 0 10px;
+    font-size: 15px;
+    color: #fff;
+    border: 0;
+    background: #022CFF;
+}
+#mCafe24Order .btnSubmit2 {
+    height: 46px !important;
+    line-height: 46px !important;
+    padding: 0 10px;
+    font-size: 14px !important;
+    color: #fff;    
+    border-radius: 100px;
+    background: #022CFF;
+    text-align: center; 
+}
+#mCafe24Order .btnEm2 {
+    height: 46px !important;
+    line-height: 46px !important;
+    padding: 0 10px;
+    font-size: 14px !important;
+    color:#ABABAB;    
+    border-radius: 100px;
+    border: 1px solid#ABABAB;
+    text-align: center; 
+}
+#mCafe24Order .ec-base-button.gFull [class*="btn"] {
+    margin: 0 0 7px;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 4px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#mCafe24Order .helpArea {
+    padding: 30px 14px; 
+}
+
+#mCafe24Order .agreeArea .agreement .agree .check {
+    padding:0;}
+/* 결과 */
+
+#mCafe24Order .pannelArea {
+    border: 0
+}
+
+.final-pay {
+    padding:40px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+
+#mCafe24Order .sideRight{
+    right:0;
+    top:0;
+}
+#mCafe24Order .agreeArea .agreement .agree .check > label {
+    margin: 0 20px 0 7px;
+}
+
+#mCafe24Order .recentShipArea .contact dd:before{
+    margin:0 7px;
+}
+
+
+.segment.ec-shippingInfo-sameaddr,.ec-shippingInfo-newAddress-setMain.segment  {
+    padding:13px !important;
+} 
+
+
+#mCafe24Order .orderArea .totalPrice{
+    margin:0;
+}
+
+#mCafe24Order .ec-base-table.typeView > table > tbody > tr > th {
+    padding: 8px 0 7px 14px;
+    vertical-align: middle;
+}
+
+#mCafe24Order .ec-base-table.typeView > table > tbody > tr > td {
+    padding: 16px 0 16px 8px;
+}
+
+#mCafe24Order .segment > .ec-base-table.typeView{
+    margin:0;
+}
+
+/* -------------------order창 자랑하기 모달------------------------ */
+
+.modal-wrap span>span{
+    display: inline;
+    font-weight: bold;
+    color: #000;
+}
+
+.modal-background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #46464660;
+    opacity: 1;
+    z-index: 9999;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.modal-wrap{
+    position: fixed;
+    max-width: 335px;
+    width: 100%;
+    padding: 13px;
+    background-color: white;
+    border-radius: 15px;
+    transform: translate(-50%,0);
+    left: 50%;
+    text-align: center;
+    color: #707070;
+    font-size: 0.9em;    
+    z-index: 9999;
+}
+
+.modal-wrap>div{
+    max-width: 335px;
+    padding: 0.8em;
+}
+/* .modal-wrap>div:last-child{
+    margin-bottom: 0;
+} */
+
+.modal-wrap .modal-content-box{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-wrap .modal-content-box>span{
+    margin-top: 0.5em;
+    font-size: 1.15em;
+    color: #000;
+}
+
+.modal-wrap .modal-content-box .rewords-money {
+    width: 70%;
+    border: 1px solid #707070;
+    padding: 0.8em;
+    margin-top: 0.8em;
+}
+
+.rewords-money>span+span{
+    font-weight: 700;
+}
+
+.modal-wrap .modal-text-box .modal-text-top, .modal-text-bottom{
+    margin-bottom: 0.9em;
+}
+
+.modal-wrap .modal-text-box .modal-text-top>span{
+    color: #000;
+    font-weight: 700;
+}
+
+.modal-wrap .modal-text-box .modal-text-top>span:first-child{
+    display: block;
+    font-size: 1.15em;
+}
+
+.modal-wrap .modal-text-box .modal-text-bottom{
+    font-size: 0.9em;
+    color: #022CFF;
+}
+
+.modal-wrap .modal-text-box .modal-msg-box{
+    margin-top: 2em;
+}
+
+.modal-wrap .modal-check-product-box {
+    padding-top: 2.8em;
+}
+
+.modal-wrap .modal-check-product-box form {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    left: 2.8em;
+    color: #fff;
+}
+
+.modal-wrap .modal-check-product-box form input{
+    display: none;
+} 
+
+.modal-wrap .modal-check-product-box form input+label
+{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 250px;
+    width: 250px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal-wrap .modal-check-product-box form input+label>img{
+    display: block;
+    width: 80px;
+}  
+
+.modal-wrap .modal-check-product-box form input+label>span{
+    display: flex;
+    width: 170px;
+    flex-flow: column nowrap;
+    justify-content: center;
+    color: #333;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+
+.modal-wrap .modal-check-product-box form input+label>span>strong{
+    display: block;
+   font-size: 0.9em;
+   word-break: keep-all;
+}
+
+.modal-wrap .modal-check-product-box form input+label>span>p{
+    display: block;
+    font-size: 0.75em;
+    word-break: keep-all;
+    color: #666;
+ }
+
+.modal-wrap .modal-check-product-box form input+label::before{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url(/bvtIMG/icon/checkbox-unChecked.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: calc(50% - 10px);
+    left: -3.2em;
+}
+.modal-wrap .modal-check-product-box form input:checked+label::before{
+    display: block;
+    position: absolute;
+    content: " ";
+    width: 25px;
+    height: 25px;
+    background: url(/bvtIMG/icon/checkbox-checked.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: calc(50% - 10px);
+    left: -3.2em;
+}
+
+.modal-wrap .modal-check-product-box form #unChecked{
+    position: absolute;
+    top: -48px;
+    left: -47px;
+    background: #fff;
+    border: 1px solid #cecece64;
+    font-size: small;
+    padding: 0.5em;
+    cursor: pointer;
+    box-shadow: 3px 7px 11px #cecece64;
+} 
+
+.modal-msg-box{
+    font-size: smaller;
+}
+
+.modal-wrap .modal-btn-box  {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-wrap .modal-btn-box button{
+    width: 140px;
+    height: 44px;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 0.9em;
+    cursor: pointer;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+.modal-wrap .modal-btn-box #modal-btn-ok-records{
+    background: #022CFF;
+    box-shadow: 3px 7px 11px #0288ff4b;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.modal-wrap .modal-btn-box #modal-btn-no-records{
+    background: #fff;
+    box-shadow: 3px 7px 11px #cecece64;
+}
+
+.modal-wrap .modal-btn-box #modal-btn-ok-rewords{
+    background: #022CFF;
+    box-shadow: 3px 7px 11px #0288ff4b;
+    color: #fff;
+}
+
+.modal-wrap .modal-btn-box #modal-btn-check-records{
+    background: #022CFF;
+    box-shadow: 3px 7px 11px #0288ff4b;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.modal-wrap .modal-btn-box #modal-btn-show-records{
+    background: #fff;
+    box-shadow: 3px 7px 11px #cecece64;
+}
+
+#modal-btn-closed{
+    position: absolute;
+    display: block;
+    top: 0px;
+    right: -40px;
+    border: 0;
+    color: #707070;
+    background: #ffffff00;
+    cursor: pointer;
+}
+
+/* second-more-then-one-choice reject modal */
+
+.reject-modal-black-background{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #46464610;
+    opacity: 1;
+    z-index: 9999;
+    word-wrap: break-word;
+}
+.reject-modal-wrap{
+    position: fixed;
+    max-width: 335px;
+    width: 100%;
+    padding: 13px;
+    background-color: white;
+    border-radius: 15px;
+    transform: translate(-50%,0);
+    left: 50%;
+    text-align: center;
+    box-shadow: 3px 7px 11px #cecece64;
+    z-index: 9999;
+}
+.reject-modal-text-box{
+    padding: 0.8em;
+    margin-bottom: 0.8em;
+}
+.reject-modal-closed-btn{
+    width: 249px;
+    height: 48px;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 0.9em;
+    cursor: pointer;
+    padding: 0.5em;
+    box-sizing: border-box;
+    background: #022CFF;
+    box-shadow: 3px 7px 11px #0288ff4b;
+    color: #fff;
+    margin-bottom: 0.8em;
+}

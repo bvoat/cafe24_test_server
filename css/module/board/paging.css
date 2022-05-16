@@ -1,0 +1,12 @@
+.xans-board-paging { margin:10px 0; text-align:center; }
+.xans-board-paging p,
+.xans-board-paging ol,
+.xans-board-paging li { display:inline; }
+.xans-board-paging img { vertical-align:top; }
+.xans-board-paging p { margin-right:-3px; *margin-right:1px; }
+.xans-board-paging ol { margin:0 17px 0 20px; }
+.xans-board-paging li { margin:0 4px; font-size:12px; font-weight:bold; font-family:tahoma, sans-serif; }
+.xans-board-paging li a { color:#7c7b7b; }
+.xans-board-paging li a:hover { color:#ffd5c40; text-decoration:underline; }
+.xans-board-paging li a.this { color:#fd5c40; }
+.xans-board-paging a.nolink { cursor:default; }

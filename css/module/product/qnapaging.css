@@ -1,0 +1,15 @@
+.xans-product-qnapaging { clear:both; text-align:center; }
+.xans-product-qnapaging { padding:13px 0; }
+.xans-product-qnapaging { text-align:center; margin:20px 0 0;}
+.xans-product-qnapaging p,
+.xans-product-qnapaging ol,
+.xans-product-qnapaging li { display:inline; }
+.xans-product-qnapaging img {vertical-align:middle; }
+.xans-product-qnapaging p { margin-right:-4px; }
+.xans-product-qnapaging ol { margin:0 7px; }
+.xans-product-qnapaging li { margin:0 9px 0 0; padding:0 0 0 11px; font-size:11px; background:url(http://img.echosting.cafe24.com/design/skin/mono/bg_page.gif) left center no-repeat; }
+.xans-product-qnapaging li:first-child { background:none; }
+.xans-product-qnapaging li a { color:#202020; }
+.xans-product-qnapaging li a:hover { color:#f26522; text-decoration:underline; }
+.xans-product-qnapaging li a.this { color:#f26522; }
+.xans-product-qnapaging li a.nolink { cursor:default; }

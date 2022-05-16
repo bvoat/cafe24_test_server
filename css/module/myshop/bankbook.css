@@ -1,0 +1,9 @@
+.xans-myshop-bankbook { border:1px solid #e6e6e6; background:#efeff0; }
+.xans-myshop-bankbook ul { padding:22px 40px 17px; }
+.xans-myshop-bankbook li { overflow:hidden; padding:7px 0 7px 6px; background:url("http://img.echosting.cafe24.com/design/skin/default/myshop/ico_myshop.gif") no-repeat 0 11px; }
+.xans-myshop-bankbook li strong { float:left; }
+.xans-myshop-bankbook li strong.title { width:60px; font-weight:normal; font-size:11px; }
+.xans-myshop-bankbook li strong.data { width:190px; text-align:right; color:#757575; font-size:12px; }
+.xans-myshop-bankbook li strong.data.use { color:#ff7108; }
+.xans-myshop-bankbook li.etc strong.data { color:#202020; }
+.xans-myshop-bankbook li a { float:left; margin:-2px 0 0 8px; }

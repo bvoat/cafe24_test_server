@@ -1,0 +1,12 @@
+#popup { width:500px; }
+.header { height:77px; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_popup_header.gif") 0 0 repeat-x; }
+.header h1 { height:49px; padding:0 0 0 33px; font-size:20px; line-height:49px; color:#fefefe; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_popup_title.gif") 20px center no-repeat; }
+.content { padding:0 22px 22px; }
+.content .btnArea { overflow:hidden; padding:20px 0 0; text-align:right; }
+.content .btnArea.center { text-align:center; }
+.content .btnArea span.left { float:left; }
+
+.xans-myshop-orderhistoryescrow { font-size:11px; }
+.xans-myshop-orderhistoryescrow fieldset { display:block; padding:0 0 20px; color:#202020; vertical-align:middle; }
+.xans-myshop-orderhistoryescrow fieldset input { padding:1px 3px; margin:0 5px; width:77px; height:20px; border:1px solid #bcbcbc; }
+.xans-myshop-orderhistoryescrow fieldset p { padding:0 0 20px; color:#f36424; line-height:17px; }

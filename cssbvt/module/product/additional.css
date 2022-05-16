@@ -1,0 +1,100 @@
+/* 관련 상품 */
+
+.xans-product-relation .relation h3 {
+    margin-bottom: 15px;
+    color:#292929;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+
+.xans-product-relation .relation div.prdList img {
+    vertical-align: middle;
+}
+
+.xans-product-relation .relation div.prdList div.item {
+    display: inline-block;
+    color: #757575;
+    vertical-align: top;
+}
+
+
+.xans-product-relation a img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.xans-product-relation .box-img {
+    width: 100%;
+}
+
+.xans-product-relation .box-img>a {
+    position: relative;
+    padding-top: 100%;
+    /* 1:1 ratio */
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+
+.xans-product-relation .relation div.prdList div.item .box p>a {
+    font-size: 0.9em !important;
+    color: #292929 !important;
+    font-weight: normal !important;
+}
+
+.xans-product-relation .relation div.prdList div.item .box strong {
+    display: block;
+    font-size: 0.95em !important;
+    color: #292929 !important;
+    font-weight: bold;
+}
+
+.xans-product-relation .relation div.prdList div.item .thumb {
+    height: 100% !important;
+    border-radius: 5px;
+}
+
+.xans-product-relation .box-desc{
+    width: 100%;
+    margin-bottom: 50px;
+    padding-top: 10px; 
+}
+.xans-product-relation .box-desc .title * {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 12px;
+    color: #292929 ;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.xans-product-relation .box-desc .price {
+    font-size: 13px;
+    color: #292929;
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 5px;
+
+}
+
+
+
+.xans-product-relation .box-desc .price.strike {
+    font-weight: normal !important;
+    font-size: 11px !important;
+    text-decoration: line-through;
+    color: #C7C7C7 !important;
+}
+
+.xans-product-relation .box-desc .price.mPriceStrike {
+    font-weight: normal !important;
+    font-size: 11px !important;
+    text-decoration: line-through;
+    color: #C7C7C7 !important;
+}

@@ -1,0 +1,42 @@
+/* 게시판 전체 공통 */
+.xans-board-title .title { margin:0 0 15px; }
+.xans-board-title .title h2 { font-size:12px; color:#292929; }
+.xans-board-title .title p { padding:16px 0 0 0; font-size:11px; color:#8f8f8f; line-height:140%; }
+.xans-board-title .title p.imgArea { padding:0; }
+.xans-board-title .title p.imgArea img { display:block; margin:0 0 20px; }
+
+.xans-board-category { margin:0 0 10px; }
+
+/* list */
+.xans-board-listpackage { margin:0 0 10px; }
+.xans-board-listpackage .boardList table { border-bottom:1px solid #c0c0c0; color:#8f8f8f; font-size:11px; }
+.xans-board-listpackage table th { padding:9px 0 7px; border-top:2px solid #c0c0c0; border-bottom:1px solid #ccc; background:#f6f6f6; font-weight:normal; color:#202020; }
+.xans-board-listpackage table td { padding:11px 0 9px; border-top:1px dotted #e3e3e3; line-height:140%; text-align:center; vertical-align:middle; }
+.xans-board-listpackage table a,
+.xans-board-listpackage table a:hover { color:#000; }
+.xans-board-listpackage table td.subject { font-size:12px; text-align:left; word-break:break-all; }
+.xans-board-listpackage table .subject img { vertical-align:middle; margin:0 1px; }
+.xans-board-listpackage table .number { width:52px; }
+.xans-board-listpackage table .category { width:104px; }
+.xans-board-listpackage table .name { width:84px; }
+.xans-board-listpackage table .date { width:74px; }
+.xans-board-listpackage table .hit { width:45px; }
+.xans-board-listpackage table .grade { width:60px; }
+.xans-board-listpackage table .writer { width:84px; }
+.xans-board-listpackage table .recom { width:45px; }
+.xans-board-listpackage table .thumb { width:134px; overflow:hidden; }
+.xans-board-listpackage table .thumb img { width:46px; float:left; }
+.xans-board-listpackage table .thumb span { float:left; width:80px; padding:0 0 0 8px; text-align:left; }
+.xans-board-listpackage table tbody.notice .subject { font-weight:bold; }
+.xans-board-listpackage table input[type=radio],
+.xans-board-listpackage table input[type=checkbox] { width:13px; height:13px; vertical-align:-2px; *vertical-align:2px; margin:0 2px 0 0; }
+
+.xans-board-buttonlist { margin:10px 0; text-align:right; }
+
+/* 갤러리형 탭메뉴 */
+ul.xans-board-listheader { text-align:right; padding:0 0 10px; }
+ul.xans-board-listheader li { display:inline; }
+
+/* 상품후기 아코디언형 */
+.xans-board-notice #content_view td { padding:9px 10px 20px; background:#f6f7f9; text-align:left; }
+.xans-board-list #content_view td { padding:9px 10px 20px; background:#f6f7f9; text-align:left; word-break:break-all; white-space:pre-wrap; }

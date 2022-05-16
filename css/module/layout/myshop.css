@@ -1,0 +1,12 @@
+.xans-layout-myshop { margin:30px 0 40px; }
+.xans-layout-myshop h2 { height:30px; font-size:12px; color:#292929; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/bg_title.gif") 0 3px repeat-x; }
+.xans-layout-myshop h2 span { padding:0 7px 0 0; background:#fff; }
+.xans-layout-myshop ul { overflow:hidden; margin:-7px 0 0 -5px; }
+.xans-layout-myshop li { float:left; padding:7px 0 0 15px; font-size:11px; background:url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_myshop.gif") 0 8px no-repeat; }
+.xans-layout-myshop li.order { width:79px; background:none; }
+.xans-layout-myshop li.mileage {}
+.xans-layout-myshop li.member { width:79px; background:none; }
+.xans-layout-myshop li.consult {}
+.xans-layout-myshop li.wish { width:79px; background:none; }
+.xans-layout-myshop a { color:#8f8f91; }
+.xans-layout-myshop a:hover { color:#80a3d7; text-decoration:none; }

@@ -1,0 +1,73 @@
+@charset "utf-8";
+#footer {
+    width: 100%;
+    float: left;
+    background-color: #F3F5FE;
+    padding: 3vw 26px;
+}
+
+.footerBox1 {
+    width: 100%;
+    float: left;
+    text-align: left;
+    padding: 0 0 30px 0;
+}
+
+.footerBox1 li {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.footerBox2 {
+    width: 100%;
+    float: right;
+    font-size: 16px;
+}
+
+.footerBox4 .thanksto {
+    color: #022CFF;
+    font-size: 12px;
+}
+
+.footerBox2 .companyInfo {
+    font-size: 12px;
+}
+
+.footerBox3 .companyInfo {
+    line-height: 21px;
+    font-size: 12px;
+}
+
+.footerBox3 {
+    width: 100%;
+    float: left;
+    display: block;
+}
+
+.footerBox4 {
+    width: 100%;
+    float: left;
+    display: none;
+}
+
+.footer-mobile-toggle-box {
+    width: auto;
+    margin: 20px 0px;
+    float: left;
+    text-align: left;
+    color: #022CFF;
+    font-size: 0.9em;
+}
+
+.footer-mobile-toggle-box:active {
+    background-color: #f7f7f7;
+}
+
+.footer-mobile-toggle-box img {
+    height: 9px;
+    margin-left: 7px;
+}

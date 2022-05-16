@@ -1,0 +1,17 @@
+
+
+/* 게시글 컨트롤 */
+.gRight {
+    margin:50px 0;
+}
+.gRight>a{
+    background-color: #022CFF;
+    border-radius: 100px;
+    display: inherit;
+    height: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.8em;
+    padding: 8px 23px;
+    margin:10px 0;
+}
