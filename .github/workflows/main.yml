@@ -19,7 +19,6 @@ jobs:
         protocol: ftp
         port: 21
         exclude: |
-        	README.md
           **/.git*
           **/.git*/**
           **/node_modules/**
@@ -31,6 +30,7 @@ jobs:
           *.ini
           *gif
           *.yml
+          *.md
 
     - name: 📂 Sync files (2)
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
@@ -42,7 +42,6 @@ jobs:
         protocol: ftp
         port: 21
         exclude: |
-          README.md
           **/.git*
           **/.git*/**
           **/node_modules/**
@@ -54,3 +53,4 @@ jobs:
           *.ini
           *gif
           *.yml
+          *.md
