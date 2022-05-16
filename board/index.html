@@ -1,0 +1,304 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="path">
+    <h3>현재 위치</h3>
+    <ol>
+        <li class="first"><a href="/">홈</a></li>
+        <li title="현재 위치">게시판 메인</li>
+    </ol>
+</div>
+
+<div class="titleArea">
+    <h2>게시판 메인</h2>
+</div>
+
+<!-- 조회수 BEST & 추천수 BEST -->
+<div class="boardMain">
+    <div module="board_MainHit">
+        <!--@css(/css/module/board/mainHit.css)-->
+        <!--
+            $count = 5
+            $subject_cut = 25
+         -->
+        <h3><span>조회수 베스트</span></h3>
+        <table border="1" summary="">
+        <caption>게시판 목록</caption>
+        <thead>
+            <tr>
+                <th scope="col" class="subject">제목</th>
+                <th scope="col" class="date">작성일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="subject"><a href="{$board_read_url}">{$subject|cut:25,...}</a></td>
+                <td class="date">{$write_date|date:Y-m-d}</td>
+            </tr>
+            <tr>
+                <td class="subject"><a href="{$board_read_url}">{$subject|cut:25,...}</a></td>
+                <td class="date">{$write_date|date:Y-m-d}</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <div module="board_MainRecommend">
+        <!--@css(/css/module/board/mainRecommend.css)-->
+        <!--
+            $count = 5
+         -->
+        <h3><span>추천수 베스트</span></h3>
+        <table border="1" summary="">
+        <caption>게시판 목록</caption>
+        <thead>
+            <tr>
+                <th scope="col" class="subject">제목</th>
+                <th scope="col" class="date">작성일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="subject"><a href="{$board_read_url}">{$subject|cut:25,...}</a></td>
+                <td class="date">{$write_date|date:Y-m-d}</td>
+            </tr>
+            <tr>
+                <td class="subject"><a href="{$board_read_url}">{$subject|cut:25,...}</a></td>
+                <td class="date">{$write_date|date:Y-m-d}</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- 공지사항 & 뉴스/이벤트 -->
+<div class="boardMain">
+    <div class="board leftArea" module="board_listpackage_1">
+        <!--@css(/css/module/board/listPackage_1.css)-->
+        <h3 module="board_title_1"><span>{$home_title}</span></h3>
+        <table border="1" summary="">
+        <caption>공지사항 목록</caption>
+        <thead module="board_listheader_1">
+            <tr>
+                <th scope="col" class="subject">제목</th>
+                <th scope="col" class="date">작성일</th>
+            </tr>
+        </thead>
+        <tbody module="board_list_1">
+            <!--
+                $count = 5
+                $main_list = yes
+             -->
+            <tr>
+                <td class="subject"><a href="/board/free/read.html{$param_read}">{$subject|cut:25,...}</a> {$icon_new}{$icon_hit}{$icon_file}{$comment_count}</td>
+                <td class="date {$date_display|display}">{$write_date|date:Y-m-d}</td>
+            </tr>
+            <tr>
+                <td class="subject"><a href="/board/free/read.html{$param_read}">{$subject|cut:25,...}</a> {$icon_new}{$icon_hit}{$icon_file}{$comment_count}</td>
+                <td class="date {$date_display|display}">{$write_date|date:Y-m-d}</td>
+            </tr>
+        </tbody>
+        </table>
+        <a href="/board/free/list.html?board_no=1" class="more"><img src="http://img.echosting.cafe24.com/design/skin/default/layout/btn_board_more.gif" alt="MORE" /></a>
+    </div>
+
+    <div class="board rightArea" module="board_listpackage_2">
+        <!--@css(/css/module/board/listPackage_2.css)-->
+        <h3 module="board_title_2"><span>{$home_title}</span></h3>
+        <table border="1" summary="뉴스&amp;이벤트 목록입니다.">
+        <caption>뉴스&amp;이벤트 목록</caption>
+        <thead module="board_listheader_2">
+            <tr>
+                <th scope="col" class="subject">제목</th>
+                <th scope="col" class="date">작성일</th>
+            </tr>
+        </thead>
+
+        <tbody module="board_list_2">
+            <!--
+                $count = 5
+                $main_list = yes
+             -->
+            <tr>
+                <td class="subject"><a href="/board/free/read.html{$param_read}">{$subject|cut:25,...}</a> {$icon_new}{$icon_hit}{$icon_file}{$comment_count}</td>
+                <td class="date {$date_display|display}">{$write_date|date:Y-m-d}</td>
+            </tr>
+            <tr>
+                <td class="subject"><a href="/board/free/read.html{$param_read}">{$subject|cut:25,...}</a> {$icon_new}{$icon_hit}{$icon_file}{$comment_count}</td>
+                <td class="date {$date_display|display}">{$write_date|date:Y-m-d}</td>
+            </tr>
+        </tbody>
+        </table>
+        <a href="/board/free/list.html?board_no=2" class="more"><img src="http://img.echosting.cafe24.com/design/skin/default/layout/btn_board_more.gif" alt="MORE" /></a>
+    </div>
+</div>
+
+<!-- 1:1 맞춤상담 & 자유게시판 -->
+<div class="boardMain">
+    <div class="board" module="board_listpackage_5">
+        <!--@css(/css/module/board/listPackage_5.css)-->
+        <h3 module="board_title_5"><span>{$home_title}</span></h3>
+        <table border="1" summary="">
+        <caption>자유게시판 목록</caption>
+        <thead module="board_listheader_5">
+            <tr>
+                <th scope="col" class="subject">제목</th>
+                <th scope="col" class="date">작성일</th>
+            </tr>
+        </thead>
+
+        <tbody module="board_list_5">
+            <!--
+                $count = 5
+                $main_list = yes
+             -->
+            <tr>
+                <td class="subject"><a href="/board/free/read.html{$param_read}">{$subject|cut:45,...}</a> {$icon_new}{$icon_hit}{$icon_file}{$comment_count}</td>
+                <td class="date {$date_display|display}">{$write_date|date:Y-m-d}</td>
+            </tr>
+            <tr>
+                <td class="subject"><a href="/board/free/read.html{$param_read}">{$subject|cut:45,...}</a> {$icon_new}{$icon_hit}{$icon_file}{$comment_count}</td>
+                <td class="date {$date_display|display}">{$write_date|date:Y-m-d}</td>
+            </tr>
+        </tbody>
+        </table>
+        <a href="/board/free/list.html?board_no=5" class="more"><img src="http://img.echosting.cafe24.com/design/skin/default/layout/btn_board_more.gif" alt="MORE" /></a>
+    </div>
+    <div class="board" module="board_listpackage_1002">
+        <!--@css(/css/module/board/listPackage_5.css)-->
+        <h3 module="board_title_1002"><span>{$home_title}</span></h3>
+        <table border="1" summary="">
+        <caption>자유게시판 목록</caption>
+        <thead module="board_listheader_1002">
+            <tr>
+                <th scope="col" class="subject">제목</th>
+                <th scope="col" class="date">작성일</th>
+            </tr>
+        </thead>
+
+        <tbody module="board_list_1002">
+            <!--
+                $count = 5
+                $main_list = yes
+             -->
+            <tr>
+                <td class="subject"><a href="/board/free/read.html{$param_read}">{$subject|cut:45,...}</a> {$icon_new}{$icon_hit}{$icon_file}{$comment_count}</td>
+                <td class="date {$date_display|display}">{$write_date|date:Y-m-d}</td>
+            </tr>
+            <tr>
+                <td class="subject"><a href="/board/free/read.html{$param_read}">{$subject|cut:45,...}</a> {$icon_new}{$icon_hit}{$icon_file}{$comment_count}</td>
+                <td class="date {$date_display|display}">{$write_date|date:Y-m-d}</td>
+            </tr>
+        </tbody>
+        </table>
+        <a href="/board/free/list.html?board_no=1002" class="more"><img src="http://img.echosting.cafe24.com/design/skin/default/layout/btn_board_more.gif" alt="MORE" /></a>
+    </div>
+</div>
+
+<!-- 이용안내 FAQ & 자료실 -->
+<div class="boardMain">
+    <div class="board leftArea" module="board_listpackage_3">
+        <!--@css(/css/module/board/listPackage_3.css)-->
+        <h3 module="board_title_3"><span>{$home_title}</span></h3>
+        <table border="1" summary="">
+        <caption>이용안내 목록</caption>
+        <thead module="board_listheader_3">
+            <tr>
+                <th scope="col" class="subject">제목</th>
+                <th scope="col" class="date">작성일</th>
+            </tr>
+        </thead>
+
+        <tbody module="board_list_3">
+            <!--
+                $count = 5
+                $main_list = yes
+             -->
+            <tr>
+                <td class="subject"><a href="/board/free/read.html{$param_read}">{$subject|cut:25,...}</a> {$icon_new}{$icon_hit}{$icon_file}{$comment_count}</td>
+                <td class="date {$date_display|display}">{$write_date|date:Y-m-d}</td>
+            </tr>
+            <tr>
+                <td class="subject"><a href="/board/free/read.html{$param_read}">{$subject|cut:25,...}</a> {$icon_new}{$icon_hit}{$icon_file}{$comment_count}</td>
+                <td class="date {$date_display|display}">{$write_date|date:Y-m-d}</td>
+            </tr>
+        </tbody>
+        </table>
+        <a href="/board/free/list.html?board_no=3" class="more"><img src="http://img.echosting.cafe24.com/design/skin/default/layout/btn_board_more.gif" alt="MORE" /></a>
+    </div>
+
+    <div class="board rightArea" module="board_listpackage_7">
+        <!--@css(/css/module/board/listPackage_7.css)-->
+        <h3 module="board_title_7"><span>{$home_title}</span></h3>
+        <table border="1" summary="">
+        <caption>자료실 목록</caption>
+        <thead module="board_listheader_7">
+            <tr>
+                <th scope="col" class="subject">제목</th>
+                <th scope="col" class="date">작성일</th>
+            </tr>
+        </thead>
+
+        <tbody module="board_list_7">
+            <!--
+                $count = 5
+                $main_list = yes
+             -->
+            <tr>
+                <td class="subject"><a href="/board/free/read.html{$param_read}">{$subject|cut:25,...}</a> {$icon_new}{$icon_hit}{$icon_file}{$comment_count}</td>
+                <td class="date {$date_display|display}">{$write_date|date:Y-m-d}</td>
+            </tr>
+            <tr>
+                <td class="subject"><a href="/board/free/read.html{$param_read}">{$subject|cut:25,...}</a> {$icon_new}{$icon_hit}{$icon_file}{$comment_count}</td>
+                <td class="date {$date_display|display}">{$write_date|date:Y-m-d}</td>
+            </tr>
+        </tbody>
+        </table>
+        <a href="/board/free/list.html?board_no=7" class="more"><img src="http://img.echosting.cafe24.com/design/skin/default/layout/btn_board_more.gif" alt="MORE" /></a>
+    </div>
+</div>
+
+<!-- 상품Q&A & 갤러리 -->
+<div class="boardMain">
+    <div class="board leftArea" module="board_listpackage_6">
+        <!--@css(/css/module/board/listPackage_6.css)-->
+        <h3 module="board_title_6"><span>{$home_title}</span></h3>
+        <div class="galleryList" module="board_list_6">
+            <!--
+            $count = 4
+            $main_list = yes
+            -->
+            <ul>
+                <li>
+                    <a href="/board/product/read.html{$param_read}" class="imgLink">{$product_img}{$subject} {$comment_count}</a>
+                    <span><em>{$write_date|date:Y-m-d}</em></span>
+                </li>
+                <li>
+                    <a href="/board/product/read.html{$param_read}" class="imgLink">{$product_img}{$subject} {$comment_count}</a>
+                    <span><em>{$write_date|date:Y-m-d}</em></span>
+                </li>
+            </ul>
+        </div>
+        <a href="/board/product/list.html?board_no=6" class="more"><img src="http://img.echosting.cafe24.com/design/skin/default/layout/btn_board_more.gif" alt="MORE" /></a>
+    </div>
+
+    <div class="board rightArea" module="board_listpackage_8">
+        <!--@css(/css/module/board/listPackage_8.css)-->
+        <h3 module="board_title_8"><span>{$home_title}</span></h3>
+        <div class="galleryList" module="board_list_8">
+            <!--
+            $count = 4
+            $main_list = yes
+            -->
+            <ul>
+                <li>
+                    <a href="/board/product/read.html{$param_read}" class="imgLink"><img src="{$img_src}" alt="" />{$subject} {$comment_count}</a>
+                    <span><em>{$write_date|date:Y-m-d}</em></span>
+                </li>
+                <li>
+                    <a href="/board/product/read.html{$param_read}" class="imgLink"><img src="{$img_src}" alt="" />{$subject} {$comment_count}</a>
+                    <span><em>{$write_date|date:Y-m-d}</em></span>
+                </li>
+            </ul>
+        </div>
+        <a href="/board/gallery/list.html?board_no=8" class="more"><img src="http://img.echosting.cafe24.com/design/skin/default/layout/btn_board_more.gif" alt="MORE" /></a>
+    </div>
+</div>

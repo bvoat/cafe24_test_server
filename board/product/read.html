@@ -1,0 +1,306 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="wrapper2 padding2 margin-footer">
+
+    <div module="board_ReadPackage_4">
+        <!--@css(/css/module/board/readPackage.css)-->
+        <!--@css(/cssbvt/module/board/readPackage.css)-->
+
+
+        <div module="board_title_4">
+
+            <div class="margin-header">
+                <div class="bh-title b">{$board_title}</div>
+                <div class="bh-cont">{$board_info}</div>
+            </div>
+        </div>
+
+        <div module="board_Product_4">
+            <p class="prdThumb"><a href="/product/detail.html{$param_product}"><img src="{$product_img}" alt="" /></a>
+            </p>
+            <div class="prdInfo">
+                <h3><a href="/product/detail.html{$param_product}">{$product_name}</a></h3>
+                <p class="button"><a href="/product/detail.html{$param_product}" title="새창으로 이동"><img
+                            src="http://img.echosting.cafe24.com/design/skin/default/board/btn_prd_detail.gif"
+                            alt="상품상세보기" /></a></p>
+            </div>
+        </div>
+
+        <div module="board_read_4">
+            <div class="boardView">
+                <table border="1" summary="">
+                    <caption>상품 게시판 상세</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">제목</th>
+                            <td>{$subject}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">작성자</th>
+                            <td>{$member_icon} {$writer} <span class="{$config.display_ip|display}">(ip:{$ip})</span>
+                                {$admin_mileage}</td>
+                        </tr>
+                        <tr class="etcArea">
+                            <td colspan="2">
+                                <ul>
+                                    <li class="date {$config.use_date|display}">
+                                        <strong class="th">작성일</strong> <span class="td">{$write_date}</span>
+                                    </li>
+                                    <li class="recom {$config.is_use_recom|display}">
+                                        <strong class="th">추천</strong> <span class="td">{$vote_count}<a href="#none"
+                                                onclick="{$action_vote}"> <img
+                                                    src="http://img.echosting.cafe24.com/design/skin/default/board/btn_recommend.gif"
+                                                    alt="추천하기" /></a></span>
+                                    </li>
+                                    <li class="hit {$config.use_cnt|display}">
+                                        <strong class="th">조회수</strong> <span class="td">{$hit_count}</span>
+                                    </li>
+                                    <li class="grade {$config.is_use_point|display}">
+                                        <strong class="th">평점</strong> <span class="td"><img
+                                                src="http://img.echosting.cafe24.com/design/skin/default/board/ico_point{$point_count}.gif"
+                                                alt="{$point_count}점"></span>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="view">
+                            <td colspan="2">
+                                <div class="detail">{$content_image}{$content}</div>
+                            </td>
+                        </tr>
+                        <tr class="attach {$config.use_attach|display}">
+                            <th>첨부파일</th>
+                            <td>{$attach_file}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">비밀번호</th>
+                            <td>{$form.password} <span class="info">* 삭제하려면 비밀번호를 입력하세요.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="btnArea miniType {$config.is_admin|display}">
+                <span class="left">
+                    <a href="#none" onclick="{$action_post}" class="admin {$config.is_post|display}">관리자게시</a>
+                    <a href="#none" onclick="{$action_spam}"><img
+                            src="http://img.echosting.cafe24.com/design/skin/default/board/btn_spam1.gif"
+                            alt="스팸신고" /></a>
+                    <a href="#none" onclick="{$action_spam_cancle}"><img
+                            src="http://img.echosting.cafe24.com/design/skin/default/board/btn_spam2.gif"
+                            alt="스팸해제" /></a>
+                </span>
+            </div>
+
+            <div class="btnArea">
+                <span class="left"><a href="/board/product/list.html{$param_list}"><img
+                            src="//img.echosting.cafe24.com/design/skin/fashion013/btn_list.gif" alt="목록" /></a></span>
+                <a href="#none" onclick="{$action_delete}" class="{$delete_button_auth|display}"><img
+                        src="//img.echosting.cafe24.com/design/skin/fashion013/btn_delete.gif" alt="삭제" /></a>
+                <a href="/board/product/modify.html{$param_modify}" class="{$modify_button_auth|display}"><img
+                        src="//img.echosting.cafe24.com/design/skin/fashion013/btn_modify.gif" alt="수정" /></a>
+                <a href="/board/product/reply.html{$param_reply}" class="{$reply_button_auth|display}"><img
+                        src="//img.echosting.cafe24.com/design/skin/fashion013/btn_reply.gif" alt="답변" /></a>
+            </div>
+        </div>
+    </div>
+
+    <div module="board_CommentPackage_4">
+        <!--@css(/css/module/board/commentPackage.css)-->
+        <!-- 코멘트 리스트 -->
+        <div module="board_commentlist_4">
+            <!--
+        $delete_page_url = /board/product/comment_del.html
+        $delete_success_url = /board/product/read.html
+    -->
+            <ul class="boardComment">
+                <li class="first">
+                    <strong class="name">{$checkbox} {$comment_name}</strong>
+                    <span class="date">{$comment_write_date}</span>
+                    <span class="grade {$config.is_use_point|display}"><img
+                            src="http://img.echosting.cafe24.com/design/skin/default/board/ico_point{$comment_point_count}.gif"
+                            alt="{$comment_point_count}점" /></span>
+                    <span class="button">
+                        <a href="javascript:;" onclick="{$action_comment_update}"><img
+                                src="http://img.echosting.cafe24.com/design/skin/default/board/btn_ico_modify.gif"
+                                alt="댓글 수정" /></a>
+                        <a href="javascript:;" onclick="{$action_comment_delete}"><img
+                                src="http://img.echosting.cafe24.com/design/skin/default/board/btn_ico_delete.gif"
+                                alt="댓글 삭제" /></a>
+                    </span>
+                    <p class="comment">
+                        <span class="{$is_spam_display|display}"><img
+                                src="http://img.echosting.cafe24.com/design/skin/default/board/ico_spam.gif"
+                                alt="스팸글" /></span>
+                        {$comment_content}
+                    </p>
+                </li>
+                <li>
+                    <strong class="name">{$checkbox} {$comment_name}</strong>
+                    <span class="date">{$comment_write_date}</span>
+                    <span class="grade {$config.is_use_point|display}"><img
+                            src="http://img.echosting.cafe24.com/design/skin/default/board/ico_point{$comment_point_count}.gif"
+                            alt="{$comment_point_count}점" /></span>
+                    <span class="button">
+                        <a href="javascript:;" onclick="{$action_comment_update}"><img
+                                src="http://img.echosting.cafe24.com/design/skin/default/board/btn_ico_modify.gif"
+                                alt="댓글 수정" /></a>
+                        <a href="javascript:;" onclick="{$action_comment_delete}"><img
+                                src="http://img.echosting.cafe24.com/design/skin/default/board/btn_ico_delete.gif"
+                                alt="댓글 삭제" /></a>
+                    </span>
+                    <p class="comment">
+                        <span class="{$is_spam_display|display}"><img
+                                src="http://img.echosting.cafe24.com/design/skin/default/board/ico_spam.gif"
+                                alt="스팸글" /></span>
+                        {$comment_content}
+                    </p>
+                </li>
+            </ul>
+
+            <div class="btnArea {$config.is_admin|display}">
+                <p>
+                    <a href="#none" onclick="{$action_spam}"><img
+                            src="http://img.echosting.cafe24.com/design/skin/default/board/btn_spam1.gif"
+                            alt="스팸신고" /></a>
+                    <a href="#none" onclick="{$action_spam_cancle}"><img
+                            src="http://img.echosting.cafe24.com/design/skin/default/board/btn_spam2.gif"
+                            alt="스팸해제" /></a>
+                </p>
+            </div>
+        </div>
+
+        <!-- 코멘트 페이징 -->
+        <div module="board_commentpaging_4">
+            <p><a href="{$param_prev}"><img
+                        src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_prev.gif"
+                        alt="이전 페이지" /></a></p>
+            <ol>
+                <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+                <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+            </ol>
+            <p><a href="{$param_next}"><img
+                        src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_next.gif"
+                        alt="다음 페이지" /></a> </p>
+        </div>
+
+        <div module="board_commentform_4">
+            <fieldset>
+                <legend>댓글 수정</legend>
+                <p>비밀번호{$form.comment_password}</p>
+                <p>
+                    {$form.comment_modify}
+                    <a href="#none" onclick="{$action_comment_update}"><img
+                            src="http://img.echosting.cafe24.com/design/skin/default/board/btn_comment_modify.gif"
+                            alt="수정" /></a>
+                    <a href="#none" onclick="{$action_comment_cancel}"><img
+                            src="http://img.echosting.cafe24.com/design/skin/default/board/btn_comment_cancel.gif"
+                            alt="취소" /></a>
+                </p>
+                <p class="{$config.comment_size|display}">{$comment_byte} / {$comment_size} byte</p>
+            </fieldset>
+        </div>
+
+        <div module="board_commentwrite_4">
+            <!-- 댓글권한 있음 -->
+            <div class="{$comment_write_display|display}">
+                <fieldset>
+                    <legend>댓글 입력</legend>
+                    <p><strong>댓글달기</strong><span
+                            class="{$comment_input_name|display}">이름{$form.comment_name}</span>비밀번호{$form.comment_password}<a
+                            href="#none" onclick="{$action_comment_admin}" class="{$config.is_admin|display}"><img
+                                src="http://img.echosting.cafe24.com/design/skin/default/board/btn_comment_admin.gif"
+                                alt="관리자답변보기" /></a></p>
+                    <p>
+                        {$form.comment}
+                        <a href="#none" onclick="{$action_comment_insert}" class="{$comment_button|display}"><img
+                                src="http://img.echosting.cafe24.com/design/skin/default/board/btn_comment_submit.gif"
+                                alt="확인" /></a>
+                    </p>
+                    <p class="grade {$config.is_use_point|display}">{$form.comment_point}</p>
+                    <p class="{$config.comment_size|display}">{$comment_byte} / {$comment_size} byte</p>
+                    <p class="{$config.use_captcha_comment|display}">
+                        {$captcha_image}<br />
+                        {$form.captcha}
+                        * 왼쪽의 문자를 공백없이 입력하세요.(대소문자구분)
+                    </p>
+                </fieldset>
+            </div>
+            <!-- 댓글권한 없음 -->
+            <div class="{$comment_write_display_none|display}">
+                <p>{$comment_auth_name}에게만 댓글 작성 권한이 있습니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <div module="board_movement_4">
+        <!--@css(/css/module/board/movement.css)-->
+        <ul>
+            <li class="prev {$prev_display|display}"><strong>이전글</strong><a
+                    href="/board/product/read.html{$param_prev}">{$prev_subject}</a></li>
+            <li class="next {$next_display|display}"><strong>다음글</strong><a
+                    href="/board/product/read.html{$param_next}">{$next_subject}</a></li>
+        </ul>
+    </div>
+
+    <div module="board_listsgroup_4">
+        <h3>관련 글 보기</h3>
+        <!--@css(/css/module/board/listsgroup.css)-->
+        <!--
+        $count = 5
+    -->
+        <table border="1" summary="">
+            <caption>관련글 모음</caption>
+            <thead>
+                <tr>
+                    <th scope="col" class="number"> 번호</th>
+                    <th scope="col" class="thumb">상품명</th>
+                    <th scope="col" class="subject">제목</th>
+                    <th scope="col" class="writer">작성자</th>
+                    <th scope="col" class="date {$config.use_date|display}">작성일</th>
+                    <th scope="col" class="hit {$config.use_cnt|display}">조회</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="number">{$idx}</td>
+                    <td class="thumb"><span>{$product_name|cut:30,...}</span></td>
+                    <td class="subject">
+                        {$icon_re}{$icon_lock} <a href="/board/product/read.html{$param_read}">{$subject}</a>
+                        {$icon_new}{$icon_hit}{$icon_file}
+                    </td>
+                    <td class="writer">{$member_icon}{$writer}</td>
+                    <td class="date {$date_display|display}">{$write_date|date:Y-m-d}</td>
+                    <td class="hit {$hit_display|display}">{$hit_count}</td>
+                </tr>
+                <tr>
+                    <td class="number">{$idx}</td>
+                    <td class="thumb"><span>{$product_name|cut:30,...}</span></td>
+                    <td class="subject">
+                        {$icon_re}{$icon_lock} <a href="/board/product/read.html{$param_read}">{$subject}</a>
+                        {$icon_new}{$icon_hit}{$icon_file}
+                    </td>
+                    <td class="writer">{$member_icon}{$writer}</td>
+                    <td class="date {$date_display|display}">{$write_date|date:Y-m-d}</td>
+                    <td class="hit {$hit_display|display}">{$hit_count}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div module="board_function_4">
+        <!--@css(/css/module/board/function.css)-->
+        <!--
+        $success_return_url = /board/product/list.html
+     -->
+        <p>
+            해당 글 이동 : {$form.boardGroup} 으로
+            <a href="#none" onclick="{$action_article_move}"><img
+                    src="http://img.echosting.cafe24.com/design/skin/default/board/btn_move.gif" alt="글 이동" /></a>
+            <a href="#none" onclick="{$action_article_copy}"><img
+                    src="http://img.echosting.cafe24.com/design/skin/default/board/btn_copy.gif" alt="글 복사" /></a>
+            * 댓글포함, 답변 불포함
+        </p>
+    </div>
+    <!--@define(cmc_log)-->
+</div>

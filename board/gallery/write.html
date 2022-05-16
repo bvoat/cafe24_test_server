@@ -1,0 +1,113 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="board_writePackage_8">
+    <!--@css(/css/module/board/writePackage.css)-->
+    <div module="board_title_8">
+        <div class="path">
+            <h3>현재 위치</h3>
+            <ol>
+                <li class="first"><a href="/">홈</a></li>
+                <li><a href="/board/index.html">게시판</a></li>
+                <li title="현재 위치">{$board_name}</li>
+            </ol>
+        </div>
+
+        <div class="title">
+            <h2>{$board_title}</h2>
+            <p>{$board_info}</p>
+        </div>
+    </div>
+
+    <div module="board_write_8">
+        <div class="boardWrite">
+            <table border="1" summary="">
+            <caption>글쓰기 폼</caption>
+
+            <tbody>
+                <tr>
+                    <th scope="row">제목</th>
+                    <td>{$form.board_category} {$form.subject} {$form.notice}</td>
+                </tr>
+                <tr class="{$config.is_login|display}">
+                    <th scope="row">작성자</th>
+                    <td>{$form.writer}</td>
+                </tr>
+                <tr class="{$config.use_write_email|display}">
+                    <th scope="row">이메일</th>
+                    <td>{$form.email}</td>
+                </tr>
+                <tr class="{$config.is_use_point|display}">
+                    <th scope="row">평점</th>
+                    <td>{$form.point}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="write">
+                        {$form.content}
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">UCC URL</th>
+                    <td>{$form.ucc}</td>
+                </tr>
+            </tbody>
+
+            <tbody class="{$config.use_attach|display}">
+                <tr>
+                    <th scope="row">첨부파일1</th>
+                    <td>{$form.attach_file}</td>
+                </tr>
+                <tr>
+                    <th scope="row">첨부파일2</th>
+                    <td>{$form.attach_file}</td>
+                </tr>
+                <tr>
+                    <th scope="row">첨부파일3</th>
+                    <td>{$form.attach_file}</td>
+                </tr>
+                <tr>
+                    <th scope="row">첨부파일4</th>
+                    <td>{$form.attach_file}</td>
+                </tr>
+                <tr>
+                    <th scope="row">첨부파일5</th>
+                    <td>{$form.attach_file}</td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <th scope="row">비밀번호</th>
+                    <td>{$form.password}</td>
+                </tr>
+                <tr class="{$config.use_secret|display}">
+                    <th scope="row">비밀글설정</th>
+                    <td >{$form.secure}</td>
+                </tr>
+                <tr class="{$config.use_captcha_write|display}">
+                    <th scope="row">자동발송금지<br />보안문자</th>
+                    <td>
+                        {$captcha_image}
+                        <p>{$form.captcha} 영문, 숫자 조합을 공백없이 입력하세요(대소문자구분)</p>
+                    </td>
+                </tr>
+                <tr class="agree {$config.is_login|display}">
+                    <th scope="row">개인정보 수집 및 <br />이용 동의</th>
+                    <td>
+                        {$form.privacy_agreement}<br />
+                        개인정보 수집 및 이용에 동의하십니까? {$form.privacy_agreement_radio}
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <div class="btnArea miniType {$config.is_admin|display}">
+            <span class="left"><a href="#none" onclick="{$action_comment_admin}"><img src="http://img.echosting.cafe24.com/design/skin/default/board/btn_reply_admin.gif" alt="관리자답변보기" /></a></span>
+        </div>
+
+        <div class="btnArea">
+            <span class="left"><a href="/board/gallery/list.html{$param_list}"><img src="//img.echosting.cafe24.com/design/skin/fashion013/btn_list.gif" alt="목록" /></a></span>
+            <a href="/board/gallery/list.html{$param_list}"><img src="//img.echosting.cafe24.com/design/skin/fashion013/btn_cancel.gif" alt="취소" /></a>
+            <a href="#none" onclick="{$action_write}"><img src="//img.echosting.cafe24.com/design/skin/fashion013/btn_register.gif" alt="등록" /></a>
+        </div>
+    </div>
+</div>

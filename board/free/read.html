@@ -1,0 +1,78 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/cssbvt/bvt_read_event.css)-->
+
+
+
+<div class="wrapper2 margin-header margin-footer">
+    <div module="board_ReadPackage_2">
+        <!--@css(/css/module/board/readPackage.css)-->
+        <!--@css(/cssbvt/module/board/readPackage.css)-->
+
+
+        <div class="bvt-board-content" module="board_read_2">
+            <!--
+            $login_page_url = /member/login.html
+            $deny_access_url = /board/free/list.html
+        -->
+
+
+
+            {$content_image}{$content}
+
+            <div class="{$delete_button_auth|display} {$config.use_password|display} password w100 ">
+                <span>삭제하려면 비밀번호를 입력하세요.</span> {$form.password}
+            </div>
+
+            <div class="ec-base-button {$modify_button_auth|display}">
+                <!--   <span class="gLeft">
+                    <span class="{$config.is_admin|display}">
+                        <a href="#none" onclick="{$action_post}"
+                            class="btnNormalFix sizeS admin {$config.is_post|display}">{$admin_publish_message}</a>
+                        <a href="#none" onclick="{$action_post}"
+                            class="btnNormalFix sizeS admin {$config.not_post|display}">{$not_publish_message}</a>
+                        <a href="#none" onclick="{$action_spam}"
+                            class="btnNormalFix sizeS {$is_global_display|display}">스팸신고</a>
+                        <a href="#none" onclick="{$action_spam_cancle}"
+                            class="btnNormalFix sizeS {$is_global_display|display}">스팸해제</a>
+                    </span>
+                    <a href="{$link_board_list}" class="btnNormalFix sizeS">목록</a>
+                </span> -->
+                <div class="gRight">
+                    <a href="#none" onclick="{$action_delete}"
+                        class="btnNormalFix sizeS {$delete_button_auth|display}">삭제</a>
+                    <a href="/board/free/modify.html{$param_modify}"
+                        class="btnEmFix sizeS {$modify_button_auth|display}">수정</a>
+                    <a href="/board/free/reply.html{$param_reply}"
+                        class="btnSubmitFix sizeS {$reply_button_auth|display}">답변</a>
+                </div>
+            </div>
+            <!--투표 모듈 실행에 필요-->
+            <div style="display: none;" id="vote_no">{$no}</div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- 관리자 전용 메뉴 -->
+    <div module="board_function_2" class="w100 margin-footer">
+        <!--@css(/css/module/board/function.css)-->
+        <!--
+        $success_return_url = /board/free/list.html
+     -->
+        <p>
+            {$board_function_selectbox}
+            <a href="#none" class="btnNormal" onclick="{$action_article_move}"><img
+                    src="//img.echosting.cafe24.com/skin/base/common/btn_icon_move.gif" alt="" /> {$article_move}</a>
+            <a href="#none" class="btnNormal" onclick="{$action_article_copy}"><img
+                    src="//img.echosting.cafe24.com/skin/base/common/btn_icon_copy.gif" alt="" /> {$article_copy}</a>
+            {$board_function_help}
+        </p>
+    </div>
+    <!-- // 관리자 전용 메뉴 -->
+    <!--@define(cmc_log)-->
+
+    <script type="text/javascript" src="/jsbvt/jquery.cookie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>

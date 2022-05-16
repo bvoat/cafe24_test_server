@@ -1,0 +1,172 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/cssbvt/bvt_pollticle.css)-->
+
+
+
+<div class="wrapper2 margin-header margin-footer">
+    <div module="board_ReadPackage_5">
+        <!--@css(/css/module/board/readPackage.css)-->
+        <!--@css(/cssbvt/module/board/readPackage.css)-->
+
+
+        <div class="bvt-board-content" module="board_read_5">
+            <!--
+            $login_page_url = /member/login.html
+            $deny_access_url = /board/free/list.html
+        -->
+
+
+
+            {$content_image}{$content}
+
+            <div class="{$delete_button_auth|display} {$config.use_password|display} password w100 ">
+                <span>삭제하려면 비밀번호를 입력하세요.</span> {$form.password}
+            </div>
+
+            <div class="ec-base-button">
+                <!--   <span class="gLeft">
+                    <span class="{$config.is_admin|display}">
+                        <a href="#none" onclick="{$action_post}"
+                            class="btnNormalFix sizeS admin {$config.is_post|display}">{$admin_publish_message}</a>
+                        <a href="#none" onclick="{$action_post}"
+                            class="btnNormalFix sizeS admin {$config.not_post|display}">{$not_publish_message}</a>
+                        <a href="#none" onclick="{$action_spam}"
+                            class="btnNormalFix sizeS {$is_global_display|display}">스팸신고</a>
+                        <a href="#none" onclick="{$action_spam_cancle}"
+                            class="btnNormalFix sizeS {$is_global_display|display}">스팸해제</a>
+                    </span>
+                    <a href="{$link_board_list}" class="btnNormalFix sizeS">목록</a>
+                </span> -->
+                <div class="gRight">
+                    <a href="#none" onclick="{$action_delete}"
+                        class="btnNormalFix sizeS {$delete_button_auth|display}">삭제</a>
+                    <a href="/board/free/modify.html{$param_modify}"
+                        class="btnEmFix sizeS {$modify_button_auth|display}">수정</a>
+                    <a href="/board/free/reply.html{$param_reply}"
+                        class="btnSubmitFix sizeS {$reply_button_auth|display}">답변</a>
+                </div>
+            </div>
+        <!--투표 모듈 실행에 필요-->
+        <div style="display: none;" id="vote_no">{$no}</div>
+
+                    <div class="shr-box">
+            <div class="shr-text">
+                주변에 공유하고 <br>
+                투표를 함께하세요!</div>
+            <span id="gettitle" class="displaynone">{$subject}</span>
+
+            <span>
+                <label class="tooltip">
+                    <img class="shr-btn" src="/bvtIMG/shr_link.svg" id="shr-link"
+                        data-clipboard-text="bvoat.com/article/bvoat/5/{$no}/?utm_source=webshareapi&utm_medium=link&utm_campaign=sharebylink&utm_content=article_link">
+                        <input type="checkbox"><span>복사 완료!</span>
+                </label>
+            </span>
+
+            <span>
+                <img class="shr-btn" src="/bvtIMG/shr_kakao.svg" onclick="goShrBtn('kakao',window.location.href)"></img>
+            </span>
+        </div>
+            
+            
+        </div>
+
+
+
+
+    </div>
+    <div class="blue-round-btn">
+        <a href="https://docs.google.com/forms/d/1GKw5nck3l-PKshIfhfLw6QgTLwe4BJA7rMiwSc2X6FU/edit" target="_blank">폴티클
+            협업 제안, 매거진 피드백 하기</a>
+    </div>
+    <div class="board-notice">
+        비보트는 콘텐츠 발행에 있어 저작권법을 준수합니다. <br>
+        관련하여 문의할 내용이 있다면 official@passengers.co.kr로 전달해주세요!
+    </div>
+
+</div>
+
+
+
+
+<!-- 관리자 전용 메뉴 -->
+<div module="board_function_5" class="w100 margin-footer">
+    <!--@css(/css/module/board/function.css)-->
+    <!--
+        $success_return_url = /board/free/list.html
+     -->
+    <p>
+        {$board_function_selectbox}
+        <a href="#none" class="btnNormal" onclick="{$action_article_move}"><img
+                src="//img.echosting.cafe24.com/skin/base/common/btn_icon_move.gif" alt="" /> {$article_move}</a>
+        <a href="#none" class="btnNormal" onclick="{$action_article_copy}"><img
+                src="//img.echosting.cafe24.com/skin/base/common/btn_icon_copy.gif" alt="" /> {$article_copy}</a>
+        {$board_function_help}
+    </p>
+</div>
+<!-- // 관리자 전용 메뉴 -->
+<!--@define(cmc_log)-->
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+<!--카카오링크-->
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+
+<script>
+
+    Kakao.init('8d06e7b36f8d0b4e7496c6380453ff15');
+    Kakao.isInitialized();
+
+    var btn = document.getElementById('shr-link');
+    var clipboard = new Clipboard(btn);
+
+    clipboard.on('success', function (e) {
+        console.log(e);
+
+    });
+    clipboard.on('error', function (e) {
+        console.log(e);
+    });
+
+    function goShrBtn(type, _url) {
+        if (type == "link") {
+            if (navigator.share) {
+                navigator.share({
+                    title: document.getElementById("gettitle").innerText,
+                    text: '직접 투표하고 보터들의 선택 결과를 확인해보세요',
+                    url: _url + `/?utm_source=webshareapi&utm_medium=link&utm_campaign=sharebylink&utm_content=article_link`,
+                })
+                    .then(() => console.log('Successful share'))
+                    .catch((error) => console.log('Error sharing', error));
+            }
+        }
+        else if (type == "kakao") {
+            Kakao.Link.sendDefault({
+                objectType: 'feed',
+                content: {
+                    title: document.getElementById("gettitle").innerText,
+                    description: '직접 투표하고 보터들의 선택 결과를 확인해보세요',
+                    imageUrl:
+                        'https://bvoat.com/bvtIMG/banner/share_image.png',
+                    link: {
+                        mobileWebUrl: _url + `/?utm_source=kakaotalk&utm_medium=sharelink&utm_campaign=sharebykakao`,
+                        webUrl: _url + `/?utm_source=kakaotalk&utm_medium=sharelink&utm_campaign=sharebykakao`,
+                    },
+                },
+                buttons: [
+                    {
+                        title: '바로가기',
+                        link: {
+                            mobileWebUrl: _url + `/?utm_source=kakaotalk&utm_medium=sharelink&utm_campaign=sharebykakao`,
+                            webUrl: _url + `/?utm_source=kakaotalk&utm_medium=sharelink&utm_campaign=sharebykakao`,
+                        },
+                    },
+                ],
+            })
+        }
+    }
+
+
+</script>

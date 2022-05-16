@@ -1,0 +1,83 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="board_ReadPackage_8">
+    <!--@css(/css/module/board/readPackage.css)-->
+    <div module="board_title_8">
+        <div class="path">
+            <h3>현재 위치</h3>
+            <ol>
+                <li class="first"><a href="/">홈</a></li>
+                <li><a href="/board/index.html">게시판</a></li>
+                <li title="현재 위치">{$board_name}</li>
+            </ol>
+        </div>
+
+        <div class="title">
+            <h2>{$board_title}</h2>
+            <p>{$board_info}</p>
+        </div>
+    </div>
+
+    <div module="board_read_8">
+        <div class="boardView">
+            <table border="1" summary="">
+            <caption>게시판 상세</caption>
+            <tbody>
+                <tr>
+                    <th scope="row" style="height:10px; font-size:9pt">제목</th>
+                    <td>{$subject}</td>
+                </tr>
+                <tr>
+                    <th scope="row" style="font-size:9pt" >작성자</th>
+                    <td>{$member_icon} {$writer} <span class="{$config.display_ip|display}">(ip:{$ip})</span> {$admin_mileage}</td>
+                </tr>
+                
+                <tr class="view">
+                    <td colspan="2">
+                        <div class="detail">{$content_image}{$content}</div>
+                    </td>
+                </tr>
+
+            </tbody>
+            </table>
+        </div>
+
+        <div class="btnArea miniType {$config.is_admin|display}">
+            <span class="left">
+                <a href="#none" onclick="{$action_post}" class="admin {$config.is_post|display}">관리자게시</a>
+                <a href="#none" onclick="{$action_spam}"><img src="http://img.echosting.cafe24.com/design/skin/default/board/btn_spam1.gif" alt="스팸신고" /></a>
+                <a href="#none" onclick="{$action_spam_cancle}"><img src="http://img.echosting.cafe24.com/design/skin/default/board/btn_spam2.gif" alt="스팸해제" /></a>
+            </span>
+        </div>
+
+        <div class="btnArea">
+            <span class="left"><a href="/board/gallery/list.html{$param_list}"><img src="//img.echosting.cafe24.com/design/skin/fashion013/btn_list.gif" alt="목록" /></a></span>
+            <a href="#none" onclick="{$action_delete}" class="{$delete_button_auth|display}"><img src="//img.echosting.cafe24.com/design/skin/fashion013/btn_delete.gif" alt="삭제" /></a>
+            <a href="/board/gallery/modify.html{$param_modify}" class="{$modify_button_auth|display}"><img src="//img.echosting.cafe24.com/design/skin/fashion013/btn_modify.gif" alt="수정" /></a>
+            <a href="/board/gallery/reply.html{$param_reply}" class="{$reply_button_auth|display}"><img src="//img.echosting.cafe24.com/design/skin/fashion013/btn_reply.gif" alt="답변" /></a>
+        </div>
+    </div>
+</div>
+
+
+
+<div module="board_movement_8">
+    <!--@css(/css/module/board/movement.css)-->
+    <ul>
+        <li class="prev {$prev_display|display}"><strong>이전글</strong><a href="/board/gallery/read.html{$param_prev}">{$prev_subject}</a></li>
+        <li class="next {$next_display|display}"><strong>다음글</strong><a href="/board/gallery/read.html{$param_next}">{$next_subject}</a></li>
+    </ul>
+</div>
+
+<div id="adminFunction" module="board_function_8">
+    <!--@css(/css/module/board/function.css)-->
+    <!--
+        $success_return_url = /board/gallery/list.html
+     -->
+    <p>
+        해당 글 이동 : {$form.boardGroup} 으로
+        <a href="#none" onclick="{$action_article_move}" ><img src="http://img.echosting.cafe24.com/design/skin/default/board/btn_move.gif"  alt="글 이동" /></a>
+        <a href="#none" onclick="{$action_article_copy}" ><img src="http://img.echosting.cafe24.com/design/skin/default/board/btn_copy.gif" alt="글 복사" /></a>
+        * 댓글포함, 답변 불포함
+    </p>
+</div>
+<!--@define(cmc_log)-->

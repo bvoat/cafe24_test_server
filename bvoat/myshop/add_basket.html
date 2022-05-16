@@ -1,0 +1,61 @@
+<!--@layout(/layout/basic/layout.html)-->
+<script src="https://bvoat.shop/app/module_index_banner.js"></script>
+<style>
+
+    
+</style>
+<div style="margin-top:85px"></div>
+   
+<div class="padding2 index_project bvt-listmain-box">
+    <div class="indextitle m25">
+        <h3 class="t14">Congrats!</h3>
+        <span class="t09">지금 보터들이 구매하고 있어요.</span>
+    </div>
+    <div class="bvt-listmain_swipe swiper-container order-swipe add-order-swipe" module="product_listmain_46">
+        <!--
+        $count = 24
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+    -->
+                <!--@import(/layoutbvt/index_listmain_swipe2.html)-->
+
+                <div class="swiper-pagination"></div>
+
+
+   
+</div>
+
+</div>
+
+</div>
+<div style="margin-top:85px"></div>
+
+
+
+<!--setting-->
+<!--@define(cmc_log)-->
+<!--@css(/cssbvt/bvt_index.css)-->
+<!--@css(/cssbvt/swiper-bvt.css)-->
+<!--@css(/cssbvt/module/product/index_listmain.css)-->
+<!--@js(/jsbvt/discount_listmain.js)-->
+<!-- @js(/jsbvt/module/layout/category.js) -->
+
+<script src="/jsbvt/swiper-bundle.min.js"></script>
+<script src="/jsbvt/swiper-bvt-setting.js"></script>
+<script>
+    
+
+        //탭+슬라이드 
+        let tabInputs = document.querySelectorAll('.tabInput');
+
+        tabInputs.forEach(function (input) {
+
+            input.addEventListener('change', function () {
+                let id = input.value;
+                let thisSwiper = document.getElementById('swiper' + id);
+                thisSwiper.swiper.update();
+            });
+
+        });
+
+</script>

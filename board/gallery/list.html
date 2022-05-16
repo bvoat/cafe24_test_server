@@ -1,0 +1,112 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="Board_ListPackage_8">
+    <!--@css(/css/module/board/listPackage_8.css)-->
+    <div module="board_title_8">
+        <div class="path">
+            <h3>현재 위치</h3>
+            <ol>
+                <li class="first"><a href="/">홈</a></li>
+                <li><a href="/board/index.html">게시판</a></li>
+                <li title="현재 위치">{$board_name}</li>
+            </ol>
+        </div>
+
+        <div class="title">
+            <p class="imgArea">{$board_top_image}</p>
+            <h2>{$board_title}</h2>
+            <p>{$board_info}</p>
+        </div>
+    </div>
+
+    <div module="board_category_8">
+        <p>{$form.board_category}</p>
+    </div>
+
+    <ul module="board_listheader_8">
+        <li><a class="{$list_type_display|display}" href="/board/gallery/list.html{$param_list}"><img src="http://img.echosting.cafe24.com/design/skin/default/board/btn_type_image.gif" alt="이미지형으로 보기"></a></li>
+        <li><a class="{$list_type_display|display}" href="/board/gallery/list2.html{$param_list}"><img src="http://img.echosting.cafe24.com/design/skin/default/board/btn_type_list.gif" alt="리스트형으로 보기"></a></li>
+    </ul>
+
+    <div module="board_notice_8">
+        <p>
+            <strong>{$checkbox} {$notice_icon} </strong>
+            <span>{$icon_re}{$icon_lock} <a href="/board/gallery/read.html{$param_read}" style="{$link_color}">{$subject}</a>{$icon_new}{$icon_file}{$comment_count}</span>
+        </p>
+        <p>
+            <strong>{$checkbox} {$notice_icon} </strong>
+            <span>{$icon_re}{$icon_lock} <a href="/board/gallery/read.html{$param_read}" style="{$link_color}">{$subject}</a>{$icon_new}{$icon_file}{$comment_count}</span>
+        </p>
+    </div>
+
+    <div module="board_list_8">
+        <!--
+            $count = 12
+        -->
+        <ul>
+            <li>
+                {$checkbox}
+                <a href="/board/gallery/read.html{$param_read}" class="imgLink">
+                    <img src="{$img_src}" onerror="this.src='http://img.echosting.cafe24.com/design/skin/default/board/img_no.gif'" alt="" /> [{$no}] {$subject} {$comment_count}
+                </a>
+                <span>
+                    <strong>작성자 : {$writer} </strong>
+                    <em>작성일 : {$write_date|date:Y-m-d}</em>
+                </span>
+            </li>
+            <li>
+                {$checkbox}
+                <a href="/board/gallery/read.html{$param_read}" class="imgLink">
+                    <img src="{$img_src}" onerror="this.src='http://img.echosting.cafe24.com/design/skin/default/board/img_no.gif'" alt="" /> [{$no}] {$subject} {$comment_count}
+                </a>
+                <span>
+                    <strong>작성자 : {$writer} </strong>
+                    <em>작성일 : {$write_date|date:Y-m-d}</em>
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <div module="board_ButtonList_8">
+        <a href="/board/gallery/write.html{$param_write}" class="{$write_display|display}"><img src="//img.echosting.cafe24.com/design/skin/fashion013/btn_write.gif" alt="글쓰기" /></a>
+    </div>
+</div>
+
+<div module="board_paging_8">
+    <!--@css(/css/module/board/paging.css)-->
+    <p><a href="{$param_first}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_first.gif" alt="첫 페이지" /></a></p>
+    <p><a href="{$param_prev}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_prev.gif" alt="이전 페이지" /></a></p>
+    <ol>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+    </ol>
+    <p><a href="{$param_next}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_next.gif" alt="다음 페이지" /></a></p>
+    <p><a href="{$param_last}"><img src="http://img.echosting.cafe24.com/design/skin/default/common/btn_page_last.gif" alt="마지막 페이지" /></a></p>
+</div>
+
+<!-- 관리자 전용 메뉴 -->
+<div module="board_catemove_8">
+    <!--@css(/css/module/board/catemove.css)-->
+    <p>
+        해당 글을 {$form.board_category_move} 카테고리로
+        <a href="#none" onclick="{$action_category_move}"><img src="http://img.echosting.cafe24.com/design/skin/default/board/btn_move.gif"  alt="글 이동" /></a>
+    </p>
+</div>
+
+<div module="board_function_8">
+    <!--@css(/css/module/board/function.css)-->
+    <p>
+        해당 글 이동 : {$form.boardGroup} 으로
+        <a href="#none" onclick="{$action_article_move}" ><img src="http://img.echosting.cafe24.com/design/skin/default/board/btn_move.gif"  alt="글 이동" /></a>
+        <a href="#none" onclick="{$action_article_copy}" ><img src="http://img.echosting.cafe24.com/design/skin/default/board/btn_copy.gif" alt="글 복사" /></a>
+        * 댓글포함, 답변 불포함
+    </p>
+</div>
+<!-- //관리자 전용 메뉴 -->
+
+<div module="board_search_8">
+    <!--@css(/css/module/board/search.css)-->
+    <fieldset class="boardSearch">
+        <legend>게시물 검색</legend>
+        <p>{$form.search_date} {$form.search_key} {$form.search} <a href="#none" onclick="{$action_search}"><img src="http://img.echosting.cafe24.com/design/skin/default/board/btn_find.gif" alt="찾기" /></a></p>
+    </fieldset>
+</div>

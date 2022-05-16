@@ -1,0 +1,34 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="board_CommentDeletePackage_1002">
+    <!--@css(/css/module/board/commentDeletePackage.css)-->
+    <div module="board_title_1002">
+        <div class="path">
+            <h3>현재 위치</h3>
+            <ol>
+                <li class="first"><a href="/">홈</a></li>
+                <li><a href="/board/index.html">게시판</a></li>
+                <li title="현재 위치">{$board_name}</li>
+            </ol>
+        </div>
+
+        <div class="title">
+            <h2>{$board_name}</h2>
+            <p>{$board_info}</p>
+        </div>
+    </div>
+
+    <div module="Board_CommentDel_1002">
+        <div class="commentDel">
+            <h3><img src="http://img.echosting.cafe24.com/design/skin/default/board/h3_comment.gif" alt="댓글삭제" /></h3>
+            <fieldset>
+                <legend>댓글삭제</legend>
+                <p class="info">댓글 등록 시 입력한 <br />비밀번호를 입력하여 주십시요.</p>
+                <p class="password"><label for="comment_password">PW</label> {$form.comment_password}</p>
+                <p class="button">
+                    <a href="/board/free/list.html{$param_list}"><img src="http://img.echosting.cafe24.com/design/skin/default/board/btn_secret_list.gif" alt="목록" /></a>
+                    <input type="image" src="http://img.echosting.cafe24.com/design/skin/default/board/btn_secret_submit.gif" alt="확인" />
+                </p>
+            </fieldset>
+        </div>
+    </div>
+</div>
