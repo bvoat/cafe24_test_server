@@ -1,0 +1,312 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<div class="margin-header">
+
+</div>
+
+<!--메인페이지 공통 노출 배너-->
+<!--@import(/bvtBANNER/allsquareBanner.html)-->
+
+<!-- 메뉴 -->
+<!--@import(/layout/basic/index_menu.html)-->
+
+
+<!--보터 카운트 배너-->
+<div class="padding2 indextitle m20">
+    <h3 class="t14">Bvoat Now</h3>
+    <span class="t09">이만큼 가치소비를 함께하고 있어요</span>
+</div>
+<div class="padding2">
+    <div class="joinbanner" id="joinbanner">🥳<b class="blue2" id="membernct"></b>의 보터가 소비로 투표 중이에요!</div>
+</div>
+
+<div class="padding2 indextitle">
+    <a href="/myshop/community/community_list.html">
+        <div class="big_btn_comm">
+            <span class="big_btn_comm_txt">💬&nbsp;가치소비 커뮤니티 바로 가기 &nbsp;<span> 〉 </span> </span>
+        </div>
+    </a>
+</div>
+
+<!-- 메인진열 사입 검증 -->
+
+<div class="padding2 indextitle m25">
+    <h3 class="t14">Bvoat Delivery</h3>
+    <span class="t09">브랜드 무관, 한 번에 배송되는 비보트 딜리버리 🚛</span>
+
+    <div class="listmain_submsg blue2">
+        - 회원 가입 시 1만 원 이상 무료배송 쿠폰 지급<br>
+        - 구매자 전원 비보트 뱃지 증정 (소진시 조기 종료)
+    </div>
+</div>
+
+<div class="padding2 index_project_nopadding">
+    <div module="product_listmain_50">
+        <!--
+                $count = 22
+                $basket_result = /product/add_basket.html
+                $basket_option = /product/basket_option.html
+            -->
+        <!--@import(/layoutbvt/index_listmain_list.html)-->
+    </div>
+</div>
+
+<div class="padding2 indextitle m25">
+    <h3 class="t14">Category</h3>
+    <span class="t09">우리의 가치있는 의식주를 위해</span>
+</div>
+<div class="index_category">
+    <div class="swiper-container category-swipe padding2">
+        <div class="swiper-wrapper" id="index_category" module="Layout_category">
+            <div class="category swiper-slide"><a href="/product/list.html{$param}"
+                    name="{$param}">{$name_or_img_tag}</a></div>
+            <div class="category swiper-slide"><a href="/product/list.html{$param}"
+                    name="{$param}">{$name_or_img_tag}</a></div>
+            <div class="category swiper-slide"><a href="/product/list.html{$param}"
+                    name="{$param}">{$name_or_img_tag}</a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="category_btn">
+            <a href="/product/cat.html">
+                더 많은 카테고리 보러 가기<img src="/bvtIMG/icon/arrow-right_gray.svg" alt="화살표">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="padding2 indextitle m25">
+    <h3 class="t14">Voters Pick</h3>
+    <span class="t09">지난 한 달 사랑받았어요</span>
+</div>
+
+<!--메인진열_기획전-->
+<div class="padding2 index_project">
+    <div class="bvt-listmain-box" module="product_listmain_1">
+        <div class="project_title">
+        </div>
+        <span class="displaynone listmain_title">{$category_title_text}</span>
+        <!--
+            $count = 20
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+        <!--@import(/layoutbvt/index_listmain_swipe.html)-->
+    </div>
+</div>
+
+
+
+<!--메인진열_기획전-->
+<div class="padding2 index_project">
+    <div class="bvt-listmain-box" module="product_listmain_2">
+        <div class="project_title">
+        </div>
+        <span class="displaynone listmain_title">{$category_title_text}</span>
+        <!--
+            $count = 20
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+        <!--@import(/layoutbvt/index_listmain_swipe.html)-->
+    </div>
+</div>
+
+
+<!--메인진열_기획전-->
+<div class="padding2 index_project">
+    <div class="bvt-listmain-box" module="product_listmain_3">
+        <div class="project_title">
+        </div>
+        <span class="displaynone listmain_title">{$category_title_text}</span>
+
+        <!--
+            $count = 20
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+        <!--@import(/layoutbvt/index_listmain_swipe.html)-->
+    </div>
+</div>
+
+
+
+<!--메인진열_기획전-->
+<div class="padding2 index_project">
+    <div class="bvt-listmain-box" module="product_listmain_4">
+        <div class="project_title">
+        </div>
+        <span class="displaynone listmain_title">{$category_title_text}</span>
+        <!--
+            $count = 20
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+        <!--@import(/layoutbvt/index_listmain_swipe.html)-->
+    </div>
+</div>
+
+<div style="margin-top:65px"></div>
+
+<div class="padding2 indextitle m20">
+    <h3 class="t14">Valuable Pick</h3>
+    <span class="t09">어떤 가치에 관심이 있으세요?</span>
+</div>
+<div class="bvt-list main padding2">
+    <div class="listmain_tabs">
+        <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1"><label for="tab1">동물과의
+            공생</label>
+        <div class="tab bvt-listmain-box" module="product_listmain_38">
+            <!--
+                $count = 20
+                $basket_result = /product/add_basket.html
+                $basket_option = /product/basket_option.html
+            -->
+
+            <div class="bvt-listmain_swipe swiper-container listmain_swipe2-swipe" id="swiper1">
+
+                <!--@import(/layoutbvt/index_listmain_swipe2.html)-->
+                <div class="listmain_swipe2-swiper-pagination"></div>
+            </div>
+        </div>
+
+        <input type="radio" name="tabs" id="tab2" class="tabInput" value="2"><label for="tab2">노동의 공정성</label>
+        <div class="tab bvt-listmain-box">
+            <!-- Swiper -->
+            <div class="bvt-listmain_swipe swiper-container listmain_swipe2-swipe" id="swiper2"
+                module="product_listmain_39">
+                <span class="displaynone listmain_title">{$category_title_text}</span>
+                <!--
+                    $count = 20
+                    $basket_result = /product/add_basket.html
+                    $basket_option = /product/basket_option.html
+                -->
+                <!--@import(/layoutbvt/index_listmain_swipe2.html)-->
+                <div class="listmain_swipe2-swiper-pagination"></div>
+            </div>
+        </div>
+
+        <input type="radio" name="tabs" id="tab3" class="tabInput" value="3"><label for="tab3">쓰.없.삶</label>
+        <div class="tab bvt-listmain-box">
+            <!-- Swiper -->
+            <div class="bvt-listmain_swipe swiper-container listmain_swipe2-swipe" id="swiper3"
+                module="product_listmain_40">
+                <span class="displaynone listmain_title">{$category_title_text}</span>
+                <!--
+                    $count = 20
+                    $basket_result = /product/add_basket.html
+                    $basket_option = /product/basket_option.html
+                -->
+                <!--@import(/layoutbvt/index_listmain_swipe2.html)-->
+                <div class="listmain_swipe2-swiper-pagination"></div>
+            </div>
+        </div>
+
+        <input type="radio" name="tabs" id="tab4" class="tabInput" value="4"><label for="tab4">해양 생태계 복원</label>
+        <div class="tab bvt-listmain-box">
+            <!-- Swiper -->
+            <div class="bvt-listmain_swipe swiper-container listmain_swipe2-swipe" id="swiper4"
+                module="product_listmain_41">
+                <span class="displaynone listmain_title">{$category_title_text}</span>
+                <!--
+                    $count = 20
+                    $basket_result = /product/add_basket.html
+                    $basket_option = /product/basket_option.html
+                -->
+                <!--@import(/layoutbvt/index_listmain_swipe2.html)-->
+                <div class="listmain_swipe2-swiper-pagination"></div>
+            </div>
+        </div>
+
+        <input type="radio" name="tabs" id="tab5" class="tabInput" value="5"><label for="tab5">영웅의 희생</label>
+        <div class="tab bvt-listmain-box">
+            <!-- Swiper -->
+            <div class="bvt-listmain_swipe swiper-container listmain_swipe2-swipe" id="swiper5"
+                module="product_listmain_44">
+                <span class="displaynone listmain_title">{$category_title_text}</span>
+                <!--
+                    $count = 20
+                    $basket_result = /product/add_basket.html
+                    $basket_option = /product/basket_option.html
+                -->
+                <!--@import(/layoutbvt/index_listmain_swipe2.html)-->
+                <div class="listmain_swipe2-swiper-pagination"></div>
+            </div>
+        </div>
+        <input type="radio" name="tabs" id="tab6" class="tabInput" value="6"><label for="tab6">업사이클링</label>
+        <div class="tab bvt-listmain-box">
+            <!-- Swiper -->
+            <div class="bvt-listmain_swipe swiper-container listmain_swipe2-swipe" id="swiper6"
+                module="product_listmain_45">
+                <span class="displaynone listmain_title">{$category_title_text}</span>
+                <!--
+                    $count = 20
+                    $basket_result = /product/add_basket.html
+                    $basket_option = /product/basket_option.html
+                -->
+                <!--@import(/layoutbvt/index_listmain_swipe2.html)-->
+                <div class="listmain_swipe2-swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="padding2 index_project bvt-listmain-box">
+    <div class="indextitle m25">
+        <h3 class="t14">Congrats!</h3>
+        <span class="t09">지금 보터들이 구매하고 있어요.</span>
+    </div>
+    <div class="bvt-listmain_swipe swiper-container order-swipe" module="product_listmain_46">
+        <!--
+        $count = 20
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+    -->
+
+        <!--@import(/layoutbvt/index_listmain_swipe2.html)-->
+        <div class="swiper-pagination"></div>
+
+    </div>
+</div>
+
+
+<div style="margin-top:45px"></div>
+
+
+
+<!--footer-->
+<!--@css(/cssbvt/module/layout/footer.css)-->
+<!--@import(/layout/basic/footer.html)-->
+
+
+<!--setting-->
+<!--@define(cmc_log)-->
+<!--@css(/cssbvt/bvt_index.css)-->
+<!--@css(/cssbvt/swiper-bvt.css)-->
+<!--@css(/cssbvt/module/product/index_listmain.css)-->
+<!--@js(/jsbvt/discount_listmain.js)-->
+<!--@js(/jsbvt/discount_listnormal_main.js)-->
+
+
+<script src="/jsbvt/swiper-bundle.min.js"></script>
+<script src="/jsbvt/swiper-bvt-setting.js"></script>
+<script>
+
+
+    //탭+슬라이드 
+    let tabInputs = document.querySelectorAll('.tabInput');
+
+    tabInputs.forEach(function (input) {
+
+        input.addEventListener('change', function () {
+            let id = input.value;
+            let thisSwiper = document.getElementById('swiper' + id);
+            thisSwiper.swiper.update();
+        });
+
+    });
+
+</script>
