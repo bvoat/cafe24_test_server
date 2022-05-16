@@ -1,0 +1,54 @@
+on: push
+name: 🚀 Deploy Bvoat website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 1000
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+
+    - name: 📂 Sync files (1)
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: bvoatofficial.ftp.cafe24.com
+        server-dir: sde_design/mobile15/
+        username: bvoatofficial
+        password: ftpqlqhxm2@
+        protocol: ftp
+        port: 21
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.github*
+          **/.github*/**
+          **/preference*
+          **/preference*/**
+          *.json
+          *.ini
+          *gif
+          *.yml
+
+    - name: 📂 Sync files (2)
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: bvoatofficial.ftp.cafe24.com
+        server-dir: sde_design/mobile16/
+        username: bvoatofficial
+        password: ftpqlqhxm2@
+        protocol: ftp
+        port: 21
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.github*
+          **/.github*/**
+          **/preference*
+          **/preference*/**
+          *.json
+          *.ini
+          *gif
+          *.yml
